@@ -1,0 +1,11 @@
+@include "rna/cell_annotation_service.mro"
+
+call CELLRANGER_ANNOTATE_CS(
+    filtered_matrix       = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix.h5",
+    tenx_cloud_token_path = "/oldhome/ouyjh/.config/txg/credentials",
+    sample_id             = "run_annotate_1kpbmcs",
+    sample_desc           = "",
+    cell_annotation_model = null,
+    sample_cloupe         = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe",
+    cas_track_name        = null,
+)

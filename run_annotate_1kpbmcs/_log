@@ -1,0 +1,157 @@
+Martian Runtime - v4.0.14
+2026-03-04 16:14:08 [build  ] Built with Go version go1.25.1
+2026-03-04 16:14:08 [cmdline] mrp __run_annotate_1kpbmcs.mro run_annotate_1kpbmcs
+2026-03-04 16:14:08 [pid    ] 618305
+2026-03-04 16:14:08 [environ] USER=ouyjh
+2026-03-04 16:14:08 [environ] LOGNAME=ouyjh
+2026-03-04 16:14:08 [environ] HOME=/oldhome/ouyjh
+2026-03-04 16:14:08 [environ] PATH=/Nas3Data/Download/cellranger-10.0.0/lib/bin:/Nas3Data/Download/cellranger-10.0.0/external/martian/bin:/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin:/Nas3Data/Download/cellranger-10.0.0/bin/tenkit:/Nas3Data/Download/cellranger-10.0.0/bin:/oldhome/ouyjh/miniconda3/bin:/oldhome/ouyjh/miniconda3/condabin:/oldhome/ouyjh/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+2026-03-04 16:14:08 [environ] SHELL=/oldhome/ouyjh/miniconda3/bin/zsh
+2026-03-04 16:14:08 [environ] TERM=xterm-256color
+2026-03-04 16:14:08 [environ] XDG_SESSION_ID=78
+2026-03-04 16:14:08 [environ] XDG_RUNTIME_DIR=/run/user/1000
+2026-03-04 16:14:08 [environ] XDG_SESSION_TYPE=tty
+2026-03-04 16:14:08 [environ] XDG_SESSION_CLASS=user
+2026-03-04 16:14:08 [environ] LANG=C
+2026-03-04 16:14:08 [environ] SSH_CLIENT=10.3.82.40 59078 22
+2026-03-04 16:14:08 [environ] SSH_CONNECTION=10.3.82.40 59078 10.3.81.71 22
+2026-03-04 16:14:08 [environ] SSH_TTY=/dev/pts/14
+2026-03-04 16:14:08 [environ] SHLVL=1
+2026-03-04 16:14:08 [environ] PWD=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline
+2026-03-04 16:14:08 [environ] LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::*.rds=01;33:*.h5ad=01;33:*.pdf=01;35:*.png=01;35:*.csv=34:*.tsv=34:*.txt=34:*.html=04;36
+2026-03-04 16:14:08 [environ] CONDA_EXE=/oldhome/ouyjh/miniconda3/bin/conda
+2026-03-04 16:14:08 [environ] CONDA_PYTHON_EXE=/oldhome/ouyjh/miniconda3/bin/python
+2026-03-04 16:14:08 [environ] CONDA_SHLVL=1
+2026-03-04 16:14:08 [environ] CONDA_PREFIX=/oldhome/ouyjh/miniconda3
+2026-03-04 16:14:08 [environ] CONDA_DEFAULT_ENV=base
+2026-03-04 16:14:08 [environ] CONDA_PROMPT_MODIFIER=
+2026-03-04 16:14:08 [environ] CONDA_BACKUP_JAVA_HOME=
+2026-03-04 16:14:08 [environ] JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+2026-03-04 16:14:08 [environ] CONDA_BACKUP_JAVA_LD_LIBRARY_PATH=
+2026-03-04 16:14:08 [environ] JAVA_LD_LIBRARY_PATH=/oldhome/ouyjh/miniconda3/jre/lib/amd64/server
+2026-03-04 16:14:08 [environ] JAVA_CMD=/usr/lib/jvm/java-17-openjdk-amd64/bin/java
+2026-03-04 16:14:08 [environ] _=/oldhome/ouyjh/bin/cellranger
+2026-03-04 16:14:08 [environ] HDF5_USE_FILE_LOCKING=FALSE
+2026-03-04 16:14:08 [environ] LC_CTYPE=en_US.UTF-8
+2026-03-04 16:14:08 [environ] MKL_CBWR=COMPATIBLE
+2026-03-04 16:14:08 [environ] PYTHONNOUSERSITE=1
+2026-03-04 16:14:08 [environ] RUST_BACKTRACE=1
+2026-03-04 16:14:08 [environ] PYTHONPATH=/Nas3Data/Download/cellranger-10.0.0/lib/python:/Nas3Data/Download/cellranger-10.0.0/external/martian/adapters/python
+2026-03-04 16:14:08 [environ] TENX_PRODUCT=cellranger
+2026-03-04 16:14:08 [environ] TENX_VERSION=10.0.0
+2026-03-04 16:14:08 [environ] TENX_COPYRIGHT=Copyright 2023 10x Genomics, Inc. All rights reserved.
+2026-03-04 16:14:08 [environ] MROPATH=/Nas3Data/Download/cellranger-10.0.0/mro
+2026-03-04 16:14:08 [version] MRO Version=10.0.0
+2026-03-04 16:14:08 [options] --jobmode=local
+2026-03-04 16:14:08 [options] --vdrmode=rolling
+2026-03-04 16:14:08 [options] --profile=disable
+2026-03-04 16:14:08 [options] --stackvars=false
+2026-03-04 16:14:08 [options] --zip=false
+2026-03-04 16:14:08 [options] --limit-loadavg=false
+2026-03-04 16:14:08 [options] --noexit=false
+2026-03-04 16:14:08 [options] --nopreflight=false
+2026-03-04 16:14:08 [jobmngr] Job config = /Nas3Data/Download/cellranger-10.0.0/external/martian/jobmanagers/config.json
+2026-03-04 16:14:08 [jobmngr] Using 64 logical cores available on system.
+2026-03-04 16:14:08 [jobmngr] Using 1814 GB, 90% of system memory.
+2026-03-04 16:14:08 [sysinfo] linux amd64
+2026-03-04 16:14:08 [sysinfo] Linux kernel release version: 6.8.0-90-generic
+2026-03-04 16:14:08 [sysinfo] glibc version: 2.39
+2026-03-04 16:14:08 [filesys] Pipestance path /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs
+2026-03-04 16:14:08 [filesys] Pipestance filesystem type nfs
+2026-03-04 16:14:08 [filesys] 25 TB and 9,480,056,862 inodes available.
+2026-03-04 16:14:08 [filesys] Pipestance filesystem nfs4 mount options: rw,relatime,rw,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.1.255.71,local_lock=none,addr=10.1.255.99
+2026-03-04 16:14:08 [filesys] Pipestance directory permissions drwxrwxr-x owned by uid 1000 gid 1000
+2026-03-04 16:14:08 [filesys] Bin path /Nas3Data/Download/cellranger-10.0.0/external/martian/bin
+2026-03-04 16:14:08 [filesys] Bin filesystem type nfs
+2026-03-04 16:14:08 [filesys] Bin filesystem nfs4 mount options: rw,relatime,rw,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.1.255.71,local_lock=none,addr=10.1.255.48
+2026-03-04 16:14:08 [filesys] Executable file permissions -rwxrwxr-x owned by uid 1000 gid 1000
+2026-03-04 16:14:08 [user   ] User ouyjh uid 1000 / gid 1000
+Serving UI at http://fat02:42051?auth=9OR8S2_ewELlnEZILmQVuu0OiuZWEQzO0cGiDCY67ok
+
+Running preflight checks (please wait)...
+2026-03-04 16:14:08 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_PREFLIGHT
+2026-03-04 16:14:08 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_PREFLIGHT.fork0.chnk0.main
+2026-03-04 16:14:10 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_PREFLIGHT
+2026-03-04 16:14:10 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES
+2026-03-04 16:14:10 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES.fork0.split
+2026-03-04 16:14:10 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CHECK_CLOUPE_MATRIX_CONSISTENT
+2026-03-04 16:14:10 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CHECK_CLOUPE_MATRIX_CONSISTENT.fork0.chnk0.main
+2026-03-04 16:14:10 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION
+2026-03-04 16:14:10 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION.fork0.chnk0.main
+2026-03-04 16:14:11 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION
+2026-03-04 16:14:12 [runtime] (split_complete)  ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES
+2026-03-04 16:14:12 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES.fork0.join
+2026-03-04 16:14:12 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CHECK_CLOUPE_MATRIX_CONSISTENT
+2026-03-04 16:20:13 [runtime] (update)          ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES.fork0 join_running
+2026-03-04 16:26:14 [runtime] (update)          ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES.fork0 join_running
+2026-03-04 16:27:58 [runtime] (join_complete)   ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES
+2026-03-04 16:27:58 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS
+2026-03-04 16:27:58 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS.fork0.split
+2026-03-04 16:28:00 [runtime] (split_complete)  ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS
+2026-03-04 16:28:00 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS.fork0.join
+2026-03-04 16:28:02 [runtime] (join_complete)   ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS
+2026-03-04 16:28:02 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES
+2026-03-04 16:28:02 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES.fork0.chnk0.main
+2026-03-04 16:28:02 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART
+2026-03-04 16:28:02 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART.fork0.chnk0.main
+2026-03-04 16:28:02 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES
+2026-03-04 16:28:02 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES.fork0.chnk0.main
+2026-03-04 16:28:02 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT
+2026-03-04 16:28:02 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT.fork0.split
+2026-03-04 16:28:02 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES
+2026-03-04 16:28:02 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES.fork0.chnk0.main
+2026-03-04 16:28:02 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT
+2026-03-04 16:28:02 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT.fork0.chnk0.main
+2026-03-04 16:28:02 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES
+2026-03-04 16:28:02 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES
+2026-03-04 16:28:02 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5
+2026-03-04 16:28:02 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5.fork0.chnk0.main
+2026-03-04 16:28:06 [runtime] (split_complete)  ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT
+2026-03-04 16:28:06 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT.fork0.join
+2026-03-04 16:28:06 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES
+2026-03-04 16:28:06 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT
+2026-03-04 16:28:06 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5
+2026-03-04 16:28:07 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS
+2026-03-04 16:28:07 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS.fork0.split
+2026-03-04 16:28:07 [runtime] (split_complete)  ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS
+2026-03-04 16:28:07 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS.fork0.chnk0.main
+2026-03-04 16:28:07 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS.fork0.chnk1.main
+2026-03-04 16:28:07 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART
+2026-03-04 16:28:09 [runtime] (join_complete)   ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT
+2026-03-04 16:28:16 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS
+2026-03-04 16:28:16 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS.fork0.join
+2026-03-04 16:28:17 [runtime] (join_complete)   ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS
+2026-03-04 16:28:17 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP
+2026-03-04 16:28:17 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP.fork0.chnk0.main
+2026-03-04 16:28:19 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP
+2026-03-04 16:28:19 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY
+2026-03-04 16:28:19 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY.fork0.chnk0.main
+2026-03-04 16:28:20 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY
+2026-03-04 16:28:20 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.DEMUX_CLOUPE_TRACK_NAME
+2026-03-04 16:28:20 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.DEMUX_CLOUPE_TRACK_NAME.fork0.chnk0.main
+2026-03-04 16:28:20 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.DEMUX_CLOUPE_TRACK_NAME
+2026-03-04 16:28:20 [runtime] (ready)           ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.APPEND_CELL_TYPES_CLOUPE
+2026-03-04 16:28:20 [runtime] (run:local)       ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.APPEND_CELL_TYPES_CLOUPE.fork0.chnk0.main
+2026-03-04 16:28:21 [runtime] (chunks_complete) ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.APPEND_CELL_TYPES_CLOUPE
+2026-03-04 16:28:21 [runtime] VDR killed 11 files, 27 MB.
+
+Outputs:
+- cell_types:                              /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_types.csv
+- cell_annotation_results:                 /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_annotation_results.json.gz
+- web_summary_cell_types:                  /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/web_summary_cell_types.html
+- cell_annotation_differential_expression: /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_annotation_differential_expression.csv
+- cell_annotation_sample_cloupe:           /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_annotation_sample_cloupe.cloupe
+
+2026-03-04 16:28:21 [perform] Serializing pipestance performance data.
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+2026-03-04 16:28:27 Shutting down.
+2026-03-04 16:28:27 [jobmngr] Highest memory usage observed: {
+  "rss": 964956160,
+  "shared": 449839104,
+  "vmem": 11618852864,
+  "text": 49860608,
+  "stack": 1085853696,
+  "proc_count": 83
+}

@@ -1,0 +1,7 @@
+{
+    "feature_reference": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/SUMMARIZE_REPORTS/fork0/join-u3c10a6a6f6/files/feature_reference.csv",
+    "metrics_summary_csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/SUMMARIZE_REPORTS/fork0/join-u3c10a6a6f6/files/metrics_summary_csv.csv",
+    "metrics_summary_json": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/SUMMARIZE_REPORTS/fork0/join-u3c10a6a6f6/files/metrics_summary_json.json",
+    "web_summary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/SUMMARIZE_REPORTS/fork0/join-u3c10a6a6f6/files/web_summary.html",
+    "ws_data": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/SUMMARIZE_REPORTS/fork0/join-u3c10a6a6f6/files/ws_data.json"
+}

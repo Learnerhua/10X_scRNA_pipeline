@@ -1,0 +1,614 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title> 
+    <link href="../css/report_beta.css" rel="stylesheet" type="text/css" />
+    <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.5.2.min.js" language="javascript"></script>   
+    <script src="../js/jquery.albumSlider.min.js" type="text/javascript"></script>
+    <script src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
+    <script src="../js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+    <script src="../js/albumSider.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/overlib.js"></script>
+    <script src="../js/report.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    $(function () {
+	        $(".download").each(function () {
+	            var width = $(this).parent().next(".table-container").children("table").width();
+	            var floatright = width;
+
+	            if (floatright <= 960) {
+	                $(this).css("margin-left", floatright - 60 + "px");
+	            } else {
+	                $(this).css("margin-left", "960px");
+	            }
+	        });
+	        var w = 0;
+	        var h = $(".catalog").height();
+
+
+	        $(".catalog_li a").each(function () {
+	            var width = $(this).width();
+	            if (width > w) {
+	                w = width;
+	            }
+	        });
+	        $(".catalog").width(w + 40 + "px");
+	        //$("ul.left_ul li:odd").css("background-color", "#d3e6f9");
+	        $(".span_hide").toggle(function () {
+	            $(".catalog_li").hide();
+	            $(this).text("[展示]")
+
+	        }, function () {
+
+	            $(".catalog_li").show();
+	            $(this).text("[隐藏]");
+	        });
+	        $(".catalog").height();
+
+		var height = $(".content").height();
+
+		if (710 - height < 60 && 710 - height >0) {             
+                	$(".footer").css("margin-top", 710 - height + "px");
+            	} else if (710 - height >60) {           
+                	$(".footer").css("margin-top", 710 - height - 60 + "px");
+            	}
+
+		$(".confirm").click(function () {
+	            var text = $(this).prev().val();
+	            if (text.length == "0") {
+	                alert("Please enter sample key word! ")
+	                return;
+	            }
+	            $(this).parents("div.lane").find("ul.imglist li").each(function () {
+					
+					if ($(this).text().toLowerCase().indexOf(text.toLowerCase()) >= 0) {
+	                    $(this).show();
+	                } else {
+	                    $(this).hide();
+	                }
+
+	            })
+	        });
+	        $(".showall").click(function () {
+	            $(this).parents("div.lane").find("ul.imglist li").each(function () {
+	                $(this).show();
+	            })
+	        });
+		$(".download1").find("img").mouseenter(function () {
+	            $(this).parent().next().show();
+
+	        });
+	        $(".download1").mouseleave(function () {
+	            $(".showMessage").hide();
+	        });
+
+	    })
+    </script>
+</head>
+<body>
+	<div class="link">
+		<div class = "rightline">
+			<div class = "imgVersion toHtml" url = "Results.html">
+			</div>
+			<div class = "line toHtml" url = "Results.html">
+				English
+			</div>
+		</div>
+	<div class="rightline">
+		<a href="../../report_cn.pdf" target = "_blank">
+				<img style="margin-top:20px;" width="50px;" height="50px;" src="../img/pdf.jpg" title="PDF Download" alt="PDF" />
+			</a>
+		</div>
+	</div>
+<div class = "top" onclick = "javascript:scroll(0,0)"></div>
+  <div id="page">
+			<div class = "move_left left_fixer">
+		<div class = "left_top">	<div><img style="margin-top:10px;"  src = "../img/BGI_Research_Logo.png" width = "120" alt = ""/></a></div>	</div>
+		<ul class = "left_ul">
+			<li class = "menuBG toHtml" url = "Results_cn.html">分析结果
+			</li>
+			<li class = "toHtml" url = "Methods_cn.html">分析方法
+			</li>
+			<li class = "toHtml" url = "Tables_cn.html">结果表格
+			</li>
+			<li class = "toHtml" url = "Figures_cn.html">结果图片
+			</li>
+			<li class = "toHtml" url = "Files_cn.html">文件
+			</li>
+			<li class = "toHtml" url = "References_cn.html">参考文献
+			</li>
+			<li class = "toHtml" url = "Help_cn.html">帮助
+			</li>
+			<li class = "toHtml" url = "FAQs_cn.html">常见问题
+			</li>
+		</ul>
+	</div>
+
+
+			<div class = "content">
+			<div class = "catalog">
+	<div class = "cont_ca">内容  <span class = "span_hide">[隐藏]</span></div>		<div class = "catalog_li"><a href = "#1">1 技术简介</a></div>
+		<div class = "catalog_li"><a href = "#2">2 项目信息</a></div>
+		<div class = "catalog_li"><a href = "#3">3 测序结果</a></div>
+		<div class = "catalog_li"><a href = "#3.1">3.1 下机数据质控</a></div>
+		<div class = "catalog_li"><a href = "#3.2">3.2 基因组比对</a></div>
+		<div class = "catalog_li"><a href = "#3.3">3.3 基因表达定量</a></div>
+		<div class = "catalog_li"><a href = "#4">4 数据标准化</a></div>
+		<div class = "catalog_li"><a href = "#5">5 高变基因选择和PCA降维</a></div>
+		<div class = "catalog_li"><a href = "#5.1">5.1  高变特征筛选 </a></div>
+		<div class = "catalog_li"><a href = "#5.2">5.2  主成分分析 </a></div>
+		<div class = "catalog_li"><a href = "#6">6 数据清洗</a></div>
+		<div class = "catalog_li"><a href = "#7">7 单样本分析</a></div>
+		<div class = "catalog_li"><a href = "#7.1">7.1  细胞聚类 </a></div>
+		<div class = "catalog_li"><a href = "#7.2">7.2  Marker基因鉴定 </a></div>
+		<div class = "catalog_li"><a href = "#7.3">7.3  Marker基因分析 </a></div>
+		<div class = "catalog_li"><a href = "#8">8 功能富集分析</a></div>
+		<div class = "catalog_li"><a href = "#8.1">8.1 GO富集分析</a></div>
+		<div class = "catalog_li"><a href = "#8.2">8.2 KEGG富集分析</a></div>
+		<div class = "catalog_li"><a href = "#9">9 细胞亚群注释</a></div>
+		<div class = "catalog_li"><a href = "#10">10 拟时序分析</a></div>
+		<div class = "catalog_li"><a href = "#11">11 细胞类群互作分析</a></div>
+	</div>
+
+				<div><a name = '1'></a></div>
+	<h2>1 技术简介</h2>
+
+
+
+	<div class = "p">本项目使用10X Genomics开发的单细胞组学技术（Chromium）<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>，分析目标样本的单细胞水平的转录表达模式，全流程概览如图1所示。</div><br/>
+	<div class = "p">实验流程：</div><br/>
+	<div class = "p">1. 样本处理及质检：对目标组织样本进行细胞/细胞核悬液制备，并进行细胞/细胞核悬液质控评估；</div><br/>
+	<div class = "p">2. 单细胞分离及mRNA分子的捕获：对制备合格的细胞/细胞核悬液通过Chromium的液滴微流控设备，完成<span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion，10X Chromium平台的核心技术，通过微流控芯片将单个细胞和带寡核苷酸标签的凝胶磁珠包裹在油包水液滴中，形成独立的微型反应器。</div></div></span>（Gel bead in Emulsion）的生成，实现单个细胞的分离，<span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion，10X Chromium平台的核心技术，通过微流控芯片将单个细胞和带寡核苷酸标签的凝胶磁珠包裹在油包水液滴中，形成独立的微型反应器。</div></div></span>生成后破乳回收mRNA分子，并对mRNA分子进行逆转录合成cDNA；</div><br/>
+	<div class = "p">3. 文库制备及测序：cDNA合成后构建测序文库并完成测序；</div><br/>
+	<div class = "p">数据分析：</div><br/>
+	<div class = "p">针对下机数据进行质控，并完成全套分析，最终得到目标样本细胞/细胞核水平表达的基因信息。</div>
+
+
+
+	<div><a name = 'figure1'></a></div>
+	<div class = "mgt"><a href = "../../resource/scRNA_analysis_pipeline_cn.png" target = "_blank"><img src= "../../resource/scRNA_analysis_pipeline_cn.png"    width = "800"   height = "400"/></a></div>
+	<div class = "p1 img_title"><centet><b>图1&nbsp;&nbsp;单细胞组学技术流程图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title"> </div>
+	<div><a name = '2'></a></div>
+	<h2>2 项目信息</h2>
+
+
+
+	<div class = "p">本项目的信息见表1。</div>
+
+
+
+	<div><a name = "table1"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>表1</b>&nbsp;&nbsp;项目信息表&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/Project_information.txt">下载</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">信息<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">内容<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">合同编号</td><td class = "align_center">KMHD_10X/KMHD_10X</td></tr>
+		<tr><td class = "align_center">项目名称</td><td class = "align_center">康美华大10X单细胞数据流程开发</td></tr>
+		<tr><td class = "align_center">合作方</td><td class = "align_center">康美华大生信部</td></tr>
+		<tr><td class = "align_center">物种名称</td><td class = "align_center">人（Human）</td></tr>
+		<tr><td class = "align_center">参考基因组</td><td class = "align_center">GRCh38</td></tr>
+		<tr><td class = "align_center">样品组织/部位</td><td class = "align_center">外周血</td></tr>
+		<tr><td class = "align_center">样品数目</td><td class = "align_center">1</td></tr>
+	</table>
+	</div>
+
+
+
+	<div><a name = '3'></a></div>
+	<h2>3 测序结果</h2>
+
+
+
+	<div><a name = '3.1'></a></div>
+	<h3>3.1 下机数据质控</h3>
+
+
+
+	<div class = "p">测序数据下机后，会对read1和read2进行数据质控，read1为包含16bp <span class = "key_sign">&nbsp;Cell Barcode&nbsp;<div class = "key_body"><div class = "key_title">Cell Barcode</div><div class = "key_content">用于标识细胞的人工合成核酸序列，10X Chromium使用16bp的Cell Barcode，白名单中包含约737,000个已知序列，编辑距离≥3，允许1个碱基测序错误的唯一校正。</div></div></span>以及12bp <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier，唯一分子标识符，用于标识从样本组织捕获到的核酸序列，10X v2为10bp，v3为12bp。不同的mRNA序列片段可以来自相同的分子，使用相同的UMI标识。UMI校正是基于编辑距离=1的方向性合并。</div></div></span>序列，read2为cDNA序列。 使用Cell Ranger (v10.0.0) 工具对read1和read2进行质控过滤， 过滤标准详见信息分析流程-下机数据质控，质控统计结果见表2。</div>
+
+
+
+	<div><a name = "table2"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>表2</b>&nbsp;&nbsp;下机数据质控统计结果&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/QC.xls">下载</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">Sample<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Number of Fragments<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Valid Barcodes<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Q30 Bases in Barcode<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Q30 Bases in RNA Read<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Q30 Bases in UMI<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">run_count_1kpbmcs</td><td class = "align_center">66,601,887</td><td class = "align_center">64,870,238</td><td class = "align_center">94.1%</td><td class = "align_center">90.2%</td><td class = "align_center">92.7%</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">Sample: 样本名；</div>
+	<div class = "p1_desc">Number of Reads：测序的总reads数；</div>
+	<div class = "p1_desc">Valid Barcodes: Reads中的barcode在已知数据集中的比例；</div>
+	<div class = "p1_desc">Q30 Bases in Barcode：Barcode测序质量在Q30以上的碱基比例；</div>
+	<div class = "p1_desc">Q30 Bases in RNA Read: 插入RNA片段的测序质量在Q30以上的碱基比例；</div>
+	<div class = "p1_desc">Q30 Bases in UMI: UMI测序质量在Q30以上的碱基比例；</div>
+
+
+
+	<div><a name = '3.2'></a></div>
+	<h3>3.2 基因组比对</h3>
+
+
+
+	<div class = "p">使用STAR<a href="https://doi.org/10.1186/s13059-019-1662-y" target="_blank"><sup>[2]</sup></a>软件将Clean Reads与参考基因组进行比对，统计比对到外显子区、内含子区、基因间区等区域的reads数。比对结果见表3。</div>
+
+
+
+	<div><a name = "table3"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>表3</b>&nbsp;&nbsp;Clean Reads与参考基因组的比对结果统计&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/Mapping.xls">下载</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">Sample<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Mapping Mapped to Genome<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Reads Mapped to Exonic Regions<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Reads Mapped to Intronic Regions<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Reads Mapped to Intergenic Regions<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">run_count_1kpbmcs</td><td class = "align_center">93.7%</td><td class = "align_center">58.9%</td><td class = "align_center">31.1%</td><td class = "align_center">3.7%</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">Sample: 样本名；</div>
+	<div class = "p1_desc">Reads Mapped to Genome：比对到基因组上的reads比例；</div>
+	<div class = "p1_desc">Reads Mapped to Exonic Regions：比对到外显子区域的reads比例；</div>
+	<div class = "p1_desc">Reads Mapped to Intronic Regions：比对到内含子区域的reads比例；</div>
+	<div class = "p1_desc">Reads Mapped to Intergenic Regions：比对到基因间区的reads比例；</div>
+
+
+
+	<div><a name = '3.3'></a></div>
+	<h3>3.3 基因表达定量</h3>
+
+
+
+	<div class = "p">使用STARsolo<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>软件，将比对到参考基因组唯一位置的reads (Uniquely Mapping Reads) 与基因的对应关系以及基因表达量(<span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier，唯一分子标识符，用于标识从样本组织捕获到的核酸序列，10X v2为10bp，v3为12bp。不同的mRNA序列片段可以来自相同的分子，使用相同的UMI标识。UMI校正是基于编辑距离=1的方向性合并。</div></div></span>数量)进行统计， 得到每个细胞基因捕获情况， 具体结果见表4。</div>
+
+
+
+	<div><a name = "table4"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>表4</b>&nbsp;&nbsp;基因捕获情况统计&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/Cell.xls">下载</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">Sample<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Estimated Number of Cells<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Mean Reads per Cell<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Median Genes per Cell<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Total Genes Detected<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Median UMI Counts per Cell<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">run_count_1kpbmcs</td><td class = "align_center">1,221</td><td class = "align_center">54,547</td><td class = "align_center">3,290</td><td class = "align_center">25,863</td><td class = "align_center">10,029</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">Sample: 样本名</div>
+	<div class = "p1_desc">Estimated Number of Cells：细胞数量估计；</div>
+	<div class = "p1_desc">Mean Reads per Cell：平均每个细胞中的reads数量；</div>
+	<div class = "p1_desc">Median Genes per Cell：平均每个细胞中的基因数；</div>
+	<div class = "p1_desc">Total Genes Detected：检测到的基因总数；</div>
+	<div class = "p1_desc">Median UMI Counts per Cell：平均每个细胞中UMI的数量。</div>
+
+
+
+	<div><a name = '4'></a></div>
+	<h2>4 数据标准化</h2>
+
+
+
+	<div class = "p">对单个样品的不同文库分别质控， 满足质控标准后合并用于后续分析。 通过可视化细胞的基因分布图， <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier，唯一分子标识符，用于标识从样本组织捕获到的核酸序列，10X v2为10bp，v3为12bp。不同的mRNA序列片段可以来自相同的分子，使用相同的UMI标识。UMI校正是基于编辑距离=1的方向性合并。</div></div></span>分布图， 可以评估每个样品的细胞活性及基因表达况。线粒体RNA比例， RNA数量和表达量在一定程度上可以反映出细胞活性和质量。 一般来说， 线粒体RNA比例越低、 RNA数量越多、 RNA表达量越高的细胞， 其活性和质量越好。</div>
+
+
+
+	<div><a name = 'figure2'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图2&nbsp;&nbsp;mRNA和线粒体RNA相关性散点图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每个点表示一个细胞。 左图： X轴表示mRNA表达量， Y轴表示线粒体RNA比例； 右图： X轴mRNA表达量， Y轴表示mRNA数。 图中数字表示相关性系。</div>
+	<div><a name = 'figure3'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图3&nbsp;&nbsp;QC小提琴图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">左图： mRNA数； 中图： mRNA表达量； 右图： 线粒体RNA比例。</div>
+	<br/><div class = "p">根据定量结果进行数据过滤， 过滤掉mRNA表达量过低或过高， 以及线粒体RNA比例过高的细胞， 详见信息分析流程-数据质控和过滤， 过滤后的数据集对细胞内所有基因的表达量进行均一化用于后续分析。</div>
+
+
+
+	<div><a name = '5'></a></div>
+	<h2>5 高变基因选择和PCA降维</h2>
+
+
+
+	<div><a name = '5.1'></a></div>
+	<h3>5.1  高变特征筛选 </h3>
+
+
+
+	<div class = "p"> 基于每个样品中所有基因平均值和分散度（ 均值和方差） ， 使用R包-Seurat<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>筛选出每个样品中呈现高变异度的基因， 用于下游的PCA分析。 默认挑选变异程度最高的2000个基因。 详见信息分析流程-高变特征筛选。</div>
+
+
+
+	<div><a name = 'figure4'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png"    width = "860"/></a></div>
+	<div class = "p1 img_title"><centet><b>图4&nbsp;&nbsp;高变基因筛选图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">X轴表示平均表达量,Y轴表示标准化方差,右图在左图基础上标注了表达量变异程度top 10的marker基因。</div>
+	<div><a name = '5.2'></a></div>
+	<h3>5.2  主成分分析 </h3>
+
+
+
+	<div class = "p">维度热图展示了主成分（ PC） 的变异最大的基因和及其表达量在细胞数据中的异质性， 有助于选择合适的维度进行下游分析。 同时也可以采用折线图 (elbow plot) 决定使用多少个PC来聚类， 以便捕捉到数据中大部分的变化。 图5和图6用于展示top15PC的降维结果， 可以看到随着PC成分的增加， 特征越来越不明显， 有助于下游选择合适的维度。</div>
+
+
+
+	<div><a name = 'figure5'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><centet><b>图5&nbsp;&nbsp;Top15 PC的降维热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每列表示一个细胞， 每行表示一个基因； 黄色表示高表达， 紫色表示低表达。</div>
+	<div><a name = 'figure6'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图6&nbsp;&nbsp;Top15 PC的elbow plot图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">X轴为PC序号， Y轴为标准差。</div>
+	<div><a name = '6'></a></div>
+	<h2>6 数据清洗</h2>
+
+
+
+	<div class = "p">对单个样品的不同文库分别数据清洗和过滤， 满足质控标准后合并用于后续分析。 通过计算液滴中可能存在的双细胞（核）比例以及可能存在的外来RNA污染，利用假设检验推断出在一定概率下最有可能受到污染或者是双胞（核）的细胞。计算结果通过数据的降维聚类图展示，两种过滤方法均淘汰的细胞会被剔除，不纳入后续的分析中。</div>
+
+
+
+	<div><a name = 'figure7'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图7&nbsp;&nbsp;DoubletFinder 识别的双胞（核）以及非双胞。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每个点表示一个细胞。不同颜色表示细胞类型，红色表示细胞为双胞（核），青色表示细胞为非双胞。</div>
+	<div><a name = 'figure8'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图8&nbsp;&nbsp;DecontX 识别污染细胞。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每个点表示一个细胞。不同颜色表示细胞类型，红色表示细胞被污染可能性较高，青色表示细胞被污染的可能性较低。</div>
+	<br/><div class = "p">根据定量结果进行数据过滤， 过滤掉可能是双胞（核）或存在污染的细胞， 过滤后的数据集对细胞内所有基因的表达量进行均一化用于后续分析。</div>
+
+
+
+	<div><a name = '7'></a></div>
+	<h2>7 单样本分析</h2>
+
+
+
+	<div><a name = '7.1'></a></div>
+	<h3>7.1  细胞聚类 </h3>
+
+
+
+	<div class = "p">首先使用PCA对基因的表达矩阵进行降维处理， 之后使用UMAP进行细胞聚类， 生成细胞聚类结果见图6。 该图中每个点代表一个细胞， 空间距离近的点表示这些细胞的基因表达模式比较接近； 颜色根据graph-based聚类算法得到的分类决定， 算法认为同一个cluster内的细胞， 基因表达模式最接近。</div>
+
+
+
+	<div><a name = 'figure9'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图9&nbsp;&nbsp;细胞聚类结果。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">X轴表示的是UMAP第一成分， Y轴表示的是UMAP第二成分。 数字和颜色代表cluster编号。</div>
+	<div><a name = '7.2'></a></div>
+	<h3>7.2  Marker基因鉴定 </h3>
+
+
+
+	<div class = "p">使用R包-Seurat分别计算每一类细胞与其他类群的差异表达基因(marker 基因)， 筛选矫正后p-value<0.05且log2FC(log2 fold change:用于评估平均表达量差异倍数)top10 marker基因用于后续结果可视化。表4用于展示结果的前5行， 完整表格详见交付目录IDBiotech_result/4.single_sample/*/2.marker_find/*top10_GeneDiffExp.xls。</div>
+
+
+
+	<div><a name = "table5"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>表5</b>&nbsp;&nbsp;run_count_1kpbmcs细胞类群Marker基因（Top3）&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_top3_Markers.xls">下载</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+	<tr><th class = "align_center"><span class = "key_sign_tb">p_val<div class = "key_body"><div class = "key_content">P-value</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">avg_log2FC<div class = "key_body"><div class = "key_content">Average log2FC</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">pct.1<div class = "key_body"><div class = "key_content">pct.1</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">pct.2<div class = "key_body"><div class = "key_content">pct.2</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">p_val_adj<div class = "key_body"><div class = "key_content">Adjusted P-value</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">cluster<div class = "key_body"><div class = "key_content">Cluster</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">gene<div class = "key_body"><div class = "key_content">Gene</div></div></span></th></tr>
+	<tr><td class = "align_center">5.3040733060608e-14</td><td class = "align_center">5.90812597020177</td><td class = "align_center">0.071</td><td class = "align_center">0.001</td><td class = "align_center">1.11868210098128e-09</td><td class = "align_center">0</td><td class = "align_center">HLF</td></tr>
+	<tr><td class = "align_center">9.86795792606281e-07</td><td class = "align_center">5.79099335551828</td><td class = "align_center">0.027</td><td class = "align_center">0</td><td class = "align_center">0.0208125100618591</td><td class = "align_center">0</td><td class = "align_center">KIF19</td></tr>
+	<tr><td class = "align_center">1.70173608621492e-48</td><td class = "align_center">5.75512639230505</td><td class = "align_center">0.269</td><td class = "align_center">0.006</td><td class = "align_center">3.58913157943589e-44</td><td class = "align_center">0</td><td class = "align_center">IATPR</td></tr>
+	<tr><td class = "align_center">6.32422263005578e-19</td><td class = "align_center">5.0668376381096</td><td class = "align_center">0.108</td><td class = "align_center">0.003</td><td class = "align_center">1.33384179490506e-14</td><td class = "align_center">1</td><td class = "align_center">CEACAM3</td></tr>
+	<tr><td class = "align_center">1.02484265797564e-13</td><td class = "align_center">4.93820173519813</td><td class = "align_center">0.061</td><td class = "align_center">0</td><td class = "align_center">2.16149564993643e-09</td><td class = "align_center">1</td><td class = "align_center">ENSG00000286872</td></tr>
+	<tr><td class = "align_center">0.000451961005444999</td><td class = "align_center">4.81826536502014</td><td class = "align_center">0.02</td><td class = "align_center">0.001</td><td class = "align_center">1</td><td class = "align_center">1</td><td class = "align_center">VASH1-DT</td></tr>
+	<tr><td class = "align_center">2.41463210764165e-09</td><td class = "align_center">5.47417487082446</td><td class = "align_center">0.053</td><td class = "align_center">0.002</td><td class = "align_center">5.092700578227e-05</td><td class = "align_center">2</td><td class = "align_center">CYP4F3</td></tr>
+	<tr><td class = "align_center">3.29095697142602e-12</td><td class = "align_center">5.34600042904148</td><td class = "align_center">0.061</td><td class = "align_center">0.001</td><td class = "align_center">6.94095734843463e-08</td><td class = "align_center">2</td><td class = "align_center">KCNJ15</td></tr>
+	<tr><td class = "align_center">2.76240134541867e-27</td><td class = "align_center">5.30446130478018</td><td class = "align_center">0.176</td><td class = "align_center">0.008</td><td class = "align_center">5.82618067762251e-23</td><td class = "align_center">2</td><td class = "align_center">SERPINB2</td></tr>
+	<tr><td class = "align_center">0.00422387183513731</td><td class = "align_center">7.58977216615775</td><td class = "align_center">0.015</td><td class = "align_center">0.001</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">CLDN5</td></tr>
+	<tr><td class = "align_center">0.00422387183513731</td><td class = "align_center">6.71425993030866</td><td class = "align_center">0.015</td><td class = "align_center">0.001</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">LY6G6F</td></tr>
+	<tr><td class = "align_center">0.000167249397964261</td><td class = "align_center">6.59214906296929</td><td class = "align_center">0.015</td><td class = "align_center">0</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">TRAPPC3L</td></tr>
+	<tr><td class = "align_center">0.000167249397964261</td><td class = "align_center">6.59214906296929</td><td class = "align_center">0.015</td><td class = "align_center">0</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">ENSG00000267316</td></tr>
+	<tr><td class = "align_center">1.59934532805308e-74</td><td class = "align_center">10.04654749696</td><td class = "align_center">0.346</td><td class = "align_center">0</td><td class = "align_center">3.37317923139675e-70</td><td class = "align_center">4</td><td class = "align_center">ENSG00000257275</td></tr>
+	<tr><td class = "align_center">9.00618653141672e-66</td><td class = "align_center">8.63737200910687</td><td class = "align_center">0.323</td><td class = "align_center">0.002</td><td class = "align_center">1.8994948013411e-61</td><td class = "align_center">4</td><td class = "align_center">SCN3A</td></tr>
+	<tr><td class = "align_center">1.08363111088679e-203</td><td class = "align_center">8.25865266793103</td><td class = "align_center">0.929</td><td class = "align_center">0.004</td><td class = "align_center">2.28548637597133e-199</td><td class = "align_center">4</td><td class = "align_center">TCL1A</td></tr>
+	<tr><td class = "align_center">5.15796481288074e-94</td><td class = "align_center">9.36229669241278</td><td class = "align_center">0.448</td><td class = "align_center">0.002</td><td class = "align_center">1.08786635868468e-89</td><td class = "align_center">5</td><td class = "align_center">ENSG00000228033</td></tr>
+	<tr><td class = "align_center">2.83556625672241e-186</td><td class = "align_center">8.37378700851507</td><td class = "align_center">0.955</td><td class = "align_center">0.012</td><td class = "align_center">5.98049279205324e-182</td><td class = "align_center">5</td><td class = "align_center">SLC4A10</td></tr>
+	<tr><td class = "align_center">8.33861889991444e-31</td><td class = "align_center">8.07131571838811</td><td class = "align_center">0.134</td><td class = "align_center">0</td><td class = "align_center">1.75869811218095e-26</td><td class = "align_center">5</td><td class = "align_center">RBM24</td></tr>
+	<tr><td class = "align_center">1.5762598293406e-05</td><td class = "align_center">6.22834684771001</td><td class = "align_center">0.03</td><td class = "align_center">0.001</td><td class = "align_center">0.332448960606226</td><td class = "align_center">6</td><td class = "align_center">SMOC2</td></tr>
+	<tr><td class = "align_center">9.54845678402386e-12</td><td class = "align_center">6.22796465042395</td><td class = "align_center">0.061</td><td class = "align_center">0.001</td><td class = "align_center">2.01386502031847e-07</td><td class = "align_center">6</td><td class = "align_center">STYK1</td></tr>
+	<tr><td class = "align_center">2.15156534725701e-11</td><td class = "align_center">6.16848478030419</td><td class = "align_center">0.045</td><td class = "align_center">0</td><td class = "align_center">4.53786647389975e-07</td><td class = "align_center">6</td><td class = "align_center">EPHX4</td></tr>
+	<tr><td class = "align_center">1.69195911597018e-42</td><td class = "align_center">10.3593006846339</td><td class = "align_center">0.419</td><td class = "align_center">0.029</td><td class = "align_center">3.56851097149271e-38</td><td class = "align_center">7</td><td class = "align_center">IGHA1</td></tr>
+	<tr><td class = "align_center">2.43339223537432e-54</td><td class = "align_center">9.18273071071192</td><td class = "align_center">0.323</td><td class = "align_center">0.006</td><td class = "align_center">5.13226756362798e-50</td><td class = "align_center">7</td><td class = "align_center">IGHG2</td></tr>
+	<tr><td class = "align_center">1.58004841432701e-81</td><td class = "align_center">9.17613594292543</td><td class = "align_center">0.468</td><td class = "align_center">0.008</td><td class = "align_center">3.33248011065711e-77</td><td class = "align_center">7</td><td class = "align_center">IGHG1</td></tr>
+	<tr><td class = "align_center">6.19928772415435e-07</td><td class = "align_center">6.72752662668168</td><td class = "align_center">0.039</td><td class = "align_center">0.001</td><td class = "align_center">0.0130749177390139</td><td class = "align_center">8</td><td class = "align_center">ZNF346-IT1</td></tr>
+	<tr><td class = "align_center">5.57402553041927e-72</td><td class = "align_center">6.57370690372465</td><td class = "align_center">0.471</td><td class = "align_center">0.011</td><td class = "align_center">1.17561772462073e-67</td><td class = "align_center">8</td><td class = "align_center">NRCAM</td></tr>
+	<tr><td class = "align_center">1.66199265873349e-14</td><td class = "align_center">6.52025039611055</td><td class = "align_center">0.059</td><td class = "align_center">0</td><td class = "align_center">3.5053087165348e-10</td><td class = "align_center">8</td><td class = "align_center">MXRA8</td></tr>
+	<tr><td class = "align_center">4.7952597122065e-152</td><td class = "align_center">9.37802795772645</td><td class = "align_center">0.771</td><td class = "align_center">0.006</td><td class = "align_center">1.01136822590147e-147</td><td class = "align_center">9</td><td class = "align_center">BNC2</td></tr>
+	<tr><td class = "align_center">1.08279447928851e-94</td><td class = "align_center">9.28995095846408</td><td class = "align_center">0.438</td><td class = "align_center">0.001</td><td class = "align_center">2.28372183626739e-90</td><td class = "align_center">9</td><td class = "align_center">ENSG00000288970</td></tr>
+	<tr><td class = "align_center">3.37992270431441e-109</td><td class = "align_center">8.96255559910122</td><td class = "align_center">0.583</td><td class = "align_center">0.006</td><td class = "align_center">7.12859497566952e-105</td><td class = "align_center">9</td><td class = "align_center">MYOM2</td></tr>
+	<tr><td class = "align_center">1.44022745581125e-47</td><td class = "align_center">7.09500773003462</td><td class = "align_center">0.231</td><td class = "align_center">0.001</td><td class = "align_center">3.0375837270515e-43</td><td class = "align_center">10</td><td class = "align_center">RDUR</td></tr>
+	<tr><td class = "align_center">1.04280340697129e-30</td><td class = "align_center">7.0407838654519</td><td class = "align_center">0.154</td><td class = "align_center">0.001</td><td class = "align_center">2.19937666564314e-26</td><td class = "align_center">10</td><td class = "align_center">UICLM</td></tr>
+	<tr><td class = "align_center">5.85331063297531e-13</td><td class = "align_center">6.80688882016098</td><td class = "align_center">0.051</td><td class = "align_center">0</td><td class = "align_center">1.23452174560082e-08</td><td class = "align_center">10</td><td class = "align_center">PPP1R17</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">pct.1：在当前细胞类群（Cluster）中检测到的Marker细胞的百分比；</div>
+	<div class = "p1_desc"> pct.2：在其余细胞类群（Cluster）中检测到的Marker细胞的百分比。</div>
+	<div class = "p1_desc"> avg_logFC：记录两组之间平均表达式的差异倍数,正值表示该特征在当前cluster中表达得更高。</div>
+	<div class = "p1_desc"> p_val_adj：调整后的p值， 越小越显著。</div>
+	<div class = "p1_desc"> cluster：细胞类群。</div>
+
+
+
+	<div><a name = '7.3'></a></div>
+	<h3>7.3  Marker基因分析 </h3>
+
+
+
+	<div class = "p">对得到的Marker基因， 统计其在不同细胞类群中的表达情况， 使用聚类热图、 气泡图和小提琴图等方式进行可视化展示， 每个细胞类群中Top3基因的结果分别见图10、 图11和图12。</div>
+
+
+
+	<div><a name = 'figure10'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png"    width = "1000"/></a></div>
+	<div class = "p1 img_title"><centet><b>图10&nbsp;&nbsp;Marker基因聚类热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标为不同的细胞类群；纵坐标为Marker基因；黄色代表高表达，紫色代表低表达。</div>
+	<div><a name = 'figure11'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><centet><b>图11&nbsp;&nbsp;Marker基因气泡热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标为Marker基因，纵坐标为不同的细胞类群；颜色从浅到深，颜色越深表示基因平均表达量越高；圆形越大表示表达该基因的细胞数目越多。</div>
+	<div><a name = 'figure12'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><centet><b>图12&nbsp;&nbsp;Marker基因小提琴图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">纵坐标为不同细胞类群，横坐标为Marker 基因表达量，数字越高表示基因的表达量越高。</div>
+	<div><a name = '8'></a></div>
+	<h2>8 功能富集分析</h2>
+
+
+
+	<div class = "p">在每一种细胞类群的所有Marker基因中筛选显著的差异表达基因（ adjust P-value < 0.05 && Log2FC > 0.5），使用clusterProfiler软件分别对每一个细胞类群的差异基因进行GO（Gene Ontology）和KEGG（Kyoto Encyclopedia of Genes and Genomes）功能富集分析<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>。GO和KEGG富集分析结果图13和14。</div>
+
+
+
+	<div><a name = '8.1'></a></div>
+	<h3>8.1 GO富集分析</h3>
+
+
+
+	<div class = "p"> 对差异基因使用基因本体论数据库（GO）进行富集分析。</div>
+
+
+
+	<div><a name = 'figure13'></a></div>
+	<div class = "albumSlider lane">
+	<div class="selectImg">
+		<div class="fright">
+			<input type="text" value="" />
+			<input type="button" value="搜索" class="confirm" />
+			<input type="button" value="显示" class="showall" />
+		</div>
+	</div>
+		<div class = "fullview" style="height:351px"  alt = "1"><a href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png"><img src = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png" style="height:351px"  alt = ""/></a></div>
+		<div class = "slider">
+			<div class = "button movebackward" title = "向上"></div>
+				<div class = "imglistwrap">
+					<ul class = "imglist">
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png">run_count_1kpbmcs_0 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_GO_Barplot.png">run_count_1kpbmcs_1 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_GO_Barplot.png">run_count_1kpbmcs_2 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_GO_Barplot.png">run_count_1kpbmcs_3 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_GO_Barplot.png">run_count_1kpbmcs_4 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_GO_Barplot.png">run_count_1kpbmcs_5 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_GO_Barplot.png">run_count_1kpbmcs_6 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_GO_Barplot.png">run_count_1kpbmcs_7 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_GO_Barplot.png">run_count_1kpbmcs_8 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_GO_Barplot.png">run_count_1kpbmcs_9 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_GO_Barplot.png">run_count_1kpbmcs_10 cluster</li>
+					</ul>
+				</div>
+			<div class = "button1 moveforward" title = "向下"></div>
+		</div>
+	</div>
+
+	<div class = "p1 img_title"><center><b>图13&nbsp;&nbsp;GO富集分析结果图。</b></center></div>	<div class = "p1 img_title">横轴为富集基因数目，纵轴为显著富集到的GO term，颜色对应不同的GO数据库子集，分子功能（Molecular Function，MF，细胞组分（Cellular Component ，CC）），生物过程（Biological Process ，BP）。</div>
+
+
+	<div><a name = '8.2'></a></div>
+	<h3>8.2 KEGG富集分析</h3>
+
+
+
+	<div class = "p"> 对差异基因使用KEGG通路数据库进行富集分析。</div>
+
+
+
+	<div><a name = 'figure14'></a></div>
+	<div class = "albumSlider lane">
+	<div class="selectImg">
+		<div class="fright">
+			<input type="text" value="" />
+			<input type="button" value="搜索" class="confirm" />
+			<input type="button" value="显示" class="showall" />
+		</div>
+	</div>
+		<div class = "fullview" style="height:351px"  alt = "1"><a href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png"><img src = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png" style="height:351px"  alt = ""/></a></div>
+		<div class = "slider">
+			<div class = "button movebackward" title = "向上"></div>
+				<div class = "imglistwrap">
+					<ul class = "imglist">
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png">run_count_1kpbmcs_0 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_KEGG_Barplot.png">run_count_1kpbmcs_1 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_KEGG_Barplot.png">run_count_1kpbmcs_2 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_KEGG_Barplot.png">run_count_1kpbmcs_3 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_KEGG_Barplot.png">run_count_1kpbmcs_4 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_KEGG_Barplot.png">run_count_1kpbmcs_5 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_KEGG_Barplot.png">run_count_1kpbmcs_6 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_KEGG_Barplot.png">run_count_1kpbmcs_7 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_KEGG_Barplot.png">run_count_1kpbmcs_8 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_KEGG_Barplot.png">run_count_1kpbmcs_9 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_KEGG_Barplot.png">run_count_1kpbmcs_10 cluster</li>
+					</ul>
+				</div>
+			<div class = "button1 moveforward" title = "向下"></div>
+		</div>
+	</div>
+
+	<div class = "p1 img_title"><center><b>图14&nbsp;&nbsp;KEGG富集分析结果图。</b></center></div>	<div class = "p1 img_title">横轴为富集基因数目，纵轴为富集到的KEGG Pathway，颜色对应P-value的值，越深表示富集效果越显著。</div>
+
+
+	<div><a name = '9'></a></div>
+	<h2>9 细胞亚群注释</h2>
+
+
+
+	<div class = "p">通过聚类分析得到不同细胞类群后，除了使用每个cluster的Marker基因信息对细胞类群进行初步的注释和分析之外，还可通过其他软件将细胞类群与参考数据库进行比较，以得到分群后不同细胞的细胞类群注释信息。</div><br/>
+	<div class = "p">SingleR细胞注释</div><br/>
+	<div class = "p">SingleR<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>可以将细胞聚类结果中的每个cluster与参考数据库进行比较，根据该cluster与参考数据库中已知细胞类群基因表达谱的相似性对cluster进行打分，最终得到一个打分矩阵。通过打分矩阵结果即可将细胞聚类结果注释为不同的细胞类群。细胞类群的打分矩阵结果见图15，细胞类群注释结果见图16。</div>
+
+
+
+	<div><a name = 'figure15'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图15&nbsp;&nbsp;SingleR细胞类群注释打分热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标为细胞聚类结果的cluster，纵坐标为参考数据集中包含的细胞类型，每一格颜色越接近黄色表示打分越高；最上方Labels表示SingleR给出的细胞注释结果</div>
+	<div><a name = 'figure16'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png"    width = "900"   height = "350"/></a></div>
+	<div class = "p1 img_title"><centet><b>图16&nbsp;&nbsp;SingleR细胞类群注释结果图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">UMAP细胞聚类结果图。每一种颜色代表SingleR注释得到的一种细胞类群。 </div>
+	<div><a name = '10'></a></div>
+	<h2>10 拟时序分析</h2>
+
+
+
+	<div class = "p">拟时序分析（pseudotime analysis）也称为细胞轨迹分析（trajectory inference），是指根据不同细胞类群之间其基因差异表达的情况，获得细胞谱系的发育结果，构建细胞随着一个虚拟时间顺序的变化轨迹，以此重现细胞随时间变化而变化的过程。</div><br/>
+	<div class = "p">        使用Monocle3<a href="https://doi.org/10.1038/nmeth.3176" target="_blank"><sup>[4]</sup></a>软件进行拟时序分析，基于Seurat对象提取的矩阵进一步降维聚类，并判断降维后的聚类结果之间的表达量关联以确定是否属于同一发育轨迹。根据软件推测的发育轨迹进行细胞类群的可视化，结果见图17。</div>
+
+
+
+	<div><a name = 'figure17'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图17&nbsp;&nbsp;细胞发育轨迹图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">图中黑色线条表示推测的细胞发育轨迹</div>
+	<div class = "p">根据细胞发育轨迹结果中的节点信息，结合不同细胞类群中基因表达量的变化，Monocle3可以通过机器学习算法计算处于最早发育阶段的细胞，实现拟时序分析，结果见图18。</div>
+
+
+
+	<div><a name = 'figure18'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图18&nbsp;&nbsp;拟时序分析结果图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">图中黑色线条表示推测的细胞发育轨迹，颜色从紫色到黄色，颜色越接近黄色表示细胞发育时间越晚</div>
+	<br/><div class = "p">在不同的细胞类群聚类结果中，选取Monocle3计算得到的Top5 Marker基因，按照已获得的拟时序结果进行基因表达量的拟时序作图，结果见图19。</div>
+
+
+
+	<div><a name = 'figure19'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图19&nbsp;&nbsp;Marker基因动态表达结果图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标表示拟时序结果；纵坐标表示基因表达量，颜色从紫色到黄色，颜色越接近黄色表示细胞发育时间越晚；黑色线条表示基因表达趋势。</div>
+	<div><a name = '11'></a></div>
+	<h2>11 细胞类群互作分析</h2>
+
+
+
+	<div class = "p">CellChat<a href="https://doi.org/10.1093/nar/gkr965" target="_blank"><sup>[5]</sup></a>是一个能够从单细胞数据中定量推断和分析细胞间通信网络的工具，利用网络分析和模式识别方法预测细胞的主要信号输入和输出，以及这些细胞和信号如何协调功能。CellChatDB数据库整合了来自KEGG和最近研究中的信号分析信息，该数据库囊括了已知的配体-受体复合物组成，包括配体-受体多聚体复合物以及几类辅酶因子。本项目使用CellChat来鉴定时空数据中的配体/受体关系和细胞间的通讯分子，研究不同细胞类型之间的相互交流及通讯网络。所有细胞类群间的通讯网络见图20，每个类群与其他类群间的通讯网络见图21。</div>
+
+
+
+	<div><a name = 'figure20'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png"    width = "800"/></a></div>
+	<div class = "p1 img_title"><centet><b>图20&nbsp;&nbsp;所有细胞类群间的细胞通讯网络图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">连线越粗表示两个cluster之间的互作越强。</div>
+	<div><a name = 'figure21'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png"    width = "800"/></a></div>
+	<div class = "p1 img_title"><centet><b>图21&nbsp;&nbsp;每个细胞类群与其他类群间的细胞通讯网络图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">连线越粗表示两个cluster之间的互作越强。</div>
+	<br/><br/>
+			</div>
+
+
+	<div class="footer" style="margin-left:230px;font-size:14x;border-top:2px solid #c9c9c9; width:1035px;clear:both;">
+           
+        </div>
+        </div>
+
+  </div>
+</body>
+</html>

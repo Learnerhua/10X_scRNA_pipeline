@@ -1,0 +1,39 @@
+{
+    "timestamp": "2026-03-03T11:09:57.876600811+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/samplesheet.csv"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T11:09:42.788823363+08:00",
+            "DeltaBytes": 10854
+        },
+        {
+            "Timestamp": "2026-03-03T11:09:46.212934531+08:00",
+            "DeltaBytes": 6063
+        },
+        {
+            "Timestamp": "2026-03-03T11:09:47.253492204+08:00",
+            "DeltaBytes": 224985233
+        },
+        {
+            "Timestamp": "2026-03-03T11:09:55.097990908+08:00",
+            "DeltaBytes": 224938680
+        },
+        {
+            "Timestamp": "2026-03-03T11:09:56.299742361+08:00",
+            "DeltaBytes": 8430
+        },
+        {
+            "Timestamp": "2026-03-03T11:09:57.117681647+08:00",
+            "DeltaBytes": 12750
+        },
+        {
+            "Timestamp": "2026-03-03T11:09:57.876600811+08:00",
+            "DeltaBytes": -364
+        }
+    ],
+    "count": 1,
+    "size": 364
+}

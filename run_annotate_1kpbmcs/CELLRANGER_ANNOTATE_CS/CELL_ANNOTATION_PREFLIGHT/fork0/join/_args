@@ -1,0 +1,14 @@
+{
+    "__mem_gb": 8,
+    "__threads": 1,
+    "__vmem_gb": 11,
+    "cas_track_name": null,
+    "cell_annotation_model": null,
+    "cr_annotate_filtered_matrix": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix.h5",
+    "cr_annotate_sample_cloupe": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe",
+    "is_cr_annotate": true,
+    "is_multi": false,
+    "reference_path": null,
+    "skip_cell_annotation": false,
+    "tenx_cloud_token_path": "/oldhome/ouyjh/.config/txg/credentials"
+}

@@ -1,0 +1,9 @@
+{
+    "fixed_point_base": null,
+    "fixed_point_exponent": null,
+    "is_spatial": false,
+    "matrix_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u3c10a6a574/files/preprocessed_matrix_h5.h5",
+    "num_pca_genes": null,
+    "num_principal_comps": null,
+    "pca_map": null
+}

@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-03-04T16:28:21.096117489+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CLOUPE_CELL_TYPES/fork0/chnk0-u6f41a7ed12/files/cloupe_cas_types.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-04T16:28:02.204465876+08:00",
+            "DeltaBytes": 31096
+        },
+        {
+            "Timestamp": "2026-03-04T16:28:21.096117489+08:00",
+            "DeltaBytes": -27050
+        }
+    ],
+    "count": 1,
+    "size": 27050
+}

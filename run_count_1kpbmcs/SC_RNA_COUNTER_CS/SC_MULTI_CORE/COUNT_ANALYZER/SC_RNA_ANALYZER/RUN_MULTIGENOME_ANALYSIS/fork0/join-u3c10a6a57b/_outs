@@ -1,0 +1,5 @@
+{
+    "multi_genome_csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-u3c10a6a57b/files/multi_genome_csv",
+    "multi_genome_json": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-u3c10a6a57b/files/multi_genome_json",
+    "multi_genome_summary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-u3c10a6a57b/files/multi_genome_summary.json"
+}

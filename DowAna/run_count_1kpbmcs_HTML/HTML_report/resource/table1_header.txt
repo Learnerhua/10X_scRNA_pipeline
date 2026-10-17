@@ -1,0 +1,8 @@
+Content
+Total Reads
+Valid CID Reads
+Valid CID Ratio
+Clean Reads
+Clean Ratio
+Clean Reads Q20
+Clean Reads Q30

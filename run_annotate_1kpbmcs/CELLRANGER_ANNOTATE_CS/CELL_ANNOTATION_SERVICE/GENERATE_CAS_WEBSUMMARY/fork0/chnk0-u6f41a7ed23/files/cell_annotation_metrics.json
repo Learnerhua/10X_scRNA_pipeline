@@ -1,0 +1,11 @@
+{
+    "cell_annotation_model": "human_pca_v1_beta",
+    "cell_annotation_tree_version_used": "V5_mappings",
+    "cell_annotation_display_map_version_used": "celltype_display_mapping_v6",
+    "cell_annotation_frac_returned_bcs": 1.0,
+    "cell_annotation_success": true,
+    "cell_annotation_differential_expression": false,
+    "cell_annotation_beta_model": true,
+    "cell_annotation_model_developer": "Broad Institute, 10x Genomics",
+    "pipeline_version": "10.0.0"
+}

@@ -1,0 +1,10 @@
+Col	Description
+1	Chromosome ID
+2	Position
+3	+/- chain
+4	cytosine pattern (CG/CHH/CHG)
+5	cytosine sequence context
+6	copy number : the same value as rep_rate from qmap file colum 11
+7	methyl-reads num
+8	non-methyl-reads num
+9	Binomial distribution expected values

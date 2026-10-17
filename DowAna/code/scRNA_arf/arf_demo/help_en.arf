@@ -1,0 +1,65 @@
+format = arf1.0
+language = EN
+
+%help
+@title
+Format of Sequencing Data
+@paragraph
+10X single-cell sequencing data are stored in FASTQ format, which is the standard output format for Illumina sequencing platform. See attached Figure 3 for examples of data. This file consists of four action units: the first line begins with '@', followed by the sequence description; The second line is the sequence; The third line begins with a '+', which may or may not be followed by the sequence description; The fourth line is the base quality value of the second line sequence, and the two lines are correspond one by one. An example is shown as the following:
+
+\verbatim
+\@A00228:279:HFWFVDMXX:1:1101:8486:1000 2:N:0:NCATTACT
+NACAAAGTCCCCCCCATAATACAGGGGGAGCCACTTGGGCAGGAGGCAGGGAGGGGTCCATTCCCCCTGGTGGGGCTGGTGGGGAGCTG
++
+\#FFFFFFFFFFFFFFF:FFFFFFF:FFFFFFFFFFFFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFFFFFF
+\end
+
+@title
+Data Delivery
+@paragraph
+For some big raw data, suach as raw sequencing fastq、alignment bam and experession gem，and some big analysis results，suach as gem of tissue、rds of cell cluster，are delivered by a Portable Hard Disk(PHD) or Cloud Disk . The directory structure is consistent with this report;
+All standard analysis results have been shown in this report, and all tables and figures (including pdf) have been put in the corresponding directory which will not be delivered again.
+The detailed directory and files are shown as the following:
+\verbatim
+    Directory                                       Content            Files            Deliver method
+|-- IDBiotech_result
+|-- QC.xls                                    QC report   
+|-- Mapping.xls                               QC report
+|-- Cell.xls                                  QC report
+|   |-- Sample1                              Sample Name                        
+|   |   |-- 01.Data_report                    Data report
+|   |   |   |-- LibraryID1                                            Library of Sample         This report  
+|   |   |       |-- *xls                                                report         This report      
+|   |   |-- 02.Normalize                      Data Normalize
+|   |   |   |-- *pdf                          Analysis result pdf       This report                             
+|   |   |   |-- *png                          Analysis result png       This report
+|   |   |-- 03.HvgPCA                         High variableFeatures                This report
+|   |   |   |-- *pdf                                            Analysis result png        This report
+|   |   |   |-- *png                                            Analysis result png         This report
+|   |   |-- 04.Decontamination                        Data Cleaning
+|   |   |   |-- *pdf                                            Analysis result png        This report
+|   |   |   |-- *png                                            Analysis result png         This report
+|   |   |-- 04.sSample                        Single sample analysis
+|   |   |   |-- *pdf                                            Analysis result png        This report
+|   |   |   |-- *png                                            Analysis result png         This report
+|   |   |-- 05.GOKEGG                        Gene enrichment analysis
+|   |   |   |-- *pdf                                            Analysis result png        This report
+|   |   |   |-- *png                                            Analysis result png         This report
+|   |   |-- 06.SingleR                        SingleR Cell annotation
+|   |   |   |-- *pdf                                            Analysis result png        This report
+|   |   |   |-- *png                                            Analysis result png         This report
+|   |   |-- 07.Monocle                        Pseudotime analysis
+|   |   |   |-- *pdf                                            Analysis result png        This report
+|   |   |   |-- *png                                            Analysis result png         This report
+|   |   |-- 08.CellChat                        Cell-cell communication analysis
+|   |   |   |-- *pdf                                            Analysis result png        This report
+|   |   |   |-- *png                                            Analysis result png         This report
+|   |-- Sample2
+|   |-- SampleN              
+|-- report.html                             Html report
+|-- report.pdf                              Pdf report
+|-- src                     
+`-- temp
+\end
+
+

@@ -1,0 +1,30 @@
+{
+    "timestamp": "2026-03-03T17:07:49.554334444+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk0-u3c10a6a451/files/pos_sortednon_multiplexed.bam",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk1-u3c10a6a451/files/pos_sortednon_multiplexed.bam",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk2-u3c10a6a451/files/pos_sortednon_multiplexed.bam",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk3-u3c10a6a451/files/pos_sortednon_multiplexed.bam",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk4-u3c10a6a451/files/pos_sortednon_multiplexed.bam",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk5-u3c10a6a451/files/pos_sortednon_multiplexed.bam",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk6-u3c10a6a451/files/pos_sortednon_multiplexed.bam",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk7-u3c10a6a451/files/pos_sortednon_multiplexed.bam"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T17:05:21.012324995+08:00",
+            "DeltaBytes": 4264297347
+        },
+        {
+            "Timestamp": "2026-03-03T17:07:00.18061508+08:00",
+            "DeltaBytes": 4268261448
+        },
+        {
+            "Timestamp": "2026-03-03T17:07:49.554334444+08:00",
+            "DeltaBytes": -4264176601
+        }
+    ],
+    "count": 8,
+    "size": 4264176601
+}

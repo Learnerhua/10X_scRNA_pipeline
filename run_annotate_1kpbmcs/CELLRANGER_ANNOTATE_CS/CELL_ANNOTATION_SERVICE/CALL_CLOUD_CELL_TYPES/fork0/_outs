@@ -1,0 +1,14 @@
+{
+    "cas_success": true,
+    "cell_type_results": {
+        "cell_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/cell_types.csv",
+        "results": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/results.json.gz",
+        "metadata": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/metadata.json",
+        "frac_returned_bcs": 1.0,
+        "model_used": "human_pca_v1_beta",
+        "skip_downstream": false
+    },
+    "disable_cas_ws": null,
+    "disable_summarize": false,
+    "summary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/summary.json"
+}

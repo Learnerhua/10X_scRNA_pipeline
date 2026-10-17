@@ -1,0 +1,31 @@
+@include "tenkit/make_fastqs.mro"
+
+call MAKE_FASTQS(
+    run_path              = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+    lanes                 = null,
+    specs                 = [
+        {
+            "csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-simple-1.2.0.csv",
+        },
+    ],
+    project               = "H35KCBCXY",
+    bases_mask            = null,
+    bcl2fastq1_args       = " --mismatches=1",
+    bcl2fastq2_args       = " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+    bc_read_type          = "R1",
+    bc_start_index        = 0,
+    bc_length             = 16,
+    si_read_type          = "I1",
+    umi_read_type         = "R1",
+    umi_start_index       = 16,
+    umi_length            = 10,
+    output_path           = null,
+    interop_output_path   = null,
+    delete_undetermined   = false,
+    max_bcl2fastq_threads = 6,
+    force_single_index    = false,
+    filter_dual_index     = false,
+    filter_single_index   = false,
+    all_mkfastq_args      = "--id=tiny-bcl --run=cellranger-tiny-bcl-1.2.0 --csv=cellranger-tiny-bcl-simple-1.2.0.csv",
+    rc_i2_override        = null,
+)

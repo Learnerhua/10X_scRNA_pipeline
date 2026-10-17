@@ -1,0 +1,30 @@
+{
+    "timestamp": "2026-03-04T16:28:19.897339812+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/DIFF_EXP_CAS/fork0/chnk0-u6f41a7ed17/files/diffexp.bincode.lz4",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/DIFF_EXP_CAS/fork0/chnk1-u6f41a7ed17/files/diffexp.bincode.lz4",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/DIFF_EXP_CAS/fork0/join-u6f41a7ed17/files/diffexp_h5.h5",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/DIFF_EXP_CAS/fork0/join-u6f41a7ed17/files/diffexp_csv"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-04T16:28:07.026887952+08:00",
+            "DeltaBytes": 2893917
+        },
+        {
+            "Timestamp": "2026-03-04T16:28:16.884180515+08:00",
+            "DeltaBytes": 23540483
+        },
+        {
+            "Timestamp": "2026-03-04T16:28:17.337051694+08:00",
+            "DeltaBytes": -12458746
+        },
+        {
+            "Timestamp": "2026-03-04T16:28:19.897339812+08:00",
+            "DeltaBytes": -13954210
+        }
+    ],
+    "count": 6,
+    "size": 26412956
+}

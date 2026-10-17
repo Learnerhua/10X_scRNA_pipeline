@@ -1,0 +1,90 @@
+{
+    "__mem_gb": 8,
+    "__threads": 1,
+    "__vmem_gb": 11,
+    "analysis": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u3c10a6a598/files/analysis",
+    "antibody_histograms": null,
+    "antibody_treemap": null,
+    "antigen_histograms": null,
+    "antigen_treemap": null,
+    "barcode_summary_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_SUMMARY/fork0/join-u3c10a6a448/files/barcode_summary.h5",
+    "cell_annotation_viable_but_not_requested": true,
+    "chemistry_defs": {
+        "Gene Expression": {
+            "barcode": [
+                {
+                    "kind": "gel_bead",
+                    "length": 16,
+                    "offset": 0,
+                    "read_type": "R1",
+                    "whitelist": {
+                        "name": "3M-february-2018_TRU",
+                        "part": null,
+                        "slide": null,
+                        "strand": "+",
+                        "translation": false,
+                        "translation_whitelist_path": null
+                    }
+                }
+            ],
+            "barcode_extraction": null,
+            "description": "Single Cell 3' v3 (polyA)",
+            "endedness": "three_prime",
+            "name": "SC3Pv3-polyA",
+            "rna": {
+                "length": null,
+                "min_length": null,
+                "offset": 0,
+                "read_type": "R2"
+            },
+            "rna2": null,
+            "strandedness": "+",
+            "umi": [
+                {
+                    "length": 12,
+                    "min_length": 10,
+                    "offset": 16,
+                    "read_type": "R1",
+                    "whitelist": null
+                }
+            ]
+        }
+    },
+    "feature_reference": null,
+    "filtered_barcodes": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u3c10a6a44e/files/filtered_barcodes.csv",
+    "filtered_gene_bc_matrices_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u3c10a6a44e/files/filtered_matrices_h5.h5",
+    "include_introns": true,
+    "per_feature_metrics_csv": null,
+    "reference_info": {
+        "genomes": [
+            "GRCh38"
+        ],
+        "transcriptome_info": {
+            "fasta_hash": "b6f131840f9f337e7b858c3d1e89d7ce0321b243",
+            "gtf_hash": "",
+            "gtf_hash_gz": "432db3ab308171ef215fac5dc4ca40096099a4c6",
+            "input_fasta_files": [
+                "Homo_sapiens.GRCh38.dna.primary_assembly.fa.modified"
+            ],
+            "input_gtf_files": [
+                "gencode.v44.primary_assembly.annotation.gtf.filtered"
+            ],
+            "mem_gb": 16.0,
+            "mkref_version": "8.0.0",
+            "reference_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/References/refdata-gex-GRCh38-2024-A"
+        },
+        "version": "2024-A"
+    },
+    "sample_desc": "",
+    "sample_id": "run_count_1kpbmcs",
+    "summaries": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/MERGE_METRICS/fork0/chnk0-u3c10a6a6f5/files/summary.json",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u3c10a6a598/files/summary.json",
+        null,
+        null,
+        null,
+        null
+    ],
+    "target_panel_summary": null,
+    "target_set_name": null
+}

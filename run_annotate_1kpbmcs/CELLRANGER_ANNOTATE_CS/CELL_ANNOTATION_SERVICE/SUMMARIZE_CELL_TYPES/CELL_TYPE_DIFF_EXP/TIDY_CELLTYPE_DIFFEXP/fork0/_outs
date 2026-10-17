@@ -1,0 +1,4 @@
+{
+    "cas_diffexp_csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/TIDY_CELLTYPE_DIFFEXP/fork0/chnk0-u6f41a7ed21/files/cas_diffexp_csv.csv",
+    "diffexp": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/TIDY_CELLTYPE_DIFFEXP/fork0/chnk0-u6f41a7ed21/files/diffexp.json"
+}

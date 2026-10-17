@@ -1,0 +1,29 @@
+627119150097      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:00 tiny-bcl/MAKE_FASTQS_CS/fork0/files
+631384983572      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:00 tiny-bcl/MAKE_FASTQS_CS/fork0/split/files
+635678794269      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:00 tiny-bcl/MAKE_FASTQS_CS/fork0/join/files
+648546128436      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:00 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0/split/files
+652908123756      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:00 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0/join/files
+  2670925503      0 drwxrwxr-x   2 ouyjh    ouyjh           6 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0/chnk0-u266ba650f6/files
+642210127269      0 lrwxrwxrwx   1 ouyjh    ouyjh          23 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0/files -> chnk0-u266ba650f6/files
+663636835989      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:00 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/split/files
+667921911368      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:00 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/join/files
+  8612965896      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/chnk0-u266ba650f6/files
+657151618569      0 lrwxrwxrwx   1 ouyjh    ouyjh          23 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/files -> chnk0-u266ba650f6/files
+ 21767090719      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/split/files
+ 26098533950      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/join/files
+ 30327758614      0 drwxrwxr-x   2 ouyjh    ouyjh          43 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files
+ 30327758616      0 lrwxrwxrwx   1 ouyjh    ouyjh          44 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/input_samplesheet.csv -> ../../../../../../outs/input_samplesheet.csv
+ 15690840665      0 lrwxrwxrwx   1 ouyjh    ouyjh          23 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/files -> chnk0-u266ba650fa/files
+ 43025097752      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/split-u266ba650fb/files
+ 49426461271      0 drwxrwxr-x   2 ouyjh    ouyjh          56 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files
+ 49426461272      0 lrwxrwxrwx   1 ouyjh    ouyjh          33 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path -> ../../../../../../outs/fastq_path
+ 49426461273      0 lrwxrwxrwx   1 ouyjh    ouyjh          35 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/interop_path -> ../../../../../../outs/interop_path
+ 36605952018      0 lrwxrwxrwx   1 ouyjh    ouyjh          22 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/files -> join-u266ba650fb/files
+ 56460377923      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files
+158945418533      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0/split-u266ba65103/files
+165650727056      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0/join-u266ba65103/files
+152848164370      0 lrwxrwxrwx   1 ouyjh    ouyjh          22 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0/files -> join-u266ba65103/files
+184798490282      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0/chnk0-u266ba65104/files
+171820017706      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/fork0/files
+176226022411      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/fork0/split/files
+180499151920      0 drwxrwxr-x   2 ouyjh    ouyjh          10 Mar  3 11:09 tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/fork0/join/files

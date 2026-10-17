@@ -1,0 +1,223 @@
+Martian Runtime - v4.0.14
+2026-03-03 11:00:30 [build  ] Built with Go version go1.25.1
+2026-03-03 11:00:30 [cmdline] mrp __tiny-bcl.mro tiny-bcl --localcores=12
+2026-03-03 11:00:30 [pid    ] 598650
+2026-03-03 11:00:30 [environ] SHELL=/oldhome/ouyjh/miniconda3/bin/zsh
+2026-03-03 11:00:30 [environ] TENX_VERSION=10.0.0
+2026-03-03 11:00:30 [environ] CONDA_EXE=/oldhome/ouyjh/miniconda3/bin/conda
+2026-03-03 11:00:30 [environ] PYTHONNOUSERSITE=1
+2026-03-03 11:00:30 [environ] JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+2026-03-03 11:00:30 [environ] JAVA_LD_LIBRARY_PATH=/oldhome/ouyjh/miniconda3/jre/lib/amd64/server
+2026-03-03 11:00:30 [environ] TENX_SCRIPTDIR=/Nas3Data/Download/cellranger-10.0.0/bin
+2026-03-03 11:00:30 [environ] PWD=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq
+2026-03-03 11:00:30 [environ] LOGNAME=ouyjh
+2026-03-03 11:00:30 [environ] XDG_SESSION_TYPE=tty
+2026-03-03 11:00:30 [environ] CONDA_PREFIX=/oldhome/ouyjh/miniconda3
+2026-03-03 11:00:30 [environ] HOME=/oldhome/ouyjh
+2026-03-03 11:00:30 [environ] CONDA_BACKUP_JAVA_HOME=
+2026-03-03 11:00:30 [environ] LANG=C
+2026-03-03 11:00:30 [environ] JAVA_CMD=/usr/lib/jvm/java-17-openjdk-amd64/bin/java
+2026-03-03 11:00:30 [environ] LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::*.rds=01;33:*.h5ad=01;33:*.pdf=01;35:*.png=01;35:*.csv=34:*.tsv=34:*.txt=34:*.html=04;36
+2026-03-03 11:00:30 [environ] TENX_SUBCMDDIR=/Nas3Data/Download/cellranger-10.0.0/bin/sc_rna
+2026-03-03 11:00:30 [environ] TENX_BANNER=cellranger mkfastq (10.0.0)
+Copyright (c) 2021 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+2026-03-03 11:00:30 [environ] CONDA_PROMPT_MODIFIER=
+2026-03-03 11:00:30 [environ] SSH_CONNECTION=10.3.82.40 64624 10.3.81.71 22
+2026-03-03 11:00:30 [environ] XDG_SESSION_CLASS=user
+2026-03-03 11:00:30 [environ] PYTHONPATH=/Nas3Data/Download/cellranger-10.0.0/lib/python:/Nas3Data/Download/cellranger-10.0.0/external/martian/adapters/python
+2026-03-03 11:00:30 [environ] TERM=xterm-256color
+2026-03-03 11:00:30 [environ] USER=ouyjh
+2026-03-03 11:00:30 [environ] CONDA_SHLVL=1
+2026-03-03 11:00:30 [environ] SHLVL=3
+2026-03-03 11:00:30 [environ] MKL_CBWR=COMPATIBLE
+2026-03-03 11:00:30 [environ] HDF5_USE_FILE_LOCKING=FALSE
+2026-03-03 11:00:30 [environ] XDG_SESSION_ID=64
+2026-03-03 11:00:30 [environ] CONDA_PYTHON_EXE=/oldhome/ouyjh/miniconda3/bin/python
+2026-03-03 11:00:30 [environ] CONDA_BACKUP_JAVA_LD_LIBRARY_PATH=
+2026-03-03 11:00:30 [environ] LD_LIBRARY_PATH=
+2026-03-03 11:00:30 [environ] LC_CTYPE=en_US.UTF-8
+2026-03-03 11:00:30 [environ] XDG_RUNTIME_DIR=/run/user/1000
+2026-03-03 11:00:30 [environ] SSH_CLIENT=10.3.82.40 64624 22
+2026-03-03 11:00:30 [environ] CONDA_DEFAULT_ENV=base
+2026-03-03 11:00:30 [environ] TENX_SUBCMD=mkfastq
+2026-03-03 11:00:30 [environ] TENX_PRODUCT=cellranger
+2026-03-03 11:00:30 [environ] PATH=/Nas3Data/Download/cellranger-10.0.0/lib/bin:/Nas3Data/Download/cellranger-10.0.0/external/martian/bin:/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin:/Nas3Data/Download/cellranger-10.0.0/bin/tenkit:/Nas3Data/Download/cellranger-10.0.0/bin:/Nas3Data/Download/cellranger-10.0.0/lib/bin:/Nas3Data/Download/cellranger-10.0.0/external/martian/bin:/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin:/Nas3Data/Download/cellranger-10.0.0/bin/tenkit:/Nas3Data/Download/cellranger-10.0.0/bin:/Nas3Data/Download/cellranger-10.0.0/lib/bin:/Nas3Data/Download/cellranger-10.0.0/external/martian/bin:/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin:/Nas3Data/Download/cellranger-10.0.0/bin/tenkit:/Nas3Data/Download/cellranger-10.0.0/bin:/oldhome/ouyjh/miniconda3/bin:/oldhome/ouyjh/miniconda3/condabin:/oldhome/ouyjh/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+2026-03-03 11:00:30 [environ] RUST_BACKTRACE=1
+2026-03-03 11:00:30 [environ] SSH_TTY=/dev/pts/14
+2026-03-03 11:00:30 [environ] TENX_COPYRIGHT=Copyright (c) 2021 10x Genomics, Inc.  All rights reserved.
+2026-03-03 11:00:30 [environ] _=/Nas3Data/Download/cellranger-10.0.0/external/martian/bin/mrp
+2026-03-03 11:00:30 [options] --localcores=12
+2026-03-03 11:00:30 [environ] MROPATH=/Nas3Data/Download/cellranger-10.0.0/mro
+2026-03-03 11:00:30 [version] MRO Version=10.0.0
+2026-03-03 11:00:30 [options] --jobmode=local
+2026-03-03 11:00:30 [options] --vdrmode=rolling
+2026-03-03 11:00:30 [options] --profile=disable
+2026-03-03 11:00:30 [options] --stackvars=false
+2026-03-03 11:00:30 [options] --zip=false
+2026-03-03 11:00:30 [options] --limit-loadavg=false
+2026-03-03 11:00:30 [options] --noexit=false
+2026-03-03 11:00:30 [options] --nopreflight=false
+2026-03-03 11:00:30 [jobmngr] Job config = /Nas3Data/Download/cellranger-10.0.0/external/martian/jobmanagers/config.json
+2026-03-03 11:00:30 [jobmngr] Using 12 cores, per --localcores option.
+2026-03-03 11:00:30 [jobmngr] Using 1814 GB, 90% of system memory.
+2026-03-03 11:00:30 [sysinfo] linux amd64
+2026-03-03 11:00:30 [sysinfo] Linux kernel release version: 6.8.0-90-generic
+2026-03-03 11:00:30 [sysinfo] glibc version: 2.39
+2026-03-03 11:00:30 [filesys] Pipestance path /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl
+2026-03-03 11:00:30 [filesys] Pipestance filesystem type nfs
+2026-03-03 11:00:30 [filesys] 25 TB and 9,480,075,142 inodes available.
+2026-03-03 11:00:30 [filesys] Pipestance filesystem nfs4 mount options: rw,relatime,rw,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.1.255.71,local_lock=none,addr=10.1.255.99
+2026-03-03 11:00:30 [filesys] Pipestance directory permissions drwxrwxr-x owned by uid 1000 gid 1000
+2026-03-03 11:00:30 [filesys] Bin path /Nas3Data/Download/cellranger-10.0.0/external/martian/bin
+2026-03-03 11:00:30 [filesys] Bin filesystem type nfs
+2026-03-03 11:00:30 [filesys] Bin filesystem nfs4 mount options: rw,relatime,rw,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.1.255.71,local_lock=none,addr=10.1.255.48
+2026-03-03 11:00:30 [filesys] Executable file permissions -rwxrwxr-x owned by uid 1000 gid 1000
+2026-03-03 11:00:30 [user   ] User ouyjh uid 1000 / gid 1000
+Serving UI at http://fat02:37023?auth=beB0KUnLjq_VJjRXDa51gfJ0NV-f71blUBSQBMFeS7k
+
+Running preflight checks (please wait)...
+2026-03-03 11:00:30 [runtime] (ready)           ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT
+2026-03-03 11:00:30 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT.fork0.chnk0.main
+2026-03-03 11:00:30 [runtime] (ready)           ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL
+2026-03-03 11:00:30 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL.fork0.chnk0.main
+2026-03-03 11:00:31 [runtime] (failed)          ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT
+
+[error] No valid bcl2fastq found on path. Recommended version of bcl2fastq is v2.20.
+On machine: fat02, bcl2fastq not found on PATH.
+
+2026-03-03 11:00:31 Shutting down.
+2026-03-03 11:00:31 [jobmngr] Highest memory usage observed: {
+  "rss": 37416960,
+  "shared": 17301504,
+  "vmem": 1722576896,
+  "text": 5611520,
+  "stack": 106528768,
+  "proc_count": 20
+}
+Martian Runtime - v4.0.14
+2026-03-03 11:09:42 [build  ] Built with Go version go1.25.1
+2026-03-03 11:09:42 [cmdline] mrp __tiny-bcl.mro tiny-bcl --localcores=12
+2026-03-03 11:09:42 [pid    ] 599659
+2026-03-03 11:09:42 [environ] SHELL=/oldhome/ouyjh/miniconda3/bin/zsh
+2026-03-03 11:09:42 [environ] TENX_VERSION=10.0.0
+2026-03-03 11:09:42 [environ] CONDA_EXE=/oldhome/ouyjh/miniconda3/bin/conda
+2026-03-03 11:09:42 [environ] PYTHONNOUSERSITE=1
+2026-03-03 11:09:42 [environ] JAVA_HOME=/oldhome/ouyjh/miniconda3
+2026-03-03 11:09:42 [environ] JAVA_LD_LIBRARY_PATH=/oldhome/ouyjh/miniconda3/jre/lib/amd64/server
+2026-03-03 11:09:42 [environ] TENX_SCRIPTDIR=/Nas3Data/Download/cellranger-10.0.0/bin
+2026-03-03 11:09:42 [environ] PWD=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq
+2026-03-03 11:09:42 [environ] LOGNAME=ouyjh
+2026-03-03 11:09:42 [environ] XDG_SESSION_TYPE=tty
+2026-03-03 11:09:42 [environ] CONDA_PREFIX=/oldhome/ouyjh/miniconda3
+2026-03-03 11:09:42 [environ] HOME=/oldhome/ouyjh
+2026-03-03 11:09:42 [environ] CONDA_BACKUP_JAVA_HOME=
+2026-03-03 11:09:42 [environ] LANG=C
+2026-03-03 11:09:42 [environ] JAVA_CMD=/usr/lib/jvm/java-17-openjdk-amd64/bin/java
+2026-03-03 11:09:42 [environ] LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::*.rds=01;33:*.h5ad=01;33:*.pdf=01;35:*.png=01;35:*.csv=34:*.tsv=34:*.txt=34:*.html=04;36
+2026-03-03 11:09:42 [environ] TENX_SUBCMDDIR=/Nas3Data/Download/cellranger-10.0.0/bin/sc_rna
+2026-03-03 11:09:42 [environ] TENX_BANNER=cellranger mkfastq (10.0.0)
+Copyright (c) 2021 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+2026-03-03 11:09:42 [environ] CONDA_PROMPT_MODIFIER=
+2026-03-03 11:09:42 [environ] SSH_CONNECTION=10.3.82.40 64624 10.3.81.71 22
+2026-03-03 11:09:42 [environ] XDG_SESSION_CLASS=user
+2026-03-03 11:09:42 [environ] PYTHONPATH=/Nas3Data/Download/cellranger-10.0.0/lib/python:/Nas3Data/Download/cellranger-10.0.0/external/martian/adapters/python
+2026-03-03 11:09:42 [environ] TERM=xterm-256color
+2026-03-03 11:09:42 [environ] USER=ouyjh
+2026-03-03 11:09:42 [environ] CONDA_SHLVL=1
+2026-03-03 11:09:42 [environ] SHLVL=3
+2026-03-03 11:09:42 [environ] MKL_CBWR=COMPATIBLE
+2026-03-03 11:09:42 [environ] HDF5_USE_FILE_LOCKING=FALSE
+2026-03-03 11:09:42 [environ] XDG_SESSION_ID=64
+2026-03-03 11:09:42 [environ] CONDA_PYTHON_EXE=/oldhome/ouyjh/miniconda3/bin/python
+2026-03-03 11:09:42 [environ] CONDA_BACKUP_JAVA_LD_LIBRARY_PATH=
+2026-03-03 11:09:42 [environ] LD_LIBRARY_PATH=
+2026-03-03 11:09:42 [environ] LC_CTYPE=en_US.UTF-8
+2026-03-03 11:09:42 [environ] XDG_RUNTIME_DIR=/run/user/1000
+2026-03-03 11:09:42 [environ] SSH_CLIENT=10.3.82.40 64624 22
+2026-03-03 11:09:42 [environ] CONDA_DEFAULT_ENV=base
+2026-03-03 11:09:42 [environ] TENX_SUBCMD=mkfastq
+2026-03-03 11:09:42 [environ] TENX_PRODUCT=cellranger
+2026-03-03 11:09:42 [environ] PATH=/Nas3Data/Download/cellranger-10.0.0/lib/bin:/Nas3Data/Download/cellranger-10.0.0/external/martian/bin:/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin:/Nas3Data/Download/cellranger-10.0.0/bin/tenkit:/Nas3Data/Download/cellranger-10.0.0/bin:/Nas3Data/Download/cellranger-10.0.0/lib/bin:/Nas3Data/Download/cellranger-10.0.0/external/martian/bin:/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin:/Nas3Data/Download/cellranger-10.0.0/bin/tenkit:/Nas3Data/Download/cellranger-10.0.0/bin:/Nas3Data/Download/cellranger-10.0.0/lib/bin:/Nas3Data/Download/cellranger-10.0.0/external/martian/bin:/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin:/Nas3Data/Download/cellranger-10.0.0/bin/tenkit:/Nas3Data/Download/cellranger-10.0.0/bin:/oldhome/ouyjh/miniconda3/bin:/oldhome/ouyjh/miniconda3/condabin:/oldhome/ouyjh/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+2026-03-03 11:09:42 [environ] RUST_BACKTRACE=1
+2026-03-03 11:09:42 [environ] SSH_TTY=/dev/pts/14
+2026-03-03 11:09:42 [environ] TENX_COPYRIGHT=Copyright (c) 2021 10x Genomics, Inc.  All rights reserved.
+2026-03-03 11:09:42 [environ] _=/Nas3Data/Download/cellranger-10.0.0/external/martian/bin/mrp
+2026-03-03 11:09:42 [options] --localcores=12
+2026-03-03 11:09:42 [environ] MROPATH=/Nas3Data/Download/cellranger-10.0.0/mro
+2026-03-03 11:09:42 [version] MRO Version=10.0.0
+2026-03-03 11:09:42 [options] --jobmode=local
+2026-03-03 11:09:42 [options] --vdrmode=rolling
+2026-03-03 11:09:42 [options] --profile=disable
+2026-03-03 11:09:42 [options] --stackvars=false
+2026-03-03 11:09:42 [options] --zip=false
+2026-03-03 11:09:42 [options] --limit-loadavg=false
+2026-03-03 11:09:42 [options] --noexit=false
+2026-03-03 11:09:42 [options] --nopreflight=false
+2026-03-03 11:09:42 [jobmngr] Job config = /Nas3Data/Download/cellranger-10.0.0/external/martian/jobmanagers/config.json
+2026-03-03 11:09:42 [jobmngr] Using 12 cores, per --localcores option.
+2026-03-03 11:09:42 [jobmngr] Using 1814 GB, 90% of system memory.
+2026-03-03 11:09:42 [runtime] Reattaching in local mode.
+2026-03-03 11:09:42 [sysinfo] linux amd64
+2026-03-03 11:09:42 [sysinfo] Linux kernel release version: 6.8.0-90-generic
+2026-03-03 11:09:42 [sysinfo] glibc version: 2.39
+2026-03-03 11:09:42 [filesys] Pipestance path /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl
+2026-03-03 11:09:42 [filesys] Pipestance filesystem type nfs
+2026-03-03 11:09:42 [filesys] 25 TB and 9,480,074,421 inodes available.
+2026-03-03 11:09:42 [filesys] Pipestance filesystem nfs4 mount options: rw,relatime,rw,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.1.255.71,local_lock=none,addr=10.1.255.99
+2026-03-03 11:09:42 [filesys] Pipestance directory permissions drwxrwxr-x owned by uid 1000 gid 1000
+2026-03-03 11:09:42 [filesys] Bin path /Nas3Data/Download/cellranger-10.0.0/external/martian/bin
+2026-03-03 11:09:42 [filesys] Bin filesystem type nfs
+2026-03-03 11:09:42 [filesys] Bin filesystem nfs4 mount options: rw,relatime,rw,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.1.255.71,local_lock=none,addr=10.1.255.48
+2026-03-03 11:09:42 [filesys] Executable file permissions -rwxrwxr-x owned by uid 1000 gid 1000
+2026-03-03 11:09:42 [user   ] User ouyjh uid 1000 / gid 1000
+Serving UI at http://fat02:33579?auth=wb882-HRyt-6-y_dbVnJPYIIhCS7og2wzbwbpBjklPU
+
+2026-03-03 11:09:42 [runtime] (reset-partial)   ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT.fork0.chnk0
+2026-03-03 11:09:42 [runtime] (reset-partial)   ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL.fork0.chnk0
+2026-03-03 11:09:42 [runtime] Found orphaned local stage: ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT
+2026-03-03 11:09:42 [runtime] Found orphaned local stage: ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL
+2026-03-03 11:09:42 [runtime] (split_complete)  ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT
+2026-03-03 11:09:42 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT.fork0.chnk0.main
+2026-03-03 11:09:42 [runtime] (split_complete)  ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL
+2026-03-03 11:09:42 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL.fork0.chnk0.main
+2026-03-03 11:09:43 [runtime] (chunks_complete) ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT
+2026-03-03 11:09:46 [runtime] (chunks_complete) ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL
+2026-03-03 11:09:46 [runtime] (ready)           ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET
+2026-03-03 11:09:46 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET.fork0.chnk0.main
+2026-03-03 11:09:47 [runtime] (chunks_complete) ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET
+2026-03-03 11:09:47 [runtime] (ready)           ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET
+2026-03-03 11:09:47 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET.fork0.split
+2026-03-03 11:09:47 [runtime] (split_complete)  ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET
+2026-03-03 11:09:47 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET.fork0.chnk0.main
+2026-03-03 11:09:55 [runtime] (chunks_complete) ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET
+2026-03-03 11:09:55 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET.fork0.join
+2026-03-03 11:09:55 [runtime] (join_complete)   ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET
+2026-03-03 11:09:55 [runtime] (ready)           ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE
+2026-03-03 11:09:55 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE.fork0.split
+2026-03-03 11:09:56 [runtime] (split_complete)  ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE
+2026-03-03 11:09:56 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE.fork0.chnk0.main
+2026-03-03 11:09:57 [runtime] (chunks_complete) ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE
+2026-03-03 11:09:57 [runtime] (run:local)       ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE.fork0.join
+2026-03-03 11:09:57 [runtime] (join_complete)   ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE
+2026-03-03 11:09:57 [runtime] VDR killed 1 files, 364 B.
+
+Outputs:
+- FASTQ output folder:   /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/outs/fastq_path
+- Interop output folder: /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/outs/interop_path
+- Input samplesheet:     /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/outs/input_samplesheet.csv
+
+2026-03-03 11:09:57 [perform] Serializing pipestance performance data.
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+2026-03-03 11:10:03 Shutting down.
+2026-03-03 11:10:03 [jobmngr] Highest memory usage observed: {
+  "rss": 1010909184,
+  "shared": 71303168,
+  "vmem": 3836657664,
+  "text": 8142848,
+  "stack": 1403637760,
+  "proc_count": 55
+}

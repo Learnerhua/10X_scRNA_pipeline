@@ -1,0 +1,9 @@
+Content
+
+Unique Mapping Reads
+Intergenic Reads
+Annotation Succeed Reads
+Exonic Reads
+Intronic Reads
+Duplicated Reads
+Final Unique Reads

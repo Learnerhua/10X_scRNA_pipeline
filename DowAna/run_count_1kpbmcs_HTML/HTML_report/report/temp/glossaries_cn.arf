@@ -1,0 +1,26 @@
+format = arf1.0
+language = CN
+
+content = Glossaries
+
+%glossary
+
+@glossary
+keyword = "GEM"
+desc = "Gel Beads-in-Emulsion，10X Chromium平台的核心技术，通过微流控芯片将单个细胞和带寡核苷酸标签的凝胶磁珠包裹在油包水液滴中，形成独立的微型反应器。"
+
+@glossary
+keyword = "TE"
+desc = "transposable element，转座子"
+
+@glossary
+keyword = "SN"
+desc = "Serial Number，时空芯片的唯一编号"
+
+@glossary
+keyword = "Cell Barcode"
+desc = "用于标识细胞的人工合成核酸序列，10X Chromium使用16bp的Cell Barcode，白名单中包含约737,000个已知序列，编辑距离≥3，允许1个碱基测序错误的唯一校正。"
+
+@glossary
+keyword = "UMI"
+desc = "Unique Molecular Identifier，唯一分子标识符，用于标识从样本组织捕获到的核酸序列，10X v2为10bp，v3为12bp。不同的mRNA序列片段可以来自相同的分子，使用相同的UMI标识。UMI校正是基于编辑距离=1的方向性合并。"

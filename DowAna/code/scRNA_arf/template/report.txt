@@ -1,0 +1,8 @@
+cdtsUser = BGI_P_RD
+cdtsPwd = BGIPRD
+ftpPath = /BGI_P_RD//BGI-RD-DEMO-PROJECT/BGI-RD-DEMO-PROJECT-101
+dataPath = //BGI-RD-DEMO-PROJECT/BGI-RD-DEMO-PROJECT-101
+reportName = TITLE
+email = someone@genomics.cn
+randomNum = 20160330313683
+TarName = null

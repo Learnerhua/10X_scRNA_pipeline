@@ -1,0 +1,113 @@
+{
+    "name": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES.fork0.chnk0",
+    "type": "local",
+    "cwd": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/ANALYZE_CELL_TYPES/fork0/chnk0-u6f41a7ed12/files",
+    "python": {
+        "binpath": "/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin/python3",
+        "version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:45:31) [GCC 13.3.0]"
+    },
+    "rusage": {
+        "self": {
+            "ru_maxrss": 15360,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 573,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.00731,
+            "ru_stime": 0.002463,
+            "ru_inblock": 16,
+            "ru_oublock": 48,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 0
+        },
+        "children": {
+            "ru_maxrss": 169312,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 44445,
+            "ru_majflt": 19,
+            "ru_nswap": 0,
+            "ru_utime": 0.989711,
+            "ru_stime": 0.270491,
+            "ru_inblock": 5128,
+            "ru_oublock": 136,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 9
+        }
+    },
+    "used_bytes": {
+        "rss": 37748736,
+        "shared": 17825792,
+        "vmem": 1684258816,
+        "text": 3829760,
+        "stack": 107536384,
+        "proc_count": 1
+    },
+    "io": {
+        "total": {
+            "read": {
+                "sysc": 476,
+                "bytes": 40960
+            },
+            "write": {
+                "sysc": 13,
+                "bytes": 0
+            }
+        },
+        "max": {
+            "read": {
+                "sysc": 936.4930619871653,
+                "bytes": 81614.37408296658
+            },
+            "write": {
+                "sysc": 25.90299958687904,
+                "bytes": 0
+            }
+        },
+        "dev": {
+            "read": {
+                "sysc": 116.36867457844,
+                "bytes": 15300.77413466758
+            },
+            "write": {
+                "sysc": 4.856202728288058,
+                "bytes": 0
+            }
+        }
+    },
+    "wallclock": {
+        "start": "2026-03-04T16:28:02.082067868+08:00",
+        "end": "2026-03-04T16:28:06.382153388+08:00",
+        "duration_seconds": 4.300085524
+    },
+    "profile_mode": "disable",
+    "stackvars_flag": "disable",
+    "monitor_flag": "disable",
+    "invocation": {
+        "call": "CELLRANGER_ANNOTATE_CS",
+        "args": {
+            "cas_track_name": null,
+            "cell_annotation_model": null,
+            "filtered_matrix": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix.h5",
+            "sample_cloupe": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe",
+            "sample_desc": "",
+            "sample_id": "run_annotate_1kpbmcs",
+            "tenx_cloud_token_path": "/oldhome/ouyjh/.config/txg/credentials"
+        },
+        "mro_file": "rna/cell_annotation_service.mro"
+    },
+    "version": {
+        "martian": "v4.0.14",
+        "pipelines": "10.0.0"
+    },
+    "host": "fat02",
+    "pid": 619271,
+    "threads": 1,
+    "memGB": 1,
+    "vmemGB": 4
+}

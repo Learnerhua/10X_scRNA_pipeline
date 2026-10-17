@@ -1,0 +1,72 @@
+[
+    {
+        "range": {
+            "end": {
+                "content": {
+                    "Sequence": "ATTTCACGTGGATACG"
+                },
+                "gem_group": 1,
+                "valid": true
+            },
+            "start": {
+                "content": {
+                    "Sequence": "AAAAAAAAAAAAAAAA"
+                },
+                "gem_group": 1,
+                "valid": false
+            }
+        },
+        "read_ann_subsample_rate": 0.7507294416427612
+    },
+    {
+        "range": {
+            "end": {
+                "content": {
+                    "Sequence": "GAAGCCCCAGGAACCA"
+                },
+                "gem_group": 1,
+                "valid": true
+            },
+            "start": {
+                "content": {
+                    "Sequence": "ATTTCACGTGGATACG"
+                },
+                "gem_group": 1,
+                "valid": true
+            }
+        },
+        "read_ann_subsample_rate": 0.7507294416427612
+    },
+    {
+        "range": {
+            "end": {
+                "content": {
+                    "Sequence": "TAGCACAAGTACTCGT"
+                },
+                "gem_group": 1,
+                "valid": true
+            },
+            "start": {
+                "content": {
+                    "Sequence": "GAAGCCCCAGGAACCA"
+                },
+                "gem_group": 1,
+                "valid": true
+            }
+        },
+        "read_ann_subsample_rate": 0.7507294416427612
+    },
+    {
+        "range": {
+            "end": null,
+            "start": {
+                "content": {
+                    "Sequence": "TAGCACAAGTACTCGT"
+                },
+                "gem_group": 1,
+                "valid": true
+            }
+        },
+        "read_ann_subsample_rate": 0.7507294416427612
+    }
+]

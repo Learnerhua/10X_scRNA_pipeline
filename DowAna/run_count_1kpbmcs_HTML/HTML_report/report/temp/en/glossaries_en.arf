@@ -1,0 +1,26 @@
+format = arf1.0
+language = EN
+
+content = Glossaries
+
+%glossary
+
+@glossary
+keyword = "GEM"
+desc = "Gel Beads-in-Emulsion, the core technology of 10X Chromium platform. Through microfluidic chips, single cells and gel beads carrying oligonucleotide tags are encapsulated in water-in-oil droplets, forming independent micro-reactors."
+
+@glossary
+keyword = "TE"
+desc = "Transposable element."
+
+@glossary
+keyword = "SN"
+desc = "Serial Number, the unique number of the STOmics chip."
+
+@glossary
+keyword = "Cell Barcode"
+desc = "Synthetic nucleic acid sequences used to identify cells. 10X Chromium uses 16bp Cell Barcodes, with a whitelist containing approximately 737,000 known sequences with minimum edit distance of 3, allowing unique correction of 1-base sequencing errors."
+
+@glossary
+keyword = "UMI"
+desc = "Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1."

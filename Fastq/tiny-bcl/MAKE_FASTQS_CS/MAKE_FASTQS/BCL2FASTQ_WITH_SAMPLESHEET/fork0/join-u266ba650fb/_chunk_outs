@@ -1,0 +1,14 @@
+[
+    {
+        "bcl2fastq_args": "bcl2fastq --minimum-trimmed-read-length 8 --mask-short-adapter-reads 8 --create-fastq-for-index-reads --ignore-missing-positions --ignore-missing-filter --ignore-missing-bcls --use-bases-mask=Y26,I8,Y98 -R /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0 --output-dir=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/fastq_path --interop-dir=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/interop_path --sample-sheet=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/samplesheet.csv -p 6 -r 6 -w 6 --barcode-mismatches 1",
+        "bcl2fastq_version": "2.20.0.422",
+        "fastq_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/fastq_path",
+        "file_read_types_map": {
+            "R1": "R1",
+            "I1": "I1",
+            "R2": "R2"
+        },
+        "interop_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/interop_path",
+        "rc_i2_read": false
+    }
+]

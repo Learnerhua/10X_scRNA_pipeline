@@ -1,0 +1,4 @@
+2026-03-04 16:14:10 [time] __start__
+2026-03-04 16:14:12 [info] Running getbarcodes: getbarcodes /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CHECK_CLOUPE_MATRIX_CONSISTENT/fork0/chnk0-u6f41a7e9d2/files/bcs.txt
+2026-03-04 16:14:12 [info] getbarcodes output: b''
+2026-03-04 16:14:12 [time] __end__

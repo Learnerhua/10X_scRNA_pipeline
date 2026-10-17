@@ -1,0 +1,27 @@
++ ulimit -u 10240
++ major_dir=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna
++ replace_dir=/oldhome/luow/STProject_2023_analysis/QT2411280001/SC/DowAna
++ sampleNames=(run_count_1kpbmcs)
++ sed -i s#/oldhome/luow/STProject_2023_analysis/QT2411280001/SC/DowAna#/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna#g /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/Pipeline_scRNA_arf.pl
++ sed -i s#/oldhome/luow/STProject_2023_analysis/QT2411280001/SC/DowAna#/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna#g /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl
++ sed -i s#/oldhome/luow/STProject_2023_analysis/QT2411280001/SC/DowAna#/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna#g /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/pdf.STOmics.sh
++ for sample in ${sampleNames[@]}
++ perl /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/Pipeline_scRNA_arf.pl -sample run_count_1kpbmcs -pinfo /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/Project.info -indir /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/Res/ -outdir /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/run_count_1kpbmcs_HTML -step 1234567
++ find /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/run_count_1kpbmcs_HTML -name arf2html.STOmics.sh -exec sed -i -e s#/share/appspace_data/shared_groups/BGI/USERS/bgi_lily/Report#/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna#g -e '8s/^/#/' '{}' +
++ for sample in ${sampleNames[@]}
++ cd /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/run_count_1kpbmcs_HTML/HTML_report/IDBiotech_result/
++ for file in *.xls
++ cat Cell.xls
++ perl -alne 'if($.==1){print}else{if($_=~/\brun_count_1kpbmcs\b/){print}}'
++ mv test Cell.xls
++ for file in *.xls
++ cat Mapping.xls
++ perl -alne 'if($.==1){print}else{if($_=~/\brun_count_1kpbmcs\b/){print}}'
++ mv test Mapping.xls
++ for file in *.xls
++ cat QC.xls
++ perl -alne 'if($.==1){print}else{if($_=~/\brun_count_1kpbmcs\b/){print}}'
++ mv test QC.xls
++ cd /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/run_count_1kpbmcs_HTML/HTML_report/
++ cd /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna
++ bash arf2html.STOmics.sh

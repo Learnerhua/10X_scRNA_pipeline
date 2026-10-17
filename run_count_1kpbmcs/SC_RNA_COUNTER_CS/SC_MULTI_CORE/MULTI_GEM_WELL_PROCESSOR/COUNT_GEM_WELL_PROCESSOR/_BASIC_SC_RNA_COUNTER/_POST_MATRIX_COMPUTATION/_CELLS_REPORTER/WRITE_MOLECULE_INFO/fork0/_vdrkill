@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-03-03T17:16:34.975286894+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/WRITE_MOLECULE_INFO/fork0/join-u3c10a6a563/files/non_multiplexed_summary.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T17:09:55.74064409+08:00",
+            "DeltaBytes": 69200904
+        },
+        {
+            "Timestamp": "2026-03-03T17:16:34.975286894+08:00",
+            "DeltaBytes": -85
+        }
+    ],
+    "count": 1,
+    "size": 85
+}

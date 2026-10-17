@@ -1,0 +1,6 @@
+@include "rna/cell_annotation_service.mro"
+
+call DEMUX_CLOUPE_TRACK_NAME(
+    cas_track_name_from_user = null,
+    cas_track_name_from_ppln = "Cell Types (beta)",
+)

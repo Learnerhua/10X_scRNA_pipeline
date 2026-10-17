@@ -1,0 +1,151 @@
+{
+    "name": "ID.run_count_1kpbmcs.SC_RNA_COUNTER_CS.SC_MULTI_CORE.MULTI_REPORTER.CLOUPE_PREPROCESS.fork0",
+    "type": "local",
+    "cwd": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/split-u3c10a6a701/files",
+    "python": {
+        "binpath": "/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin/python3",
+        "version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:45:31) [GCC 13.3.0]"
+    },
+    "rusage": {
+        "self": {
+            "ru_maxrss": 27076,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 576,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.003086,
+            "ru_stime": 0.006089,
+            "ru_inblock": 16,
+            "ru_oublock": 48,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 0
+        },
+        "children": {
+            "ru_maxrss": 135168,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 23588,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.831994,
+            "ru_stime": 0.233076,
+            "ru_inblock": 72,
+            "ru_oublock": 96,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 16
+        }
+    },
+    "used_bytes": {
+        "rss": 93847552,
+        "shared": 48234496,
+        "vmem": 1953599488,
+        "text": 3829760,
+        "stack": 133816320,
+        "proc_count": 1
+    },
+    "io": {
+        "total": {
+            "read": {
+                "sysc": 1296,
+                "bytes": 20480
+            },
+            "write": {
+                "sysc": 13,
+                "bytes": 0
+            }
+        },
+        "max": {
+            "read": {
+                "sysc": 2571.331829553366,
+                "bytes": 40822.38439476972
+            },
+            "write": {
+                "sysc": 25.912646344336245,
+                "bytes": 0
+            }
+        },
+        "dev": {
+            "read": {
+                "sysc": 302.0586625896207,
+                "bytes": 6025.215434627862
+            },
+            "write": {
+                "sysc": 3.824599641121202,
+                "bytes": 0
+            }
+        }
+    },
+    "wallclock": {
+        "start": "2026-03-03T17:16:49.651316929+08:00",
+        "end": "2026-03-03T17:16:50.762990394+08:00",
+        "duration_seconds": 1.111673476
+    },
+    "profile_mode": "disable",
+    "stackvars_flag": "disable",
+    "monitor_flag": "disable",
+    "invocation": {
+        "call": "SC_RNA_COUNTER_CS",
+        "args": {
+            "aligner": null,
+            "cell_annotation_model": null,
+            "check_library_compatibility": true,
+            "chemistry": "auto",
+            "disable_ab_aggregate_detection": false,
+            "emptydrops_minimum_umis": null,
+            "feature_reference": null,
+            "filter_probes": null,
+            "force_cells": null,
+            "global_minimum_umis": null,
+            "include_introns": true,
+            "max_mito_percent": null,
+            "min_crispr_umi_threshold": 3,
+            "no_bam": false,
+            "no_secondary_analysis": false,
+            "r1_length": null,
+            "r2_length": null,
+            "recovered_cells": null,
+            "reference_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/References/refdata-gex-GRCh38-2024-A",
+            "sample_def": [
+                {
+                    "fastq_id": null,
+                    "fastq_mode": "ILMN_BCL2FASTQ",
+                    "gem_group": null,
+                    "lanes": null,
+                    "library_type": "Gene Expression",
+                    "read_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs",
+                    "sample_indices": [
+                        "any"
+                    ],
+                    "sample_names": [
+                        "pbmc_1k_v3"
+                    ],
+                    "subsample_rate": null
+                }
+            ],
+            "sample_desc": "",
+            "sample_id": "run_count_1kpbmcs",
+            "skip_cell_annotation": true,
+            "target_set": null,
+            "target_set_name": null,
+            "targeting_method": null,
+            "tenx_cloud_token_path": null,
+            "trim_polya_min_score": 20,
+            "trim_tso_min_score": 20
+        },
+        "mro_file": "rna/sc_rna_counter_cs.mro"
+    },
+    "version": {
+        "martian": "v4.0.14",
+        "pipelines": "10.0.0"
+    },
+    "host": "fat02",
+    "pid": 607639,
+    "threads": 1,
+    "memGB": 1,
+    "vmemGB": 4
+}

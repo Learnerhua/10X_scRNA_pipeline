@@ -1,0 +1,32 @@
+{
+    "aggregate_barcodes": null,
+    "assign_tags": null,
+    "assign_tags_outs": null,
+    "filtered_barcodes": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u3c10a6a44e/files/filtered_barcodes.csv",
+    "filtered_gene_bc_matrices_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u3c10a6a44e/files/filtered_matrices_h5.h5",
+    "filtered_gene_bc_matrices_mex": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u3c10a6a44e/files/filtered_matrices_mex",
+    "gem_groups": [
+        1
+    ],
+    "isotype_normalization_factors": null,
+    "molecule_info": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/WRITE_MOLECULE_INFO/fork0/join-u3c10a6a563/files/molecule_info_non_multiplexed.h5",
+    "multi_matrices": null,
+    "multi_metrics": null,
+    "multi_molecule_info": null,
+    "multi_pos_sorted_bam": null,
+    "nonambient_cell_calls": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u3c10a6a44e/files/nonambient_calls.csv",
+    "per_probe_metrics": null,
+    "pos_sorted_bam": {
+        "bai_index_file": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/join-u3c10a6a450/files/pos_sorted_non_multiplexed.bam.bai",
+        "bam_file": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/join-u3c10a6a450/files/pos_sorted_non_multiplexed.bam",
+        "csi_index_file": null,
+        "sample": "non_multiplexed"
+    },
+    "possorted_genome_bai_index": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/join-u3c10a6a450/files/pos_sorted_non_multiplexed.bam.bai",
+    "possorted_genome_bam": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/join-u3c10a6a450/files/pos_sorted_non_multiplexed.bam",
+    "possorted_genome_csi_index": null,
+    "raw_probe_bc_matrix": null,
+    "sample_assignment_metrics": null,
+    "sample_barcodes": null,
+    "summary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/MERGE_METRICS/fork0/chnk0-u3c10a6a6f5/files/summary.json"
+}

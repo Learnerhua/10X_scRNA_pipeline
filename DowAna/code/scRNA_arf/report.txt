@@ -1,0 +1,9 @@
+cdtsUser = tmp
+cdtsPwd = tmp
+ftpPath = tmp
+dataPath = tmp
+projectID = PN-12315126267
+reportName = 时空组项目
+email = zhangrui7@genomics.cn
+randomNum = 20160330313683
+TarName = null

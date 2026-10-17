@@ -1,0 +1,182 @@
+format = arf1.0
+language = CN
+
+%method
+@title
+项目流程
+@paragraph
+从样品接收到项目交付的整体项目流程如下：
+@figure
+number = 1
+title = "项目流程图"
+file = <url = resource/scRNA_technology_pipeline.png>
+size = <width =500;height = 300>
+desc = " "
+
+%method
+@title
+实验流程
+@paragraph
+
+@subtitle
+number = 1
+10X Chromium单细胞技术原理
+@paragraph
+10X Chromium 技术是基于微流控的油包水液滴系统， 通过引入 Gel Beads-in-Emulsion（GEM） 技术， 将带有寡核苷酸标签的凝胶磁珠（Gel Beads） 与单个细胞或者细胞核包裹在油包水液滴中， 每个GEM作为一个独立的微型反应室完成细胞裂解和捕获mRNA分子及用于识别来自同一GEM的标签序列。 凝胶磁珠表面携带的寡核苷酸包含： 用于标识细胞的 Cell Barcode（16bp）、 用于标识分子的 UMI（v2为10bp， v3为12bp） 以及用于捕获mRNA的 Poly(dT) 序列， 对cDNA进行文库构建和Illumina测序， 即可一次性获得大量细胞的基因表达信息， 如下图所示。
+@figure
+number = 2
+title = "10X Chromium单细胞技术原理示意图。"
+file = <url = resource/scRNA_library_structure.png>
+size = <width = 700;height = 300>
+desc = " "
+
+@subtitle
+number = 2
+测序文库结构
+@paragraph
+cDNA经PCR扩增、 片段化、 末端修复与A尾添加、 接头连接、 再扩增、 构建可用于Illumina测序的标准文库后， 进行上机测序。 文库结构如下图所示。
+@figure
+number = 3
+title = "单细胞测序文库结构示意图。"
+file = <url = resource/scRNA_library_sequence.png>
+size = <width = 700;height = 300>
+desc = " Cell Barcode： 用于标识细胞的人工合成核酸序列（16bp）； UMI： 用于标识从样本组织捕获到的核酸序列（v2为10bp， v3为12bp）； Poly(dT)： 用于与mRNA poly(A)互补配对的序列； Insert： 捕获的RNA片段 "
+
+%method
+@title
+信息分析流程
+@paragraph
+测序得到的原始数据称为raw reads。 使用10X Genomics官方提供的Cell Ranger分析流程对下机数据进行处理， 主要包括以下步骤： (1) 使用STAR将Read2比对到参考基因组； (2) 对Read1中的Cell Barcode进行白名单校正和UMI校正； (3) 将比对上的reads注释到相应的基因上； (4) 按照有效的Barcode+UMI+Gene组合进行去重计数； (5) 使用EmptyDrops算法区分真实细胞与空液滴（Cell Calling）； (6) 进行降维聚类等二次分析。 具体分析流程见下图：
+@figure
+number = 4
+title = "信息分析流程图"
+file = <url = resource/analysis_pipeline.png>
+size = <width = 768;height = 300>
+desc = " "
+
+
+@subtitle
+number = 1
+下机数据质控
+@paragraph
+使用Cell Ranger对下机数据进行拆解和质量控制， 主要包括以下步骤：
+(1) 使用cellranger mkfastq将Illumina BCL文件转换为FASTQ格式；
+(2) 对Read1中的Cell Barcode进行白名单校正： 10X Chromium使用约737,000个已知Barcode序列（白名单）， 白名单内Barcode之间编辑距离≥3， 因此1个碱基测序错误可唯一校正回白名单中的原始序列， 无法校正的Barcode对应的Read将被丢弃；
+(3) 对UMI序列进行校正： 如果同一个基因+同一个Cell Barcode下的两个UMI仅有一个碱基不同（编辑距离=1）， 则将Read支持数少的UMI校正为Read支持数多的UMI；
+(4) 测序质量评估： Q30 Bases in Barcode应≥90%， Q30 Bases in UMI应≥90%， Q30 Bases in RNA Read应≥75%， Valid Barcodes比例应大于75%。
+
+@subtitle
+number = 2
+数据比对与数据统计
+@paragraph
+RNA reads（ 插入片段） 将会用STAR比对软件比对到事先构建的参考基因组数据库。 基于STAR的比对结果， 结合参考数据集（ gtf／ gff文件） 里的信息， 统计基因组上各个区域的reads覆盖信息， 可以得到比对到外显子， 内含子， 基因间区的比例信息， 做为数据质控的参考指标。 Cell Ranger集成了STAR比对算法， 并针对10X Barcode结构进行了优化。 下图为其原理示意图：
+@figure
+number = 5
+title = "STAR比对原理"
+file = <url = resource/STAR.png>
+size = <width = 500;height = 300>
+desc = " "
+
+@subtitle
+number = 3
+基因表达定量统计
+@paragraph
+scRNA-seq的基因表达定量， 主要基于UMI计数来实现的。 如果某些reads pair拥有同样的Cell Barcode序列， UMI标签， 以及比对到同样的基因， 将会被定义为PCR重复； 只有非PCR重复的， 以及通过校验的Cell Barcode和UMI才会用于下游基因定量的分析。UMI校正规则如下：
+(1) 同一个Cell Barcode+同一个基因下， 如果两个UMI仅有一个碱基不同（编辑距离=1）， 则将Read支持数少的UMI归入Read支持数多的UMI；
+(2) 最终每个UMI group计为1个mRNA分子。
+
+@subtitle
+number = 4
+数据质控和过滤
+@paragraph
+常用的QC过滤条件主要包括：
+(1)每个细胞鉴定到的基因的数量： a)低质量细胞或者空液滴通常鉴定到的基因非常少; b)双胞或者多胞的液滴可能会表现出异常高的基因数量。
+(2)每个细胞鉴定到的分子数量（ 与1类似） ；
+(3)比对到线粒体基因组的比例；
+Cell Ranger使用EmptyDrops算法自动区分真实细胞与空液滴， 在此基础上， 下游分析常用的细胞过滤参数为：
+(1)过滤掉基因数小于200或者大于最大基因数*90%的细胞；
+(2)过滤掉线粒体reads比例超过5%的细胞(能量需求高的细胞类型需要特殊处理， 如肿瘤组织、 心肌细胞， 一般阈值设置为20%以上)；
+
+@subtitle
+number = 5
+高变特征筛选
+@paragraph
+计算出在数据集中表现出细胞间高差异特征的子集（ 即它们在一些细胞中高度表达， 而在其他细胞中低表达） ， 在下游分析中关注这些基因有助于突出单细胞数据集中的生物信号。 默认情况下， 挑选变异程度最高的2000个基因。 这些基因将用于下游分析， 如PCA。
+
+@subtitle
+number = 6
+细胞聚类
+@paragraph
+首先计算出数据中的主成分， 在因子分析技术中， 变量按其相关性进行分组， 即特定组内的所有变量之间具有高度相关性，但往往与其他组的变量之间相关性较低， 之后根据富集的程度和p值筛选出最显著的主成分， 再根据tSNE或者UMAP（ https://www.nature.com/articles/nbt.4314） 的算法进行非线性降维分析， 将细胞聚成若干类。 默认采用UMAP算法， 原因主要为： UMAP更适合处理大型数据集和复杂的维度信息； 结合了可视化的强大功能和减少数据维度的能力； 除了保留本地结构外， 它还保留了数据的全局结构。 （ The Ultimate Guide to 12 Dimensionality Reduction Techniques (with Python codes)）
+
+@subtitle
+number = 7
+cluster中特异marker基因筛选
+@paragraph
+计算每个cluster和剩下所有细胞的差异表达基因， 筛选参数为：
+\verbatim
+min.pct = 0.25, logfc.threshold = 0.25
+\end
+
+@subtitle
+number = 8
+分析软件说明
+@paragraph
+本项目用到的分析软件见下表:
+
+@table
+number = 1
+title = "分析软件的名称、版本和说明"
+file = <url = resource/scRNA_software_info.xls >
+format = <field = 1; type = string; align =centre; desc = "名称">
+format = <field = 2; type = string; align =centre; desc = "版本">
+format = <field = 3; type = string; align =centre; desc = "说明">
+
+
+
+@reference
+number = 1
+text = "Zheng G X Y, Terry J M, Belgrader P, et al. Massively parallel digital transcriptional profiling of single cells[J]. Nature communications, 2017, 8(1): 1-12."
+url = https://doi.org/10.1038/ncomms14049
+
+@reference
+number = 2
+text = "Dobin A, Davis C A, Schlesinger F, et al. STAR: ultrafast universal RNA-seq aligner[J]. Bioinformatics, 2013, 29(1): 15-21."
+url = https://doi.org/10.1093/bioinformatics/bts635
+
+@reference
+number = 3
+text = "Lun A T L, Riesenfeld S, Andrews T, et al. EmptyDrops: distinguishing cells from empty droplets in droplet-based single-cell RNA sequencing data[J]. Genome biology, 2019, 20(1): 1-9."
+url = https://doi.org/10.1186/s13059-019-1662-y
+
+@reference
+number = 4
+text = "Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. doi: 10.1016/s0168-9525(00)02024-2. PMID: 10827456."
+url = https://doi.org/10.1016/s0168-9525(00)02024-2
+
+@reference
+number = 5
+text = "Buchfink B, Xie C, Huson D H. Fast and sensitive protein alignment using DIAMOND[J]. Nature methods, 2015, 12(1): 59-60"
+url = https://doi.org/10.1038/nmeth.3176
+
+@reference
+number = 6
+text = "Zhang H M, Chen H, Liu W, et al. AnimalTFDB: a comprehensive animal transcription factor database[J]. Nucleic acids research, 2012, 40(D1): D144-D149."
+url = https://doi.org/10.1093/nar/gkr965
+
+@reference
+number = 7
+text = "Butler A, Hoffman P, Smibert P, et al. Integrating single-cell transcriptomic data across different conditions, technologies, and species[J]. Nature biotechnology, 2018, 36(5): 411-420."
+url = https://doi.org/10.1038/nbt.4096
+
+@reference
+number = 8
+text = "Kanehisa M, Furumichi M, Sato Y, et al. KEGG: integrating viruses and cellular organisms[J]. Nucleic acids research, 2021, 49(D1):D545-D551."
+url = https://doi.org/10.1093/nar/gkaa970
+
+@reference
+number = 9
+text = "Aran D, Looney A P, Liu L, et al. Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage[J]. Nature immunology, 2019, 20(2): 163-172."
+url = https://doi.org/10.1093/nar/gkaa970
+
+

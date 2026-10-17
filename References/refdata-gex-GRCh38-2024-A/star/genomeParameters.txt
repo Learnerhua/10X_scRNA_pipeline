@@ -1,0 +1,16 @@
+### /mnt/yard/madhumati.gundapunen/cellranger-8.0.0/lib/bin/STAR   --runMode genomeGenerate   --runThreadN 16   --genomeDir /mnt/home/ian.fiddes/yard/update_references/redo/mkref_GRCh38/MAKE_REFERENCE/_MAKE_REFERENCE/fork0/join-u2bd2ea44d7/files/reference/star   --genomeFastaFiles /mnt/home/ian.fiddes/yard/update_references/redo/mkref_GRCh38/MAKE_REFERENCE/_MAKE_REFERENCE/fork0/join-u2bd2ea44d7/files/reference/fasta/genome.fa      --genomeSAindexNbases 14   --genomeChrBinNbits 18   --genomeSAsparseD 3   --limitGenomeGenerateRAM 17179869184   --sjdbGTFfile /mnt/home/ian.fiddes/yard/update_references/redo/mkref_GRCh38/MAKE_REFERENCE/_MAKE_REFERENCE/fork0/join-u2bd2ea44d7/files/reference/genes/genes.gtf
+### GstrandBit 32
+versionGenome	2.7.1a
+genomeFastaFiles	/mnt/home/ian.fiddes/yard/update_references/redo/mkref_GRCh38/MAKE_REFERENCE/_MAKE_REFERENCE/fork0/join-u2bd2ea44d7/files/reference/fasta/genome.fa 
+genomeSAindexNbases	14
+genomeChrBinNbits	18
+genomeSAsparseD	3
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	/mnt/home/ian.fiddes/yard/update_references/redo/mkref_GRCh38/MAKE_REFERENCE/_MAKE_REFERENCE/fork0/join-u2bd2ea44d7/files/reference/genes/genes.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	3216071051 8738781846

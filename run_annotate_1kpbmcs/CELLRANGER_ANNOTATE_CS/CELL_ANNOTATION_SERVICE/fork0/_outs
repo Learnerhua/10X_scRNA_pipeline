@@ -1,0 +1,21 @@
+{
+    "cas_metrics": null,
+    "cell_annotation_cloupe_name": "Cell Types (beta)",
+    "cell_type_bar_chart": null,
+    "cell_type_websummary_bundle": {
+        "cell_annotation_metrics": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/GENERATE_CAS_WEBSUMMARY/fork0/chnk0-u6f41a7ed23/files/cell_annotation_metrics.json",
+        "cell_type_interactive_bar_chart": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CELL_TYPES_BARCHART/fork0/chnk0-u6f41a7ed12/files/cell_type_interactive_bar_chart.json",
+        "cell_types_box_plot": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CELL_TYPES_BOX_PLOT/fork0/join-u6f41a7ed12/files/cell_types_box_plot.json",
+        "cell_types_umap_plot": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CELL_TYPES_UMAP_PLOT/fork0/chnk0-u6f41a7ed12/files/cell_types_umap_plot.json",
+        "diffexp": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/TIDY_CELLTYPE_DIFFEXP/fork0/chnk0-u6f41a7ed21/files/diffexp.json"
+    },
+    "cell_types": {
+        "cell_annotation_differential_expression": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/TIDY_CELLTYPE_DIFFEXP/fork0/chnk0-u6f41a7ed21/files/cas_diffexp_csv.csv",
+        "cell_annotation_results": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/results.json.gz",
+        "cell_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/REPLACE_LOW_UMI_CELLS/fork0/join-u6f41a7ed0e/files/cell_types.csv",
+        "web_summary_cell_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/GENERATE_CAS_WEBSUMMARY/fork0/chnk0-u6f41a7ed23/files/minimal_websummary.html"
+    },
+    "cloupe_cas_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CLOUPE_CELL_TYPES/fork0/chnk0-u6f41a7ed12/files/cloupe_cas_types.json",
+    "disable_summarize": false,
+    "spatial_cell_types_chart": null
+}

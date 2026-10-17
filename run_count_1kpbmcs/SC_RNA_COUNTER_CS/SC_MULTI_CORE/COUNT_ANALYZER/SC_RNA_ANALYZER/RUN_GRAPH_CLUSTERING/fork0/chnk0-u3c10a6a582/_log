@@ -1,0 +1,37 @@
+2026-03-03 17:10:26 [time] __start__
+2026-03-03 17:10:26 [cr_ana::stages::graph_clustering] Decided to not sketch because args.sketch=false, SKETCH_SAMPLE_SIZE=500000, number of rows in proj=1221
+2026-03-03 17:10:27 [cr_ana::stages::graph_clustering] computing k-nearest neighbors with k = 140
+2026-03-03 17:10:27 [scan_rs::nn] constructing ball tree of 1221 points
+2026-03-03 17:10:27 [scan_rs::nn] querying points for 140 neighbors
+2026-03-03 17:10:27 [cr_ana::stages::graph_clustering] running louvain
+2026-03-03 17:10:27 [cr_ana::louvain] building network for neighbor matrix of shape: (1221,140)
+2026-03-03 17:10:27 [cr_ana::louvain] louvain starting cpm score: -0.000849
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 0
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.592768
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 1
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.607863
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 2
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.611911
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 3
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.612426
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 4
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.612498
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 5
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.612512
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 6
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.612520
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 7
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.612550
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 8
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.612575
+2026-03-03 17:10:27 [cr_ana::louvain]   iteration 9
+2026-03-03 17:10:27 [cr_ana::louvain]     cpm score: 0.612575
+2026-03-03 17:10:27 [cr_ana::louvain] louvain optimized in 10 iterations
+2026-03-03 17:10:27 [cr_ana::louvain] louvain final cpm score: 0.612575
+2026-03-03 17:10:27 [cr_ana::stages::graph_clustering] merging clusters
+2026-03-03 17:10:27 [cr_ana::stages::graph_clustering] cluster labels: {2, 6, 3, 0, 1, 5, 4}
+2026-03-03 17:10:27 [scan_rs::merge_clusters] computing DE params on 25863 x 381 matrix
+2026-03-03 17:10:27 [scan_rs::merge_clusters] computing DE on 200 vs 181 cells
+2026-03-03 17:10:28 [scan_rs::merge_clusters] computing DE params on 25863 x 362 matrix
+2026-03-03 17:10:28 [scan_rs::merge_clusters] computing DE on 193 vs 169 cells
+2026-03-03 17:10:28 [time] __end__

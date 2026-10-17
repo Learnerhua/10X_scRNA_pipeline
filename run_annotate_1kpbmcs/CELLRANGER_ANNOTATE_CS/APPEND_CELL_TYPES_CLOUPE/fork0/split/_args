@@ -1,0 +1,5 @@
+{
+    "cas_track_name": "Cell Types (beta)",
+    "cloupe_cas_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CLOUPE_CELL_TYPES/fork0/chnk0-u6f41a7ed12/files/cloupe_cas_types.json",
+    "sample_cloupe": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe"
+}

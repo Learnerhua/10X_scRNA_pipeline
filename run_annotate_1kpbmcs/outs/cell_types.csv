@@ -1,0 +1,1222 @@
+barcode,coarse_cell_type,fine_cell_type,cell_count_in_model,coarse_cell_type_unfiltered,umi_count
+AAACCCAAGGAGAGTA-1,monocyte,classical monocyte,221,monocyte,12958
+AAACGCTTCAGCCCAG-1,B cell,naive B cell,315,B cell,9527
+AAAGAACAGACGACTG-1,leukocyte,leukocyte,257,leukocyte,6601
+AAAGAACCAATGGCAG-1,leukocyte,leukocyte,265,leukocyte,4419
+AAAGAACGTCTGCAAT-1,T cell,"central memory CD4-positive, alpha-beta T cell",273,T cell,10004
+AAAGGATAGTAGACAT-1,B cell,naive B cell,334,B cell,12245
+AAAGGATCACCGGCTA-1,B cell,naive B cell,436,B cell,8269
+AAAGGATTCAGCTTGA-1,monocyte,CD14-positive monocyte,326,monocyte,18876
+AAAGGATTCCGTTTCG-1,monocyte,CD14-positive monocyte,292,monocyte,24530
+AAAGGGCTCATGCCCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",236,T cell,10478
+AAAGGGCTCCGTAGGC-1,T cell,"CD8-positive, alpha-beta memory T cell",129,T cell,8415
+AAAGGTACAACTGCTA-1,monocyte,CD14-positive monocyte,389,monocyte,15855
+AAAGTCCAGCGGGTTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",321,T cell,10295
+AAAGTCCAGTCAACAA-1,T cell,mature T cell,166,T cell,4265
+AAAGTCCCACCAGCCA-1,B cell,B cell,152,B cell,25334
+AAAGTGATCGTACACA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",425,lymphocyte,8361
+AAATGGAAGCCGCTTG-1,monocyte,CD14-positive monocyte,261,monocyte,20647
+AAATGGACAATGCTCA-1,monocyte,CD14-positive monocyte,317,monocyte,20224
+AAATGGAGTACCGCGT-1,T cell,regulatory T cell,188,T cell,25050
+AAATGGATCCTATTTG-1,B cell,naive B cell,209,B cell,8100
+AACAAAGGTGATGAAT-1,T cell,"central memory CD4-positive, alpha-beta T cell",191,T cell,11327
+AACAACCAGTAGTCCT-1,monocyte,classical monocyte,230,monocyte,4334
+AACAACCCACGCTATA-1,leukocyte,leukocyte,225,leukocyte,9824
+AACAAGAGTTATAGAG-1,monocyte,"CD14-low, CD16-positive monocyte",410,monocyte,17191
+AACAGGGGTGGGAGAG-1,T cell,mucosal invariant T cell,153,T cell,8733
+AACCAACAGCTTGTTG-1,leukocyte,leukocyte,178,leukocyte,7660
+AACCCAACAACTGATC-1,leukocyte,leukocyte,214,leukocyte,7494
+AACCCAAGTGGGCTTC-1,B cell,naive B cell,301,B cell,9939
+AACCCAATCTTACCGC-1,leukocyte,leukocyte,211,leukocyte,7766
+AACCTGACATCCTATT-1,monocyte,classical monocyte,207,monocyte,18662
+AACCTTTGTTTCGGCG-1,leukocyte,leukocyte,271,leukocyte,4303
+AACGAAAAGGTTGGTG-1,hematopoietic cell,platelet,485,hematopoietic cell,5828
+AACGAAACAATGTCTG-1,T cell,"CD4-positive, alpha-beta T cell",212,T cell,1278
+AACGAAACAGCGTTTA-1,monocyte,CD14-positive monocyte,453,monocyte,5657
+AACGAAATCCATTTAC-1,leukocyte,leukocyte,150,leukocyte,5775
+AACGGGAGTCGCTCGA-1,monocyte,classical monocyte,298,monocyte,25563
+AACGTCAAGACGCCCT-1,monocyte,classical monocyte,332,monocyte,14910
+AAGAACAAGACCATTC-1,glial cell,microglial cell,219,glial cell,8202
+AAGAACAAGCCTCAGC-1,monocyte,"CD14-low, CD16-positive monocyte",301,monocyte,25323
+AAGAACATCTTGCAAG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",241,T cell,12284
+AAGACAACACTTCAGA-1,monocyte,CD14-positive monocyte,315,monocyte,20622
+AAGACAACAGATCACT-1,monocyte,monocyte,169,monocyte,35192
+AAGACAATCCGCGAGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",175,T cell,10555
+AAGACTCGTGACGTCC-1,hematopoietic cell,erythrocyte,188,hematopoietic cell,827
+AAGCATCAGGTCCGAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",218,T cell,9843
+AAGCATCCAGTCTTCC-1,monocyte,CD14-positive monocyte,173,monocyte,25495
+AAGCGTTCACTGATTG-1,monocyte,CD14-positive monocyte,274,monocyte,24840
+AAGCGTTTCGCTATTT-1,B cell,memory B cell,188,B cell,12925
+AAGGTAAAGGAAGTAG-1,leukocyte,leukocyte,236,leukocyte,8077
+AAGGTAAAGGCCACCT-1,T cell,mature T cell,140,T cell,12776
+AAGGTAAGTCCTTAAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",280,T cell,10481
+AAGTACCAGCGCCTTG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",187,T cell,9129
+AAGTACCAGCTCCATA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",270,T cell,9726
+AAGTACCCAAAGAACT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",224,T cell,11431
+AAGTGAACATCAGCAT-1,leukocyte,leukocyte,189,leukocyte,9064
+AAGTGAATCGGAAGGT-1,monocyte,CD14-positive monocyte,290,monocyte,21999
+AAGTTCGAGGATACAT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",273,T cell,10488
+AAGTTCGGTCAACACT-1,monocyte,CD14-positive monocyte,297,monocyte,19723
+AATCACGAGGCTCTAT-1,monocyte,classical monocyte,213,monocyte,1504
+AATCGACAGTATGTAG-1,T cell,"CD4-positive, alpha-beta T cell",205,T cell,3584
+AATCGACGTGAGACGT-1,monocyte,CD14-positive monocyte,259,monocyte,13881
+AATGAAGCAGTATGAA-1,leukocyte,leukocyte,284,leukocyte,7950
+AATGACCGTGTCATCA-1,monocyte,monocyte,124,monocyte,26917
+AATGGAACACTCATAG-1,B cell,memory B cell,238,B cell,16119
+AATGGAATCTGATGGT-1,monocyte,CD14-positive monocyte,321,monocyte,16632
+AATGGCTAGGACGGAG-1,T cell,mature T cell,451,T cell,3723
+AATTCCTTCCATTGGA-1,monocyte,CD14-positive monocyte,309,monocyte,24537
+ACAAAGAAGCCTCAAT-1,monocyte,CD14-positive monocyte,245,monocyte,16857
+ACAAAGAGTTCCATTT-1,glial cell,microglial cell,195,glial cell,9247
+ACAACCATCTATCCAT-1,leukocyte,leukocyte,174,leukocyte,5631
+ACAACCATCTGCCCTA-1,T cell,"central memory CD4-positive, alpha-beta T cell",187,T cell,13726
+ACAAGCTGTAGGTCAG-1,T cell,mature T cell,175,T cell,10223
+ACACCAAAGAGTCAGC-1,leukocyte,leukocyte,134,leukocyte,10470
+ACACGCGGTGTTGCCG-1,monocyte,CD14-positive monocyte,416,monocyte,13152
+ACACGCGTCACCTCGT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",294,lymphocyte,7026
+ACACGCGTCGCCGTGA-1,monocyte,classical monocyte,259,monocyte,7845
+ACACTGATCACTGATG-1,monocyte,CD14-positive monocyte,365,monocyte,8321
+ACACTGATCTTTCCGG-1,glial cell,microglial cell,216,glial cell,8595
+ACAGAAAAGTATTAGG-1,monocyte,CD14-positive monocyte,423,monocyte,10612
+ACAGAAACACCAGCGT-1,monocyte,classical monocyte,271,monocyte,9910
+ACAGCCGTCGCTGTTC-1,B cell,naive B cell,424,B cell,7382
+ACATCCCCACAAATGA-1,leukocyte,leukocyte,239,leukocyte,4154
+ACATCCCGTAAGATTG-1,monocyte,classical monocyte,271,monocyte,11957
+ACATCGATCTAAGAAG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",428,lymphocyte,9376
+ACATCGATCTGAGAGG-1,T cell,"CD8-positive, alpha-beta memory T cell",80,T cell,7206
+ACATCGATCTTGGGCG-1,monocyte,CD14-positive monocyte,350,monocyte,12206
+ACATGCAGTTGCTTGA-1,monocyte,CD14-positive monocyte,286,monocyte,8216
+ACATTTCGTGCCGAAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",334,T cell,8758
+ACATTTCGTTTCTTAC-1,B cell,naive B cell,242,B cell,10930
+ACCACAAAGGCCTTGC-1,monocyte,CD14-positive monocyte,329,monocyte,12889
+ACCACAAAGGTTAGTA-1,T cell,"CD4-positive, alpha-beta T cell",211,T cell,1057
+ACCACAAGTCTGTGGC-1,B cell,naive B cell,402,B cell,7609
+ACCATTTCATTGGGAG-1,T cell,regulatory T cell,206,T cell,9377
+ACCCAAAAGCCACAAG-1,hematopoietic cell,erythrocyte,182,hematopoietic cell,670
+ACCCAAAGTTGGGAAC-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,369,myeloid leukocyte,11725
+ACCCTTGGTATCGTAC-1,T cell,mature T cell,210,T cell,13513
+ACCCTTGTCATTTCGT-1,T cell,"CD8-positive, alpha-beta memory T cell",139,T cell,10776
+ACCTACCCAACGGTAG-1,leukocyte,leukocyte,216,leukocyte,10388
+ACCTGAACATGAGAAT-1,leukocyte,leukocyte,149,leukocyte,12911
+ACCTGTCTCAAGTCTG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",202,T cell,11321
+ACCTGTCTCTCAACGA-1,monocyte,"CD14-low, CD16-positive monocyte",328,monocyte,28199
+ACGATCAGTCGTTCAA-1,T cell,"CD8-positive, alpha-beta memory T cell",145,T cell,10891
+ACGATCATCCACGGAC-1,leukocyte,leukocyte,121,leukocyte,9070
+ACGATCATCCGTTGGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",251,T cell,11021
+ACGCACGAGAGAGTGA-1,lymphocyte,"CD16-negative, CD56-bright natural killer cell, human",276,lymphocyte,5110
+ACGGTCGTCACTACGA-1,T cell,"central memory CD4-positive, alpha-beta T cell",202,T cell,10802
+ACGGTTAAGTGCTCAT-1,B cell,naive B cell,428,B cell,9446
+ACGTAACAGGTGCTTT-1,T cell,"central memory CD4-positive, alpha-beta T cell",120,T cell,11501
+ACGTAACTCATATGGC-1,B cell,naive B cell,371,B cell,7912
+ACGTAACTCTTCGATT-1,monocyte,CD14-positive monocyte,361,monocyte,7880
+ACGTACAAGCTGTTCA-1,leukocyte,leukocyte,187,leukocyte,8304
+ACGTACACAAAGCTCT-1,monocyte,CD14-positive monocyte,263,monocyte,25795
+ACGTACACAGACGATG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",422,lymphocyte,8071
+ACGTAGTCACGCCACA-1,B cell,naive B cell,360,B cell,9196
+ACGTAGTCATTAGGAA-1,leukocyte,leukocyte,223,leukocyte,7302
+ACGTTCCGTGGGTCAA-1,monocyte,classical monocyte,289,monocyte,5776
+ACTATCTGTGTGTACT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",405,lymphocyte,12867
+ACTATGGAGAAATCCA-1,B cell,memory B cell,303,B cell,16698
+ACTCCCAAGGTTGGTG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",430,lymphocyte,8910
+ACTCCCATCGTCCTCA-1,T cell,"central memory CD4-positive, alpha-beta T cell",104,T cell,11795
+ACTGATGAGCAGCGAT-1,B cell,naive B cell,454,B cell,7894
+ACTGATGCACCAGCCA-1,B cell,naive B cell,440,B cell,9976
+ACTGTGACAACTCGAT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",202,T cell,13958
+ACTTATCTCTAAGGAA-1,monocyte,monocyte,211,monocyte,25172
+ACTTCGCAGAACCGCA-1,T cell,mature T cell,218,T cell,9718
+ACTTCGCGTACTCCGG-1,B cell,naive B cell,286,B cell,8890
+ACTTTCAAGTATGACA-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",158,T cell,7032
+ACTTTCACAAGCGAAC-1,leukocyte,leukocyte,205,leukocyte,2850
+ACTTTCAGTACGCGTC-1,T cell,"central memory CD4-positive, alpha-beta T cell",260,T cell,13784
+AGAAATGTCATTCGTT-1,monocyte,monocyte,254,monocyte,10545
+AGAAGCGGTCTAGATC-1,T cell,"central memory CD4-positive, alpha-beta T cell",329,T cell,12349
+AGAAGCGTCTGCGTCT-1,T cell,"central memory CD4-positive, alpha-beta T cell",300,T cell,15278
+AGACAAAGTAGCTTGT-1,monocyte,CD14-positive monocyte,294,monocyte,19354
+AGACACTCAAGTCGTT-1,T cell,"central memory CD4-positive, alpha-beta T cell",240,T cell,5439
+AGACCATCATTACTCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",258,T cell,8166
+AGACTCATCAACGCTA-1,glial cell,microglial cell,172,glial cell,14324
+AGACTCATCAGAGCGA-1,monocyte,classical monocyte,381,monocyte,20103
+AGAGAATAGAGGGTCT-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",176,T cell,8519
+AGAGAATCACCCAACG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",171,T cell,13047
+AGAGAGCAGTTGTCGT-1,B cell,naive B cell,426,B cell,7126
+AGAGCAGGTCATAAAG-1,monocyte,CD14-positive monocyte,357,monocyte,6855
+AGAGCAGGTTGAGTCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",387,T cell,8391
+AGAGCAGTCGCGCTGA-1,T cell,"CD8-positive, alpha-beta memory T cell",167,T cell,8499
+AGAGCCCGTCACTCGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",246,T cell,10732
+AGATAGAGTGACACGA-1,monocyte,CD14-positive monocyte,203,monocyte,10410
+AGATCGTCAGGACTTT-1,leukocyte,leukocyte,208,leukocyte,9435
+AGATGAACAGGCACAA-1,leukocyte,leukocyte,183,leukocyte,9022
+AGATGCTGTACGGTTT-1,monocyte,classical monocyte,336,monocyte,6380
+AGATGCTGTGTGGTCC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",345,T cell,8299
+AGCATCAGTCGGTGTC-1,monocyte,CD14-positive monocyte,190,monocyte,17722
+AGCATCAGTGGTCCGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",316,T cell,9486
+AGCCAATAGTCCCTAA-1,T cell,"central memory CD4-positive, alpha-beta T cell",98,T cell,15975
+AGCCACGCAGGTTCGC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",345,T cell,10182
+AGCCACGGTTCCGCGA-1,monocyte,CD14-positive monocyte,394,monocyte,17028
+AGCCACGTCCGAGAAG-1,leukocyte,leukocyte,250,leukocyte,5267
+AGCCAGCGTAATGCGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",285,T cell,9401
+AGCCAGCGTAGTTAGA-1,mononuclear cell,plasmacytoid dendritic cell,500,mononuclear cell,19228
+AGCGTATCATATGCGT-1,hematopoietic cell,erythrocyte,190,hematopoietic cell,980
+AGCGTATTCAGTGGGA-1,B cell,naive B cell,388,B cell,6619
+AGCGTCGCATTGACCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",215,T cell,7515
+AGCGTCGTCCTTATCA-1,hematopoietic cell,erythrocyte,490,hematopoietic cell,514
+AGCTACACAGTCGGAA-1,T cell,"central memory CD4-positive, alpha-beta T cell",171,T cell,9731
+AGCTACAGTCGTTTCC-1,leukocyte,leukocyte,233,leukocyte,7246
+AGGAAATTCACCATGA-1,monocyte,monocyte,201,monocyte,17567
+AGGAATACAAACTCGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",235,T cell,11680
+AGGAATATCATTACGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",130,T cell,9336
+AGGACGAAGACCTTTG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",251,lymphocyte,9466
+AGGACGAAGATTAGTG-1,T cell,"central memory CD4-positive, alpha-beta T cell",242,T cell,11508
+AGGACGATCACTGATG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",255,T cell,14336
+AGGACGATCCAGTACA-1,glial cell,microglial cell,172,glial cell,11102
+AGGACTTTCCTACCAC-1,leukocyte,leukocyte,288,leukocyte,7470
+AGGAGGTAGGTCACAG-1,T cell,"CD4-positive, alpha-beta T cell",304,T cell,1967
+AGGATAAAGAACAAGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",335,T cell,10525
+AGGCCACAGGGCCAAT-1,B cell,naive B cell,187,B cell,24271
+AGGCTGCAGGGCTTCC-1,B cell,naive B cell,377,B cell,9466
+AGGCTGCGTGTGTGTT-1,B cell,naive B cell,436,B cell,6655
+AGGGAGTCACCATTCC-1,hematopoietic cell,erythrocyte,165,hematopoietic cell,782
+AGGGAGTGTGTCGCTG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",293,T cell,8075
+AGGGCTCCAATACGCT-1,monocyte,classical monocyte,403,monocyte,9324
+AGGGTCCCAGGACATG-1,monocyte,CD14-positive monocyte,306,monocyte,6162
+AGGGTCCCAGTAGTTC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",118,lymphocyte,7746
+AGGGTTTCAGCGTGCT-1,monocyte,CD14-positive monocyte,253,monocyte,14528
+AGGTAGGAGGAAGTAG-1,B cell,naive B cell,424,B cell,10402
+AGGTAGGCAAAGCGTG-1,monocyte,classical monocyte,317,monocyte,19341
+AGGTCATTCAAGTCGT-1,monocyte,classical monocyte,376,monocyte,6896
+AGGTGTTAGCAATTAG-1,hematopoietic cell,platelet,455,hematopoietic cell,554
+AGGTGTTCATTAAGCC-1,monocyte,CD14-positive monocyte,281,monocyte,15823
+AGGTGTTGTCGATTAC-1,leukocyte,leukocyte,167,leukocyte,8970
+AGGTGTTTCAATGCAC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",189,T cell,9343
+AGGTGTTTCGTTACCC-1,monocyte,monocyte,235,monocyte,10481
+AGGTTACAGGTGCGAT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",284,T cell,11564
+AGGTTACGTCTGATAC-1,monocyte,"CD14-low, CD16-positive monocyte",451,monocyte,18132
+AGTAACCCAAGCTCTA-1,monocyte,CD14-positive monocyte,278,monocyte,7534
+AGTAACCTCGTTGTAG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",415,T cell,9053
+AGTACCAGTGGGTCAA-1,monocyte,classical monocyte,363,monocyte,17626
+AGTACCATCAGCTTGA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",466,lymphocyte,9217
+AGTAGCTAGGAGTACC-1,B cell,naive B cell,386,B cell,10439
+AGTAGCTCACTGCTTC-1,leukocyte,leukocyte,156,leukocyte,2067
+AGTAGCTCAGGCACTC-1,monocyte,monocyte,181,monocyte,7802
+AGTAGCTGTTAGAAAC-1,monocyte,monocyte,202,monocyte,13246
+AGTAGTCGTATGACAA-1,leukocyte,leukocyte,181,leukocyte,13357
+AGTCAACAGTCATGCT-1,monocyte,CD14-positive monocyte,311,monocyte,16220
+AGTCAACGTACACGCC-1,mononuclear cell,plasmacytoid dendritic cell,489,mononuclear cell,19227
+AGTCACATCTCCCATG-1,leukocyte,leukocyte,241,leukocyte,2051
+AGTCTCCCAACCGTGC-1,B cell,naive B cell,296,B cell,12276
+AGTCTCCGTGAGTCAG-1,leukocyte,leukocyte,258,leukocyte,8739
+AGTGCCGCATCTGGGC-1,T cell,"CD8-positive, alpha-beta memory T cell",112,T cell,10007
+AGTTAGCAGTCAGGGT-1,leukocyte,leukocyte,164,leukocyte,8032
+AGTTAGCGTACCATAC-1,B cell,B cell,219,B cell,10480
+AGTTAGCGTTCATCGA-1,leukocyte,leukocyte,268,leukocyte,8332
+AGTTCCCCAAACAGGC-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",233,T cell,8873
+AGTTCCCGTTACACTG-1,leukocyte,leukocyte,152,leukocyte,8537
+AGTTCGAGTATGCGTT-1,B cell,naive B cell,406,B cell,6796
+ATACCGACACACGGTC-1,T cell,"central memory CD4-positive, alpha-beta T cell",259,T cell,11889
+ATACTTCGTACGACTT-1,monocyte,classical monocyte,334,monocyte,23056
+ATACTTCGTTCGGTAT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",313,T cell,9191
+ATACTTCTCAGCTGAT-1,T cell,"central memory CD4-positive, alpha-beta T cell",159,T cell,14183
+ATACTTCTCGCCGTGA-1,B cell,B cell,243,B cell,8119
+ATAGACCTCCGCTTAC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",191,lymphocyte,7382
+ATAGGCTGTGTTACAC-1,monocyte,CD14-positive monocyte,393,monocyte,10051
+ATATCCTGTATGAGCG-1,B cell,naive B cell,446,B cell,8172
+ATCACAGAGACGTCCC-1,monocyte,CD14-positive monocyte,273,monocyte,22140
+ATCACAGCATGACGTT-1,monocyte,classical monocyte,184,monocyte,14388
+ATCACGATCCGCAACG-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",134,T cell,6873
+ATCACTTGTGGCTGCT-1,monocyte,classical monocyte,143,monocyte,28018
+ATCCACCCAGCAGTGA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",448,lymphocyte,8832
+ATCCACCCATGTCTAG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",422,lymphocyte,9104
+ATCCACCGTTTGTTGG-1,monocyte,CD14-positive monocyte,310,monocyte,23355
+ATCCATTAGACGCAGT-1,B cell,naive B cell,433,B cell,8523
+ATCCCTGCAATTTCTC-1,leukocyte,leukocyte,251,leukocyte,10637
+ATCCGTCCAACTCCCT-1,B cell,naive B cell,241,B cell,10670
+ATCCTATGTCTGTGCG-1,B cell,naive B cell,343,B cell,6454
+ATCGATGCAACGGCTC-1,B cell,naive B cell,407,B cell,9944
+ATCGATGGTCAATCTG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",469,lymphocyte,10526
+ATCGGATAGGAAAGGT-1,T cell,"central memory CD4-positive, alpha-beta T cell",259,T cell,10828
+ATCGGCGAGTCCTACA-1,leukocyte,leukocyte,228,leukocyte,5206
+ATCGTAGCATCGGAGA-1,monocyte,CD14-positive monocyte,474,monocyte,5869
+ATCGTCCAGCCTGAAG-1,monocyte,CD14-positive monocyte,242,monocyte,20699
+ATCGTCCGTATGAGGC-1,monocyte,CD14-positive monocyte,272,monocyte,14789
+ATCGTCCTCGGAGCAA-1,monocyte,"CD14-low, CD16-positive monocyte",490,monocyte,16154
+ATCGTGAAGCAGATAT-1,monocyte,classical monocyte,316,monocyte,7205
+ATCTCTACAAGAAACT-1,monocyte,classical monocyte,223,monocyte,23332
+ATCTCTAGTCGTGGTC-1,leukocyte,leukocyte,165,leukocyte,7537
+ATCTTCAAGAAGAGCA-1,monocyte,CD14-positive monocyte,257,monocyte,6801
+ATCTTCACATACTGAC-1,monocyte,classical monocyte,293,monocyte,10798
+ATCTTCAGTCTCTCCA-1,monocyte,classical monocyte,212,monocyte,9877
+ATCTTCATCTCATAGG-1,glial cell,microglial cell,225,glial cell,9188
+ATGAAAGTCCTTATGT-1,leukocyte,leukocyte,198,leukocyte,13722
+ATGACCAAGGCTAACG-1,monocyte,CD14-positive monocyte,385,monocyte,17926
+ATGACCACAATATCCG-1,T cell,"central memory CD4-positive, alpha-beta T cell",210,T cell,11815
+ATGAGTCTCCAGTTCC-1,B cell,naive B cell,231,B cell,10821
+ATGATCGGTCGAACAG-1,B cell,naive B cell,434,B cell,7782
+ATGCGATGTGCTCTTC-1,B cell,naive B cell,409,B cell,7519
+ATGCGATGTTGTAGCT-1,glial cell,microglial cell,171,glial cell,8001
+ATGGAGGGTGTTTACG-1,T cell,"CD4-positive, alpha-beta T cell",144,T cell,4035
+ATGGATCGTAGATTGA-1,B cell,memory B cell,269,B cell,14575
+ATGGATCTCGACCTAA-1,leukocyte,leukocyte,162,leukocyte,6280
+ATGGGAGAGACGTCCC-1,T cell,"central memory CD4-positive, alpha-beta T cell",243,T cell,10751
+ATGGGAGCACTCCGGA-1,monocyte,monocyte,141,monocyte,30057
+ATGGGAGTCCACTGAA-1,monocyte,CD14-positive monocyte,373,monocyte,11943
+ATGGGAGTCCCATACC-1,T cell,"CD4-positive, alpha-beta T cell",144,T cell,2871
+ATGGTTGTCACGGAGA-1,monocyte,classical monocyte,307,monocyte,17328
+ATGTCCCCAGGAATCG-1,B cell,naive B cell,420,B cell,6868
+ATGTCCCCATAGGTTC-1,B cell,naive B cell,251,B cell,12153
+ATGTCCCGTCCTACGG-1,monocyte,classical monocyte,312,monocyte,18927
+ATTACTCCAGCTTTGA-1,T cell,"central memory CD4-positive, alpha-beta T cell",159,T cell,10319
+ATTACTCGTTGCAACT-1,B cell,naive B cell,269,B cell,12841
+ATTCACTAGAAGGCTC-1,T cell,mature T cell,81,T cell,10486
+ATTCACTTCTCCGCAT-1,leukocyte,leukocyte,225,leukocyte,8164
+ATTCAGGCAAGTATCC-1,monocyte,classical monocyte,396,monocyte,8706
+ATTCAGGCATAGCTGT-1,monocyte,classical monocyte,267,monocyte,22611
+ATTCAGGTCTTCGTGC-1,T cell,"central memory CD4-positive, alpha-beta T cell",134,T cell,9149
+ATTCCATCACGACTAT-1,glial cell,microglial cell,173,glial cell,7317
+ATTCCCGAGTCACTCA-1,leukocyte,leukocyte,121,leukocyte,10282
+ATTCCTACATGAGATA-1,monocyte,monocyte,159,monocyte,16173
+ATTCGTTCAGTCTTCC-1,glial cell,microglial cell,194,glial cell,13025
+ATTCGTTGTAACACCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",378,T cell,12644
+ATTCGTTGTGTAGCAG-1,B cell,plasma cell,437,B cell,24145
+ATTCGTTGTGTTCAGT-1,T cell,"central memory CD4-positive, alpha-beta T cell",365,T cell,9414
+ATTCGTTGTTCTTGTT-1,monocyte,classical monocyte,217,monocyte,12184
+ATTCTACTCTCGTGAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",184,T cell,10565
+ATTCTTGAGTTCCAGT-1,leukocyte,leukocyte,314,leukocyte,4781
+ATTCTTGGTACAATAG-1,glial cell,microglial cell,242,glial cell,9317
+ATTTCACAGTGCAAAT-1,monocyte,monocyte,117,monocyte,15347
+ATTTCACGTGGATACG-1,monocyte,CD14-positive monocyte,326,monocyte,20630
+ATTTCTGCAAGGTCTT-1,monocyte,classical monocyte,387,monocyte,25194
+ATTTCTGGTATCCTCC-1,B cell,B cell,194,B cell,12925
+ATTTCTGTCGATGCAT-1,monocyte,classical monocyte,392,monocyte,10593
+ATTTCTGTCGGCCAAC-1,T cell,"central memory CD4-positive, alpha-beta T cell",238,T cell,13909
+CAAAGAACACATATCG-1,leukocyte,leukocyte,164,leukocyte,9516
+CAAAGAACAGCTGTTA-1,leukocyte,leukocyte,217,leukocyte,10893
+CAAAGAAGTTCTCCCA-1,monocyte,CD14-positive monocyte,257,monocyte,12746
+CAACAACTCGATACTG-1,leukocyte,leukocyte,219,leukocyte,7680
+CAACAGTCATCCGTTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",187,T cell,11154
+CAACAGTTCGAGCACC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",335,T cell,8720
+CAACCAAGTTAGAAAC-1,monocyte,CD14-positive monocyte,273,monocyte,5625
+CAACCTCGTATCGGTT-1,leukocyte,leukocyte,152,leukocyte,10064
+CAACGATAGACGGAAA-1,monocyte,CD14-positive monocyte,318,monocyte,17875
+CAACGATAGCCTAGGA-1,monocyte,CD14-positive monocyte,155,monocyte,22821
+CAACGATCAAAGCACG-1,leukocyte,leukocyte,168,leukocyte,10787
+CAACGATTCAAGCCCG-1,monocyte,CD14-positive monocyte,262,monocyte,15499
+CAAGACTAGTGGAAAG-1,T cell,gamma-delta T cell,154,T cell,10980
+CAAGACTTCAATCGGT-1,monocyte,classical monocyte,410,monocyte,22671
+CAAGAGGTCTTCACGC-1,monocyte,CD14-positive monocyte,411,monocyte,25232
+CAAGCTAGTGGCTGCT-1,monocyte,CD14-positive monocyte,179,monocyte,28658
+CAAGGGAAGAGTCGAC-1,T cell,"central memory CD4-positive, alpha-beta T cell",132,T cell,11265
+CAATACGAGGCAGCTA-1,T cell,mature T cell,178,T cell,4981
+CAATACGTCTCGACCT-1,hematopoietic cell,erythrocyte,148,hematopoietic cell,728
+CAATCGAAGAGGATCC-1,T cell,"central memory CD4-positive, alpha-beta T cell",270,T cell,11003
+CAATCGATCCGTACGG-1,leukocyte,leukocyte,188,leukocyte,9491
+CAATGACTCAAGCCCG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",227,T cell,13336
+CAATTTCAGATTGCGG-1,B cell,naive B cell,376,B cell,9367
+CACACAACAAGAAACT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",136,T cell,11493
+CACACAACACGAGGAT-1,monocyte,CD14-positive monocyte,341,monocyte,6277
+CACAGATCACTCCGAG-1,monocyte,monocyte,133,monocyte,17430
+CACAGATCATCATGAC-1,monocyte,classical monocyte,256,monocyte,9094
+CACAGATGTTCCGTTC-1,monocyte,"CD14-low, CD16-positive monocyte",470,monocyte,16632
+CACAGGCCAACGATCT-1,monocyte,monocyte,178,monocyte,12927
+CACATGAGTTTCGACA-1,T cell,mature T cell,214,T cell,9908
+CACCAAAAGGACATCG-1,monocyte,classical monocyte,202,monocyte,21024
+CACCGTTCACCCTAGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",245,T cell,11736
+CACGAATCACATAGCT-1,T cell,mature T cell,144,T cell,14834
+CACGAATTCAAGTCGT-1,T cell,"central memory CD4-positive, alpha-beta T cell",223,T cell,11826
+CACGGGTAGCATTTGC-1,monocyte,classical monocyte,266,monocyte,23123
+CACGGGTTCCCGATCT-1,B cell,naive B cell,409,B cell,7857
+CACGTTCCAGCTTCCT-1,monocyte,classical monocyte,224,monocyte,21500
+CACGTTCTCTATCACT-1,leukocyte,leukocyte,126,leukocyte,17447
+CACTAAGGTGATAGTA-1,leukocyte,leukocyte,165,leukocyte,10729
+CACTGAAGTCTTTCTA-1,B cell,naive B cell,299,B cell,11013
+CACTGAATCCTGATAG-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,489,myeloid leukocyte,29834
+CACTGGGAGGCGACAT-1,monocyte,classical monocyte,230,monocyte,17745
+CACTGGGAGTTACTCG-1,monocyte,classical monocyte,222,monocyte,11312
+CACTGGGGTCGCACAC-1,monocyte,"CD14-low, CD16-positive monocyte",287,monocyte,24226
+CACTGTCCACATATGC-1,B cell,naive B cell,288,B cell,13729
+CACTTCGTCACCTACC-1,monocyte,classical monocyte,196,monocyte,33288
+CAGAGCCGTGCCCGTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",296,T cell,7161
+CAGATACTCGTTCCCA-1,glial cell,microglial cell,174,glial cell,11085
+CAGATTGAGAACGTGC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",214,T cell,10563
+CAGATTGAGCTGAGCA-1,T cell,"central memory CD4-positive, alpha-beta T cell",360,T cell,9852
+CAGATTGGTGACTAAA-1,B cell,naive B cell,324,B cell,13356
+CAGCAATGTATCGTTG-1,monocyte,"CD14-low, CD16-positive monocyte",341,monocyte,19531
+CAGCAGCTCAGAGTTC-1,leukocyte,leukocyte,144,leukocyte,7247
+CAGCCAGGTGGGTTGA-1,monocyte,"CD14-low, CD16-positive monocyte",443,monocyte,17658
+CAGCGTGTCCATCACC-1,B cell,naive B cell,438,B cell,8584
+CAGGCCAGTTCAATCG-1,T cell,"central memory CD4-positive, alpha-beta T cell",270,T cell,16382
+CAGGCCATCACTCACC-1,leukocyte,leukocyte,220,leukocyte,6323
+CAGGCCATCCACTAGA-1,monocyte,CD14-positive monocyte,407,monocyte,13596
+CAGGGCTAGATTGGGC-1,T cell,gamma-delta T cell,96,T cell,8430
+CAGGGCTTCGACGAGA-1,B cell,plasma cell,444,B cell,22330
+CAGGTATGTCAGTCTA-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,264,myeloid leukocyte,35532
+CAGGTATGTGTAAATG-1,B cell,naive B cell,407,B cell,9497
+CAGTTAGTCGGCCCAA-1,leukocyte,leukocyte,240,leukocyte,4206
+CAGTTCCCAATCGTCA-1,glial cell,microglial cell,253,glial cell,8650
+CATAAGCGTAGCGCTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",349,T cell,11196
+CATAAGCTCCGTGTGG-1,monocyte,CD14-positive monocyte,249,monocyte,16473
+CATACTTTCAACGAGG-1,T cell,"central memory CD4-positive, alpha-beta T cell",231,T cell,9996
+CATAGACCATCTCAAG-1,hematopoietic cell,erythrocyte,139,hematopoietic cell,1209
+CATAGACGTACCTTCC-1,T cell,mature T cell,289,T cell,4902
+CATCAAGAGCGCCGTT-1,monocyte,"CD14-low, CD16-positive monocyte",495,monocyte,5010
+CATCAAGGTATGGTTC-1,B cell,naive B cell,285,B cell,13200
+CATCAAGGTCTAACTG-1,B cell,B cell,345,B cell,3400
+CATCAAGGTTGTCCCT-1,B cell,naive B cell,328,B cell,8331
+CATCCGTGTATCGCTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",244,T cell,10245
+CATCGCTTCTTTGCAT-1,T cell,T cell,182,T cell,726
+CATCGGGTCGCTACAA-1,B cell,naive B cell,399,B cell,7012
+CATCGTCTCCGTTGAA-1,glial cell,microglial cell,168,glial cell,21335
+CATGAGTCACCATTCC-1,T cell,mature T cell,135,T cell,10380
+CATGCCTCAATTGCTG-1,B cell,naive B cell,243,B cell,12566
+CATGCCTCAGGCTATT-1,monocyte,monocyte,166,monocyte,9689
+CATGCCTGTTCCGCAG-1,monocyte,classical monocyte,292,monocyte,20799
+CATGCGGTCGGTCGAC-1,leukocyte,leukocyte,178,leukocyte,2867
+CATGCTCGTCTCTCAC-1,B cell,B cell,346,B cell,6109
+CATTCTAGTAGCTTGT-1,T cell,mucosal invariant T cell,120,T cell,11424
+CATTCTATCAGTAGGG-1,monocyte,CD14-positive monocyte,256,monocyte,17391
+CATTGAGAGGGACCAT-1,monocyte,CD14-positive monocyte,188,monocyte,20666
+CATTTCATCTCTCTTC-1,monocyte,classical monocyte,252,monocyte,24392
+CCAAGCGAGCTAATCC-1,leukocyte,leukocyte,138,leukocyte,8106
+CCAAGCGAGGTTCATC-1,monocyte,classical monocyte,244,monocyte,11562
+CCAATGAAGGTCACTT-1,B cell,naive B cell,403,B cell,8095
+CCAATTTCAAAGGCTG-1,T cell,"CD8-positive, alpha-beta memory T cell",136,T cell,10783
+CCAATTTCATTCGATG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",154,lymphocyte,8171
+CCACACTCAGGACTTT-1,monocyte,"CD14-low, CD16-positive monocyte",462,monocyte,24456
+CCACCATAGGTCATCT-1,glial cell,microglial cell,227,glial cell,9122
+CCACGAGGTAATCAAG-1,lymphocyte,lymphocyte,150,lymphocyte,1657
+CCACGAGTCTTCCTAA-1,monocyte,CD14-positive monocyte,328,monocyte,20289
+CCACGTTTCATCAGTG-1,B cell,naive B cell,219,B cell,13286
+CCACGTTTCGTGAGAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",200,T cell,9624
+CCACGTTTCTGCTGAA-1,B cell,memory B cell,177,B cell,17305
+CCACTTGCAGCTATTG-1,leukocyte,leukocyte,222,leukocyte,6787
+CCACTTGTCGCAGAGA-1,monocyte,"CD14-low, CD16-positive monocyte",490,monocyte,21660
+CCATAAGGTGAGGAAA-1,monocyte,CD14-positive monocyte,394,monocyte,14042
+CCATCACCATTAAAGG-1,B cell,naive B cell,203,B cell,12474
+CCATCACTCTAACACG-1,monocyte,classical monocyte,310,monocyte,12972
+CCCGGAATCAAACCCA-1,leukocyte,leukocyte,131,leukocyte,9152
+CCCTAACCAGGTTCGC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",245,T cell,11310
+CCCTAACGTAACTGCT-1,monocyte,"CD14-low, CD16-positive monocyte",269,monocyte,22669
+CCCTTAGGTTTCCAAG-1,T cell,mature T cell,168,T cell,9974
+CCGAACGAGCTAAGTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",156,T cell,5964
+CCGAACGAGGAACGCT-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,208,myeloid leukocyte,26320
+CCGATCTGTGGAGGTT-1,monocyte,classical monocyte,296,monocyte,13314
+CCGATGGGTTCTCGCT-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,467,myeloid leukocyte,33909
+CCGATGGTCACCTCTG-1,monocyte,monocyte,223,monocyte,7214
+CCGATGGTCTGTCGCT-1,B cell,memory B cell,256,B cell,12707
+CCGCAAGCATTCAGGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",265,T cell,10349
+CCGCAAGGTACCAGAG-1,leukocyte,leukocyte,174,leukocyte,10716
+CCGGACAGTGATACCT-1,monocyte,CD14-positive monocyte,345,monocyte,19488
+CCGGGTACACTCCGAG-1,monocyte,CD14-positive monocyte,315,monocyte,23706
+CCGGGTACATACCAGT-1,T cell,mature T cell,197,T cell,5933
+CCGGTAGGTAGTACGG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",447,lymphocyte,6300
+CCGTAGGGTTCCCACT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",295,lymphocyte,8450
+CCGTAGGTCATACAGC-1,B cell,naive B cell,244,B cell,9575
+CCGTGAGAGAGGTCAC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",237,lymphocyte,9103
+CCGTGAGTCGCCTTTG-1,B cell,B cell,204,B cell,6295
+CCGTTCACAGAAGCTG-1,leukocyte,leukocyte,284,leukocyte,5090
+CCTAAGAAGACTCTAC-1,glial cell,microglial cell,182,glial cell,26728
+CCTATCGAGACAGCGT-1,monocyte,classical monocyte,284,monocyte,19022
+CCTCAACTCTTAGCCC-1,leukocyte,leukocyte,171,leukocyte,11659
+CCTCAGTAGCAAGGAA-1,monocyte,monocyte,262,monocyte,2686
+CCTCAGTCATGATGCT-1,leukocyte,leukocyte,125,leukocyte,11514
+CCTCAGTTCCGAGCTG-1,B cell,naive B cell,269,B cell,10469
+CCTCATGCACTATGTG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",431,lymphocyte,9355
+CCTCATGGTTTCGCTC-1,leukocyte,leukocyte,176,leukocyte,14825
+CCTCATGTCTCTCAAT-1,monocyte,CD14-positive monocyte,402,monocyte,16908
+CCTCCAAAGGCCCGTT-1,monocyte,classical monocyte,220,monocyte,35258
+CCTCCAAAGTATGATG-1,B cell,B cell,247,B cell,3211
+CCTCCAACAACCCTCT-1,leukocyte,leukocyte,201,leukocyte,9055
+CCTCCAACACAATGAA-1,B cell,naive B cell,275,B cell,12548
+CCTCCTCAGTCCCGAC-1,B cell,naive B cell,232,B cell,10582
+CCTCCTCCATTCAGGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",205,T cell,10626
+CCTCCTCTCAAGCGTT-1,leukocyte,leukocyte,155,leukocyte,11013
+CCTCTAGCAGACCTAT-1,monocyte,monocyte,174,monocyte,16987
+CCTCTCCGTGTGCTTA-1,T cell,"CD4-positive, alpha-beta T cell",240,T cell,2208
+CCTCTCCTCGTTCCTG-1,monocyte,monocyte,152,monocyte,25812
+CCTGCATAGTGGTGAC-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,489,myeloid leukocyte,25238
+CCTGCATCAACGGGTA-1,leukocyte,leukocyte,128,leukocyte,9576
+CCTGCATGTTCTTAGG-1,leukocyte,leukocyte,202,leukocyte,12406
+CCTGTTGGTGTGCCTG-1,monocyte,classical monocyte,333,monocyte,19419
+CCTGTTGTCAAGAGTA-1,B cell,B cell,232,B cell,7899
+CCTTCAGAGGAACGTC-1,hematopoietic cell,platelet,490,hematopoietic cell,3957
+CCTTCAGCACAGAGCA-1,B cell,memory B cell,266,B cell,19955
+CGAAGGATCGACGCGT-1,T cell,"central memory CD4-positive, alpha-beta T cell",342,T cell,10197
+CGAATTGGTCTGTTAG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",290,T cell,10638
+CGAGAAGTCAAGTTGC-1,B cell,plasma cell,370,B cell,70021
+CGAGAAGTCCAATGCA-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,362,myeloid leukocyte,32288
+CGAGGAAAGTCGCGAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",381,T cell,8279
+CGAGGAACACTGATTG-1,B cell,naive B cell,399,B cell,11808
+CGAGGAAGTCCTGGGT-1,monocyte,monocyte,387,monocyte,3861
+CGAGGCTCAGATCACT-1,B cell,naive B cell,238,B cell,8426
+CGAGGCTCAGCATGCC-1,monocyte,CD14-positive monocyte,319,monocyte,11158
+CGAGTGCGTTCCGCGA-1,T cell,"central memory CD4-positive, alpha-beta T cell",294,T cell,12179
+CGAGTTAGTCGAGTTT-1,monocyte,CD14-positive monocyte,372,monocyte,10536
+CGATCGGCAATTGGTC-1,monocyte,CD14-positive monocyte,408,monocyte,8935
+CGATCGGCAGCGTGAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",280,T cell,7514
+CGATGCGAGCAGAAAG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",321,T cell,8830
+CGATGCGTCGAACCAT-1,B cell,naive B cell,434,B cell,6473
+CGATGGCCACTCGATA-1,T cell,"central memory CD4-positive, alpha-beta T cell",270,T cell,13827
+CGATGGCGTAGCGTCC-1,T cell,"central memory CD4-positive, alpha-beta T cell",349,T cell,11434
+CGCAGGTGTGCTTCAA-1,B cell,naive B cell,429,B cell,6189
+CGCATAAAGTGATGGC-1,monocyte,CD14-positive monocyte,158,monocyte,21888
+CGCATGGAGGCCACTC-1,monocyte,classical monocyte,210,monocyte,1680
+CGCGTGAGTACAATAG-1,B cell,naive B cell,368,B cell,7348
+CGGAACCGTATCACGT-1,monocyte,classical monocyte,263,monocyte,9827
+CGGAACCGTTTGCAGT-1,B cell,naive B cell,257,B cell,10754
+CGGACACAGGACAGCT-1,monocyte,classical monocyte,340,monocyte,15379
+CGGGACTGTTTCACTT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",441,lymphocyte,9563
+CGGGTGTTCCGTGACG-1,monocyte,classical monocyte,372,monocyte,16787
+CGTAAGTGTGATAGTA-1,T cell,"central memory CD4-positive, alpha-beta T cell",216,T cell,11024
+CGTAGTATCAGCCCAG-1,leukocyte,leukocyte,256,leukocyte,5704
+CGTCAAACAGAATGTA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",466,lymphocyte,9583
+CGTCCATGTTTGGAAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",317,T cell,8765
+CGTGAATAGTCGGCCT-1,T cell,"CD4-positive, alpha-beta T cell",182,T cell,9133
+CGTGATATCTGGTGGC-1,T cell,"CD4-positive, alpha-beta T cell",146,T cell,2592
+CGTGCTTAGCTTTGTG-1,monocyte,CD14-positive monocyte,330,monocyte,12830
+CGTGCTTCAAGCGCTC-1,monocyte,CD14-positive monocyte,242,monocyte,19404
+CGTGCTTGTTTAGACC-1,T cell,"central memory CD4-positive, alpha-beta T cell",195,T cell,9260
+CGTGTCTCACAGTACT-1,T cell,"central memory CD4-positive, alpha-beta T cell",361,T cell,9180
+CGTGTCTCATGGGTTT-1,T cell,"central memory CD4-positive, alpha-beta T cell",184,T cell,8481
+CGTGTCTGTCAGTTTG-1,monocyte,CD14-positive monocyte,344,monocyte,12278
+CGTTAGATCAGCCTCT-1,monocyte,"CD14-low, CD16-positive monocyte",431,monocyte,19821
+CGTTAGATCATTATCC-1,monocyte,monocyte,236,monocyte,28128
+CGTTAGATCCAAGAGG-1,monocyte,classical monocyte,241,monocyte,5033
+CGTTCTGTCAGCGCAC-1,leukocyte,leukocyte,151,leukocyte,8294
+CGTTCTGTCCCGAACG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",300,lymphocyte,7299
+CTAACCCAGCCGCTTG-1,leukocyte,leukocyte,147,leukocyte,6460
+CTAACCCCACTTCAAG-1,T cell,mature T cell,207,T cell,12351
+CTAACTTAGCCTCACG-1,lymphocyte,lymphocyte,221,lymphocyte,5015
+CTAAGTGCACAATGCT-1,B cell,naive B cell,237,B cell,10884
+CTAAGTGGTCCACTCT-1,leukocyte,leukocyte,249,leukocyte,9586
+CTACAGACAACAAAGT-1,B cell,plasma cell,436,B cell,55234
+CTACAGACAGGAATAT-1,lymphocyte,lymphocyte,126,lymphocyte,5966
+CTACAGATCAGGAGAC-1,leukocyte,leukocyte,349,leukocyte,5036
+CTACCTGTCTCGAACA-1,monocyte,CD14-positive monocyte,185,monocyte,14638
+CTACGGGTCACCATAG-1,hematopoietic cell,erythrocyte,176,hematopoietic cell,947
+CTACGGGTCGTTCAGA-1,leukocyte,leukocyte,193,leukocyte,8433
+CTAGACAGTCGTGGTC-1,monocyte,"CD14-low, CD16-positive monocyte",252,monocyte,10155
+CTAGACAGTCTAACTG-1,monocyte,monocyte,125,monocyte,18226
+CTAGGTATCTAACGCA-1,B cell,naive B cell,352,B cell,9199
+CTATCCGAGCTGTTAC-1,leukocyte,leukocyte,115,leukocyte,11648
+CTCAACCGTGGATGAC-1,B cell,memory B cell,214,B cell,14505
+CTCAACCGTGTGTCGC-1,B cell,B cell,299,B cell,5472
+CTCAAGAAGATTACCC-1,leukocyte,leukocyte,228,leukocyte,12663
+CTCAAGACATCCTGTC-1,monocyte,monocyte,273,monocyte,8591
+CTCAAGAGTCAAAGAT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",468,lymphocyte,11120
+CTCAATTTCGGAAGGT-1,monocyte,classical monocyte,261,monocyte,14810
+CTCACTGCACCTTCCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",233,T cell,11351
+CTCAGAACAATTGTGC-1,B cell,B cell,282,B cell,8631
+CTCAGGGGTCATCGCG-1,monocyte,classical monocyte,371,monocyte,13498
+CTCAGGGTCTCACCCA-1,monocyte,"CD14-low, CD16-positive monocyte",474,monocyte,19262
+CTCAGTCAGGGACAGG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",433,lymphocyte,6999
+CTCATCGAGAGGCGTT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",375,T cell,11638
+CTCATCGTCGTACCTC-1,B cell,naive B cell,435,B cell,8517
+CTCATTAAGGAAGTGA-1,monocyte,CD14-positive monocyte,286,monocyte,11523
+CTCATTATCGTACACA-1,mononuclear cell,dendritic cell,109,mononuclear cell,21978
+CTCCAACCAATCTCTT-1,leukocyte,leukocyte,240,leukocyte,11217
+CTCCAACGTAGTGTGG-1,T cell,"central memory CD4-positive, alpha-beta T cell",342,T cell,11314
+CTCCATGAGACAGCTG-1,B cell,naive B cell,382,B cell,10677
+CTCCATGGTGTTGACT-1,monocyte,classical monocyte,346,monocyte,6015
+CTCCATGTCATCGTAG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",306,T cell,11601
+CTCCATGTCGTCGATA-1,monocyte,classical monocyte,307,monocyte,23890
+CTCCCAATCAATCAGC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",297,lymphocyte,11504
+CTCCCTCAGCGCGTTC-1,monocyte,monocyte,277,monocyte,19955
+CTCCCTCCACCGGAAA-1,monocyte,monocyte,186,monocyte,27062
+CTCCCTCGTTTACGAC-1,glial cell,microglial cell,252,glial cell,8434
+CTCCCTCTCATCGCTC-1,glial cell,microglial cell,245,glial cell,9577
+CTCCGATTCCTTTAGT-1,glial cell,microglial cell,198,glial cell,11003
+CTCCGATTCTTTCTAG-1,lymphocyte,lymphocyte,156,lymphocyte,9366
+CTCCTCCTCACCTCTG-1,leukocyte,leukocyte,130,leukocyte,13532
+CTCCTTTAGATGCTGG-1,monocyte,monocyte,199,monocyte,25696
+CTCCTTTTCTACACTT-1,leukocyte,leukocyte,131,leukocyte,13659
+CTCGAGGAGCCTATTG-1,B cell,naive B cell,413,B cell,6578
+CTCGAGGAGGAAAGGT-1,T cell,gamma-delta T cell,97,T cell,9906
+CTCTCAGGTTAAGCAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",241,T cell,10138
+CTCTCGATCCATAGGT-1,B cell,B cell,237,B cell,8499
+CTCTGGTAGTAGGATT-1,monocyte,CD14-positive monocyte,284,monocyte,2347
+CTGAATGAGCTCTATG-1,monocyte,classical monocyte,434,monocyte,12458
+CTGAATGAGGCGAACT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",317,T cell,8401
+CTGAGGCGTTCAGCGC-1,B cell,naive B cell,469,B cell,6826
+CTGATCCGTCGCGTCA-1,T cell,"central memory CD4-positive, alpha-beta T cell",308,T cell,6457
+CTGATCCTCCCTCTAG-1,T cell,mature T cell,220,T cell,9502
+CTGATCCTCTCTCCGA-1,hematopoietic cell,platelet,469,hematopoietic cell,1067
+CTGCAGGAGCCATTGT-1,T cell,"central memory CD4-positive, alpha-beta T cell",227,T cell,9689
+CTGCATCAGCGTCAAG-1,monocyte,CD14-positive monocyte,400,monocyte,3920
+CTGCATCGTAAGCTCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",212,T cell,8360
+CTGCCATTCAGTGTTG-1,T cell,"central memory CD4-positive, alpha-beta T cell",324,T cell,13214
+CTGCCATTCGGAACTT-1,monocyte,CD14-positive monocyte,269,monocyte,22007
+CTGCCTACAAGACTGG-1,monocyte,monocyte,277,monocyte,6667
+CTGCCTATCTTGATTC-1,B cell,naive B cell,274,B cell,10263
+CTGCGAGAGATTAGAC-1,monocyte,CD14-positive monocyte,466,monocyte,8400
+CTGCGAGAGTGCACTT-1,monocyte,CD14-positive monocyte,288,monocyte,16605
+CTGCGAGCAGATTCGT-1,B cell,naive B cell,267,B cell,10505
+CTGCGAGGTAGGTTTC-1,monocyte,monocyte,262,monocyte,6590
+CTGCTCACAGCGTTTA-1,monocyte,"CD14-low, CD16-positive monocyte",340,monocyte,23304
+CTGGACGCAACGATTC-1,leukocyte,leukocyte,144,leukocyte,15146
+CTGGACGCACACGGTC-1,monocyte,classical monocyte,407,monocyte,13360
+CTGGACGGTTCCCAAA-1,T cell,mature T cell,132,T cell,12752
+CTGGACGTCTCATTTG-1,monocyte,CD14-positive monocyte,346,monocyte,19780
+CTGGCAGGTTGCAAGG-1,monocyte,classical monocyte,277,monocyte,2852
+CTGGCAGTCGTCTCAC-1,T cell,"central memory CD4-positive, alpha-beta T cell",260,T cell,9254
+CTGTCGTAGCTGGCCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",183,T cell,10660
+CTGTGAAAGGAACGCT-1,monocyte,CD14-positive monocyte,219,monocyte,13382
+CTGTGAATCATCGCTC-1,monocyte,CD14-positive monocyte,390,monocyte,10337
+CTGTGGGGTCGTGATT-1,B cell,plasma cell,472,B cell,20935
+CTTAGGAGTCTGTGGC-1,B cell,naive B cell,281,B cell,6488
+CTTCAATGTTGGACTT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",149,T cell,12328
+CTTCGGTCACGTTCGG-1,B cell,naive B cell,329,B cell,9037
+CTTCGGTTCCAAGAGG-1,B cell,naive B cell,393,B cell,7652
+CTTCTCTTCCTACAAG-1,leukocyte,leukocyte,201,leukocyte,12220
+CTTGAGAAGAATTGCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",291,T cell,11608
+CTTGAGATCCCGAGGT-1,T cell,"CD4-positive, alpha-beta T cell",214,T cell,869
+CTTGATTAGGTAGGCT-1,leukocyte,leukocyte,180,leukocyte,7105
+GAAACCTAGGAGGTTC-1,monocyte,monocyte,274,monocyte,5732
+GAACACTGTTGGACTT-1,B cell,naive B cell,326,B cell,9304
+GAACGTTGTCAGGAGT-1,monocyte,CD14-positive monocyte,458,monocyte,9300
+GAACTGTCATCGAACT-1,leukocyte,leukocyte,131,leukocyte,12090
+GAACTGTTCTCAAAGC-1,leukocyte,leukocyte,142,leukocyte,12503
+GAAGAATAGGTACAAT-1,monocyte,classical monocyte,342,monocyte,15898
+GAAGCCCCAGGAACCA-1,monocyte,"CD14-low, CD16-positive monocyte",355,monocyte,28781
+GAAGCGATCAGTAGGG-1,leukocyte,leukocyte,318,leukocyte,3774
+GAAGGACGTCTGCCTT-1,monocyte,CD14-positive monocyte,252,monocyte,16298
+GAAGGGTTCGCAGATT-1,T cell,"central memory CD4-positive, alpha-beta T cell",173,T cell,3924
+GAAGTAAGTCTAGATC-1,T cell,"central memory CD4-positive, alpha-beta T cell",276,T cell,10891
+GAATCACCAGTGGTGA-1,T cell,mature T cell,196,T cell,12086
+GACACGCCAGTCCGTG-1,B cell,naive B cell,396,B cell,8301
+GACACGCGTTCCAAAC-1,B cell,naive B cell,290,B cell,9907
+GACAGCCGTATCGTGT-1,leukocyte,leukocyte,97,leukocyte,8870
+GACATCAGTAACGATA-1,monocyte,classical monocyte,358,monocyte,1074
+GACCCTTCAGCGTATT-1,monocyte,"CD14-low, CD16-positive monocyte",363,monocyte,21188
+GACCCTTCATCATCTT-1,glial cell,microglial cell,152,glial cell,10535
+GACCTTCCACCTGCGA-1,monocyte,CD14-positive monocyte,346,monocyte,12873
+GACCTTCGTCGAGCTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",316,T cell,8019
+GACTATGCAGTCCCGA-1,T cell,"CD4-positive, alpha-beta T cell",371,T cell,1704
+GACTATGCATCATTGG-1,monocyte,classical monocyte,234,monocyte,19731
+GACTATGTCCAAGGGA-1,T cell,"central memory CD4-positive, alpha-beta T cell",203,T cell,13190
+GACTCAATCTAGTGAC-1,hematopoietic cell,erythrocyte,133,hematopoietic cell,940
+GACTCAATCTCCCAAC-1,monocyte,classical monocyte,396,monocyte,17215
+GACTGATTCATCCTAT-1,leukocyte,leukocyte,146,leukocyte,12451
+GACTTCCTCCTCTAGC-1,leukocyte,leukocyte,151,leukocyte,12306
+GAGAAATCATTGGATC-1,leukocyte,leukocyte,154,leukocyte,9333
+GAGACCCAGTAGGATT-1,monocyte,CD14-positive monocyte,361,monocyte,19367
+GAGACTTAGTCACTCA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",138,lymphocyte,11088
+GAGACTTCAGGCTATT-1,monocyte,CD14-positive monocyte,309,monocyte,17067
+GAGAGGTTCATAGACC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",333,T cell,11597
+GAGATGGCATGTAACC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",211,T cell,9877
+GAGCCTGAGCGCACAA-1,T cell,"CD4-positive, alpha-beta T cell",166,T cell,874
+GAGCCTGAGGCAGCTA-1,mononuclear cell,plasmacytoid dendritic cell,492,mononuclear cell,21152
+GAGCCTGCAGTCTCTC-1,leukocyte,leukocyte,244,leukocyte,8644
+GAGCCTGGTCCACGCA-1,glial cell,microglial cell,177,glial cell,9697
+GAGCTGCGTCGGATTT-1,monocyte,CD14-positive monocyte,358,monocyte,18058
+GAGGCAAAGTCACGAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",228,T cell,7098
+GAGGGATCACTTGGCG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",264,T cell,11914
+GAGGGTACAGTTTCAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",265,T cell,13045
+GAGGGTAGTCAACACT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",267,T cell,9951
+GAGGGTATCTGTCCCA-1,T cell,"central memory CD4-positive, alpha-beta T cell",308,T cell,12211
+GAGTCATAGGGTTGCA-1,B cell,B cell,204,B cell,6618
+GAGTGAGGTCGGCTAC-1,B cell,naive B cell,424,B cell,8407
+GAGTGTTCACAAGCTT-1,B cell,naive B cell,412,B cell,7574
+GAGTGTTGTACGTAGG-1,leukocyte,leukocyte,241,leukocyte,7725
+GAGTTACAGACGACGT-1,T cell,"central memory CD4-positive, alpha-beta T cell",237,T cell,11313
+GAGTTGTAGCGTTACT-1,monocyte,classical monocyte,374,monocyte,22148
+GAGTTGTAGTGCGTCC-1,monocyte,CD14-positive monocyte,391,monocyte,7226
+GAGTTGTCACGGTGCT-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",191,T cell,7732
+GATAGCTGTCGGAAAC-1,monocyte,CD14-positive monocyte,457,monocyte,19853
+GATAGCTGTCTGTTAG-1,T cell,regulatory T cell,119,T cell,8673
+GATAGCTTCGTGCAGC-1,B cell,naive B cell,470,B cell,4524
+GATCACACACCCTGTT-1,T cell,T cell,213,T cell,69324
+GATCAGTAGGAACATT-1,B cell,naive B cell,432,B cell,8983
+GATCAGTAGTGCGCTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",249,T cell,11433
+GATCAGTGTTACAGCT-1,monocyte,monocyte,312,monocyte,5409
+GATCATGAGGCCTAAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",249,T cell,12827
+GATCCCTAGAGGATGA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",266,T cell,9842
+GATCCCTGTAATTAGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",226,T cell,9813
+GATCGTACAGCGCGTT-1,T cell,"central memory CD4-positive, alpha-beta T cell",297,T cell,11264
+GATCGTATCTCTGGTC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",434,lymphocyte,6415
+GATGACTAGAGGTTAT-1,B cell,B cell,212,B cell,2470
+GATGACTTCGTGGCGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",284,T cell,9923
+GATGACTTCTCTAGGA-1,B cell,B cell,316,B cell,9198
+GATGAGGCAAATGCGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",352,T cell,7335
+GATGATCGTATGGAAT-1,leukocyte,leukocyte,234,leukocyte,7053
+GATGATCGTGTAACGG-1,B cell,naive B cell,427,B cell,8793
+GATGCTAGTACAGGTG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",147,T cell,8192
+GATGCTATCCTACGAA-1,leukocyte,leukocyte,229,leukocyte,4589
+GATGGAGAGCCAGACA-1,B cell,memory B cell,338,B cell,16894
+GATGGAGCACTTGAAC-1,T cell,"central memory CD4-positive, alpha-beta T cell",304,T cell,12360
+GATGGAGTCTGCGGCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",299,T cell,8969
+GATGGAGTCTTCCAGC-1,monocyte,classical monocyte,271,monocyte,8793
+GATTCGAGTCGCACGT-1,T cell,T cell,200,T cell,872
+GATTCTTGTACAGTCT-1,leukocyte,leukocyte,257,leukocyte,11043
+GATTGGTAGGCTGGAT-1,T cell,"CD4-positive, alpha-beta T cell",132,T cell,3946
+GATTGGTGTTGAGAGC-1,T cell,"central memory CD4-positive, alpha-beta T cell",285,T cell,9880
+GATTTCTCAAGTGGGT-1,leukocyte,leukocyte,181,leukocyte,9137
+GATTTCTGTCGTCGGT-1,lymphocyte,natural killer cell,143,lymphocyte,2001
+GATTTCTTCCTTCAGC-1,B cell,B cell,211,B cell,9637
+GCAACCGTCATTTCCA-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",184,T cell,8453
+GCAACCGTCGAACGGA-1,B cell,naive B cell,424,B cell,8344
+GCACGGTAGTAGTCTC-1,leukocyte,leukocyte,150,leukocyte,11639
+GCACGGTCACCCAACG-1,B cell,naive B cell,366,B cell,7783
+GCACGTGTCAGACATC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",323,lymphocyte,8245
+GCAGCCAAGAGGTCAC-1,B cell,naive B cell,395,B cell,10067
+GCAGCCACATACATCG-1,B cell,naive B cell,345,B cell,9048
+GCAGCCAGTTGCGTAT-1,B cell,naive B cell,247,B cell,11882
+GCAGCCATCACCGGGT-1,T cell,"CD8-positive, alpha-beta memory T cell",107,T cell,8737
+GCAGCTGGTAAGTTAG-1,monocyte,CD14-positive monocyte,256,monocyte,24678
+GCAGCTGGTGGGTCAA-1,B cell,naive B cell,421,B cell,8468
+GCAGCTGTCAAAGCCT-1,mononuclear cell,plasmacytoid dendritic cell,489,mononuclear cell,23291
+GCAGCTGTCCTTCTGG-1,T cell,"CD8-positive, alpha-beta memory T cell",92,T cell,10399
+GCAGTTACACATTCTT-1,monocyte,CD14-positive monocyte,354,monocyte,7329
+GCAGTTATCTCTCTTC-1,monocyte,"CD14-low, CD16-positive monocyte",434,monocyte,21778
+GCATCGGGTAACGATA-1,monocyte,monocyte,243,monocyte,17966
+GCCAACGTCTAACGCA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",391,lymphocyte,10048
+GCCAACGTCTGCATAG-1,monocyte,CD14-positive monocyte,352,monocyte,17018
+GCCAGGTGTTAGAAAC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",259,T cell,12545
+GCCAGTGAGTCCTACA-1,B cell,naive B cell,448,B cell,7079
+GCCGATGAGGCGAAGG-1,hematopoietic cell,erythrocyte,162,hematopoietic cell,1833
+GCCGATGAGTAACCTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",285,T cell,7913
+GCCGATGCATCTTTCA-1,B cell,naive B cell,212,B cell,8774
+GCCGTGACAACGACTT-1,monocyte,classical monocyte,315,monocyte,9335
+GCCGTGACATGCCGGT-1,T cell,"CD8-positive, alpha-beta memory T cell",140,T cell,10292
+GCCGTGAGTCAGTCCG-1,hematopoietic cell,platelet,486,hematopoietic cell,3098
+GCCTGTTCACAGTCAT-1,monocyte,CD14-positive monocyte,198,monocyte,19179
+GCGAGAAAGTTGTAGA-1,monocyte,"CD14-low, CD16-positive monocyte",477,monocyte,15523
+GCGAGAATCCTCAGAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",212,T cell,8795
+GCGGAAAGTGTGTCCG-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",140,T cell,7999
+GCGGATCAGCAACTTC-1,monocyte,classical monocyte,317,monocyte,9071
+GCGTTTCAGTCTAGCT-1,leukocyte,leukocyte,214,leukocyte,3157
+GCTACAAGTCAGCTTA-1,B cell,B cell,293,B cell,4205
+GCTACCTCACGCACCA-1,monocyte,CD14-positive monocyte,265,monocyte,19112
+GCTACCTGTCCTACAA-1,monocyte,classical monocyte,225,monocyte,20427
+GCTGAATAGCACTCTA-1,B cell,naive B cell,255,B cell,12712
+GCTGAATCACACGGAA-1,B cell,naive B cell,310,B cell,10923
+GCTGAATTCGTTAGTG-1,monocyte,CD14-positive monocyte,447,monocyte,15461
+GCTGCAGAGGGCAGAG-1,B cell,memory B cell,239,B cell,13345
+GCTGCAGGTGCTGATT-1,T cell,"central memory CD4-positive, alpha-beta T cell",237,T cell,11590
+GCTGCAGGTTGACGGA-1,monocyte,CD14-positive monocyte,344,monocyte,14700
+GCTGGGTAGTACAACA-1,leukocyte,leukocyte,215,leukocyte,7267
+GCTTCACCAACACGAG-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,315,myeloid leukocyte,29623
+GCTTGGGAGAAGGTAG-1,monocyte,CD14-positive monocyte,203,monocyte,24323
+GCTTTCGAGTGCAAAT-1,monocyte,CD14-positive monocyte,312,monocyte,15883
+GCTTTCGGTTCGGGTC-1,leukocyte,leukocyte,197,leukocyte,8895
+GCTTTCGTCCGGTAGC-1,T cell,"central memory CD4-positive, alpha-beta T cell",320,T cell,10803
+GCTTTCGTCTGGGTCG-1,monocyte,CD14-positive monocyte,169,monocyte,25152
+GGAACCCAGCCATTTG-1,monocyte,classical monocyte,354,monocyte,21450
+GGAACCCTCTAATTCC-1,B cell,naive B cell,285,B cell,9274
+GGAAGTGCAACCCTCT-1,monocyte,classical monocyte,335,monocyte,8387
+GGAATCTCAAACTGCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",227,T cell,11703
+GGAATCTTCAATCTCT-1,leukocyte,leukocyte,169,leukocyte,16086
+GGAATGGAGGACTAAT-1,monocyte,CD14-positive monocyte,326,monocyte,18154
+GGAATGGCACGACGCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",187,T cell,4319
+GGACGTCGTTCAACGT-1,monocyte,CD14-positive monocyte,430,monocyte,17697
+GGAGAACGTGCCCACA-1,monocyte,classical monocyte,342,monocyte,4312
+GGAGGATGTATGAAAC-1,monocyte,CD14-positive monocyte,458,monocyte,12057
+GGAGGTAAGGCGTTGA-1,monocyte,CD14-positive monocyte,335,monocyte,13558
+GGAGGTATCTGGTGCG-1,monocyte,classical monocyte,376,monocyte,5314
+GGATCTAAGCAATTCC-1,T cell,T cell,129,T cell,780
+GGATCTAGTGCCTGCA-1,hematopoietic cell,platelet,420,hematopoietic cell,846
+GGATCTATCACCTACC-1,leukocyte,leukocyte,189,leukocyte,9730
+GGATCTATCATAAGGA-1,T cell,"CD8-positive, alpha-beta memory T cell",109,T cell,9278
+GGATGTTAGCCGGATA-1,glial cell,microglial cell,157,glial cell,7454
+GGCACGTAGGCCCGTT-1,hematopoietic cell,erythrocyte,231,hematopoietic cell,713
+GGCGTCACATTGTGCA-1,leukocyte,leukocyte,229,leukocyte,5989
+GGCTGTGCAAAGCTAA-1,leukocyte,leukocyte,232,leukocyte,3480
+GGCTGTGCACGGTGAA-1,B cell,naive B cell,407,B cell,8965
+GGCTGTGGTCCACATA-1,monocyte,classical monocyte,242,monocyte,8967
+GGCTTGGCACCGAATT-1,B cell,naive B cell,404,B cell,7716
+GGCTTGGGTAGATCGG-1,B cell,naive B cell,399,B cell,9494
+GGCTTGGTCTTCTTCC-1,monocyte,CD14-positive monocyte,436,monocyte,4408
+GGGACAATCCGATCTC-1,monocyte,CD14-positive monocyte,209,monocyte,24024
+GGGACCTGTTAGGGAC-1,leukocyte,leukocyte,252,leukocyte,4567
+GGGACCTGTTCTTGTT-1,leukocyte,leukocyte,180,leukocyte,15073
+GGGACTCCACATATCG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",217,T cell,8984
+GGGACTCCACGGGCTT-1,monocyte,classical monocyte,196,monocyte,23674
+GGGAGATCACGGGTAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",194,T cell,8824
+GGGAGATTCACGGACC-1,B cell,naive B cell,439,B cell,7712
+GGGAGTAAGCAGGCAT-1,monocyte,CD14-positive monocyte,435,monocyte,12588
+GGGAGTATCACCTCGT-1,monocyte,classical monocyte,164,monocyte,3276
+GGGAGTATCTTAGCCC-1,monocyte,classical monocyte,363,monocyte,10437
+GGGATCCAGGGCAATC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",477,lymphocyte,6209
+GGGATGAAGGGAGGGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",348,T cell,9334
+GGGATGAAGTCCCGAC-1,T cell,"central memory CD4-positive, alpha-beta T cell",282,T cell,16361
+GGGCCATTCAGACCGC-1,monocyte,CD14-positive monocyte,277,monocyte,20037
+GGGCTACAGACCAAAT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",346,T cell,10433
+GGGCTACAGGCAGTCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",293,T cell,8254
+GGGCTCATCGCAATTG-1,leukocyte,leukocyte,222,leukocyte,11850
+GGGTAGAAGTAGGGTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",303,T cell,8109
+GGGTCACCAGGAGGTT-1,T cell,"central memory CD4-positive, alpha-beta T cell",315,T cell,8190
+GGGTCACGTCCTTAAG-1,monocyte,CD14-positive monocyte,294,monocyte,22302
+GGGTCACTCACAAGGG-1,monocyte,CD14-positive monocyte,339,monocyte,14196
+GGGTCTGAGTCAACAA-1,monocyte,classical monocyte,299,monocyte,1923
+GGGTCTGGTTTGAAAG-1,leukocyte,leukocyte,197,leukocyte,8055
+GGGTCTGTCCCGTTCA-1,monocyte,CD14-positive monocyte,242,monocyte,8853
+GGGTGAACATAAGCAA-1,T cell,"central memory CD4-positive, alpha-beta T cell",180,T cell,11415
+GGGTTATCAGCCATTA-1,T cell,"central memory CD4-positive, alpha-beta T cell",217,T cell,11939
+GGGTTTACACAGAGCA-1,monocyte,CD14-positive monocyte,326,monocyte,13200
+GGGTTTACACTAAACC-1,B cell,naive B cell,253,B cell,9787
+GGTAATCCAAAGGAGA-1,T cell,mucosal invariant T cell,128,T cell,6382
+GGTAATCCACAGCATT-1,monocyte,CD14-positive monocyte,250,monocyte,11948
+GGTAATCCATACCACA-1,monocyte,CD14-positive monocyte,273,monocyte,10542
+GGTAATCTCAAGTTGC-1,monocyte,monocyte,139,monocyte,19738
+GGTAGAGAGACCAGCA-1,monocyte,CD14-positive monocyte,447,monocyte,10790
+GGTCACGCAATGGCCC-1,T cell,"central memory CD4-positive, alpha-beta T cell",180,T cell,14180
+GGTCACGGTCGTGATT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",307,T cell,9325
+GGTCTGGTCAGACATC-1,B cell,naive B cell,223,B cell,9092
+GGTCTGGTCTCCCAAC-1,T cell,mucosal invariant T cell,153,T cell,13256
+GGTGATTAGCTGTACT-1,B cell,naive B cell,400,B cell,8170
+GGTGATTCAGCTCGGT-1,monocyte,CD14-positive monocyte,404,monocyte,15774
+GGTGGCTGTGCGCTCA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",480,lymphocyte,7252
+GGTGTCGCAACGATCT-1,monocyte,CD14-positive monocyte,265,monocyte,17339
+GGTGTCGGTGTTATCG-1,B cell,naive B cell,454,B cell,9117
+GGTGTTAGTGGATTTC-1,B cell,memory B cell,315,B cell,27608
+GGTTAACTCACTCACC-1,T cell,"CD4-positive, alpha-beta T cell",380,T cell,2169
+GGTTCTCCAGGTTCCG-1,monocyte,CD14-positive monocyte,476,monocyte,7165
+GGTTGTATCGAAGGAC-1,B cell,plasma cell,381,B cell,44684
+GTAACACAGAAAGCGA-1,glial cell,microglial cell,213,glial cell,5902
+GTAACACAGCTCCGAC-1,monocyte,"CD14-low, CD16-positive monocyte",486,monocyte,19070
+GTAACACGTAGATGTA-1,glial cell,microglial cell,209,glial cell,9187
+GTAACACGTGGCGTAA-1,monocyte,classical monocyte,304,monocyte,2873
+GTAAGTCTCGATTGGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",343,T cell,9901
+GTAATCGCAGTTTCGA-1,T cell,"CD8-positive, alpha-beta memory T cell",96,T cell,12079
+GTAATCGGTTGCGAAG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",466,lymphocyte,9104
+GTAATGCCACCAGTAT-1,monocyte,CD14-positive monocyte,351,monocyte,16588
+GTACAACAGATAGCTA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",471,lymphocyte,7389
+GTAGAAACATGGACAG-1,monocyte,CD14-positive monocyte,229,monocyte,11181
+GTAGAAATCTGAGATC-1,monocyte,CD14-positive monocyte,266,monocyte,19512
+GTAGAGGCAACTTCTT-1,leukocyte,leukocyte,166,leukocyte,6422
+GTAGATCCATCCCGTT-1,T cell,"central memory CD4-positive, alpha-beta T cell",357,T cell,12951
+GTAGATCTCCCGAAAT-1,B cell,naive B cell,328,B cell,2568
+GTAGCTATCTCATGGA-1,monocyte,CD14-positive monocyte,461,monocyte,18220
+GTAGGAGTCCGTCACT-1,leukocyte,leukocyte,205,leukocyte,4809
+GTAGGTTCAGAAGCGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",356,T cell,7887
+GTAGGTTGTGTTCGTA-1,leukocyte,leukocyte,175,leukocyte,7786
+GTAGTACCACCCTATC-1,monocyte,CD14-positive monocyte,292,monocyte,21034
+GTAGTACTCTGTGTGA-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,365,myeloid leukocyte,27402
+GTATTTCAGAAGAGCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",355,T cell,9015
+GTCAAACCAAGCACCC-1,leukocyte,leukocyte,155,leukocyte,11821
+GTCAAACTCAATGCAC-1,leukocyte,leukocyte,206,leukocyte,2855
+GTCAAGTCAATACCTG-1,leukocyte,leukocyte,136,leukocyte,3845
+GTCACGGAGCGGGTTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",395,T cell,10196
+GTCACGGCACCGTACG-1,T cell,"central memory CD4-positive, alpha-beta T cell",319,T cell,11823
+GTCACTCTCTTGAACG-1,leukocyte,leukocyte,189,leukocyte,10230
+GTCATGAAGACTCATC-1,T cell,"CD4-positive, alpha-beta T cell",379,T cell,1591
+GTCATGAAGTTTGGCT-1,monocyte,classical monocyte,382,monocyte,17197
+GTCATGACATTGGATC-1,B cell,naive B cell,359,B cell,7498
+GTCATTTCAAGAGAGA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",222,T cell,6795
+GTCATTTGTACGACTT-1,T cell,mature T cell,142,T cell,2957
+GTCATTTTCCTAGAGT-1,leukocyte,leukocyte,283,leukocyte,6396
+GTCCCATCATGCCGAC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",312,T cell,7800
+GTCCTCAAGTCACGAG-1,B cell,B cell,178,B cell,13838
+GTCGAATAGGAGTATT-1,B cell,naive B cell,386,B cell,7013
+GTCGAATCAGAACCGA-1,monocyte,CD14-positive monocyte,261,monocyte,8330
+GTCGAATGTCAAGCGA-1,monocyte,CD14-positive monocyte,271,monocyte,6866
+GTCGCGAAGCAGCGAT-1,T cell,gamma-delta T cell,133,T cell,6266
+GTCGCGAGTTTACCTT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",467,lymphocyte,7857
+GTCTACCCAGGAAGTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",170,T cell,8660
+GTCTAGACAATGCAGG-1,hematopoietic cell,erythrocyte,200,hematopoietic cell,1031
+GTCTAGAGTATGTCAC-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,413,myeloid leukocyte,26320
+GTCTAGATCGAGAGAC-1,B cell,naive B cell,282,B cell,12014
+GTCTGTCAGATACGAT-1,leukocyte,leukocyte,112,leukocyte,10590
+GTCTGTCTCGAGCCTG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",262,lymphocyte,7826
+GTGAGCCCATCTTCGC-1,leukocyte,leukocyte,267,leukocyte,1963
+GTGAGCCGTGATCGTT-1,leukocyte,leukocyte,249,leukocyte,4753
+GTGAGCCTCTGGAAGG-1,monocyte,CD14-positive monocyte,369,monocyte,12649
+GTGAGGAAGCATTGAA-1,glial cell,microglial cell,183,glial cell,8550
+GTGAGGACACAACATC-1,T cell,"CD8-positive, alpha-beta memory T cell",95,T cell,9928
+GTGAGGACACTTTAGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",243,T cell,8943
+GTGAGTTTCCAATGCA-1,leukocyte,leukocyte,183,leukocyte,9056
+GTGATGTAGACATCAA-1,leukocyte,leukocyte,175,leukocyte,9869
+GTGCGTGAGCTTCTAG-1,monocyte,CD14-positive monocyte,213,monocyte,23677
+GTGCTGGCAGGCTACC-1,leukocyte,leukocyte,218,leukocyte,8802
+GTGCTGGTCAAACCTG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",279,T cell,12571
+GTGCTTCAGACCATAA-1,monocyte,classical monocyte,264,monocyte,12515
+GTGCTTCCACTCATAG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",237,lymphocyte,8640
+GTGCTTCGTCGCTTGG-1,monocyte,classical monocyte,365,monocyte,9743
+GTGGAAGAGCCAAGTG-1,B cell,B cell,105,B cell,15409
+GTGGAGAAGATCCGAG-1,T cell,"CD4-positive, alpha-beta T cell",97,T cell,834
+GTGGCGTAGAATAACC-1,leukocyte,leukocyte,250,leukocyte,8425
+GTGGCGTCAATCGAAA-1,leukocyte,leukocyte,133,leukocyte,7599
+GTGGGAAAGGTCGTAG-1,B cell,naive B cell,377,B cell,8288
+GTGGGAACATGAGTAA-1,T cell,"central memory CD4-positive, alpha-beta T cell",141,T cell,9791
+GTGGTTAAGTAACCGG-1,leukocyte,leukocyte,204,leukocyte,3934
+GTGTAACTCTTGGTGA-1,leukocyte,leukocyte,277,leukocyte,6754
+GTGTCCTAGTCGGCCT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",464,lymphocyte,6693
+GTGTCCTCAGTTGTTG-1,B cell,naive B cell,239,B cell,15553
+GTGTCCTGTGGCCTCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",309,T cell,11229
+GTGTGATCACTACGGC-1,T cell,"central memory CD4-positive, alpha-beta T cell",221,T cell,11079
+GTGTGATTCTTACGTT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",210,lymphocyte,7571
+GTGTGGCAGGTACTGG-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,496,myeloid leukocyte,27843
+GTGTGGCAGGTAGTCG-1,T cell,gamma-delta T cell,162,T cell,9839
+GTGTGGCGTAAGTTGA-1,B cell,plasma cell,67,B cell,1613
+GTGTGGCTCACCACAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",319,T cell,11454
+GTGTTCCAGGTGCCTC-1,B cell,B cell,325,B cell,4703
+GTGTTCCGTAGTTCCA-1,hematopoietic cell,platelet,492,hematopoietic cell,4191
+GTTACAGAGGGCTAAC-1,T cell,"CD4-positive, alpha-beta T cell",164,T cell,797
+GTTACAGAGTGTAGTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",345,T cell,7823
+GTTACAGCAAATCAGA-1,leukocyte,leukocyte,156,leukocyte,8795
+GTTACGAGTATGAGAT-1,monocyte,classical monocyte,262,monocyte,18412
+GTTAGTGAGAACGTGC-1,T cell,"central memory CD4-positive, alpha-beta T cell",173,T cell,11377
+GTTAGTGCACCTCTAC-1,monocyte,CD14-positive monocyte,277,monocyte,27131
+GTTATGGTCGTTCCTG-1,leukocyte,leukocyte,285,leukocyte,3340
+GTTCATTTCCGATGCG-1,hematopoietic cell,platelet,483,hematopoietic cell,860
+GTTCCGTAGTTGCCCG-1,monocyte,CD14-positive monocyte,180,monocyte,12039
+GTTCCGTCACCCGTAG-1,leukocyte,leukocyte,220,leukocyte,9538
+GTTCTATCAAATGAGT-1,B cell,naive B cell,264,B cell,9378
+GTTCTATCACGTGTGC-1,monocyte,CD14-positive monocyte,392,monocyte,9325
+GTTCTATTCTACACTT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",303,lymphocyte,9259
+GTTGAACAGGAACATT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",487,lymphocyte,8597
+GTTGAACGTACCCGCA-1,monocyte,CD14-positive monocyte,310,monocyte,23355
+GTTGCGGAGCTGCCTG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",355,T cell,10452
+GTTGCTCAGTTTCGAC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",341,lymphocyte,8024
+GTTGCTCTCATTTCCA-1,glial cell,microglial cell,190,glial cell,11527
+GTTGTAGCAGTTCTAG-1,leukocyte,leukocyte,159,leukocyte,9068
+GTTGTGAAGACCTTTG-1,hematopoietic cell,erythrocyte,149,hematopoietic cell,681
+GTTGTGATCTCGGTCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",310,T cell,9628
+GTTTGGAGTGTATACC-1,glial cell,microglial cell,152,glial cell,7542
+TAACGACCACATATGC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",215,T cell,10906
+TAACGACGTGCCTACG-1,T cell,mature T cell,305,T cell,3786
+TAACTTCGTTGTGGAG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",480,lymphocyte,7269
+TAAGCACAGAAGCTGC-1,leukocyte,leukocyte,206,leukocyte,10158
+TAAGCACTCACCATAG-1,B cell,naive B cell,378,B cell,8085
+TAAGCCAGTCCAACGC-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",249,lymphocyte,2563
+TAAGCCATCTGGCCTT-1,B cell,B cell,213,B cell,8509
+TAAGCGTTCGTTGCCT-1,B cell,naive B cell,370,B cell,5131
+TAAGCGTTCTGTCGTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",241,T cell,8572
+TAATTCCCACTCCGGA-1,glial cell,microglial cell,182,glial cell,11800
+TAATTCCGTATTGACC-1,monocyte,"CD14-low, CD16-positive monocyte",427,monocyte,21161
+TAATTCCGTCAGTCCG-1,T cell,"central memory CD4-positive, alpha-beta T cell",103,T cell,12079
+TACAACGCAAAGGTTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",316,T cell,10152
+TACAACGCATAGATCC-1,leukocyte,leukocyte,178,leukocyte,10591
+TACACCCTCGACTCCT-1,leukocyte,leukocyte,149,leukocyte,12641
+TACAGGTTCCTTACCG-1,leukocyte,leukocyte,169,leukocyte,14625
+TACATTCGTGGCTTAT-1,T cell,"central memory CD4-positive, alpha-beta T cell",193,T cell,14568
+TACCGGGTCCTCGATC-1,hematopoietic cell,platelet,493,hematopoietic cell,1036
+TACCTCGCACCCAACG-1,leukocyte,leukocyte,132,leukocyte,11700
+TACCTGCAGTCACGCC-1,hematopoietic cell,erythrocyte,149,hematopoietic cell,1673
+TACCTGCAGTCTGCAT-1,glial cell,microglial cell,156,glial cell,13448
+TACCTGCTCCAAGCTA-1,B cell,naive B cell,271,B cell,9622
+TACGCTCGTCAATCTG-1,hematopoietic cell,erythrocyte,196,hematopoietic cell,841
+TACGCTCTCTCGGTCT-1,monocyte,classical monocyte,271,monocyte,26423
+TACGCTCTCTTAAGGC-1,B cell,naive B cell,265,B cell,9836
+TACGGGCTCAACGAGG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",294,T cell,10446
+TACGGGCTCTACCACC-1,leukocyte,leukocyte,136,leukocyte,9973
+TACGTCCCAAGTGATA-1,monocyte,CD14-positive monocyte,403,monocyte,12881
+TACGTCCCATGTGTCA-1,leukocyte,leukocyte,230,leukocyte,7061
+TACTTACAGGCATCTT-1,hematopoietic cell,erythrocyte,179,hematopoietic cell,760
+TACTTCATCATGCCGG-1,leukocyte,leukocyte,134,leukocyte,10278
+TAGACCAGTCTCGGGT-1,leukocyte,leukocyte,137,leukocyte,6443
+TAGACTGAGATTGTGA-1,B cell,memory B cell,286,B cell,10341
+TAGACTGGTCTTGAAC-1,monocyte,classical monocyte,322,monocyte,12565
+TAGACTGTCGCCGAGT-1,monocyte,CD14-positive monocyte,297,monocyte,19328
+TAGAGTCGTTGTGTAC-1,monocyte,CD14-positive monocyte,200,monocyte,15527
+TAGATCGCAAATGGTA-1,monocyte,CD14-positive monocyte,293,monocyte,10113
+TAGATCGCACACGCCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",298,T cell,8860
+TAGATCGTCACAACCA-1,monocyte,classical monocyte,305,monocyte,21270
+TAGCACAAGTACTCGT-1,monocyte,classical monocyte,315,monocyte,7226
+TAGGAGGCAAGACCTT-1,B cell,naive B cell,399,B cell,5549
+TAGGAGGGTTCCAGGC-1,B cell,naive B cell,383,B cell,10359
+TAGGGTTAGAGAGCGG-1,T cell,"central memory CD4-positive, alpha-beta T cell",259,T cell,10559
+TAGGGTTAGGAACATT-1,B cell,naive B cell,409,B cell,9098
+TAGGGTTCAAGAAACT-1,B cell,B cell,304,B cell,4601
+TAGGTACGTGTCATCA-1,monocyte,CD14-positive monocyte,241,monocyte,22100
+TAGGTACTCGAAGCAG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",482,lymphocyte,8314
+TAGTGCACACTCGATA-1,monocyte,CD14-positive monocyte,447,monocyte,14589
+TAGTGCACAGAGGAAA-1,monocyte,classical monocyte,230,monocyte,23360
+TATACCTGTTCTCGTC-1,T cell,"CD8-positive, alpha-beta memory T cell",136,T cell,10586
+TATACCTTCTGTCCGT-1,monocyte,CD14-positive monocyte,417,monocyte,15021
+TATATCCCATGCGTGC-1,B cell,naive B cell,448,B cell,7149
+TATCGCCTCTCCCAAC-1,monocyte,monocyte,130,monocyte,32432
+TATCTTGTCCATCTCG-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,446,myeloid leukocyte,41633
+TATCTTGTCGGCTTGG-1,monocyte,classical monocyte,257,monocyte,1224
+TATGTTCAGTATGGAT-1,leukocyte,leukocyte,210,leukocyte,8854
+TATTGCTTCTCGAACA-1,leukocyte,leukocyte,250,leukocyte,8635
+TCAAGCATCCACTTTA-1,leukocyte,leukocyte,185,leukocyte,13537
+TCAATCTAGAGGTTTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",308,T cell,10230
+TCAATCTGTTTCCCAC-1,B cell,B cell,248,B cell,9844
+TCACAAGGTAGTGGCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",287,T cell,11093
+TCACAAGGTGGATACG-1,monocyte,CD14-positive monocyte,290,monocyte,17038
+TCACACCCACCAGCCA-1,monocyte,monocyte,154,monocyte,28630
+TCACACCGTCTCACGG-1,T cell,mucosal invariant T cell,152,T cell,11633
+TCACACCGTTAAACCC-1,monocyte,monocyte,148,monocyte,21815
+TCACACCTCTGGGAGA-1,leukocyte,leukocyte,219,leukocyte,6883
+TCACACCTCTTACCAT-1,glial cell,microglial cell,244,glial cell,11444
+TCACATTCAGAACTAA-1,monocyte,"CD14-low, CD16-positive monocyte",329,monocyte,21978
+TCACATTCATGCCATA-1,leukocyte,leukocyte,178,leukocyte,13383
+TCACGCTAGGACATCG-1,T cell,"CD8-positive, alpha-beta memory T cell",94,T cell,10666
+TCACGCTGTCTGCCTT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",298,T cell,10029
+TCACGCTTCACTAGCA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",177,T cell,12050
+TCACGCTTCGCTGACG-1,hematopoietic cell,platelet,388,hematopoietic cell,559
+TCACGCTTCGGACTGC-1,T cell,"central memory CD4-positive, alpha-beta T cell",210,T cell,10210
+TCACGGGCAACCGACC-1,monocyte,classical monocyte,376,monocyte,23375
+TCACTATGTTTAGACC-1,glial cell,microglial cell,164,glial cell,11274
+TCACTCGCAAAGCAAT-1,monocyte,CD14-positive monocyte,316,monocyte,22065
+TCACTCGGTCAACCAT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",175,T cell,11666
+TCACTCGTCGGTCATA-1,monocyte,CD14-positive monocyte,209,monocyte,19132
+TCAGCAACAAATCAAG-1,monocyte,"CD14-low, CD16-positive monocyte",456,monocyte,20221
+TCAGCAAGTATGACAA-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,478,myeloid leukocyte,27557
+TCAGGGCTCATGCGGC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",244,T cell,13306
+TCAGGTACAATCGCAT-1,B cell,naive B cell,393,B cell,7799
+TCAGGTAGTATGGTAA-1,leukocyte,leukocyte,284,leukocyte,11056
+TCAGTCCGTAAGATCA-1,monocyte,CD14-positive monocyte,275,monocyte,20844
+TCAGTCCGTCTCTCAC-1,T cell,mature T cell,226,T cell,14828
+TCAGTTTAGGATATAC-1,monocyte,CD14-positive monocyte,392,monocyte,18058
+TCATACTCAGGTACGA-1,leukocyte,leukocyte,198,leukocyte,8882
+TCATACTTCAGAGCAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",164,T cell,8912
+TCATATCCATGCTGCG-1,mononuclear cell,plasmacytoid dendritic cell,488,mononuclear cell,18709
+TCATCATAGCACACAG-1,monocyte,CD14-positive monocyte,312,monocyte,19925
+TCATCATGTTGCACGC-1,monocyte,CD14-positive monocyte,223,monocyte,12384
+TCATCCGTCCAACTGA-1,B cell,naive B cell,390,B cell,9210
+TCATGCCCAAAGCGTG-1,T cell,gamma-delta T cell,163,T cell,8942
+TCATGCCGTGTCTTAG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",298,T cell,10748
+TCATGTTAGAGGCGGA-1,B cell,naive B cell,371,B cell,8639
+TCATGTTGTGTGTGTT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",359,T cell,6384
+TCATTACGTGCATGAG-1,leukocyte,leukocyte,137,leukocyte,7922
+TCATTGTGTGAGCAGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",102,T cell,8948
+TCCATCGGTTTAGTCG-1,B cell,naive B cell,324,B cell,10556
+TCCCACACACTAGAGG-1,hematopoietic cell,erythrocyte,182,hematopoietic cell,901
+TCCCACACAGACCAAG-1,monocyte,classical monocyte,306,monocyte,15743
+TCCCACAGTTGACGGA-1,T cell,T cell,193,T cell,629
+TCCCAGTAGACCGTTT-1,monocyte,CD14-positive monocyte,426,monocyte,12934
+TCCCAGTTCGACATAC-1,monocyte,CD14-positive monocyte,209,monocyte,14502
+TCCCATGTCGGCCCAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",254,T cell,5195
+TCCGATCTCAAACCTG-1,T cell,"central memory CD4-positive, alpha-beta T cell",114,T cell,11521
+TCCTCCCAGTCTAACC-1,monocyte,classical monocyte,280,monocyte,14560
+TCCTCGATCTCTCGAC-1,leukocyte,leukocyte,125,leukocyte,8777
+TCCTCTTAGAGTGAAG-1,monocyte,CD14-positive monocyte,336,monocyte,18371
+TCCTCTTAGCCAAGGT-1,monocyte,monocyte,168,monocyte,30651
+TCCTTCTCAACTCGTA-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,373,myeloid leukocyte,30155
+TCCTTTCTCGCTGTCT-1,mononuclear cell,plasmacytoid dendritic cell,476,mononuclear cell,23539
+TCGAAGTGTATCAGGG-1,T cell,"CD8-positive, alpha-beta memory T cell",109,T cell,8583
+TCGACCTCAAAGACTA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",263,T cell,9926
+TCGACCTCAAGTAGTA-1,B cell,plasma cell,440,B cell,38652
+TCGACGGTCGAAGTGG-1,T cell,mature T cell,106,T cell,9461
+TCGATTTGTACGCTTA-1,leukocyte,leukocyte,167,leukocyte,12739
+TCGCAGGAGATTGACA-1,T cell,"central memory CD4-positive, alpha-beta T cell",278,T cell,11179
+TCGCAGGGTAGGCTCC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",335,T cell,9375
+TCGCAGGGTTCTAACG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",270,T cell,11663
+TCGCTCACAAGATTGA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",329,T cell,8901
+TCGCTTGAGAGACAAG-1,T cell,"CD8-positive, alpha-beta memory T cell, CD45RO-positive",63,T cell,9323
+TCGCTTGAGCATTTGC-1,glial cell,microglial cell,223,glial cell,9763
+TCGGGACGTAACGGTG-1,monocyte,"CD14-low, CD16-positive monocyte",261,monocyte,2164
+TCGGGACTCTAGATCG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",347,T cell,11002
+TCGGGCACAGTTACCA-1,leukocyte,leukocyte,213,leukocyte,3912
+TCGGGCATCCGATTAG-1,leukocyte,leukocyte,178,leukocyte,10151
+TCGGGCATCTGAACGT-1,monocyte,classical monocyte,344,monocyte,17289
+TCGGGTGCAGTCTGGC-1,monocyte,classical monocyte,236,monocyte,4935
+TCGGTCTTCATTGCTT-1,leukocyte,leukocyte,167,leukocyte,10334
+TCGGTCTTCGACATAC-1,T cell,"central memory CD4-positive, alpha-beta T cell",141,T cell,10291
+TCGTAGACAATGAAAC-1,monocyte,classical monocyte,374,monocyte,15648
+TCGTGCTGTAAGGAGA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",366,T cell,5851
+TCGTGCTGTGATCATC-1,mononuclear cell,plasmacytoid dendritic cell,489,mononuclear cell,13425
+TCTAACTAGGTCCAGA-1,glial cell,microglial cell,224,glial cell,8088
+TCTACCGCAGTCGTTA-1,T cell,"central memory CD4-positive, alpha-beta T cell",310,T cell,9777
+TCTACCGTCCACGGAC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",115,T cell,8405
+TCTATACGTTATCCAG-1,monocyte,classical monocyte,281,monocyte,20203
+TCTATCAGTATGCTAC-1,monocyte,classical monocyte,357,monocyte,16105
+TCTATCAGTTGCCGAC-1,leukocyte,leukocyte,227,leukocyte,6883
+TCTCACGAGGCTCCCA-1,leukocyte,leukocyte,204,leukocyte,8858
+TCTCCGAAGTCAATCC-1,monocyte,classical monocyte,181,monocyte,28910
+TCTCCGATCTCTCTTC-1,B cell,memory B cell,256,B cell,21251
+TCTCTGGCAAAGCAAT-1,monocyte,"CD14-low, CD16-positive monocyte",431,monocyte,21319
+TCTGCCAAGTTACGGG-1,B cell,plasma cell,356,B cell,6256
+TCTGCCAGTAACGCGA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",176,T cell,9097
+TCTGCCAGTAGATGTA-1,monocyte,CD14-positive monocyte,415,monocyte,24164
+TCTGGCTCATCCTGTC-1,glial cell,microglial cell,203,glial cell,13489
+TCTGTCGAGACTAGAT-1,monocyte,CD14-positive monocyte,242,monocyte,11228
+TCTGTCGCACCAGCGT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",463,lymphocyte,11517
+TCTTAGTAGGCCTGCT-1,leukocyte,leukocyte,176,leukocyte,12828
+TCTTAGTCAACACGAG-1,monocyte,CD14-positive monocyte,234,monocyte,20099
+TCTTAGTGTTGCCAAT-1,monocyte,classical monocyte,220,monocyte,22897
+TCTTAGTTCAGAATAG-1,leukocyte,leukocyte,237,leukocyte,9076
+TCTTCCTCACCAAAGG-1,hematopoietic cell,erythrocyte,181,hematopoietic cell,708
+TCTTGCGAGATGAAGG-1,leukocyte,leukocyte,172,leukocyte,8319
+TCTTGCGCACTACTTT-1,B cell,naive B cell,266,B cell,9033
+TCTTGCGCAGAGGAAA-1,T cell,"central memory CD4-positive, alpha-beta T cell",353,T cell,10485
+TCTTGCGGTCCAGCCA-1,T cell,mature T cell,223,T cell,12298
+TCTTTGAGTGGAGAAA-1,B cell,naive B cell,389,B cell,7586
+TGAACGTCAAATGAAC-1,leukocyte,leukocyte,265,leukocyte,8697
+TGAACGTGTAACTAAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",309,T cell,13626
+TGAACGTGTCCATAGT-1,monocyte,monocyte,209,monocyte,2796
+TGAATGCGTGGACTAG-1,B cell,naive B cell,424,B cell,7963
+TGAATGCTCGACGAGA-1,monocyte,classical monocyte,352,monocyte,20075
+TGAATGCTCGCCGTGA-1,monocyte,CD14-positive monocyte,375,monocyte,17278
+TGACAGTAGAGGTGCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",250,T cell,3424
+TGACAGTTCGAGATGG-1,B cell,naive B cell,445,B cell,7305
+TGACCCTTCTCATTGT-1,monocyte,"CD14-low, CD16-positive monocyte",249,monocyte,16204
+TGACGCGGTGGCTTAT-1,monocyte,CD14-positive monocyte,338,monocyte,6575
+TGACTCCAGTCTCCTC-1,leukocyte,leukocyte,157,leukocyte,11891
+TGACTCCCACCATAAC-1,monocyte,classical monocyte,270,monocyte,13226
+TGAGACTAGGCTGAAC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",177,T cell,9745
+TGAGCATTCCATTGCC-1,glial cell,microglial cell,263,glial cell,9406
+TGAGCATTCCTTCACG-1,leukocyte,leukocyte,160,leukocyte,9768
+TGAGCATTCGATACTG-1,T cell,"central memory CD4-positive, alpha-beta T cell",246,T cell,10781
+TGAGCATTCTGTCTCG-1,monocyte,CD14-positive monocyte,287,monocyte,12903
+TGAGCGCCACTATGTG-1,monocyte,CD14-positive monocyte,215,monocyte,20961
+TGAGCGCCAGCATACT-1,monocyte,CD14-positive monocyte,415,monocyte,23476
+TGAGCGCTCGTCTAAG-1,T cell,gamma-delta T cell,121,T cell,8527
+TGAGGAGTCCATCGTC-1,B cell,memory B cell,231,B cell,17693
+TGAGGGATCAAACGTC-1,B cell,naive B cell,315,B cell,9845
+TGAGGGATCATAAGGA-1,monocyte,monocyte,166,monocyte,6239
+TGAGGTTCAAACTAGA-1,monocyte,classical monocyte,221,monocyte,8323
+TGAGGTTCAGGACATG-1,monocyte,classical monocyte,222,monocyte,25415
+TGAGGTTGTAGCTTTG-1,monocyte,CD14-positive monocyte,271,monocyte,25661
+TGAGTCACAGAACGCA-1,monocyte,CD14-positive monocyte,212,monocyte,20307
+TGAGTCAGTAACCCTA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",309,lymphocyte,7371
+TGAGTCAGTCACTCTC-1,monocyte,classical monocyte,279,monocyte,14516
+TGATCAGAGGATTCAA-1,monocyte,CD14-positive monocyte,210,monocyte,25212
+TGATGCACAGGGCTTC-1,leukocyte,leukocyte,137,leukocyte,9474
+TGATGGTAGACCCGCT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",461,lymphocyte,11506
+TGATTCTGTAGGTACG-1,hematopoietic cell,erythrocyte,190,hematopoietic cell,651
+TGCACGGTCGAGTACT-1,B cell,naive B cell,444,B cell,6005
+TGCAGGCAGCGTTCAT-1,leukocyte,leukocyte,206,leukocyte,5812
+TGCAGGCCAGGAATAT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",233,T cell,8655
+TGCAGTAAGTAGTCCT-1,B cell,naive B cell,421,B cell,7423
+TGCAGTATCCACATAG-1,monocyte,CD14-positive monocyte,296,monocyte,15868
+TGCATCCCACCCAACG-1,B cell,B cell,311,B cell,5718
+TGCATGAAGCACCCAC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",196,T cell,12730
+TGCGACGAGCGACAGT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",490,lymphocyte,7463
+TGCGATAAGAATCGCG-1,leukocyte,leukocyte,246,leukocyte,10529
+TGCGGCAAGTGGTGAC-1,leukocyte,leukocyte,158,leukocyte,9875
+TGCGGCACAAAGACGC-1,T cell,"central memory CD4-positive, alpha-beta T cell",220,T cell,11527
+TGCTCCACAATCTAGC-1,leukocyte,leukocyte,215,leukocyte,10670
+TGCTCGTAGACGAGCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",302,T cell,10738
+TGCTCGTTCCCATTTA-1,B cell,naive B cell,442,B cell,8151
+TGCTGAACAGCACAAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",287,T cell,10882
+TGCTTCGCATAGCTGT-1,monocyte,CD14-positive monocyte,264,monocyte,5546
+TGCTTGCGTGAACTAA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",326,T cell,8882
+TGGAACTAGCGTCTCG-1,monocyte,CD14-positive monocyte,284,monocyte,12113
+TGGAGAGCAGTCAGTT-1,monocyte,classical monocyte,423,monocyte,5931
+TGGAGGAAGTAGGAAG-1,monocyte,CD14-positive monocyte,373,monocyte,9728
+TGGAGGAGTCTTTATC-1,hematopoietic cell,platelet,476,hematopoietic cell,1817
+TGGAGGATCGACATTG-1,B cell,B cell,308,B cell,5259
+TGGATCAGTTCTCCCA-1,monocyte,classical monocyte,300,monocyte,9634
+TGGATGTTCACGGGAA-1,leukocyte,leukocyte,247,leukocyte,7469
+TGGATGTTCTATCCAT-1,hematopoietic cell,erythrocyte,178,hematopoietic cell,878
+TGGCGTGGTGGATTTC-1,leukocyte,leukocyte,341,leukocyte,6030
+TGGGAAGTCGATTGGT-1,leukocyte,leukocyte,216,leukocyte,8073
+TGGGAGAAGCAAGTGC-1,B cell,naive B cell,464,B cell,6979
+TGGGAGAAGTGGTGGT-1,monocyte,classical monocyte,241,monocyte,21306
+TGGGATTAGTCACGAG-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",180,lymphocyte,10553
+TGGGATTGTACGATGG-1,monocyte,classical monocyte,236,monocyte,23221
+TGGGCGTAGTGGAATT-1,B cell,naive B cell,449,B cell,7600
+TGGGCGTCAAATTGCC-1,lymphocyte,natural killer cell,225,lymphocyte,2943
+TGGGCTGAGAGGGTCT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",163,T cell,8806
+TGGGCTGAGCGTTAGG-1,monocyte,"CD14-low, CD16-positive monocyte",484,monocyte,21327
+TGGGCTGCATCCGATA-1,glial cell,microglial cell,188,glial cell,19970
+TGGGCTGGTCGCGGTT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",489,lymphocyte,7207
+TGGGTTAGTATTGAGA-1,monocyte,"CD14-low, CD16-positive monocyte",477,monocyte,21360
+TGGGTTAGTGCACGCT-1,B cell,naive B cell,431,B cell,6378
+TGGGTTATCAGTAGGG-1,monocyte,classical monocyte,295,monocyte,16241
+TGGTACACAAAGGGTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",241,T cell,11024
+TGGTAGTCAGGCATGA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",323,T cell,10661
+TGGTAGTCATCACAGT-1,leukocyte,leukocyte,178,leukocyte,7733
+TGGTAGTTCCCTCATG-1,monocyte,CD14-positive monocyte,226,monocyte,8460
+TGGTTAGTCAACCTTT-1,hematopoietic cell,erythrocyte,187,hematopoietic cell,1913
+TGTAACGGTTGCGTAT-1,hematopoietic cell,platelet,401,hematopoietic cell,625
+TGTACAGAGACTCGAG-1,monocyte,CD14-positive monocyte,374,monocyte,21503
+TGTACAGAGTGAGTTA-1,monocyte,CD14-positive monocyte,403,monocyte,15158
+TGTACAGGTGGATTTC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",340,T cell,9352
+TGTAGACTCCATTTAC-1,monocyte,CD14-positive monocyte,251,monocyte,18540
+TGTCAGACAACTTGGT-1,leukocyte,leukocyte,145,leukocyte,11707
+TGTCAGACACTCACTC-1,T cell,"central memory CD4-positive, alpha-beta T cell",228,T cell,12550
+TGTCCACCAACTGGTT-1,T cell,"CD8-positive, alpha-beta memory T cell",98,T cell,9258
+TGTCCACTCGCTTACC-1,B cell,plasma cell,441,B cell,28840
+TGTCCCAAGCTCCATA-1,leukocyte,leukocyte,177,leukocyte,8875
+TGTCCCAAGGTCATAA-1,B cell,naive B cell,369,B cell,7727
+TGTCCCACATACTTTC-1,leukocyte,leukocyte,185,leukocyte,9201
+TGTCCCAGTCAGGCAA-1,monocyte,classical monocyte,292,monocyte,11115
+TGTCCCAGTCGGTGTC-1,monocyte,classical monocyte,180,monocyte,12530
+TGTCCTGGTACTTGTG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",158,T cell,8803
+TGTCCTGGTTGGCTAT-1,B cell,naive B cell,440,B cell,9144
+TGTCCTGTCGGCTATA-1,leukocyte,leukocyte,136,leukocyte,4523
+TGTGATGAGCGACTGA-1,B cell,naive B cell,412,B cell,7731
+TGTGATGCATTCTCTA-1,T cell,"central memory CD4-positive, alpha-beta T cell",246,T cell,12266
+TGTGCGGGTCGTCGGT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",347,lymphocyte,10945
+TGTGCGGTCACATACG-1,monocyte,classical monocyte,329,monocyte,23610
+TGTGGCGTCGTACCTC-1,monocyte,CD14-positive monocyte,341,monocyte,4994
+TGTGTGATCTGACAGT-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",369,T cell,8631
+TGTTCATAGCTGCCTG-1,hematopoietic precursor cell,hematopoietic stem cell,125,hematopoietic precursor cell,34658
+TGTTCATGTCCTGGGT-1,leukocyte,leukocyte,124,leukocyte,9276
+TGTTCCGCAAGTATAG-1,B cell,naive B cell,357,B cell,6164
+TGTTGAGCACAACGAG-1,monocyte,CD14-positive monocyte,443,monocyte,6719
+TGTTGAGTCTCGACCT-1,B cell,naive B cell,388,B cell,8088
+TGTTTGTGTGGAAATT-1,monocyte,CD14-positive monocyte,192,monocyte,31127
+TTAATCCAGCTACTAC-1,monocyte,classical monocyte,285,monocyte,25890
+TTACAGGGTGATTCTG-1,T cell,"CD8-positive, alpha-beta cytotoxic T cell",84,T cell,7722
+TTACCGCGTCCGAAAG-1,monocyte,"CD14-low, CD16-positive monocyte",491,monocyte,17302
+TTACGCCCACGTCGTG-1,monocyte,CD14-positive monocyte,373,monocyte,10944
+TTACGCCTCAATGCAC-1,leukocyte,leukocyte,127,leukocyte,6609
+TTACGTTGTTTACGAC-1,T cell,mature T cell,345,T cell,23553
+TTACGTTTCTCGCTTG-1,leukocyte,leukocyte,137,leukocyte,13162
+TTACTGTCATACATCG-1,B cell,B cell,261,B cell,10878
+TTACTGTGTAAGAACT-1,monocyte,classical monocyte,277,monocyte,7552
+TTACTGTGTTAAGGGC-1,B cell,naive B cell,424,B cell,9317
+TTAGGGTCAGGTCAGA-1,B cell,B cell,355,B cell,2983
+TTAGGGTGTCACATTG-1,T cell,mucosal invariant T cell,112,T cell,9613
+TTAGTCTCACGTATAC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",234,T cell,9854
+TTATTGCCAAACGGCA-1,B cell,naive B cell,298,B cell,9951
+TTATTGCGTACGTAGG-1,monocyte,CD14-positive monocyte,425,monocyte,8004
+TTATTGCGTCAACACT-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",323,lymphocyte,7231
+TTATTGCGTGTCTTCC-1,monocyte,classical monocyte,246,monocyte,14252
+TTCACCGCAGCCCAGT-1,B cell,naive B cell,259,B cell,9903
+TTCACGCGTTAAGTCC-1,T cell,regulatory T cell,233,T cell,10414
+TTCACGCTCTATCCAT-1,leukocyte,leukocyte,195,leukocyte,10223
+TTCAGGAAGATTGGGC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",302,T cell,7142
+TTCAGGAGTCTACAAC-1,B cell,naive B cell,247,B cell,11445
+TTCATGTAGGTCATAA-1,leukocyte,leukocyte,163,leukocyte,9553
+TTCATTGGTACGAAAT-1,T cell,"CD4-positive, alpha-beta T cell",146,T cell,4039
+TTCCACGAGGAAGTGA-1,T cell,T cell,148,T cell,1905
+TTCCACGGTCAACACT-1,B cell,B cell,172,B cell,17013
+TTCCGTGCACTCACTC-1,leukocyte,leukocyte,160,leukocyte,10895
+TTCCGTGGTTCCAGGC-1,B cell,naive B cell,282,B cell,12066
+TTCCTAAGTGACGTCC-1,hematopoietic cell,platelet,481,hematopoietic cell,1001
+TTCCTCTGTACCTGTA-1,monocyte,CD14-positive monocyte,343,monocyte,17214
+TTCCTTCAGCCTCAAT-1,hematopoietic cell,erythrocyte,190,hematopoietic cell,672
+TTCCTTCAGGTAGTCG-1,monocyte,classical monocyte,306,monocyte,5597
+TTCCTTCAGTAGTCAA-1,leukocyte,leukocyte,196,leukocyte,7750
+TTCCTTCGTGACACGA-1,monocyte,classical monocyte,390,monocyte,13427
+TTCGATTTCTGACCCT-1,hematopoietic cell,platelet,332,hematopoietic cell,688
+TTCGCTGAGGGTTAGC-1,T cell,regulatory T cell,119,T cell,16349
+TTCGCTGAGGTTCCGC-1,T cell,mature T cell,243,T cell,4139
+TTCGCTGCACTAGTAC-1,B cell,naive B cell,413,B cell,9117
+TTCGCTGTCGGACTGC-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",369,T cell,7961
+TTCTCTCGTATCGTAC-1,leukocyte,leukocyte,145,leukocyte,12145
+TTCTTGAGTCTTGCTC-1,monocyte,classical monocyte,332,monocyte,10326
+TTGACCCGTCTCGGGT-1,leukocyte,leukocyte,102,leukocyte,8412
+TTGACCCTCGTAGTGT-1,leukocyte,leukocyte,155,leukocyte,9495
+TTGATGGCATAAGATG-1,B cell,naive B cell,445,B cell,6806
+TTGCATTGTGCCTTCT-1,mononuclear cell,plasmacytoid dendritic cell,474,mononuclear cell,18536
+TTGCCTGAGAGTGACC-1,monocyte,classical monocyte,241,monocyte,17511
+TTGCCTGAGTGGAAAG-1,monocyte,CD14-positive monocyte,355,monocyte,14730
+TTGCCTGGTAGCTGCC-1,monocyte,CD14-positive monocyte,189,monocyte,24201
+TTGCGTCCACGCCACA-1,hematopoietic cell,platelet,474,hematopoietic cell,556
+TTGCTGCCATTGCCGG-1,monocyte,"CD14-low, CD16-positive monocyte",484,monocyte,20119
+TTGGGATCAACGGGTA-1,lymphocyte,"CD16-positive, CD56-dim natural killer cell, human",169,lymphocyte,9903
+TTGGGATTCAGGAAGC-1,monocyte,CD14-positive monocyte,260,monocyte,19929
+TTGGGATTCTCTCTAA-1,monocyte,classical monocyte,214,monocyte,15475
+TTGGGCGCACGGTGAA-1,T cell,"central memory CD4-positive, alpha-beta T cell",151,T cell,7508
+TTGGGCGGTCGGAAAC-1,B cell,naive B cell,429,B cell,6692
+TTGGGTAGTGCTAGCC-1,monocyte,CD14-positive monocyte,263,monocyte,13631
+TTGGGTATCACCGACG-1,monocyte,CD14-positive monocyte,188,monocyte,5658
+TTGGTTTCACTGGATT-1,leukocyte,leukocyte,255,leukocyte,8884
+TTGTGGATCTAAGAAG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",252,T cell,9612
+TTGTGTTGTGTGTCCG-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",372,T cell,7713
+TTGTTCACACTTGTGA-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,378,myeloid leukocyte,34715
+TTGTTCACAGTCGCTG-1,monocyte,CD14-positive monocyte,334,monocyte,17655
+TTGTTCATCTTTACAC-1,monocyte,classical monocyte,296,monocyte,5258
+TTGTTTGAGGTCGACA-1,T cell,"naive thymus-derived CD4-positive, alpha-beta T cell",409,T cell,7591
+TTGTTTGTCCAACCGG-1,monocyte,monocyte,253,monocyte,4402
+TTTACTGTCACGGGAA-1,B cell,B cell,274,B cell,6140
+TTTATGCCAGTGGCTC-1,hematopoietic cell,erythrocyte,193,hematopoietic cell,867
+TTTATGCGTAACATAG-1,leukocyte,leukocyte,163,leukocyte,15355
+TTTATGCGTTGATCGT-1,B cell,memory B cell,243,B cell,13926
+TTTATGCTCACTCGAA-1,hematopoietic cell,erythrocyte,184,hematopoietic cell,707
+TTTCACATCGACGCTG-1,myeloid leukocyte,CD1c-positive myeloid dendritic cell,368,myeloid leukocyte,2889
+TTTCACATCTCAGGCG-1,B cell,naive B cell,388,B cell,7426
+TTTCATGGTGCCTAAT-1,B cell,naive B cell,200,B cell,11546
+TTTCATGTCACTCACC-1,monocyte,CD14-positive monocyte,391,monocyte,12356
+TTTCCTCCACAGAGCA-1,B cell,B cell,299,B cell,8118
+TTTCCTCTCCTACACC-1,T cell,mature T cell,168,T cell,13148
+TTTCCTCTCTCTTGCG-1,monocyte,"CD14-low, CD16-positive monocyte",443,monocyte,18266
+TTTGATCTCTTTGGAG-1,T cell,"central memory CD4-positive, alpha-beta T cell",206,T cell,10650
+TTTGGTTAGTAACCTC-1,leukocyte,leukocyte,190,leukocyte,7493
+TTTGGTTGTAGAATAC-1,monocyte,CD14-positive monocyte,396,monocyte,14966
+TTTGTTGCAATTAGGA-1,B cell,naive B cell,431,B cell,7184

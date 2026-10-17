@@ -1,0 +1,37 @@
+{
+  "chunks": [
+    {
+      "__mem_gb": 5,
+      "count": 570897,
+      "index": 0
+    },
+    {
+      "__mem_gb": 5,
+      "count": 570897,
+      "index": 1
+    },
+    {
+      "__mem_gb": 5,
+      "count": 570897,
+      "index": 2
+    },
+    {
+      "__mem_gb": 5,
+      "count": 570897,
+      "index": 3
+    },
+    {
+      "__mem_gb": 5,
+      "count": 570897,
+      "index": 4
+    },
+    {
+      "__mem_gb": 5,
+      "count": 570897,
+      "index": 5
+    }
+  ],
+  "join": {
+    "__mem_gb": 4
+  }
+}

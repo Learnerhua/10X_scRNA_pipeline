@@ -1,0 +1,7 @@
+{
+    "__mem_gb": 2,
+    "__threads": 1,
+    "__vmem_gb": 5,
+    "projection_name": "umap",
+    "sample_cloupe": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe"
+}

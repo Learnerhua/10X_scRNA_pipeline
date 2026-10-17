@@ -1,0 +1,286 @@
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+p_val	avg_log2FC	pct.1	pct.2	p_val_adj	cluster	gene
+$VAR1 = [
+          [
+            '1',
+            'string',
+            '',
+            'P-value',
+            'centre'
+          ],
+          [
+            '2',
+            'string',
+            '',
+            'Average log2FC',
+            'centre'
+          ],
+          [
+            '3',
+            'string',
+            '',
+            'pct.1',
+            'centre'
+          ],
+          [
+            '4',
+            'string',
+            '',
+            'pct.2',
+            'centre'
+          ],
+          [
+            '5',
+            'string',
+            '',
+            'Adjusted P-value',
+            'centre'
+          ],
+          [
+            '6',
+            'string',
+            '',
+            'Cluster',
+            'centre'
+          ],
+          [
+            '7',
+            'string',
+            '',
+            'Gene',
+            'centre'
+          ]
+        ];
+pixel: 2700	2100	351
+pixel: 2700	2100	351
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+sh: 1: dos2unix: not found
+temp1 temp	<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>
+temp2 temp	<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1186/s13059-019-1662-y" target="_blank"><sup>[2]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp2 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1038/nmeth.3176" target="_blank"><sup>[4]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1093/nar/gkr965" target="_blank"><sup>[5]</sup></a>
+results_cn.arf	
+*****	START	*****
+Format Error: Line 40. Wrong label @subtitle.
+Format Error: Line 62. Wrong label @subtitle.
+Format Error: Line 82. Wrong label @subtitle.
+Format Error: Line 130. Wrong label @subtitle.
+Format Error: Line 143. Wrong label @subtitle.
+Format Error: Line 188. Wrong label @subtitle.
+Format Error: Line 201. Wrong label @subtitle.
+Format Error: Line 225. Wrong label @subtitle.
+Format Error: Line 257. Wrong label @subtitle.
+Format Error: Line 279. Wrong label @subtitle.
+*****	FINISH	*****
+
+results_en.arf	
+*****	START	*****
+Format Error: Line 40. Wrong label @subtitle.
+Format Error: Line 62. Wrong label @subtitle.
+Format Error: Line 82. Wrong label @subtitle.
+Format Error: Line 129. Wrong label @subtitle.
+Format Error: Line 142. Wrong label @subtitle.
+Format Error: Line 187. Wrong label @subtitle.
+Format Error: Line 200. Wrong label @subtitle.
+Format Error: Line 224. Wrong label @subtitle.
+Format Error: Line 256. Wrong label @subtitle.
+Format Error: Line 278. Wrong label @subtitle.
+*****	FINISH	*****
+
+FAQs_cn.arf	
+*****	START	*****
+The arf format is correct.
+*****	FINISH	*****
+
+FAQs_en.arf	
+*****	START	*****
+The arf format is correct.
+*****	FINISH	*****
+
+glossaries_cn.arf	
+*****	START	*****
+The arf format is correct.
+*****	FINISH	*****
+
+glossaries_en.arf	
+*****	START	*****
+The arf format is correct.
+*****	FINISH	*****
+
+help_cn.arf	
+*****	START	*****
+The arf format is correct.
+*****	FINISH	*****
+
+help_en.arf	
+*****	START	*****
+The arf format is correct.
+*****	FINISH	*****
+
+methods_cn.arf	
+*****	START	*****
+Format Error: Line 21. Wrong label @subtitle.
+Format Error: Line 33. Wrong label @subtitle.
+Format Error: Line 58. Wrong label @subtitle.
+Format Error: Line 68. Wrong label @subtitle.
+Format Error: Line 80. Wrong label @subtitle.
+Format Error: Line 88. Wrong label @subtitle.
+Format Error: Line 100. Wrong label @subtitle.
+Format Error: Line 106. Wrong label @subtitle.
+Format Error: Line 112. Wrong label @subtitle.
+Format Error: Line 121. Wrong label @subtitle.
+*****	FINISH	*****
+
+methods_en.arf	
+*****	START	*****
+Format Error: Line 27. Wrong label @subtitle.
+Format Error: Line 39. Wrong label @subtitle.
+Format Error: Line 63. Wrong label @subtitle.
+Format Error: Line 73. Wrong label @subtitle.
+Format Error: Line 85. Wrong label @subtitle.
+Format Error: Line 93. Wrong label @subtitle.
+Format Error: Line 105. Wrong label @subtitle.
+Format Error: Line 111. Wrong label @subtitle.
+Format Error: Line 117. Wrong label @subtitle.
+Format Error: Line 126. Wrong label @subtitle.
+*****	FINISH	*****
+
+
+Reference check:
+Warning: arf: methods_cn.arf. Line 142. The reference does not use.
+@reference
+url = https://doi.org/10.1093/bioinformatics/bts635
+text = Dobin A, Davis C A, Schlesinger F, et al. STAR: ultrafast universal RNA-seq aligner[J]. Bioinformatics, 2013, 29(1): 15-21.
+
+Warning: arf: methods_cn.arf. Line 167. The reference does not use.
+@reference
+url = https://doi.org/10.1038/nbt.4096
+text = Butler A, Hoffman P, Smibert P, et al. Integrating single-cell transcriptomic data across different conditions, technologies, and species[J]. Nature biotechnology, 2018, 36(5): 411-420.
+
+Warning: arf: methods_cn.arf. Line 172. The reference does not use.
+@reference
+url = https://doi.org/10.1093/nar/gkaa970
+text = Kanehisa M, Furumichi M, Sato Y, et al. KEGG: integrating viruses and cellular organisms[J]. Nucleic acids research, 2021, 49(D1):D545-D551.
+
+Warning: arf: methods_cn.arf. Line 177. The reference does not use.
+@reference
+url = https://doi.org/10.1093/nar/gkaa970
+text = Aran D, Looney A P, Liu L, et al. Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage[J]. Nature immunology, 2019, 20(2): 163-172.
+
+Warning: arf: methods_en.arf. Line 146. The reference does not use.
+@reference
+url = https://doi.org/10.1093/bioinformatics/bts635
+text = Dobin A, Davis C A, Schlesinger F, et al. STAR: ultrafast universal RNA-seq aligner[J]. Bioinformatics, 2013, 29(1): 15-21.
+
+Warning: arf: methods_en.arf. Line 171. The reference does not use.
+@reference
+url = https://doi.org/10.1038/nbt.4096
+text = Butler A, Hoffman P, Smibert P, et al. Integrating single-cell transcriptomic data across different conditions, technologies, and species[J]. Nature biotechnology, 2018, 36(5): 411-420.
+
+Warning: arf: methods_en.arf. Line 176. The reference does not use.
+@reference
+url = https://doi.org/10.1093/nar/gkaa970
+text = Kanehisa M, Furumichi M, Sato Y, et al. KEGG: integrating viruses and cellular organisms[J]. Nucleic acids research, 2021, 49(D1):D545-D551.
+
+Warning: arf: methods_en.arf. Line 181. The reference does not use.
+@reference
+url = https://doi.org/10.1093/nar/gkaa970
+text = Aran D, Looney A P, Liu L, et al. Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage[J]. Nature immunology, 2019, 20(2): 163-172.
+
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+sh: 1: dos2unix: not found
+p_val	avg_log2FC	pct.1	pct.2	p_val_adj	cluster	gene
+$VAR1 = [
+          [
+            '1',
+            'string',
+            '',
+            'P-value',
+            'centre'
+          ],
+          [
+            '2',
+            'string',
+            '',
+            'Average log2FC',
+            'centre'
+          ],
+          [
+            '3',
+            'string',
+            '',
+            'pct.1',
+            'centre'
+          ],
+          [
+            '4',
+            'string',
+            '',
+            'pct.2',
+            'centre'
+          ],
+          [
+            '5',
+            'string',
+            '',
+            'Adjusted P-value',
+            'centre'
+          ],
+          [
+            '6',
+            'string',
+            '',
+            'Cluster',
+            'centre'
+          ],
+          [
+            '7',
+            'string',
+            '',
+            'Gene',
+            'centre'
+          ]
+        ];
+pixel: 2700	2100	351
+pixel: 2700	2100	351
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+Can't exec "dos2unix": No such file or directory at /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/code/scRNA_arf/bin/arf2html.STOmics.pl line 3162.
+sh: 1: dos2unix: not found
+temp1 temp	<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>
+temp2 temp	<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>
+temp1 temp	<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>

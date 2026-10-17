@@ -1,0 +1,6 @@
+[
+    {
+        "metrics": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/SUBSAMPLE_READS/fork0/chnk0-u3c10a6a574/files/metrics.pickle.gz",
+        "summary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/SUBSAMPLE_READS/fork0/chnk0-u3c10a6a574/files/summary.json"
+    }
+]

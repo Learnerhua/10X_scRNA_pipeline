@@ -1,0 +1,13 @@
+@include "rna/_cell_annotation_common_stages.mro"
+
+call CELL_ANNOTATION_PREFLIGHT(
+    is_cr_annotate              = true,
+    is_multi                    = false,
+    tenx_cloud_token_path       = "/oldhome/ouyjh/.config/txg/credentials",
+    cell_annotation_model       = null,
+    reference_path              = null,
+    cas_track_name              = null,
+    skip_cell_annotation        = false,
+    cr_annotate_filtered_matrix = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix.h5",
+    cr_annotate_sample_cloupe   = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe",
+)

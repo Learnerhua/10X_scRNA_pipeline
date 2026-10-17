@@ -1,0 +1,5 @@
+{
+  "sample_pos_sorted_bam_chunks": {
+    "non_multiplexed": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/WRITE_POS_BAM/fork0/chnk1-u3c10a6a451/files/pos_sortednon_multiplexed.bam"
+  }
+}

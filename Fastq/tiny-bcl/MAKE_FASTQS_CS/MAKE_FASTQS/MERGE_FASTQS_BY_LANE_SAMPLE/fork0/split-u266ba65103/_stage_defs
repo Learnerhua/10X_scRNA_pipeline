@@ -1,0 +1,24 @@
+{
+    "chunks": [
+        {
+            "input_files": [
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_1/test_sample_S1_L001_I1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_1/test_sample_S1_L001_R1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_1/test_sample_S1_L001_R2_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_2/test_sample_S2_L001_I1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_2/test_sample_S2_L001_R1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_2/test_sample_S2_L001_R2_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_3/test_sample_S3_L001_I1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_3/test_sample_S3_L001_R1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_3/test_sample_S3_L001_R2_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_4/test_sample_S4_L001_I1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_4/test_sample_S4_L001_R1_001.fastq.gz",
+                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_4/test_sample_S4_L001_R2_001.fastq.gz"
+            ],
+            "project": "H35KCBCXY",
+            "lane": 1,
+            "sample_id": "test_sample",
+            "output_snum": "1"
+        }
+    ]
+}

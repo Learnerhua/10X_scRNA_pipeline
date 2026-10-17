@@ -1,0 +1,6 @@
+2026-03-03 11:09:42 [time] __start__
+2026-03-03 11:09:42 [info] BCL folder RTA Version: 1.18.66.4
+2026-03-03 11:09:42 [info] BCL params: {'ApplicationName': 'HiSeq Control Software', 'ApplicationVersion': '2.2.70'}
+2026-03-03 11:09:42 [info] RC'ing i2 read: False
+2026-03-03 11:09:43 [info] Running bcl2fastq mode: NEW.  Version: 2.20.0.422
+2026-03-03 11:09:43 [time] __end__

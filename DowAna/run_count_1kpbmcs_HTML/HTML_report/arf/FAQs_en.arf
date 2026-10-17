@@ -1,0 +1,32 @@
+format = arf1.0
+language = EN
+
+%FAQ
+
+@FAQ
+question = "1. What QC indicators are mainly looked at in the analysis results?"
+answer = "Median number of genes per cell, number of reads per cell, number of UMI. These indicators are mainly related to the amount of sequencing and the number of cells. In general, the number of genes identified in each cell of model organisms is between 500 and 5000. The reads in each cell range from tens to hundreds of Kelvin. Cell Ranger's web_summary also reports key QC indicators such as Valid Barcodes ratio (should be >75%), Q30 Bases in Barcode (should be ≥90%), Q30 Bases in UMI (should be ≥90%), Q30 Bases in RNA Read (should be ≥75%), and sequencing saturation."
+
+@FAQ
+question = "2. How many cells can be found?"
+answer = "It is closely related to the cell type in the project design and the corresponding cell viability rate, and it is also related to whether cell drug treatment is carried out in the project design. Generally, the cell death rate is fast, and the number of effective cells found is small. Cell Ranger uses the EmptyDrops algorithm to automatically distinguish real cells from empty droplets, and outputs the filtered_feature_bc_matrix for downstream analysis."
+
+@FAQ
+question = "3. What does UMAP refer to?"
+answer = "A data dimensionality reduction method, compared with TSNE, UMAP is more suitable for dealing with large data sets and complex dimensional information. UMAP combines the power of visualization with the ability to reduce data dimensions; In addition to preserving the local structure, it also preserves the global structure of the data."
+
+@FAQ
+question = "4. Why is the proportion of mitochondria filtered in ordinary samples over 5%, while the proportion of tumor samples over 20% is filtered?"
+answer = "High proportion of mitochondrial gene expression is one of the indicators that cells are under stress, so high proportion of mitochondria is often used to judge poor cell activity; However, tumors/cardiomyocytes/nerve cells/skeletal muscle cells/pancreatic secretory cells, etc. often contain a large number of mitochondria to cope with high energy requirements, so the filtration threshold needs to be up-regulated."
+
+@FAQ
+question = "5. How many categories can cell categories be divided into?"
+answer = "In theory, the more classification, the more detailed, but it will also increase the complexity of calculation and screening, so it is generally divided into 8 to 15 categories."
+
+@FAQ
+question = "6. Why do cell categories start with 0?"
+answer = "For historical reasons, c language designers began counting array subscripts with 0, and later many high-level languages followed c to count from 0."
+
+@FAQ
+question = "7. Why only high-expression marker genes in a single sample are counted? Why may log2FC be negative in marker gene identification among multiple sample groups?"
+answer = "In the single sample analysis, we pay attention to the differentially expressed genes between clusters. It is generally believed that significantly highly expressed genes can best represent each cluster and are more suitable for marker genes. In the subsequent analysis, we also pay more attention to the part of high expression. In the multi-sample intergroup analysis, we pay more attention to the differentially expressed genes between groups, so the marker genes screened may be highly expressed in group 1 or group 2, that is, log2FC may be positive or negative."

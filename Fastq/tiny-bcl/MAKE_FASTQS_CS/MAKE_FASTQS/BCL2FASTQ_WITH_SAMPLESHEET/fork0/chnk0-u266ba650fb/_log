@@ -1,0 +1,12 @@
+2026-03-03 11:09:47 [time] __start__
+2026-03-03 11:09:47 [info] Running bcl2fastq on run: /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0
+2026-03-03 11:09:47 [info] FASTQ output dir: /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/fastq_path
+2026-03-03 11:09:47 [info] Read Info: [{'read_length': 26, 'index_read': False, 'read_name': 'R1', 'original_read_name': 'R1'}, {'read_length': 8, 'index_read': True, 'read_name': 'I1', 'original_read_name': 'R2'}, {'read_length': 98, 'index_read': False, 'read_name': 'R2', 'original_read_name': 'R3'}]
+2026-03-03 11:09:47 [info] Flowcell ID: H35KCBCXY
+2026-03-03 11:09:47 [info] BCL folder RTA Version: 1.18.66.4
+2026-03-03 11:09:47 [info] BCL params: {'ApplicationName': 'HiSeq Control Software', 'ApplicationVersion': '2.2.70'}
+2026-03-03 11:09:47 [info] RC'ing i2 read: False
+2026-03-03 11:09:47 [info] Using bcl2fastq version: 2.20.0.422
+2026-03-03 11:09:47 [info] RC'ing i2 read: False
+2026-03-03 11:09:47 [info] Running bcl2fastq2: bcl2fastq --minimum-trimmed-read-length 8 --mask-short-adapter-reads 8 --create-fastq-for-index-reads --ignore-missing-positions --ignore-missing-filter --ignore-missing-bcls --use-bases-mask=Y26,I8,Y98 -R /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0 --output-dir=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/fastq_path --interop-dir=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/interop_path --sample-sheet=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/samplesheet.csv -p 6 -r 6 -w 6 --barcode-mismatches 1
+2026-03-03 11:09:55 [time] __end__

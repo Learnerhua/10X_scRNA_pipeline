@@ -1,0 +1,2389 @@
+[
+    {
+        "name": "CELLRANGER_ANNOTATE_CS",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS",
+        "highmem": {
+            "rss": 964956160,
+            "shared": 449839104,
+            "vmem": 11618852864,
+            "text": 49860608,
+            "stack": 1085853696,
+            "proc_count": 83
+        },
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:14:08.10946576+08:00",
+                    "end": "2026-03-04T16:28:21.072406058+08:00",
+                    "walltime": 852.962940298,
+                    "num_jobs": 23,
+                    "num_threads": 23,
+                    "duration": 879.0937593310001,
+                    "core_hours": 0.24419271092527778,
+                    "maxrss": 307708,
+                    "maxvmem": 3080580,
+                    "maxrss_requested": 8388608,
+                    "maxvmem_requested": 11534336,
+                    "in_blocks": 174480,
+                    "out_blocks": 93536,
+                    "total_blocks": 268016,
+                    "in_blocks_rate": 198.4771227733219,
+                    "out_blocks_rate": 106.40048232304812,
+                    "total_blocks_rate": 304.87760509637,
+                    "in_bytes": 1437696,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 1635.4296509784147,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 234049.70737150425,
+                    "out_bytes_peak": 0,
+                    "usertime": 34.717738999999995,
+                    "systemtime": 4.853587,
+                    "total_files": 30,
+                    "total_bytes": 78431863,
+                    "output_files": 23,
+                    "output_bytes": 51949151,
+                    "vdr_files": 7,
+                    "vdr_bytes": 26482712,
+                    "in_bytes_dev": 833.245821974049,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "CHECK_CLOUPE_MATRIX_CONSISTENT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CHECK_CLOUPE_MATRIX_CONSISTENT",
+                        "forki": 0
+                    },
+                    {
+                        "name": "EXTRACT_LOUPE_PROJECTION",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION",
+                        "forki": 0
+                    },
+                    {
+                        "name": "REPLACE_LOW_UMI_CELLS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS",
+                        "forki": 0
+                    },
+                    {
+                        "name": "DISABLE_CAS_REPORTER_STAGES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_BARCHART",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_BOX_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_UMAP_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT",
+                        "forki": 0
+                    },
+                    {
+                        "name": "ANALYZE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CLOUPE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "WRITE_CELL_TYPES_H5",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5",
+                        "forki": 0
+                    },
+                    {
+                        "name": "DIFF_EXP_CAS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS",
+                        "forki": 0
+                    },
+                    {
+                        "name": "TIDY_CELLTYPE_DIFFEXP",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GENERATE_CAS_WEBSUMMARY",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY",
+                        "forki": 0
+                    },
+                    {
+                        "name": "CALL_CLOUD_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "DEMUX_CLOUPE_TRACK_NAME",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.DEMUX_CLOUPE_TRACK_NAME",
+                        "forki": 0
+                    },
+                    {
+                        "name": "APPEND_CELL_TYPES_CLOUPE",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.APPEND_CELL_TYPES_CLOUPE",
+                        "forki": 0
+                    },
+                    {
+                        "name": "CELL_ANNOTATION_PREFLIGHT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_PREFLIGHT",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "bytehist": [
+            {
+                "ts": "2026-03-04T16:14:08.10946576+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_PREFLIGHT alloc",
+                "bytes": 4311
+            },
+            {
+                "ts": "2026-03-04T16:14:10.886496311+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES alloc",
+                "bytes": 109938
+            },
+            {
+                "ts": "2026-03-04T16:14:10.931146118+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION alloc",
+                "bytes": 184019
+            },
+            {
+                "ts": "2026-03-04T16:14:10.992353803+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CHECK_CLOUPE_MATRIX_CONSISTENT alloc",
+                "bytes": 211481
+            },
+            {
+                "ts": "2026-03-04T16:14:12.257673683+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES alloc",
+                "bytes": 772217
+            },
+            {
+                "ts": "2026-03-04T16:27:58.59528533+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS alloc",
+                "bytes": 776234
+            },
+            {
+                "ts": "2026-03-04T16:28:00.161818316+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS alloc",
+                "bytes": 869456
+            },
+            {
+                "ts": "2026-03-04T16:28:02.082067868+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES alloc",
+                "bytes": 893383
+            },
+            {
+                "ts": "2026-03-04T16:28:02.089012666+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART alloc",
+                "bytes": 905683
+            },
+            {
+                "ts": "2026-03-04T16:28:02.204465876+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES alloc",
+                "bytes": 936779
+            },
+            {
+                "ts": "2026-03-04T16:28:02.2097261+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT alloc",
+                "bytes": 940907
+            },
+            {
+                "ts": "2026-03-04T16:28:02.217880753+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES alloc",
+                "bytes": 944775
+            },
+            {
+                "ts": "2026-03-04T16:28:02.223574864+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT alloc",
+                "bytes": 1076043
+            },
+            {
+                "ts": "2026-03-04T16:28:02.531726075+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5 alloc",
+                "bytes": 1091623
+            },
+            {
+                "ts": "2026-03-04T16:28:06.123671252+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT alloc",
+                "bytes": 1121731
+            },
+            {
+                "ts": "2026-03-04T16:28:06.868220644+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION delete",
+                "bytes": 1051975
+            },
+            {
+                "ts": "2026-03-04T16:28:07.026887952+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS alloc",
+                "bytes": 3945892
+            },
+            {
+                "ts": "2026-03-04T16:28:16.884180515+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS alloc",
+                "bytes": 27486375
+            },
+            {
+                "ts": "2026-03-04T16:28:17.337051694+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS delete",
+                "bytes": 15027629
+            },
+            {
+                "ts": "2026-03-04T16:28:17.35737603+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP alloc",
+                "bytes": 29197784
+            },
+            {
+                "ts": "2026-03-04T16:28:19.897339812+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS delete",
+                "bytes": 15243574
+            },
+            {
+                "ts": "2026-03-04T16:28:19.974504818+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY alloc",
+                "bytes": 19851091
+            },
+            {
+                "ts": "2026-03-04T16:28:20.1287091+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT delete",
+                "bytes": 19825335
+            },
+            {
+                "ts": "2026-03-04T16:28:20.131820342+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART delete",
+                "bytes": 19817221
+            },
+            {
+                "ts": "2026-03-04T16:28:20.136138991+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT delete",
+                "bytes": 19690377
+            },
+            {
+                "ts": "2026-03-04T16:28:20.160228745+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.DEMUX_CLOUPE_TRACK_NAME alloc",
+                "bytes": 51359411
+            },
+            {
+                "ts": "2026-03-04T16:28:20.378308667+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.APPEND_CELL_TYPES_CLOUPE alloc",
+                "bytes": 83024793
+            },
+            {
+                "ts": "2026-03-04T16:28:21.096117489+08:00",
+                "desc": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES delete",
+                "bytes": 82997743
+            }
+        ],
+        "maxbytes": 83024793,
+        "type": "pipeline"
+    },
+    {
+        "name": "APPEND_CELL_TYPES_CLOUPE",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.APPEND_CELL_TYPES_CLOUPE",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:20.378308667+08:00",
+                    "end": "2026-03-04T16:28:21.072406058+08:00",
+                    "walltime": 0.694097391,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.694097393,
+                    "core_hours": 0.00019280483138888886,
+                    "maxrss": 30720,
+                    "maxvmem": 3080580,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 9048,
+                    "out_blocks": 112,
+                    "total_blocks": 9160,
+                    "in_blocks_rate": 13035.634611582529,
+                    "out_blocks_rate": 161.36064063851052,
+                    "total_blocks_rate": 13196.995252221039,
+                    "in_bytes": 12288,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 17703.567430053725,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24487.391443540673,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.247918,
+                    "systemtime": 0.064555,
+                    "total_files": 1,
+                    "total_bytes": 31660467,
+                    "output_files": 1,
+                    "output_bytes": 31660467,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "APPEND_CELL_TYPES_CLOUPE",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.APPEND_CELL_TYPES_CLOUPE",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:20.378308667+08:00",
+                            "end": "2026-03-04T16:28:21.072406058+08:00",
+                            "walltime": 0.694097391,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 0.694097393,
+                            "core_hours": 0.00019280483138888886,
+                            "maxrss": 30720,
+                            "maxvmem": 3080580,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 9048,
+                            "out_blocks": 112,
+                            "total_blocks": 9160,
+                            "in_blocks_rate": 13035.634611582529,
+                            "out_blocks_rate": 161.36064063851052,
+                            "total_blocks_rate": 13196.995252221039,
+                            "in_bytes": 12288,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 17703.567430053725,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 24487.391443540673,
+                            "out_bytes_peak": 0,
+                            "usertime": 0.247918,
+                            "systemtime": 0.064555,
+                            "total_files": 1,
+                            "total_bytes": 31660467,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 2578.7895576076367,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "CELL_ANNOTATION_PREFLIGHT",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_PREFLIGHT",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:14:08.10946576+08:00",
+                    "end": "2026-03-04T16:14:10.811835975+08:00",
+                    "walltime": 2.702370215,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 2.70237023,
+                    "core_hours": 0.0007506583972222222,
+                    "maxrss": 168448,
+                    "maxvmem": 1831716,
+                    "maxrss_requested": 8388608,
+                    "maxvmem_requested": 11534336,
+                    "in_blocks": 2320,
+                    "out_blocks": 120,
+                    "total_blocks": 2440,
+                    "in_blocks_rate": 858.5056089816383,
+                    "out_blocks_rate": 44.40546253353301,
+                    "total_blocks_rate": 902.9110715151713,
+                    "in_bytes": 8192,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 3031.4129089558537,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 16326.45707550823,
+                    "out_bytes_peak": 0,
+                    "usertime": 1.2166540000000001,
+                    "systemtime": 0.342433,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0.00004315837287515549,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "CELL_ANNOTATION_PREFLIGHT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_PREFLIGHT",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:14:08.10946576+08:00",
+                            "end": "2026-03-04T16:14:10.811835975+08:00",
+                            "walltime": 2.702370215,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 2.70237023,
+                            "core_hours": 0.0007506583972222222,
+                            "maxrss": 168448,
+                            "maxvmem": 1831716,
+                            "maxrss_requested": 8388608,
+                            "maxvmem_requested": 11534336,
+                            "in_blocks": 2320,
+                            "out_blocks": 120,
+                            "total_blocks": 2440,
+                            "in_blocks_rate": 858.5056089816383,
+                            "out_blocks_rate": 44.40546253353301,
+                            "total_blocks_rate": 902.9110715151713,
+                            "in_bytes": 8192,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 3031.4129089558537,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 16326.45707550823,
+                            "out_bytes_peak": 0,
+                            "usertime": 1.2166540000000001,
+                            "systemtime": 0.342433,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 1814.194165545533,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "CELL_ANNOTATION_SERVICE",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:14:10.886496311+08:00",
+                    "end": "2026-03-04T16:28:20.103425402+08:00",
+                    "walltime": 849.216929091,
+                    "num_jobs": 18,
+                    "num_threads": 18,
+                    "duration": 873.323364191,
+                    "core_hours": 0.2425898233863889,
+                    "maxrss": 307708,
+                    "maxvmem": 1994408,
+                    "maxrss_requested": 7340032,
+                    "maxvmem_requested": 10485760,
+                    "in_blocks": 146104,
+                    "out_blocks": 92816,
+                    "total_blocks": 238920,
+                    "in_blocks_rate": 167.29656618696205,
+                    "out_blocks_rate": 106.27907577622153,
+                    "total_blocks_rate": 273.5756419631836,
+                    "in_bytes": 1388544,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 1589.954027264887,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 234049.70737150425,
+                    "out_bytes_peak": 0,
+                    "usertime": 31.919971999999998,
+                    "systemtime": 4.096688,
+                    "total_files": 27,
+                    "total_bytes": 46678441,
+                    "output_files": 21,
+                    "output_bytes": 20265485,
+                    "vdr_files": 6,
+                    "vdr_bytes": 26412956,
+                    "in_bytes_dev": 6672.893771288666,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "CALL_CLOUD_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "REPLACE_LOW_UMI_CELLS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS",
+                        "forki": 0
+                    },
+                    {
+                        "name": "TIDY_CELLTYPE_DIFFEXP",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP",
+                        "forki": 0
+                    },
+                    {
+                        "name": "WRITE_CELL_TYPES_H5",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5",
+                        "forki": 0
+                    },
+                    {
+                        "name": "DIFF_EXP_CAS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS",
+                        "forki": 0
+                    },
+                    {
+                        "name": "DISABLE_CAS_REPORTER_STAGES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_BARCHART",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_BOX_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_UMAP_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT",
+                        "forki": 0
+                    },
+                    {
+                        "name": "ANALYZE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CLOUPE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GENERATE_CAS_WEBSUMMARY",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "pipeline"
+    },
+    {
+        "name": "CALL_CLOUD_CELL_TYPES",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES",
+        "forks": [
+            {
+                "split_stats": {
+                    "start": "2026-03-04T16:14:10.886496311+08:00",
+                    "end": "2026-03-04T16:14:12.221256767+08:00",
+                    "walltime": 1.334760456,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 1.334760449,
+                    "core_hours": 0.0003707667913888889,
+                    "maxrss": 140200,
+                    "maxvmem": 1893356,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 80,
+                    "out_blocks": 128,
+                    "total_blocks": 208,
+                    "in_blocks_rate": 59.93584845875217,
+                    "out_blocks_rate": 95.89735753400346,
+                    "total_blocks_rate": 155.83320599275564,
+                    "in_bytes": 28672,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 21481.008087616778,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 57185.523018141335,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.929794,
+                    "systemtime": 0.235755,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 19480.217921336203,
+                    "out_bytes_dev": 0
+                },
+                "join_stats": {
+                    "start": "2026-03-04T16:14:12.257673683+08:00",
+                    "end": "2026-03-04T16:27:58.543979079+08:00",
+                    "walltime": 826.286305396,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 826.28630541,
+                    "core_hours": 0.229523973725,
+                    "maxrss": 198600,
+                    "maxvmem": 1994408,
+                    "maxrss_requested": 2097152,
+                    "maxvmem_requested": 6291456,
+                    "in_blocks": 272,
+                    "out_blocks": 1264,
+                    "total_blocks": 1536,
+                    "in_blocks_rate": 0.32918372024214376,
+                    "out_blocks_rate": 1.5297361117134918,
+                    "total_blocks_rate": 1.8589198319556355,
+                    "in_bytes": 24576,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 29.742717311290168,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 16338.430939742033,
+                    "out_bytes_peak": 0,
+                    "usertime": 3.6925090000000003,
+                    "systemtime": 0.38577500000000003,
+                    "total_files": 4,
+                    "total_bytes": 548039,
+                    "output_files": 4,
+                    "output_bytes": 548039,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 430.82149503954855,
+                    "out_bytes_dev": 0
+                },
+                "fork_stats": {
+                    "start": "2026-03-04T16:14:10.886496311+08:00",
+                    "end": "2026-03-04T16:27:58.543979079+08:00",
+                    "walltime": 827.657482768,
+                    "num_jobs": 2,
+                    "num_threads": 2,
+                    "duration": 827.6210658589999,
+                    "core_hours": 0.2298947405163889,
+                    "maxrss": 198600,
+                    "maxvmem": 1994408,
+                    "maxrss_requested": 2097152,
+                    "maxvmem_requested": 6291456,
+                    "in_blocks": 352,
+                    "out_blocks": 1392,
+                    "total_blocks": 1744,
+                    "in_blocks_rate": 0.42531541851783833,
+                    "out_blocks_rate": 1.6819291550478153,
+                    "total_blocks_rate": 2.1072445735656538,
+                    "in_bytes": 53248,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 64.33862331033481,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 57185.523018141335,
+                    "out_bytes_peak": 0,
+                    "usertime": 4.6223030000000005,
+                    "systemtime": 0.62153,
+                    "total_files": 8,
+                    "total_bytes": 1096078,
+                    "output_files": 8,
+                    "output_bytes": 1096078,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 860.7723761830159,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "CALL_CLOUD_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.CALL_CLOUD_CELL_TYPES",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "GENERATE_CAS_WEBSUMMARY",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:19.974504818+08:00",
+                    "end": "2026-03-04T16:28:20.103425402+08:00",
+                    "walltime": 0.128920584,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.128920573,
+                    "core_hours": 0.00003581127027777778,
+                    "maxrss": 29752,
+                    "maxvmem": 1618404,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 960,
+                    "out_blocks": 9080,
+                    "total_blocks": 10040,
+                    "in_blocks_rate": 7446.445339643347,
+                    "out_blocks_rate": 70430.96217079333,
+                    "total_blocks_rate": 77877.40751043668,
+                    "in_bytes": 0,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 0,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 0,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.035628,
+                    "systemtime": 0.033151,
+                    "total_files": 2,
+                    "total_bytes": 4601947,
+                    "output_files": 2,
+                    "output_bytes": 4601947,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "GENERATE_CAS_WEBSUMMARY",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.GENERATE_CAS_WEBSUMMARY",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:19.974504818+08:00",
+                            "end": "2026-03-04T16:28:20.103425402+08:00",
+                            "walltime": 0.128920584,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 0.128920573,
+                            "core_hours": 0.00003581127027777778,
+                            "maxrss": 29752,
+                            "maxvmem": 1618404,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 960,
+                            "out_blocks": 9080,
+                            "total_blocks": 10040,
+                            "in_blocks_rate": 7446.445339643347,
+                            "out_blocks_rate": 70430.96217079333,
+                            "total_blocks_rate": 77877.40751043668,
+                            "in_bytes": 0,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 0,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 0,
+                            "out_bytes_peak": 0,
+                            "usertime": 0.035628,
+                            "systemtime": 0.033151,
+                            "total_files": 2,
+                            "total_bytes": 4601947,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 0,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "REPLACE_LOW_UMI_CELLS",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS",
+        "forks": [
+            {
+                "split_stats": {
+                    "start": "2026-03-04T16:27:58.59528533+08:00",
+                    "end": "2026-03-04T16:28:00.134919267+08:00",
+                    "walltime": 1.539633937,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 1.539633951,
+                    "core_hours": 0.0004276760975,
+                    "maxrss": 136192,
+                    "maxvmem": 1881224,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 56,
+                    "out_blocks": 104,
+                    "total_blocks": 160,
+                    "in_blocks_rate": 36.372281842465036,
+                    "out_blocks_rate": 67.54852342172079,
+                    "total_blocks_rate": 103.92080526418582,
+                    "in_bytes": 12288,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 7981.117844289471,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24489.323028836843,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.891704,
+                    "systemtime": 0.23102899999999998,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 5290.016988414413,
+                    "out_bytes_dev": 0
+                },
+                "join_stats": {
+                    "start": "2026-03-04T16:28:00.161818316+08:00",
+                    "end": "2026-03-04T16:28:01.997110934+08:00",
+                    "walltime": 1.835292618,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 1.8352926219999999,
+                    "core_hours": 0.0005098035061111111,
+                    "maxrss": 232192,
+                    "maxvmem": 1910548,
+                    "maxrss_requested": 3251200,
+                    "maxvmem_requested": 6501376,
+                    "in_blocks": 80,
+                    "out_blocks": 256,
+                    "total_blocks": 336,
+                    "in_blocks_rate": 43.589779112619354,
+                    "out_blocks_rate": 139.48729316038194,
+                    "total_blocks_rate": 183.07707227300128,
+                    "in_bytes": 8192,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 4463.593381132222,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 16325.114137896388,
+                    "out_bytes_peak": 0,
+                    "usertime": 1.501729,
+                    "systemtime": 0.292617,
+                    "total_files": 1,
+                    "total_bytes": 88991,
+                    "output_files": 1,
+                    "output_bytes": 88991,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 2924.701054124532,
+                    "out_bytes_dev": 0
+                },
+                "fork_stats": {
+                    "start": "2026-03-04T16:27:58.59528533+08:00",
+                    "end": "2026-03-04T16:28:01.997110934+08:00",
+                    "walltime": 3.401825604,
+                    "num_jobs": 2,
+                    "num_threads": 2,
+                    "duration": 3.3749265729999998,
+                    "core_hours": 0.0009374796036111111,
+                    "maxrss": 232192,
+                    "maxvmem": 1910548,
+                    "maxrss_requested": 3251200,
+                    "maxvmem_requested": 6501376,
+                    "in_blocks": 136,
+                    "out_blocks": 360,
+                    "total_blocks": 496,
+                    "in_blocks_rate": 40.2971730075622,
+                    "out_blocks_rate": 106.66898737295877,
+                    "total_blocks_rate": 146.966160380521,
+                    "in_bytes": 20480,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 6068.2801705505435,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24489.323028836843,
+                    "out_bytes_peak": 0,
+                    "usertime": 2.393433,
+                    "systemtime": 0.5236460000000001,
+                    "total_files": 2,
+                    "total_bytes": 177982,
+                    "output_files": 2,
+                    "output_bytes": 177982,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 1752.000383947028,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "REPLACE_LOW_UMI_CELLS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.REPLACE_LOW_UMI_CELLS",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "SUMMARIZE_CELL_TYPES",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.082067868+08:00",
+                    "end": "2026-03-04T16:28:19.857896733+08:00",
+                    "walltime": 17.775828865,
+                    "num_jobs": 13,
+                    "num_threads": 13,
+                    "duration": 42.198451186000014,
+                    "core_hours": 0.011721791996111112,
+                    "maxrss": 307708,
+                    "maxvmem": 1916208,
+                    "maxrss_requested": 7340032,
+                    "maxvmem_requested": 10485760,
+                    "in_blocks": 144656,
+                    "out_blocks": 81984,
+                    "total_blocks": 226640,
+                    "in_blocks_rate": 3427.9931119365788,
+                    "out_blocks_rate": 1942.8201200711237,
+                    "total_blocks_rate": 5370.813232007702,
+                    "in_bytes": 1314816,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 31157.920801515353,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 234049.70737150425,
+                    "out_bytes_peak": 0,
+                    "usertime": 24.868608,
+                    "systemtime": 2.918361,
+                    "total_files": 15,
+                    "total_bytes": 40802434,
+                    "output_files": 9,
+                    "output_bytes": 14389478,
+                    "vdr_files": 6,
+                    "vdr_bytes": 26412956,
+                    "in_bytes_dev": 27437.036395964282,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "WRITE_CELL_TYPES_H5",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5",
+                        "forki": 0
+                    },
+                    {
+                        "name": "DIFF_EXP_CAS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS",
+                        "forki": 0
+                    },
+                    {
+                        "name": "TIDY_CELLTYPE_DIFFEXP",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP",
+                        "forki": 0
+                    },
+                    {
+                        "name": "DISABLE_CAS_REPORTER_STAGES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_BARCHART",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_BOX_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CELL_TYPES_UMAP_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT",
+                        "forki": 0
+                    },
+                    {
+                        "name": "ANALYZE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES",
+                        "forki": 0
+                    },
+                    {
+                        "name": "GET_CLOUPE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "pipeline"
+    },
+    {
+        "name": "ANALYZE_CELL_TYPES",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.082067868+08:00",
+                    "end": "2026-03-04T16:28:06.382153388+08:00",
+                    "walltime": 4.30008552,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 4.300085524,
+                    "core_hours": 0.001194468201111111,
+                    "maxrss": 169312,
+                    "maxvmem": 1644784,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 5144,
+                    "out_blocks": 184,
+                    "total_blocks": 5328,
+                    "in_blocks_rate": 1196.2552770845773,
+                    "out_blocks_rate": 42.78984661422283,
+                    "total_blocks_rate": 1239.0451236988001,
+                    "in_bytes": 40960,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 9525.391941948734,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 81614.37408296658,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.997021,
+                    "systemtime": 0.272954,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0.0001220703125,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "ANALYZE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.ANALYZE_CELL_TYPES",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:02.082067868+08:00",
+                            "end": "2026-03-04T16:28:06.382153388+08:00",
+                            "walltime": 4.30008552,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 4.300085524,
+                            "core_hours": 0.001194468201111111,
+                            "maxrss": 169312,
+                            "maxvmem": 1644784,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 5144,
+                            "out_blocks": 184,
+                            "total_blocks": 5328,
+                            "in_blocks_rate": 1196.2552770845773,
+                            "out_blocks_rate": 42.78984661422283,
+                            "total_blocks_rate": 1239.0451236988001,
+                            "in_bytes": 40960,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 9525.391941948734,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 81614.37408296658,
+                            "out_bytes_peak": 0,
+                            "usertime": 0.997021,
+                            "systemtime": 0.272954,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 15300.77413466758,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "CELL_TYPE_DIFF_EXP",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.531726075+08:00",
+                    "end": "2026-03-04T16:28:19.857896733+08:00",
+                    "walltime": 17.326170658,
+                    "num_jobs": 6,
+                    "num_threads": 6,
+                    "duration": 20.514261104,
+                    "core_hours": 0.005698405862222223,
+                    "maxrss": 250716,
+                    "maxvmem": 1894964,
+                    "maxrss_requested": 7340032,
+                    "maxvmem_requested": 10485760,
+                    "in_blocks": 52488,
+                    "out_blocks": 79952,
+                    "total_blocks": 132440,
+                    "in_blocks_rate": 2558.6103118169613,
+                    "out_blocks_rate": 3897.386291159688,
+                    "total_blocks_rate": 6455.996602976649,
+                    "in_bytes": 1216512,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 59300.79537511575,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 234049.70737150425,
+                    "out_bytes_peak": 0,
+                    "usertime": 16.925081,
+                    "systemtime": 1.2006999999999999,
+                    "total_files": 10,
+                    "total_bytes": 40588914,
+                    "output_files": 4,
+                    "output_bytes": 14175958,
+                    "vdr_files": 6,
+                    "vdr_bytes": 26412956,
+                    "in_bytes_dev": 39526.667326074785,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "DIFF_EXP_CAS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS",
+                        "forki": 0
+                    },
+                    {
+                        "name": "TIDY_CELLTYPE_DIFFEXP",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP",
+                        "forki": 0
+                    },
+                    {
+                        "name": "WRITE_CELL_TYPES_H5",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "pipeline"
+    },
+    {
+        "name": "DIFF_EXP_CAS",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS",
+        "forks": [
+            {
+                "split_stats": {
+                    "start": "2026-03-04T16:28:07.026887952+08:00",
+                    "end": "2026-03-04T16:28:07.058888794+08:00",
+                    "walltime": 0.032000842,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.032000855,
+                    "core_hours": 0.00000888912638888889,
+                    "maxrss": 15360,
+                    "maxvmem": 1621324,
+                    "maxrss_requested": 2097152,
+                    "maxvmem_requested": 5242880,
+                    "in_blocks": 56,
+                    "out_blocks": 80,
+                    "total_blocks": 136,
+                    "in_blocks_rate": 1749.9532434367768,
+                    "out_blocks_rate": 2499.933204909681,
+                    "total_blocks_rate": 4249.886448346458,
+                    "in_bytes": 0,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 0,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 0,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.005948,
+                    "systemtime": 0.010846000000000001,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "join_stats": {
+                    "start": "2026-03-04T16:28:16.884180515+08:00",
+                    "end": "2026-03-04T16:28:17.301384782+08:00",
+                    "walltime": 0.417204267,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.417204268,
+                    "core_hours": 0.00011589007444444444,
+                    "maxrss": 33736,
+                    "maxvmem": 1621280,
+                    "maxrss_requested": 2097152,
+                    "maxvmem_requested": 5242880,
+                    "in_blocks": 5680,
+                    "out_blocks": 46048,
+                    "total_blocks": 51728,
+                    "in_blocks_rate": 13614.434069020599,
+                    "out_blocks_rate": 110372.79225532756,
+                    "total_blocks_rate": 123987.22632434816,
+                    "in_bytes": 0,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 0,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 0,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.309248,
+                    "systemtime": 0.074327,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:07.026887952+08:00",
+                    "end": "2026-03-04T16:28:17.301384782+08:00",
+                    "walltime": 10.27449683,
+                    "num_jobs": 4,
+                    "num_threads": 4,
+                    "duration": 13.560508731,
+                    "core_hours": 0.0037668079808333334,
+                    "maxrss": 94000,
+                    "maxvmem": 1766900,
+                    "maxrss_requested": 7340032,
+                    "maxvmem_requested": 10485760,
+                    "in_blocks": 5800,
+                    "out_blocks": 51920,
+                    "total_blocks": 57720,
+                    "in_blocks_rate": 427.7125670618028,
+                    "out_blocks_rate": 3828.7649106635863,
+                    "total_blocks_rate": 4256.477477725389,
+                    "in_bytes": 1187840,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 87595.53373425722,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 234049.70737150425,
+                    "out_bytes_peak": 0,
+                    "usertime": 13.092929999999999,
+                    "systemtime": 0.39414000000000005,
+                    "total_files": 6,
+                    "total_bytes": 26412956,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 6,
+                    "vdr_bytes": 26412956,
+                    "in_bytes_dev": 53223.67616826901,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "DIFF_EXP_CAS",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.DIFF_EXP_CAS",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:07.089628232+08:00",
+                            "end": "2026-03-04T16:28:16.858931099+08:00",
+                            "walltime": 9.769302867,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 9.769302861,
+                            "core_hours": 0.002713695239166667,
+                            "maxrss": 94000,
+                            "maxvmem": 1766900,
+                            "maxrss_requested": 7340032,
+                            "maxvmem_requested": 10485760,
+                            "in_blocks": 32,
+                            "out_blocks": 4808,
+                            "total_blocks": 4840,
+                            "in_blocks_rate": 3.275566379229278,
+                            "out_blocks_rate": 492.1538484791991,
+                            "total_blocks_rate": 495.42941485842834,
+                            "in_bytes": 1179648,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 120750.47900390811,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 234049.70737150425,
+                            "out_bytes_peak": 0,
+                            "usertime": 9.59132,
+                            "systemtime": 0.163857,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 63613.84370615372,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    },
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:07.093452998+08:00",
+                            "end": "2026-03-04T16:28:10.435453745+08:00",
+                            "walltime": 3.342000747,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 3.342000747,
+                            "core_hours": 0.0009283335408333333,
+                            "maxrss": 93996,
+                            "maxvmem": 1766900,
+                            "maxrss_requested": 7340032,
+                            "maxvmem_requested": 10485760,
+                            "in_blocks": 32,
+                            "out_blocks": 984,
+                            "total_blocks": 1016,
+                            "in_blocks_rate": 9.575102587492031,
+                            "out_blocks_rate": 294.4344045653799,
+                            "total_blocks_rate": 304.00950715287195,
+                            "in_bytes": 8192,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 2451.22626239796,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 16323.206470104587,
+                            "out_bytes_peak": 0,
+                            "usertime": 3.186414,
+                            "systemtime": 0.14511,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 2693.758976390878,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 1
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "TIDY_CELLTYPE_DIFFEXP",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:17.35737603+08:00",
+                    "end": "2026-03-04T16:28:19.857896733+08:00",
+                    "walltime": 2.500520703,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 2.500520704,
+                    "core_hours": 0.0006945890844444444,
+                    "maxrss": 191996,
+                    "maxvmem": 1894964,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 27312,
+                    "out_blocks": 27768,
+                    "total_blocks": 55080,
+                    "in_blocks_rate": 10922.525039008835,
+                    "out_blocks_rate": 11104.887056356083,
+                    "total_blocks_rate": 22027.412095364918,
+                    "in_bytes": 16384,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 6552.235289950233,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 32649.907634877996,
+                    "out_bytes_peak": 0,
+                    "usertime": 2.12779,
+                    "systemtime": 0.293877,
+                    "total_files": 2,
+                    "total_bytes": 14165293,
+                    "output_files": 2,
+                    "output_bytes": 14165293,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "TIDY_CELLTYPE_DIFFEXP",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.TIDY_CELLTYPE_DIFFEXP",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:17.35737603+08:00",
+                            "end": "2026-03-04T16:28:19.857896733+08:00",
+                            "walltime": 2.500520703,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 2.500520704,
+                            "core_hours": 0.0006945890844444444,
+                            "maxrss": 191996,
+                            "maxvmem": 1894964,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 27312,
+                            "out_blocks": 27768,
+                            "total_blocks": 55080,
+                            "in_blocks_rate": 10922.525039008835,
+                            "out_blocks_rate": 11104.887056356083,
+                            "total_blocks_rate": 22027.412095364918,
+                            "in_bytes": 16384,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 6552.235289950233,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 32649.907634877996,
+                            "out_bytes_peak": 0,
+                            "usertime": 2.12779,
+                            "systemtime": 0.293877,
+                            "total_files": 2,
+                            "total_bytes": 14165293,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 3755.8342658792376,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "WRITE_CELL_TYPES_H5",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.531726075+08:00",
+                    "end": "2026-03-04T16:28:06.984957731+08:00",
+                    "walltime": 4.453231656,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 4.453231669,
+                    "core_hours": 0.0012370087969444444,
+                    "maxrss": 250716,
+                    "maxvmem": 1875288,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 19376,
+                    "out_blocks": 264,
+                    "total_blocks": 19640,
+                    "in_blocks_rate": 4350.997531720823,
+                    "out_blocks_rate": 59.282790481745316,
+                    "total_blocks_rate": 4410.280322202568,
+                    "in_bytes": 12288,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 2759.344429695782,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24488.432890318556,
+                    "out_bytes_peak": 0,
+                    "usertime": 1.7043609999999998,
+                    "systemtime": 0.512683,
+                    "total_files": 2,
+                    "total_bytes": 10665,
+                    "output_files": 2,
+                    "output_bytes": 10665,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "WRITE_CELL_TYPES_H5",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.CELL_TYPE_DIFF_EXP.WRITE_CELL_TYPES_H5",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:02.531726075+08:00",
+                            "end": "2026-03-04T16:28:06.984957731+08:00",
+                            "walltime": 4.453231656,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 4.453231669,
+                            "core_hours": 0.0012370087969444444,
+                            "maxrss": 250716,
+                            "maxvmem": 1875288,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 19376,
+                            "out_blocks": 264,
+                            "total_blocks": 19640,
+                            "in_blocks_rate": 4350.997531720823,
+                            "out_blocks_rate": 59.282790481745316,
+                            "total_blocks_rate": 4410.280322202568,
+                            "in_bytes": 12288,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 2759.344429695782,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 24488.432890318556,
+                            "out_bytes_peak": 0,
+                            "usertime": 1.7043609999999998,
+                            "systemtime": 0.512683,
+                            "total_files": 2,
+                            "total_bytes": 10665,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 4762.6684506241745,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "DISABLE_CAS_REPORTER_STAGES",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.217880753+08:00",
+                    "end": "2026-03-04T16:28:02.37302008+08:00",
+                    "walltime": 0.155139327,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.155139339,
+                    "core_hours": 0.00004309426083333333,
+                    "maxrss": 18944,
+                    "maxvmem": 1598532,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 48,
+                    "out_blocks": 88,
+                    "total_blocks": 136,
+                    "in_blocks_rate": 309.3992813776266,
+                    "out_blocks_rate": 567.2320158589821,
+                    "total_blocks_rate": 876.6312972366088,
+                    "in_bytes": 0,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 0,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 0,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.096279,
+                    "systemtime": 0.030135000000000002,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "DISABLE_CAS_REPORTER_STAGES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.DISABLE_CAS_REPORTER_STAGES",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:02.217880753+08:00",
+                            "end": "2026-03-04T16:28:02.37302008+08:00",
+                            "walltime": 0.155139327,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 0.155139339,
+                            "core_hours": 0.00004309426083333333,
+                            "maxrss": 18944,
+                            "maxvmem": 1598532,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 48,
+                            "out_blocks": 88,
+                            "total_blocks": 136,
+                            "in_blocks_rate": 309.3992813776266,
+                            "out_blocks_rate": 567.2320158589821,
+                            "total_blocks_rate": 876.6312972366088,
+                            "in_bytes": 0,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 0,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 0,
+                            "out_bytes_peak": 0,
+                            "usertime": 0.096279,
+                            "systemtime": 0.030135000000000002,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 0,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "GET_CELL_TYPES_BARCHART",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.089012666+08:00",
+                    "end": "2026-03-04T16:28:07.541724222+08:00",
+                    "walltime": 5.452711556,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 5.452711569,
+                    "core_hours": 0.0015146421024999999,
+                    "maxrss": 211080,
+                    "maxvmem": 1644692,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 61384,
+                    "out_blocks": 424,
+                    "total_blocks": 61808,
+                    "in_blocks_rate": 11257.518249999333,
+                    "out_blocks_rate": 77.75947702984031,
+                    "total_blocks_rate": 11335.277727029174,
+                    "in_bytes": 24576,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 4507.11534784282,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 48983.34436936826,
+                    "out_bytes_peak": 0,
+                    "usertime": 1.395782,
+                    "systemtime": 0.34702200000000005,
+                    "total_files": 1,
+                    "total_bytes": 8114,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 1,
+                    "vdr_bytes": 8114,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "GET_CELL_TYPES_BARCHART",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BARCHART",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:02.089012666+08:00",
+                            "end": "2026-03-04T16:28:07.541724222+08:00",
+                            "walltime": 5.452711556,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 5.452711569,
+                            "core_hours": 0.0015146421024999999,
+                            "maxrss": 211080,
+                            "maxvmem": 1644692,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 61384,
+                            "out_blocks": 424,
+                            "total_blocks": 61808,
+                            "in_blocks_rate": 11257.518249999333,
+                            "out_blocks_rate": 77.75947702984031,
+                            "total_blocks_rate": 11335.277727029174,
+                            "in_bytes": 24576,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 4507.11534784282,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 48983.34436936826,
+                            "out_bytes_peak": 0,
+                            "usertime": 1.395782,
+                            "systemtime": 0.34702200000000005,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 8336.760261469644,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "GET_CELL_TYPES_BOX_PLOT",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT",
+        "forks": [
+            {
+                "split_stats": {
+                    "start": "2026-03-04T16:28:02.2097261+08:00",
+                    "end": "2026-03-04T16:28:06.024285013+08:00",
+                    "walltime": 3.814558913,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 3.814558942,
+                    "core_hours": 0.0010595997061111112,
+                    "maxrss": 251012,
+                    "maxvmem": 1915944,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 4600,
+                    "out_blocks": 88,
+                    "total_blocks": 4688,
+                    "in_blocks_rate": 1205.9061270103714,
+                    "out_blocks_rate": 23.06950851672015,
+                    "total_blocks_rate": 1228.9756355270915,
+                    "in_bytes": 12288,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 3221.3422801529223,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24488.142470944727,
+                    "out_bytes_peak": 0,
+                    "usertime": 1.7402659999999999,
+                    "systemtime": 0.36709699999999995,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 2403.960173213274,
+                    "out_bytes_dev": 0
+                },
+                "join_stats": {
+                    "start": "2026-03-04T16:28:06.123671252+08:00",
+                    "end": "2026-03-04T16:28:09.33905485+08:00",
+                    "walltime": 3.215383598,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 3.215383601,
+                    "core_hours": 0.0008931621113888889,
+                    "maxrss": 307708,
+                    "maxvmem": 1916208,
+                    "maxrss_requested": 1096704,
+                    "maxvmem_requested": 8388608,
+                    "in_blocks": 17080,
+                    "out_blocks": 136,
+                    "total_blocks": 17216,
+                    "in_blocks_rate": 5311.963398298118,
+                    "out_blocks_rate": 42.29666406139017,
+                    "total_blocks_rate": 5354.260062359508,
+                    "in_bytes": 8192,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 2547.751999933149,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 16329.524738132637,
+                    "out_bytes_peak": 0,
+                    "usertime": 2.440372,
+                    "systemtime": 0.407831,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 1670.990715977657,
+                    "out_bytes_dev": 0
+                },
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.2097261+08:00",
+                    "end": "2026-03-04T16:28:09.33905485+08:00",
+                    "walltime": 7.12932875,
+                    "num_jobs": 2,
+                    "num_threads": 2,
+                    "duration": 7.029942543000001,
+                    "core_hours": 0.0019527618175000001,
+                    "maxrss": 307708,
+                    "maxvmem": 1916208,
+                    "maxrss_requested": 1096704,
+                    "maxvmem_requested": 8388608,
+                    "in_blocks": 21680,
+                    "out_blocks": 224,
+                    "total_blocks": 21904,
+                    "in_blocks_rate": 3083.9512367832444,
+                    "out_blocks_rate": 31.86370281547264,
+                    "total_blocks_rate": 3115.8149395987175,
+                    "in_bytes": 20480,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 2913.2528288432127,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24488.142470944727,
+                    "out_bytes_peak": 0,
+                    "usertime": 4.180638,
+                    "systemtime": 0.774928,
+                    "total_files": 1,
+                    "total_bytes": 25756,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 1,
+                    "vdr_bytes": 25756,
+                    "in_bytes_dev": 335.56959014807495,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "GET_CELL_TYPES_BOX_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_BOX_PLOT",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "GET_CELL_TYPES_UMAP_PLOT",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.223574864+08:00",
+                    "end": "2026-03-04T16:28:06.82341695+08:00",
+                    "walltime": 4.599842086,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 4.599842088,
+                    "core_hours": 0.0012777339133333333,
+                    "maxrss": 177052,
+                    "maxvmem": 1853512,
+                    "maxrss_requested": 2097152,
+                    "maxvmem_requested": 5242880,
+                    "in_blocks": 3688,
+                    "out_blocks": 968,
+                    "total_blocks": 4656,
+                    "in_blocks_rate": 801.7666540382331,
+                    "out_blocks_rate": 210.44200680829982,
+                    "total_blocks_rate": 1012.208660846533,
+                    "in_bytes": 12288,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 2671.3960533681693,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24493.369316234966,
+                    "out_bytes_peak": 0,
+                    "usertime": 1.168452,
+                    "systemtime": 0.270285,
+                    "total_files": 1,
+                    "total_bytes": 126844,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 1,
+                    "vdr_bytes": 126844,
+                    "in_bytes_dev": 0.000030517578125,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "GET_CELL_TYPES_UMAP_PLOT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CELL_TYPES_UMAP_PLOT",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:02.223574864+08:00",
+                            "end": "2026-03-04T16:28:06.82341695+08:00",
+                            "walltime": 4.599842086,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 4.599842088,
+                            "core_hours": 0.0012777339133333333,
+                            "maxrss": 177052,
+                            "maxvmem": 1853512,
+                            "maxrss_requested": 2097152,
+                            "maxvmem_requested": 5242880,
+                            "in_blocks": 3688,
+                            "out_blocks": 968,
+                            "total_blocks": 4656,
+                            "in_blocks_rate": 801.7666540382331,
+                            "out_blocks_rate": 210.44200680829982,
+                            "total_blocks_rate": 1012.208660846533,
+                            "in_bytes": 12288,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 2671.3960533681693,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 24493.369316234966,
+                            "out_bytes_peak": 0,
+                            "usertime": 1.168452,
+                            "systemtime": 0.270285,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 2506.152568010868,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "GET_CLOUPE_CELL_TYPES",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:02.204465876+08:00",
+                    "end": "2026-03-04T16:28:02.350934902+08:00",
+                    "walltime": 0.146469026,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.146469019,
+                    "core_hours": 0.00004068583861111111,
+                    "maxrss": 18432,
+                    "maxvmem": 1598320,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 224,
+                    "out_blocks": 144,
+                    "total_blocks": 368,
+                    "in_blocks_rate": 1529.3336538288686,
+                    "out_blocks_rate": 983.1430631757013,
+                    "total_blocks_rate": 2512.47671700457,
+                    "in_bytes": 0,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 0,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 0,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.105355,
+                    "systemtime": 0.022337,
+                    "total_files": 1,
+                    "total_bytes": 27050,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 1,
+                    "vdr_bytes": 27050,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "GET_CLOUPE_CELL_TYPES",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CELL_ANNOTATION_SERVICE.SUMMARIZE_CELL_TYPES.GET_CLOUPE_CELL_TYPES",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:02.204465876+08:00",
+                            "end": "2026-03-04T16:28:02.350934902+08:00",
+                            "walltime": 0.146469026,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 0.146469019,
+                            "core_hours": 0.00004068583861111111,
+                            "maxrss": 18432,
+                            "maxvmem": 1598320,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 224,
+                            "out_blocks": 144,
+                            "total_blocks": 368,
+                            "in_blocks_rate": 1529.3336538288686,
+                            "out_blocks_rate": 983.1430631757013,
+                            "total_blocks_rate": 2512.47671700457,
+                            "in_bytes": 0,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 0,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 0,
+                            "out_bytes_peak": 0,
+                            "usertime": 0.105355,
+                            "systemtime": 0.022337,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 0,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "CHECK_CLOUPE_MATRIX_CONSISTENT",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CHECK_CLOUPE_MATRIX_CONSISTENT",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:14:10.992353803+08:00",
+                    "end": "2026-03-04T16:14:12.582257634+08:00",
+                    "walltime": 1.589903831,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 1.589903837,
+                    "core_hours": 0.00044163995472222225,
+                    "maxrss": 135168,
+                    "maxvmem": 1903300,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 8528,
+                    "out_blocks": 152,
+                    "total_blocks": 8680,
+                    "in_blocks_rate": 5363.846417335239,
+                    "out_blocks_rate": 95.60326635025285,
+                    "total_blocks_rate": 5459.449683685491,
+                    "in_bytes": 12288,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 7728.769321788862,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 24487.90949624171,
+                    "out_bytes_peak": 0,
+                    "usertime": 1.009442,
+                    "systemtime": 0.25541400000000003,
+                    "total_files": 1,
+                    "total_bytes": 23199,
+                    "output_files": 1,
+                    "output_bytes": 23199,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0.00008631674575031098,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "CHECK_CLOUPE_MATRIX_CONSISTENT",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.CHECK_CLOUPE_MATRIX_CONSISTENT",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:14:10.992353803+08:00",
+                            "end": "2026-03-04T16:14:12.582257634+08:00",
+                            "walltime": 1.589903831,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 1.589903837,
+                            "core_hours": 0.00044163995472222225,
+                            "maxrss": 135168,
+                            "maxvmem": 1903300,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 8528,
+                            "out_blocks": 152,
+                            "total_blocks": 8680,
+                            "in_blocks_rate": 5363.846417335239,
+                            "out_blocks_rate": 95.60326635025285,
+                            "total_blocks_rate": 5459.449683685491,
+                            "in_bytes": 12288,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 7728.769321788862,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 24487.90949624171,
+                            "out_bytes_peak": 0,
+                            "usertime": 1.009442,
+                            "systemtime": 0.25541400000000003,
+                            "total_files": 1,
+                            "total_bytes": 23199,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 2931.274173665402,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "DEMUX_CLOUPE_TRACK_NAME",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.DEMUX_CLOUPE_TRACK_NAME",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:28:20.160228745+08:00",
+                    "end": "2026-03-04T16:28:20.299807125+08:00",
+                    "walltime": 0.13957838,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.139578375,
+                    "core_hours": 0.00003877177083333333,
+                    "maxrss": 17920,
+                    "maxvmem": 1598548,
+                    "maxrss_requested": 1048576,
+                    "maxvmem_requested": 4194304,
+                    "in_blocks": 48,
+                    "out_blocks": 88,
+                    "total_blocks": 136,
+                    "in_blocks_rate": 343.89281290887646,
+                    "out_blocks_rate": 630.4701569996068,
+                    "total_blocks_rate": 974.3629699084833,
+                    "in_bytes": 0,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 0,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 0,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.088794,
+                    "systemtime": 0.030861,
+                    "total_files": 0,
+                    "total_bytes": 0,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 0,
+                    "vdr_bytes": 0,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "DEMUX_CLOUPE_TRACK_NAME",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.DEMUX_CLOUPE_TRACK_NAME",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:28:20.160228745+08:00",
+                            "end": "2026-03-04T16:28:20.299807125+08:00",
+                            "walltime": 0.13957838,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 0.139578375,
+                            "core_hours": 0.00003877177083333333,
+                            "maxrss": 17920,
+                            "maxvmem": 1598548,
+                            "maxrss_requested": 1048576,
+                            "maxvmem_requested": 4194304,
+                            "in_blocks": 48,
+                            "out_blocks": 88,
+                            "total_blocks": 136,
+                            "in_blocks_rate": 343.89281290887646,
+                            "out_blocks_rate": 630.4701569996068,
+                            "total_blocks_rate": 974.3629699084833,
+                            "in_bytes": 0,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 0,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 0,
+                            "out_bytes_peak": 0,
+                            "usertime": 0.088794,
+                            "systemtime": 0.030861,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 0,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    },
+    {
+        "name": "EXTRACT_LOUPE_PROJECTION",
+        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION",
+        "forks": [
+            {
+                "split_stats": null,
+                "join_stats": null,
+                "fork_stats": {
+                    "start": "2026-03-04T16:14:10.931146118+08:00",
+                    "end": "2026-03-04T16:14:11.575591428+08:00",
+                    "walltime": 0.64444531,
+                    "num_jobs": 1,
+                    "num_threads": 1,
+                    "duration": 0.644445305,
+                    "core_hours": 0.0001790125847222222,
+                    "maxrss": 30208,
+                    "maxvmem": 3080124,
+                    "maxrss_requested": 2097152,
+                    "maxvmem_requested": 5242880,
+                    "in_blocks": 8432,
+                    "out_blocks": 248,
+                    "total_blocks": 8680,
+                    "in_blocks_rate": 13084.120459221906,
+                    "out_blocks_rate": 384.827072330056,
+                    "total_blocks_rate": 13468.947531551961,
+                    "in_bytes": 16384,
+                    "out_bytes": 0,
+                    "in_bytes_rate": 25423.41432683725,
+                    "out_bytes_rate": 0,
+                    "in_bytes_peak": 32651.64559969233,
+                    "out_bytes_peak": 0,
+                    "usertime": 0.234959,
+                    "systemtime": 0.063636,
+                    "total_files": 1,
+                    "total_bytes": 69756,
+                    "output_files": 0,
+                    "output_bytes": 0,
+                    "vdr_files": 1,
+                    "vdr_bytes": 69756,
+                    "in_bytes_dev": 0,
+                    "out_bytes_dev": 0
+                },
+                "stages": [
+                    {
+                        "name": "EXTRACT_LOUPE_PROJECTION",
+                        "fqname": "ID.run_annotate_1kpbmcs.CELLRANGER_ANNOTATE_CS.EXTRACT_LOUPE_PROJECTION",
+                        "forki": 0
+                    }
+                ],
+                "chunks": [
+                    {
+                        "chunk_stats": {
+                            "start": "2026-03-04T16:14:10.931146118+08:00",
+                            "end": "2026-03-04T16:14:11.575591428+08:00",
+                            "walltime": 0.64444531,
+                            "num_jobs": 1,
+                            "num_threads": 1,
+                            "duration": 0.644445305,
+                            "core_hours": 0.0001790125847222222,
+                            "maxrss": 30208,
+                            "maxvmem": 3080124,
+                            "maxrss_requested": 2097152,
+                            "maxvmem_requested": 5242880,
+                            "in_blocks": 8432,
+                            "out_blocks": 248,
+                            "total_blocks": 8680,
+                            "in_blocks_rate": 13084.120459221906,
+                            "out_blocks_rate": 384.827072330056,
+                            "total_blocks_rate": 13468.947531551961,
+                            "in_bytes": 16384,
+                            "out_bytes": 0,
+                            "in_bytes_rate": 25423.41432683725,
+                            "out_bytes_rate": 0,
+                            "in_bytes_peak": 32651.64559969233,
+                            "out_bytes_peak": 0,
+                            "usertime": 0.234959,
+                            "systemtime": 0.063636,
+                            "total_files": 0,
+                            "total_bytes": 0,
+                            "output_files": 0,
+                            "output_bytes": 0,
+                            "vdr_files": 0,
+                            "vdr_bytes": 0,
+                            "in_bytes_dev": 8200.157458564076,
+                            "out_bytes_dev": 0
+                        },
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "bytehist": null,
+        "maxbytes": 0,
+        "type": "stage"
+    }
+]

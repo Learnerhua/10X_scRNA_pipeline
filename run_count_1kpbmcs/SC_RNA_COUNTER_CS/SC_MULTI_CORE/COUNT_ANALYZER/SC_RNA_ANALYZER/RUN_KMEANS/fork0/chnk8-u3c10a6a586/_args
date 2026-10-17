@@ -1,0 +1,14 @@
+{
+    "__mem_gb": 1,
+    "__threads": 1,
+    "__vmem_gb": 4,
+    "library": "Gene Expression",
+    "matrix_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u3c10a6a574/files/preprocessed_matrix_h5.h5",
+    "max_clusters": null,
+    "n_clusters": 10,
+    "num_bcs": null,
+    "num_pcs": null,
+    "pca_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u3c10a6a57c/files/pca_h5.h5",
+    "random_seed": null,
+    "which_pca": 0
+}

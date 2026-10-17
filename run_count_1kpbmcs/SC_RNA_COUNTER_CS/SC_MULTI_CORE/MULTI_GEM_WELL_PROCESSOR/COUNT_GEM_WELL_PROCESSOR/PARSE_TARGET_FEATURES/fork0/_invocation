@@ -1,0 +1,12 @@
+@include "rna/_common_stages.mro"
+
+call PARSE_TARGET_FEATURES(
+    target_set_name  = null,
+    target_set       = null,
+    reference_path   = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/References/refdata-gex-GRCh38-2024-A",
+    gene_index       = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/FULL_COUNT_INPUTS/WRITE_GENE_INDEX/fork0/chnk0-u3c10a6a026/files/gene_index.json",
+    filter_probes    = null,
+    no_bam           = false,
+    is_pd            = false,
+    is_antibody_only = false,
+)

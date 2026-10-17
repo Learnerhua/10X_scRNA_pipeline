@@ -1,0 +1,1571 @@
+[
+    {
+        "name": "MAKE_FASTQS_CS",
+        "fqname": "ID.tiny-bcl.MAKE_FASTQS_CS",
+        "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS",
+        "state": "complete",
+        "metadata": {
+            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS",
+            "names": []
+        },
+        "stagecodeCmd": "",
+        "forks": [
+            {
+                "argPermute": null,
+                "joinDef": null,
+                "state": "complete",
+                "metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/fork0",
+                    "names": [
+                        "complete",
+                        "invocation",
+                        "outs",
+                        "vdrkill"
+                    ]
+                },
+                "split_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/fork0/split",
+                    "names": []
+                },
+                "join_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/fork0/join",
+                    "names": []
+                },
+                "bindings": {
+                    "Argument": [
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+                            "id": "run_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "lanes",
+                            "type": "int[]",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": [
+                                {
+                                    "csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-simple-1.2.0.csv"
+                                }
+                            ],
+                            "id": "specs",
+                            "type": "map[]",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "H35KCBCXY",
+                            "id": "project",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "bases_mask",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " --mismatches=1",
+                            "id": "bcl2fastq1_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+                            "id": "bcl2fastq2_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "bc_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 0,
+                            "id": "bc_start_index",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 16,
+                            "id": "bc_length",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "I1",
+                            "id": "si_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "umi_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 16,
+                            "id": "umi_start_index",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 10,
+                            "id": "umi_length",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "rc_i2_override",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "interop_output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "delete_undetermined",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "force_single_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "filter_dual_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "filter_single_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 6,
+                            "id": "max_bcl2fastq_threads",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "--id=tiny-bcl --run=cellranger-tiny-bcl-1.2.0 --csv=cellranger-tiny-bcl-simple-1.2.0.csv",
+                            "id": "all_mkfastq_args",
+                            "type": "string",
+                            "waiting": false
+                        }
+                    ],
+                    "Return": [
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path",
+                            "id": "fastq_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/interop_path",
+                            "id": "interop_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/input_samplesheet.csv",
+                            "id": "input_samplesheet",
+                            "type": "csv",
+                            "waiting": false
+                        }
+                    ]
+                },
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "edges": [
+            {
+                "from": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS",
+                "to": "ID.tiny-bcl.MAKE_FASTQS_CS"
+            }
+        ],
+        "stagecodeLang": "",
+        "type": "pipeline"
+    },
+    {
+        "name": "MAKE_FASTQS",
+        "fqname": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS",
+        "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS",
+        "state": "complete",
+        "metadata": {
+            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS",
+            "names": []
+        },
+        "stagecodeCmd": "",
+        "forks": [
+            {
+                "argPermute": null,
+                "joinDef": null,
+                "state": "complete",
+                "metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/fork0",
+                    "names": [
+                        "complete",
+                        "invocation",
+                        "outs",
+                        "vdrkill"
+                    ]
+                },
+                "split_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/fork0/split",
+                    "names": []
+                },
+                "join_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/fork0/join",
+                    "names": []
+                },
+                "bindings": {
+                    "Argument": [
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+                            "id": "run_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "lanes",
+                            "type": "int[]",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": [
+                                {
+                                    "csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-simple-1.2.0.csv"
+                                }
+                            ],
+                            "id": "specs",
+                            "type": "map[]",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "H35KCBCXY",
+                            "id": "project",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "bases_mask",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " --mismatches=1",
+                            "id": "bcl2fastq1_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+                            "id": "bcl2fastq2_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "bc_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 0,
+                            "id": "bc_start_index",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 16,
+                            "id": "bc_length",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "I1",
+                            "id": "si_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "umi_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 16,
+                            "id": "umi_start_index",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 10,
+                            "id": "umi_length",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "interop_output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "delete_undetermined",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "force_single_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "filter_dual_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "filter_single_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 6,
+                            "id": "max_bcl2fastq_threads",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "--id=tiny-bcl --run=cellranger-tiny-bcl-1.2.0 --csv=cellranger-tiny-bcl-simple-1.2.0.csv",
+                            "id": "all_mkfastq_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "rc_i2_override",
+                            "type": "bool",
+                            "waiting": false
+                        }
+                    ],
+                    "Return": [
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path",
+                            "id": "fastq_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/interop_path",
+                            "id": "interop_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/input_samplesheet.csv",
+                            "id": "input_samplesheet",
+                            "type": "csv",
+                            "waiting": false
+                        }
+                    ]
+                },
+                "chunks": [],
+                "index": 0
+            }
+        ],
+        "edges": [
+            {
+                "from": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                "to": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS"
+            },
+            {
+                "from": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                "to": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS"
+            }
+        ],
+        "stagecodeLang": "",
+        "type": "pipeline"
+    },
+    {
+        "name": "BCL2FASTQ_WITH_SAMPLESHEET",
+        "fqname": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+        "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET",
+        "state": "complete",
+        "metadata": {
+            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET",
+            "names": []
+        },
+        "stagecodeCmd": "/Nas3Data/Download/cellranger-10.0.0/mro/tenkit/stages/make_fastqs/bcl2fastq_with_samplesheet",
+        "forks": [
+            {
+                "argPermute": null,
+                "joinDef": {
+                    "__threads": 1,
+                    "__mem_gb": 1,
+                    "__vmem_gb": 4
+                },
+                "state": "complete",
+                "metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0",
+                    "names": [
+                        "complete",
+                        "invocation",
+                        "outs",
+                        "vdrkill"
+                    ]
+                },
+                "split_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/split",
+                    "names": [
+                        "args",
+                        "complete",
+                        "jobinfo",
+                        "log",
+                        "stage_defs",
+                        "stderr",
+                        "stdout"
+                    ]
+                },
+                "join_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join",
+                    "names": [
+                        "args",
+                        "chunk_defs",
+                        "chunk_outs",
+                        "complete",
+                        "jobinfo",
+                        "log",
+                        "outs",
+                        "stderr",
+                        "stdout"
+                    ]
+                },
+                "bindings": {
+                    "Argument": [
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+                            "id": "run_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "interop_output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/samplesheet.csv",
+                            "id": "samplesheet_path",
+                            "type": "csv",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "bases_mask",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "bc_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "I1",
+                            "id": "si_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " --mismatches=1",
+                            "id": "bcl2fastq1_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+                            "id": "bcl2fastq2_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 6,
+                            "id": "max_bcl2fastq_threads",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "dual_indexed_flowcell",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "filter_single_index",
+                            "type": "bool",
+                            "waiting": false
+                        }
+                    ],
+                    "Return": [
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path",
+                            "id": "fastq_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/interop_path",
+                            "id": "interop_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "rc_i2_read",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": {
+                                "R1": "R1",
+                                "I1": "I1",
+                                "R2": "R2"
+                            },
+                            "id": "file_read_types_map",
+                            "type": "map",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "2.20.0.422",
+                            "id": "bcl2fastq_version",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "bcl2fastq --minimum-trimmed-read-length 8 --mask-short-adapter-reads 8 --create-fastq-for-index-reads --ignore-missing-positions --ignore-missing-filter --ignore-missing-bcls --use-bases-mask=Y26,I8,Y98 -R /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0 --output-dir=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/fastq_path --interop-dir=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0-u266ba650fb/files/interop_path --sample-sheet=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/samplesheet.csv -p 6 -r 6 -w 6 --barcode-mismatches 1",
+                            "id": "bcl2fastq_args",
+                            "type": "string",
+                            "waiting": false
+                        }
+                    ]
+                },
+                "chunks": [
+                    {
+                        "chunkDef": {
+                            "__mem_gb": 32,
+                            "__threads": 6,
+                            "__vmem_gb": 35
+                        },
+                        "metadata": {
+                            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/chnk0",
+                            "names": [
+                                "args",
+                                "complete",
+                                "jobinfo",
+                                "log",
+                                "outs",
+                                "stderr",
+                                "stdout"
+                            ]
+                        },
+                        "state": "complete",
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "edges": [
+            {
+                "from": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                "to": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET"
+            }
+        ],
+        "stagecodeLang": "Python",
+        "type": "stage"
+    },
+    {
+        "name": "MAKE_FASTQS_PREFLIGHT",
+        "fqname": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT",
+        "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT",
+        "state": "complete",
+        "metadata": {
+            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT",
+            "names": []
+        },
+        "stagecodeCmd": "/Nas3Data/Download/cellranger-10.0.0/mro/tenkit/stages/make_fastqs/make_fastqs_preflight",
+        "forks": [
+            {
+                "argPermute": null,
+                "joinDef": {
+                    "__threads": 1,
+                    "__mem_gb": 1,
+                    "__vmem_gb": 4
+                },
+                "state": "complete",
+                "metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0",
+                    "names": [
+                        "complete",
+                        "invocation",
+                        "outs",
+                        "vdrkill"
+                    ]
+                },
+                "split_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0/split",
+                    "names": [
+                        "args",
+                        "complete",
+                        "stage_defs"
+                    ]
+                },
+                "join_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0/join",
+                    "names": [
+                        "args",
+                        "chunk_defs",
+                        "complete",
+                        "outs"
+                    ]
+                },
+                "bindings": {
+                    "Argument": [
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+                            "id": "run_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "interop_output_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": true,
+                            "id": "check_executables",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 6,
+                            "id": "max_bcl2fastq_threads",
+                            "type": "int",
+                            "waiting": false
+                        }
+                    ],
+                    "Return": null
+                },
+                "chunks": [
+                    {
+                        "chunkDef": {
+                            "__mem_gb": 1,
+                            "__threads": 1,
+                            "__vmem_gb": 4
+                        },
+                        "metadata": {
+                            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT/fork0/chnk0",
+                            "names": [
+                                "args",
+                                "complete",
+                                "jobinfo",
+                                "log",
+                                "outs",
+                                "stderr",
+                                "stdout"
+                            ]
+                        },
+                        "state": "complete",
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "edges": [],
+        "stagecodeLang": "Python",
+        "type": "stage"
+    },
+    {
+        "name": "MAKE_FASTQS_PREFLIGHT_LOCAL",
+        "fqname": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL",
+        "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL",
+        "state": "complete",
+        "metadata": {
+            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL",
+            "names": []
+        },
+        "stagecodeCmd": "/Nas3Data/Download/cellranger-10.0.0/mro/tenkit/stages/make_fastqs/make_fastqs_preflight_local",
+        "forks": [
+            {
+                "argPermute": null,
+                "joinDef": {
+                    "__threads": 1,
+                    "__mem_gb": 1,
+                    "__vmem_gb": 4
+                },
+                "state": "complete",
+                "metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0",
+                    "names": [
+                        "complete",
+                        "invocation",
+                        "outs",
+                        "vdrkill"
+                    ]
+                },
+                "split_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/split",
+                    "names": [
+                        "args",
+                        "complete",
+                        "stage_defs"
+                    ]
+                },
+                "join_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/join",
+                    "names": [
+                        "args",
+                        "chunk_defs",
+                        "complete",
+                        "outs"
+                    ]
+                },
+                "bindings": {
+                    "Argument": [
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+                            "id": "run_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "check_executables",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "lanes",
+                            "type": "int[]",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": [
+                                {
+                                    "csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-simple-1.2.0.csv"
+                                }
+                            ],
+                            "id": "specs",
+                            "type": "map[]",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "bc_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 0,
+                            "id": "bc_start_index",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 16,
+                            "id": "bc_length",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "I1",
+                            "id": "si_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "umi_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 16,
+                            "id": "umi_start_index",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 10,
+                            "id": "umi_length",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+                            "id": "bcl2fastq2_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "bases_mask",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "--id=tiny-bcl --run=cellranger-tiny-bcl-1.2.0 --csv=cellranger-tiny-bcl-simple-1.2.0.csv",
+                            "id": "all_mkfastq_args",
+                            "type": "string",
+                            "waiting": false
+                        }
+                    ],
+                    "Return": null
+                },
+                "chunks": [
+                    {
+                        "chunkDef": {
+                            "__mem_gb": 1,
+                            "__threads": 1,
+                            "__vmem_gb": 4
+                        },
+                        "metadata": {
+                            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/chnk0",
+                            "names": [
+                                "args",
+                                "complete",
+                                "jobinfo",
+                                "log",
+                                "outs",
+                                "stderr",
+                                "stdout"
+                            ]
+                        },
+                        "state": "complete",
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "edges": [],
+        "stagecodeLang": "Python",
+        "type": "stage"
+    },
+    {
+        "name": "MERGE_FASTQS_BY_LANE_SAMPLE",
+        "fqname": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE",
+        "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE",
+        "state": "complete",
+        "metadata": {
+            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE",
+            "names": []
+        },
+        "stagecodeCmd": "/Nas3Data/Download/cellranger-10.0.0/mro/tenkit/stages/make_fastqs/merge_fastqs_by_lane_sample",
+        "forks": [
+            {
+                "argPermute": null,
+                "joinDef": {
+                    "__threads": 1,
+                    "__mem_gb": 1,
+                    "__vmem_gb": 4
+                },
+                "state": "complete",
+                "metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0",
+                    "names": [
+                        "complete",
+                        "invocation",
+                        "outs",
+                        "vdrkill"
+                    ]
+                },
+                "split_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0/split",
+                    "names": [
+                        "args",
+                        "complete",
+                        "jobinfo",
+                        "log",
+                        "stage_defs",
+                        "stderr",
+                        "stdout"
+                    ]
+                },
+                "join_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0/join",
+                    "names": [
+                        "args",
+                        "chunk_defs",
+                        "chunk_outs",
+                        "complete",
+                        "jobinfo",
+                        "log",
+                        "outs",
+                        "stderr",
+                        "stdout"
+                    ]
+                },
+                "bindings": {
+                    "Argument": [
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path",
+                            "id": "fastq_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/samplesheet.csv",
+                            "id": "samplesheet_path",
+                            "type": "csv",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "remove_undetermined_fastqs",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": true,
+                            "id": "remove_split_fastqs",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "2.20.0.422",
+                            "id": "bcl2fastq_version",
+                            "type": "string",
+                            "waiting": false
+                        }
+                    ],
+                    "Return": [
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE",
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "files_merged",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE",
+                            "matchedFork": null,
+                            "value": [],
+                            "id": "merged_file_paths",
+                            "type": "string[]",
+                            "waiting": false
+                        }
+                    ]
+                },
+                "chunks": [
+                    {
+                        "chunkDef": {
+                            "__mem_gb": 1,
+                            "__threads": 1,
+                            "__vmem_gb": 4,
+                            "input_files": [
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_1/test_sample_S1_L001_I1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_1/test_sample_S1_L001_R1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_1/test_sample_S1_L001_R2_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_2/test_sample_S2_L001_I1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_2/test_sample_S2_L001_R1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_2/test_sample_S2_L001_R2_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_3/test_sample_S3_L001_I1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_3/test_sample_S3_L001_R1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_3/test_sample_S3_L001_R2_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_4/test_sample_S4_L001_I1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_4/test_sample_S4_L001_R1_001.fastq.gz",
+                                "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/join-u266ba650fb/files/fastq_path/H35KCBCXY/test_sample_4/test_sample_S4_L001_R2_001.fastq.gz"
+                            ],
+                            "lane": 1,
+                            "output_snum": "1",
+                            "project": "H35KCBCXY",
+                            "sample_id": "test_sample"
+                        },
+                        "metadata": {
+                            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MERGE_FASTQS_BY_LANE_SAMPLE/fork0/chnk0",
+                            "names": [
+                                "args",
+                                "complete",
+                                "jobinfo",
+                                "log",
+                                "outs",
+                                "stderr",
+                                "stdout"
+                            ]
+                        },
+                        "state": "complete",
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "edges": [
+            {
+                "from": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET",
+                "to": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE"
+            },
+            {
+                "from": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                "to": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MERGE_FASTQS_BY_LANE_SAMPLE"
+            }
+        ],
+        "stagecodeLang": "Python",
+        "type": "stage"
+    },
+    {
+        "name": "PREPARE_SAMPLESHEET",
+        "fqname": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+        "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET",
+        "state": "complete",
+        "metadata": {
+            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET",
+            "names": []
+        },
+        "stagecodeCmd": "/Nas3Data/Download/cellranger-10.0.0/mro/tenkit/stages/make_fastqs/prepare_samplesheet",
+        "forks": [
+            {
+                "argPermute": null,
+                "joinDef": {
+                    "__threads": 1,
+                    "__mem_gb": 1,
+                    "__vmem_gb": 4
+                },
+                "state": "complete",
+                "metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0",
+                    "names": [
+                        "complete",
+                        "invocation",
+                        "outs",
+                        "vdrkill"
+                    ]
+                },
+                "split_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/split",
+                    "names": [
+                        "args",
+                        "complete",
+                        "stage_defs"
+                    ]
+                },
+                "join_metadata": {
+                    "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/join",
+                    "names": [
+                        "args",
+                        "chunk_defs",
+                        "complete",
+                        "outs"
+                    ]
+                },
+                "bindings": {
+                    "Argument": [
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+                            "id": "run_path",
+                            "type": "path",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": [
+                                {
+                                    "csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-simple-1.2.0.csv"
+                                }
+                            ],
+                            "id": "specs",
+                            "type": "map[]",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "H35KCBCXY",
+                            "id": "project",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "R1",
+                            "id": "bc_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": 16,
+                            "id": "bc_length",
+                            "type": "int",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": "I1",
+                            "id": "si_read_type",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "force_single_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "filter_dual_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "filter_single_index",
+                            "type": "bool",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+                            "id": "bcl2fastq2_args",
+                            "type": "string",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "",
+                            "node": null,
+                            "matchedFork": null,
+                            "value": null,
+                            "id": "rc_i2_override",
+                            "type": "bool",
+                            "waiting": false
+                        }
+                    ],
+                    "Return": [
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/samplesheet.csv",
+                            "id": "samplesheet",
+                            "type": "csv",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0-u266ba650fa/files/input_samplesheet.csv",
+                            "id": "input_samplesheet",
+                            "type": "csv",
+                            "waiting": false
+                        },
+                        {
+                            "mode": "reference",
+                            "node": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.PREPARE_SAMPLESHEET",
+                            "matchedFork": null,
+                            "value": false,
+                            "id": "dual_indexed_flowcell",
+                            "type": "bool",
+                            "waiting": false
+                        }
+                    ]
+                },
+                "chunks": [
+                    {
+                        "chunkDef": {
+                            "__mem_gb": 1,
+                            "__threads": 1,
+                            "__vmem_gb": 4
+                        },
+                        "metadata": {
+                            "path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/PREPARE_SAMPLESHEET/fork0/chnk0",
+                            "names": [
+                                "args",
+                                "complete",
+                                "jobinfo",
+                                "log",
+                                "outs",
+                                "stderr",
+                                "stdout"
+                            ]
+                        },
+                        "state": "complete",
+                        "index": 0
+                    }
+                ],
+                "index": 0
+            }
+        ],
+        "edges": [],
+        "stagecodeLang": "Python",
+        "type": "stage"
+    }
+]

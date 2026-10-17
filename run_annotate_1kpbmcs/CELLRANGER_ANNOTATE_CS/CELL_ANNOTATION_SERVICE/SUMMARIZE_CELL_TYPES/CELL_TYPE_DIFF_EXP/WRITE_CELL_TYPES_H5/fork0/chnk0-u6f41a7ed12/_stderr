@@ -1,0 +1,10 @@
+[stderr]
+/Nas3Data/Download/cellranger-10.0.0/mro/rna/stages/cas_cell_typing/write_cell_types_h5/__init__.py:31: PolarsInefficientMapWarning: 
+Series.map_elements is significantly slower than the native series API.
+Only use if you absolutely CANNOT implement your logic otherwise.
+Replace this expression...
+  - s.map_elements(lambda x: ...)
+with this one instead:
+  + s.replace_strict(mapper)
+
+  .map_elements(lambda x: mapper[x])

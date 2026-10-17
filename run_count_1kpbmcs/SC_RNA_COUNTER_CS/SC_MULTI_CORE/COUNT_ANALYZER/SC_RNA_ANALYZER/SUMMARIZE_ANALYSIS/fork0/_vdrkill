@@ -1,0 +1,24 @@
+{
+    "timestamp": "2026-03-03T17:17:11.726273514+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u3c10a6a598/files/summary.json",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u3c10a6a598/files/analysis"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T17:10:48.728981235+08:00",
+            "DeltaBytes": 125566741
+        },
+        {
+            "Timestamp": "2026-03-03T17:16:49.617513063+08:00",
+            "DeltaBytes": -2
+        },
+        {
+            "Timestamp": "2026-03-03T17:17:11.726273514+08:00",
+            "DeltaBytes": -44271062
+        }
+    ],
+    "count": 3,
+    "size": 44271064
+}

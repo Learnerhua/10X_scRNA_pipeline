@@ -1,0 +1,363 @@
+format = arf1.0
+language = EN
+
+%result
+@title
+Technology Introduction
+@paragraph
+This project uses the single-cell omics technology (Chromium)\reference{1}, which was developed by 10X Genomics to analyze gene expression patterns at the single cell level from target samples.
+The experimental processes are as follows:
+1. Sample processing and quality inspection: Target tissue samples were prepared with cell/nuclear suspension and evaluated for cell/nuclear suspension quality control.
+2. Isolation of single cells and capture of mRNA molecules: The qualified cell/nuclear suspension was processed by the droplet microfluidic device of Chromium to generate GEMs (Gel beads in Emulsion) and realize the separation of single cells. mRNA molecules were recovered by demulsification after GEM generation, and cDNA was synthesized by reverse transcription of mRNA molecules.
+3. Library preparation and sequencing: The cDNA library was constructed and sequenced after synthesis.
+Data analysis: 
+quality control is performed for sequenced data, and a full set of bioinformatic analyses are conducted to obtain the gene information expressed at the cell/nucleus level of the target sample. 
+
+@figure
+number = 1
+title = "Flow chart of single cell omics technology"
+file = <url = resource/scRNA_analysis_pipeline_cn.png; label = "Flow chart of single cell omics technology">
+size = <width = 800; height = 400>
+desc = " "
+
+%result
+@title
+Project Information
+@paragraph
+Informations of this project are shown in Table1.
+@table
+number = 1
+title = "Project informations"
+file = <url = IDBiotech_result/Project_information.txt>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+
+%result
+@title
+Sequencing statistics
+@paragraph
+
+@subtitle
+number = 1
+Quality Control of Sequencing Data
+@paragraph
+Quality control was processed on Read1 and Read2, Read1 contains 16bp cell barcode and 12bp UMI sequence, and Read2 is cDNA sequence. The Cell Ranger (v10.0.0) tool was used to filter Read1 and Read2 for quality control. The filtering standards are detailed in the information analysis process - Off-board Data Quality Control. The statistical results of quality control are shown in Table 2.
+@table
+number = 2
+title = "Quality control results of sequencing data"
+file = <url = IDBiotech_result/QC.xls>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+format = <field = 3; type = string; align =centre; desc = "Sample">
+format = <field = 4; type = string; align =centre; desc = "Sample">
+format = <field = 5; type = string; align =centre; desc = "Sample">
+format = <field = 6; type = string; align =centre; desc = "Sample">
+footnote = "Sample: Sample name;"
+footnote = "Number of Reads: The total number of reads sequenced;"
+footnote = "Valid Barcodes: Ratio of barcode in Reads to known data sets;"
+footnote = "Q30 Bases in Barcode: The percentage of bases in Barcode with a mass value (Q=-10log(err rate)) greater than 30;"
+footnote = "Q30 Bases in RNA Read: The percentage of bases in RNA Reads with a mass value (Q=-10log(err rate)) greater than 30;"
+footnote = "Q30 Bases in UMI: The percentage of bases in UMI with a mass value (Q=-10log(err rate)) greater than 30."
+
+@subtitle
+number = 2
+Genome Alignment
+@paragraph
+STAR\reference{3} was used to map clean reads to the reference genome, and the number of reads mapped to exon regions, intron regions and inter-genetic regions was counted. The statistical results are shown in Table3.
+@table
+number = 3
+title = "Statistics of Clean Reads aligned to the reference genome"
+file = <url = IDBiotech_result/Mapping.xls>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+format = <field = 3; type = string; align =centre; desc = "Sample">
+format = <field = 4; type = string; align =centre; desc = "Sample">
+format = <field = 5; type = string; align =centre; desc = "Sample">
+footnote = "Sample: Sample name;"
+footnote = "Reads Mapped to Genome: The ratio of reads aligned to reference genome;"
+footnote = "Reads Mapped to Exonic Regions: The ratio of reads aligned to exonic regions of reference genome;"
+footnote ="Reads Mapped to Intronic Regions: The ratio of reads aligned to intronic regions of reference genome;"
+footnote ="Reads Mapped to Intergenic Regions: The ratio of reads aligned to intergenic regions of reference genome."
+
+@subtitle
+number = 3
+Quantification of Gene Expression
+@paragraph
+ Using STARsolo\reference{4} software, reads (Uniquely Mapping Reads) compared to the unique position of the reference genome were counted according to their corresponding relationship with genes and the amount of gene expression (UMI number) to obtain the gene capture situation of each cell. The detailed results were shown in 4.
+@table
+number = 4
+title = "Statistics of Unique Mapping Reads aligned to the reference genome"
+file = <url = IDBiotech_result/Cell.xls>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+format = <field = 3; type = string; align =centre; desc = "Sample">
+format = <field = 4; type = string; align =centre; desc = "Sample">
+format = <field = 5; type = string; align =centre; desc = "Sample">
+format = <field = 6; type = string; align =centre; desc = "Sample">
+footnote = "Sample: Sample name;"
+footnote = "Estimated Number of Cells: Estimated Number of Cells;"
+footnote = "Mean Reads per Cell: Mean Reads per Cell;"
+footnote ="Median Genes per Cell: Median Genes per Cell;"
+footnote = "Total Genes Detected: Total Genes Detected."
+%result
+@title
+Data Normalization
+@paragraph
+The different libraries of a single sample were controlled separately and combined for subsequent analysis after meeting the quality control criteria. By visualizing the cell gene profile, UMI profile, the cell activity and gene expression status of each sample can be assessed. Mitochondrial RNA ratio, RNA quantity and expression can reflect cell activity and quality to some extent. In general, the lower the proportion of mitochondrial RNA, the higher the number of RNA, and the higher the expression of RNA, the better the activity and quality of cells.
+@figure
+number = 2
+title = "Scatter plot of mRNA and mitochondrial RNA correlation"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="Each dot represents a cell. Left: X axis represents mRNA expression, Y axis represents the proportion of mitochondrial RNA; Right: mRNA expression on the X-axis and mRNA number on the Y-axis. The numbers in the figure represent the correlation system."
+
+@figure
+number = 3
+title = "QC violin diagram"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="Left: mRNA number; Middle figure: mRNA expression; Right: Mitochondrial RNA ratio."
+
+
+@paragraph
+According to the quantitative results, the data was filtered out, and the cells with too low or too high mRNA expression and too high proportion of mitochondrial RNA were filtered out. For details, see the information analysis flow - Data Quality Control and Filtering. After filtering, the expression levels of all genes in the cells were homogenized for subsequent analysis.
+%result
+@title
+High variable gene selection and PCA dimensionality reduction
+@paragraph
+
+@subtitle
+number = 1
+ Highly variable feature screening 
+@paragraph
+ Based on the mean and dispersion (mean and variance) of all genes in each sample, R-package -Seurat\reference{4} was used to screen out genes with high variability in each sample for downstream PCA analysis. The 2,000 genes with the highest degree of variation are selected by default. See Information Analysis Flow - High Variable Feature Screening for details.
+@figure
+number = 4
+title = "High variant gene screening plot"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png; label = "run_count_1kpbmcs">
+size = <width = 860>
+desc="The X-axis represents the average expression level, and the Y-axis represents the standardized variance. On the basis of the left figure, marker genes with the top 10 expression level variation were marked in the right figure."
+
+
+@subtitle
+number = 2
+ Principl component analysis 
+@paragraph
+ Dimensional heat maps show the heterogeneity of principal component (PC) genes with the greatest variation and their expression levels in cell data, helping to select appropriate dimensions for downstream analysis. You can also use the elbow plot to determine how many PCS are used to cluster in order to capture most of the changes in the data. Figure 5 and Figure 6 are used to show the dimension reduction results of top15PC. It can be seen that with the increase of PC components, features become less and less obvious, which is helpful for downstream selection of appropriate dimensions.
+@figure
+number = 5
+title = "Dimension reduction heatmap for Top15 PCS"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png; label = "run_count_1kpbmcs">
+size = <width = 1200>
+desc="Each column represents a cell and each row represents a gene; Yellow indicates high expression and purple indicates low expression."
+
+@figure
+number = 6
+title = "Elbow plot for Top15 PCS"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="The X-axis is the PC serial number and the Y-axis is the standard deviation."
+
+%result
+@title
+Data Clean
+@paragraph
+Different libraries of a single sample were cleaned and filtered separately, and then combined for subsequent analysis after meeting the quality control standards. By calculating the possible proportion of double cells (nuclear) in the droplet and the possible foreign RNA contamination, the cells most likely to be contaminated or double cells (nuclear) were inferred by hypothesis testing under a certain probability. The results of the calculation are presented by the dimensionality reduction cluster plot of the data, and the cells eliminated by both filtering methods are eliminated and not included in the subsequent analysis.
+@figure
+number = 7
+title = "Doublets (nuclear) and Singlets cells identified by DoubletFinder."
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="Each dot represents a cell. Different colors indicate cell types; red indicates that the cell is Doublets (nuclear) and cyan indicates that the cell is Singlets. "
+
+@figure
+number = 8
+title = "DecontX identifies contaminated cells."
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="Each dot represents a cell. Different colors indicate cell types, with red indicating a higher probability of cell contamination and cyan indicating a lower probability of cell contamination."
+
+
+@paragraph
+According to the quantitative results, the data were filtered out, and the cells that might be double (nuclear) or with contamination were filtered out. The filtered data set was used to homogenize the expression levels of all genes in the cells for subsequent analysis.
+%result
+@title
+Single sample analysis
+@paragraph
+@subtitle
+number = 1
+ Cell Clustering 
+@paragraph
+ Firstly, PCA was used for dimensionality reduction of gene expression matrix, and then UMAP was used for cell clustering. The cell clustering results were shown in Figure 6. In this figure, each point represents a cell, and the closest points in space indicate that the gene expression patterns of these cells are more similar. The colors are determined by a graph-based clustering algorithm that identifies cells within a cluster as having the most similar gene expression patterns.
+@figure
+number = 9
+title = " Cell clustering result"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="The X-axis represents the first component of UMAP, and the Y-axis represents the second component of UMAP. The number and color represent the cluster number."
+
+
+@subtitle
+number = 2
+ Marker gene identification 
+@paragraph
+ Seurat was used to calculate the differentially expressed genes (marker genes) between each type of cell and other groups. After screening and correction, top10 marker genes with p-value<0.05 and log2FC(log2 fold change: used to evaluate the average expression difference multiple) were used for visualization of subsequent results. Table 4 shows the first five rows of results. The complete table is in the delivery directory IDBiotech_result/ 4.SINGLE_SAMPLE /*/2.marker_find/*top10_GeneDiffExp.xls.
+@table
+number = 5
+title = "run_count_1kpbmcsMarker genes of cell clustering(Top3)"
+file = <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_top3_Markers.xls>
+format = <field = 1; type = string; align =centre; align =centre; desc = "P-value">
+format = <field = 2; type = string; align =centre; desc = "Average log2FC">
+format = <field = 3; type = string; align =centre; desc = "pct.1">
+format = <field = 4; type = string; align =centre; desc = "pct.2">
+format = <field = 5; type = string; align =centre; desc = "Adjusted P-value">
+format = <field = 6; type = string; align =centre; desc = "Cluster">
+format = <field = 7; type = string; align =centre; desc = "Gene">
+footnote = "pct.1: Percentage of Marker cells in the current cell cluster;"
+footnote = "pct.2: Percentage of Marker cells in other remaining cell clusters."
+footnote = "avg_logFC: A multiple of the difference in the average expression between the two groups is recorded, with a positive value indicating that the feature is expressed more highly in the current cluster."
+footnote = "p_val_adj: The adjusted P-value, the smaller of adjusted Pvalue, the more significant it is."
+footnote = "cluster: cell clusters."
+view = -1
+
+
+@subtitle
+number = 3
+ Marker gene identification 
+@paragraph
+ The obtained Marker genes were statistically expressed in different cell groups, and visualized by means of clustering heat map, bubble map and violin map. The results of Top3 genes in each cell group were shown in figure10, figure11 and figure12, respectively.
+@figure
+number = 10
+title = "Heatmap of Marker gene clustering"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png; label = "run_count_1kpbmcs">
+size = <width = 1000>
+desc="The abscissa represents different cell groups; The ordinate is Marker gene; Yellow represents high expression and purple represents low expression."
+
+@figure
+number = 11
+title = "Bubble heatmap of Marker gene "
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png; label = "run_count_1kpbmcs">
+size = <width = 1200>
+desc="The abscissa is Marker gene and the ordinate is different cell group. The color ranges from light to dark, darker color represent higher expression level. Larger bubble indicates a higher percentage of cells expressing the gene in the cell group."
+
+@figure
+number = 12
+title = "Violin diagram of Marker gene "
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png; label = "run_count_1kpbmcs">
+size = <width = 1200>
+desc="The ordinate is different cell groups, and the abscissa is specific marker genes’ expression levels. "
+
+%result
+@title
+Functional Enrichment Analysis
+@paragraph
+Significat differently expressed Genes(DEGs, adjust P-value < 0.05 && Log2FC > 0.5) were screened from all Marker genes in each cell cluster. ClusterProfiler was used to conduct functional enrichment analysis of GO (Gene Ontology) and KEGG (Kyoto Encyclopedia of Genes and Genomes) categories\reference{4}. Enrichment results are shown from Figure 13 to 14.
+
+@subtitle
+number = 1
+ GO enrichment analysis 
+@paragraph
+ The differential genes were enriched using the gene ontology database (GO).
+@figure
+number = 13
+title = "Barplot of GO enrichment"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png; label = "run_count_1kpbmcs_0 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_GO_Barplot.png; label = "run_count_1kpbmcs_1 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_GO_Barplot.png; label = "run_count_1kpbmcs_2 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_GO_Barplot.png; label = "run_count_1kpbmcs_3 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_GO_Barplot.png; label = "run_count_1kpbmcs_4 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_GO_Barplot.png; label = "run_count_1kpbmcs_5 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_GO_Barplot.png; label = "run_count_1kpbmcs_6 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_GO_Barplot.png; label = "run_count_1kpbmcs_7 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_GO_Barplot.png; label = "run_count_1kpbmcs_8 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_GO_Barplot.png; label = "run_count_1kpbmcs_9 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_GO_Barplot.png; label = "run_count_1kpbmcs_10 cluster">
+size = <width = 1400>
+desc="X-axis, number of enriched genes; y-axis, the significant enriched GO term; The dot color corresponds to different GO database, Molecular Function(MF),Cellular Component(CC), and Biological Process(BP)."
+
+@subtitle
+number = 2
+ KEGG enrichment analysis 
+@paragraph
+ The differential genes were enriched using the KEGG pathway database.
+@figure
+number = 14
+title = "Barplot of KEGG enrichment analysis"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png; label = "run_count_1kpbmcs_0 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_KEGG_Barplot.png; label = "run_count_1kpbmcs_1 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_KEGG_Barplot.png; label = "run_count_1kpbmcs_2 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_KEGG_Barplot.png; label = "run_count_1kpbmcs_3 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_KEGG_Barplot.png; label = "run_count_1kpbmcs_4 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_KEGG_Barplot.png; label = "run_count_1kpbmcs_5 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_KEGG_Barplot.png; label = "run_count_1kpbmcs_6 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_KEGG_Barplot.png; label = "run_count_1kpbmcs_7 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_KEGG_Barplot.png; label = "run_count_1kpbmcs_8 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_KEGG_Barplot.png; label = "run_count_1kpbmcs_9 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_KEGG_Barplot.png; label = "run_count_1kpbmcs_10 cluster">
+size = <width = 1200>
+desc="X-axis, number of enriched genes; y-axis, enriched KEGG Pathway; The dot color corresponds to log10(P-value), and the darker the color, the more significant the enrichment."
+%result
+@title
+Annotation of Cell Clusters
+@paragraph
+After dividing cells into different groups through cluster analysis, cell types are further identified by using marker gene information in public databases.
+SingleR Cell Annotation
+SingleR\reference{4}can recognize the existing cell clustering results based on Seurat, compare each cluster with a reference data set, and score the cluster according to the similarity of gene expression between cluster and known cell groups in the reference data set to obtain a scoring matrix. Cells/Bins can be annotated into different groups by scoring matrix results. The visualization results of the scoring matrix of cell clustering results are shown in Figure 15, and the annotation results of cell groups are shown in Figure 16.
+@figure
+number = 15
+title = "Scoring heatmap of cell cluster annotation by SingleR"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="x-axis, the cell clusters; y-axis, cell types contained in the reference dataset; the color ranges from blue to yellow, and the more closer to yellow, the higher scores; top lables represent the annotation result by SingleR."
+@figure
+number = 16
+title = "Annotation results of cell clusters by SingleR"
+file = <url = IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png; label = "run_count_1kpbmcs">
+size = <width = 900; height = 350>
+desc="Cluster results of UMAP. Each color represents a cell cluster annotaed by SingleR."
+%result
+@title
+Pseudotime Analysis
+@paragraph
+Pseudotime analysis, also known as trajectory inference, refers to obtaining cell lineage information according to the differentially expressed genes among different cell groups and constructing a change trajectory of cells in a virtual timeline. Based on these results, a cell change timeline can be recreated.
+        Monocle3\reference{5} was used for Pseudo-time analysis. Based on the result of dimensionality reduction and clustering, we further estimated whether the clustering results belonged to the same developmental trajectory. The cell groups were visualized according to the developmental trajectories predicted by the software, and the results are shown in Figure 17.
+@figure
+number = 17
+title = "Cell development trajectory diagram"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="The black lines in the figure show the presumed trajectory of cell development."
+@paragraph
+According to the results of cell development trajectory, combined with the changes of gene expression levels in different cell groups, Monocle3 could identify the cells at the earliest developmental stage using a machine learning algorithm and create a pseudo-time analysis, as shown in Figure 18.
+@figure
+number = 18
+title = "Diagram of pseudo time series analysis results"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="The black lines represent the presumed developmental trajectory of the cells, ranging in color from purple to yellow, and the color closer to yellow, the cells develop the later."
+@paragraph
+In the clustering results of different cell classes, the top 5 marker genes calculated by Monocle3 were selected, and the gene expression levels were visualized according to the obtained pseudo-time results, as shown in Figure 19.
+@figure
+number = 19
+title = "Pseudo expression result of Marker gene"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="x-axis, the result of Pseudotime; y-axis, gene expression, and the color ranges from purple to yellow. the color closer to yellow, the cell development time is the later. The black line shows trends in gene expression."
+%result
+@title
+Interaction of Cell Clusters
+@paragraph
+CellChat\reference{6} is a tool capable of quantitatively inferring and analyzing cell-to-cell communication networks from single-cell data, using network analysis and pattern recognition methods to predict the main signal inputs and outputs of cells and how these cells and signals coordinate their functions. The CellChatDB database incorporates signal analysis information from KEGG and recent studies. The database includes known ligand-receptor complex compositions, including ligand-receptor polymeric complexes and several coenzyme factors. In this project, CellChat was used to identify ligand/receptor relationships and intercellular communication molecules in spatio-temporal data, and to study the interaction and communication networks between different cell types.The communication network among all cell clusters is shown in Fig20, and the communication network between each cluster and other clusters is shown in Fig21.
+@figure
+number = 20
+title = "Communication network diagram between all cell clusters"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png; label = "run_count_1kpbmcs">
+size = <width = 800>
+desc="The thicker the connection line, the stronger the interaction between two clusters"
+@figure
+number = 21
+title = "Communication network diagram between each cell cluster and others"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png; label = "run_count_1kpbmcs">
+size = <width = 800>
+desc="The thicker the connection line, the stronger the interaction between two clusters"
+

@@ -1,0 +1,2 @@
+[stdout]
+num_features=38606,num_barcodes=329735,nnz=5347713,chunk_mem_gib=9.7,join_mem_gib=6

@@ -1,0 +1,6 @@
+{
+    "analysis": null,
+    "cell_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/REPLACE_LOW_UMI_CELLS/fork0/join-u6f41a7ed0e/files/cell_types.csv",
+    "cloupe_projection": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/EXTRACT_LOUPE_PROJECTION/fork0/chnk0-u6f41a7e9d2/files/umap.csv",
+    "pipestance_type": "CELLRANGER_ANNOTATE_CS"
+}

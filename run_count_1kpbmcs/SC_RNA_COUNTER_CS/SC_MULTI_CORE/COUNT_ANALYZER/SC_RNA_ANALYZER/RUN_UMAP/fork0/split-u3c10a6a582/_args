@@ -1,0 +1,12 @@
+{
+    "input_dims": null,
+    "matrix_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u3c10a6a574/files/preprocessed_matrix_h5.h5",
+    "max_dims": null,
+    "metric": null,
+    "min_dist": null,
+    "n_neighbors": null,
+    "parallel": false,
+    "random_seed": null,
+    "reduction_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u3c10a6a57c/files/pca_h5.h5",
+    "reduction_type": "pca"
+}

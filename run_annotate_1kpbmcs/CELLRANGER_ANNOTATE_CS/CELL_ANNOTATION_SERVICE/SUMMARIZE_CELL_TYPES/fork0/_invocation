@@ -1,0 +1,22 @@
+@include "rna/cell_annotation_service.mro"
+
+call SUMMARIZE_CELL_TYPES(
+    filtered_matrix     = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix.h5",
+    cell_type_results   = {
+        cell_types:        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/cell_types.csv",
+        frac_returned_bcs: 1,
+        metadata:          "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/metadata.json",
+        model_used:        "human_pca_v1_beta",
+        results:           "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/results.json.gz",
+        skip_downstream:   false,
+    },
+    cell_types          = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/REPLACE_LOW_UMI_CELLS/fork0/join-u6f41a7ed0e/files/cell_types.csv",
+    analysis            = null,
+    tissue_positions    = null,
+    tissue_lowres_image = null,
+    scale_factors       = null,
+    pipestance_type     = "CELLRANGER_ANNOTATE_CS",
+    cas_success         = true,
+    is_pd               = false,
+    cloupe_projection   = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/EXTRACT_LOUPE_PROJECTION/fork0/chnk0-u6f41a7e9d2/files/umap.csv",
+)

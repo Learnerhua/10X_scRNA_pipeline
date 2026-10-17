@@ -1,0 +1,32 @@
+{
+    "aggregate_barcodes": null,
+    "feature_reference_binary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/split-u3c10a6a045/files/feature_reference.frf.bincode",
+    "filtered_barcodes": null,
+    "per_barcode_metrics": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u3c10a6a0df/files/metrics_shard.bmsf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk1-u3c10a6a0df/files/metrics_shard.bmsf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk2-u3c10a6a0df/files/metrics_shard.bmsf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk3-u3c10a6a0df/files/metrics_shard.bmsf"
+    ],
+    "reference_info": {
+        "genomes": [
+            "GRCh38"
+        ],
+        "transcriptome_info": {
+            "fasta_hash": "b6f131840f9f337e7b858c3d1e89d7ce0321b243",
+            "gtf_hash": "",
+            "gtf_hash_gz": "432db3ab308171ef215fac5dc4ca40096099a4c6",
+            "input_fasta_files": [
+                "Homo_sapiens.GRCh38.dna.primary_assembly.fa.modified"
+            ],
+            "input_gtf_files": [
+                "gencode.v44.primary_assembly.annotation.gtf.filtered"
+            ],
+            "mem_gb": 16.0,
+            "mkref_version": "8.0.0",
+            "reference_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/References/refdata-gex-GRCh38-2024-A"
+        },
+        "version": "2024-A"
+    },
+    "sample_barcodes": null
+}

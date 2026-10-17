@@ -1,0 +1,6 @@
+Content
+
+Clean Reads
+Unique Mapping Reads
+Multiple Mapping Reads
+Un-mapping Reads

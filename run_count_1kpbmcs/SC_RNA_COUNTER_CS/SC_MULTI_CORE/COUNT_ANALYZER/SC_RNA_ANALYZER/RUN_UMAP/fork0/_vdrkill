@@ -1,0 +1,30 @@
+{
+    "timestamp": "2026-03-03T17:10:49.644296574+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/chnk0-u3c10a6a582/files/umap_csv",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/chnk0-u3c10a6a582/files/umap_h5.h5",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u3c10a6a582/files/umap_csv",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u3c10a6a582/files/umap_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T17:10:26.629867838+08:00",
+            "DeltaBytes": 110124
+        },
+        {
+            "Timestamp": "2026-03-03T17:10:31.151732133+08:00",
+            "DeltaBytes": 101329
+        },
+        {
+            "Timestamp": "2026-03-03T17:10:31.256985405+08:00",
+            "DeltaBytes": -95166
+        },
+        {
+            "Timestamp": "2026-03-03T17:10:49.644296574+08:00",
+            "DeltaBytes": -95166
+        }
+    ],
+    "count": 8,
+    "size": 190332
+}

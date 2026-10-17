@@ -1,0 +1,8 @@
+{
+    "__mem_gb": 1,
+    "__threads": 1,
+    "__vmem_gb": 4,
+    "cas_track_name": null,
+    "cloupe_cas_types": null,
+    "sample_cloupe": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/join-u3c10a6a701/files/output_for_cloupe.cloupe"
+}

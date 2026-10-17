@@ -1,0 +1,7 @@
+{
+    "cell_annotation_differential_expression": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_annotation_differential_expression.csv",
+    "cell_annotation_results": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_annotation_results.json.gz",
+    "cell_annotation_sample_cloupe": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_annotation_sample_cloupe.cloupe",
+    "cell_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/cell_types.csv",
+    "web_summary_cell_types": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/outs/web_summary_cell_types.html"
+}

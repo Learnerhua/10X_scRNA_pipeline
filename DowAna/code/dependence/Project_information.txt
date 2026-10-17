@@ -1,0 +1,8 @@
+信息	内容
+合同编号	E-SCR20220107001
+项目名称	Test-name
+合作方	Test-object
+物种名称	人（Homo Sapiens）
+参考基因组	GRCh38（hg38）
+样品组织/部位	肝脏
+样品数目	10

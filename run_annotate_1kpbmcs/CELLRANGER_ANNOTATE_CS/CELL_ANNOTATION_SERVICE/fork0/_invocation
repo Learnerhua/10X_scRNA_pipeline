@@ -1,0 +1,17 @@
+@include "rna/cell_annotation_service.mro"
+
+call CELL_ANNOTATION_SERVICE(
+    filtered_matrix       = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix.h5",
+    analysis              = null,
+    sample_id             = "run_annotate_1kpbmcs",
+    sample_desc           = "",
+    tissue_positions      = null,
+    tissue_lowres_image   = null,
+    scale_factors         = null,
+    cell_annotation_model = null,
+    tenx_cloud_token_path = "/oldhome/ouyjh/.config/txg/credentials",
+    pipestance_type       = "CELLRANGER_ANNOTATE_CS",
+    alert_string          = null,
+    is_pd                 = false,
+    cloupe_projection     = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/EXTRACT_LOUPE_PROJECTION/fork0/chnk0-u6f41a7e9d2/files/umap.csv",
+)

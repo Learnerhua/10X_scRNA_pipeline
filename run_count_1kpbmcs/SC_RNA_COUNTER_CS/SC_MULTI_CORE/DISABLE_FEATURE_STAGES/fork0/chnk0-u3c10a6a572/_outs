@@ -1,0 +1,12 @@
+{
+    "disable_antibody": true,
+    "disable_antigen": true,
+    "disable_crispr": true,
+    "disable_gex": false,
+    "disable_legacy_stages": false,
+    "disable_library_cloupe": false,
+    "disable_library_crispr": true,
+    "disable_library_rna": false,
+    "disable_multiplexing": true,
+    "disable_targeted": true
+}

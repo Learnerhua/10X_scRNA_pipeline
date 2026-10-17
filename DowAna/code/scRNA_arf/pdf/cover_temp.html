@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>BGI Project Report</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width:1127px;
+	position:absolute;
+	background-image:url(SAD.jpg);
+	background-repeat: no-repeat;
+}
+.cover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	line-height:80px;
+	display:block;
+	width:1127px;
+	text-align:center;
+}
+.report_title{
+font-size:55px;
+font-weight:bold;
+}
+-->
+</style></head>
+<body>
+	<div class="cover">
+		<br /><br /><br /><br /><br />
+		<div class="report_title">BGI Report</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<strong>BGI Co., Ltd.</strong><br />
+		<span id="date" style="font-size:28px"><script type="text/javascript">
+                        var today = new Date();
+			var dayName = new Array("", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+    			var monName = new Array("Jan. ", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sept.", "Oct.", "Nov.", "Dec.");
+			var strDay;
+			if ((today.getDate() == 1) || (today.getDate() != 11) && (today.getDate() % 10 == 1))   // Correction for 11th and 1st/21st/31st
+    			strDay = "st ";
+    			else if ((today.getDate() == 2) || (today.getDate() != 12) && (today.getDate() % 10 == 2)) // Correction for 12th and 2nd/22nd/32nd
+    			strDay = "nd ";
+    			else if ((today.getDate() == 3) || (today.getDate() != 13) && (today.getDate() % 10 == 3)) // Correction for 13th and 3rd/23rd/33rd
+    			strDay = "rd ";
+    			else
+    			strDay = "th ";
+                        document.write( dayName[today.getDay()]   +", " + today.getDate() + strDay    + " " + monName[today.getMonth()]+', '+ today.getFullYear());
+                </script></span>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@include "rna/_cr_lib_stages.mro"
+
+call GENERATE_CAS_WEBSUMMARY(
+    sample_id                   = "run_annotate_1kpbmcs",
+    sample_desc                 = "",
+    cas_frac_returned_bcs       = 1,
+    metadata                    = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/CALL_CLOUD_CELL_TYPES/fork0/join-u6f41a7e9d2/files/metadata.json",
+    cell_annotation_model       = "human_pca_v1_beta",
+    cell_type_bar_chart         = null,
+    spatial_cell_types_chart    = null,
+    cell_type_websummary_bundle = {
+        cell_annotation_metrics:         null,
+        cell_type_interactive_bar_chart: "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CELL_TYPES_BARCHART/fork0/chnk0-u6f41a7ed12/files/cell_type_interactive_bar_chart.json",
+        cell_types_box_plot:             "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CELL_TYPES_BOX_PLOT/fork0/join-u6f41a7ed12/files/cell_types_box_plot.json",
+        cell_types_umap_plot:            "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CELL_TYPES_UMAP_PLOT/fork0/chnk0-u6f41a7ed12/files/cell_types_umap_plot.json",
+        diffexp:                         "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/TIDY_CELLTYPE_DIFFEXP/fork0/chnk0-u6f41a7ed21/files/diffexp.json",
+    },
+    cas_success                 = true,
+    disable_differential_expression = false,
+    alert_string                = null,
+    disable_cas_ws              = null,
+    pipestance_type             = "CELLRANGER_ANNOTATE_CS",
+)

@@ -1,0 +1,10 @@
+{
+    "__mem_gb": 1,
+    "__threads": 1,
+    "__vmem_gb": 4,
+    "check_executables": true,
+    "interop_output_path": null,
+    "max_bcl2fastq_threads": 6,
+    "output_path": null,
+    "run_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0"
+}

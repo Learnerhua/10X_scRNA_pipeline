@@ -1,0 +1,12 @@
+{
+    "B cell": 1,
+    "T cell": 2,
+    "glial cell": 3,
+    "hematopoietic cell": 4,
+    "hematopoietic precursor cell": 5,
+    "leukocyte": 6,
+    "lymphocyte": 7,
+    "monocyte": 8,
+    "mononuclear cell": 9,
+    "myeloid leukocyte": 10
+}

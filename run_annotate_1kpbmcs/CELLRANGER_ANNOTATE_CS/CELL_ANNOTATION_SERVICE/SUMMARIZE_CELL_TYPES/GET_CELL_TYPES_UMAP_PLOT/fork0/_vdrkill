@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-03-04T16:28:20.136138991+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/SUMMARIZE_CELL_TYPES/GET_CELL_TYPES_UMAP_PLOT/fork0/chnk0-u6f41a7ed12/files/cell_types_umap_plot.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-04T16:28:02.223574864+08:00",
+            "DeltaBytes": 131268
+        },
+        {
+            "Timestamp": "2026-03-04T16:28:20.136138991+08:00",
+            "DeltaBytes": -126844
+        }
+    ],
+    "count": 1,
+    "size": 126844
+}

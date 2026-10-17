@@ -1,0 +1,133 @@
+{
+    "name": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.BCL2FASTQ_WITH_SAMPLESHEET.fork0",
+    "type": "local",
+    "cwd": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/BCL2FASTQ_WITH_SAMPLESHEET/fork0/split-u266ba650fb/files",
+    "python": {
+        "binpath": "/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin/python3",
+        "version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:45:31) [GCC 13.3.0]"
+    },
+    "rusage": {
+        "self": {
+            "ru_maxrss": 14336,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 415,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.00343,
+            "ru_stime": 0.00343,
+            "ru_inblock": 16,
+            "ru_oublock": 48,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 0
+        },
+        "children": {
+            "ru_maxrss": 20480,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 3593,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.104052,
+            "ru_stime": 0.031985,
+            "ru_inblock": 96,
+            "ru_oublock": 88,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 1
+        }
+    },
+    "used_bytes": {
+        "rss": 14680064,
+        "shared": 4194304,
+        "vmem": 1636913152,
+        "text": 1437696,
+        "stack": 83193856,
+        "proc_count": 1
+    },
+    "io": {
+        "total": {
+            "read": {
+                "sysc": 6,
+                "bytes": 0
+            },
+            "write": {
+                "sysc": 0,
+                "bytes": 0
+            }
+        },
+        "max": {
+            "read": {
+                "sysc": 1003.9098944020645,
+                "bytes": 0
+            },
+            "write": {
+                "sysc": 0,
+                "bytes": 0
+            }
+        },
+        "dev": {
+            "read": {
+                "sysc": 0,
+                "bytes": 0
+            },
+            "write": {
+                "sysc": 0,
+                "bytes": 0
+            }
+        }
+    },
+    "wallclock": {
+        "start": "2026-03-03T11:09:47.253492204+08:00",
+        "end": "2026-03-03T11:09:47.414663304+08:00",
+        "duration_seconds": 0.161171097
+    },
+    "profile_mode": "disable",
+    "stackvars_flag": "disable",
+    "monitor_flag": "disable",
+    "invocation": {
+        "call": "MAKE_FASTQS_CS",
+        "args": {
+            "all_mkfastq_args": "--id=tiny-bcl --run=cellranger-tiny-bcl-1.2.0 --csv=cellranger-tiny-bcl-simple-1.2.0.csv",
+            "bases_mask": null,
+            "bc_length": 16,
+            "bc_read_type": "R1",
+            "bc_start_index": 0,
+            "bcl2fastq1_args": " --mismatches=1",
+            "bcl2fastq2_args": " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+            "delete_undetermined": false,
+            "filter_dual_index": false,
+            "filter_single_index": false,
+            "force_single_index": false,
+            "interop_output_path": null,
+            "lanes": null,
+            "max_bcl2fastq_threads": 6,
+            "output_path": null,
+            "project": "H35KCBCXY",
+            "rc_i2_override": null,
+            "run_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+            "si_read_type": "I1",
+            "specs": [
+                {
+                    "csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-simple-1.2.0.csv"
+                }
+            ],
+            "umi_length": 10,
+            "umi_read_type": "R1",
+            "umi_start_index": 16
+        },
+        "mro_file": "tenkit/make_fastqs_cs.mro"
+    },
+    "version": {
+        "martian": "v4.0.14",
+        "pipelines": "10.0.0"
+    },
+    "host": "fat02",
+    "pid": 599719,
+    "threads": 1,
+    "memGB": 1,
+    "vmemGB": 4
+}

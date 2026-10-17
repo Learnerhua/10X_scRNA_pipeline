@@ -1,0 +1,364 @@
+format = arf1.0
+language = CN
+
+%result
+@title
+技术简介
+@paragraph
+本项目使用10X Genomics开发的单细胞组学技术（Chromium）\reference{1}，分析目标样本的单细胞水平的转录表达模式，全流程概览如图1所示。
+实验流程：
+1. 样本处理及质检：对目标组织样本进行细胞/细胞核悬液制备，并进行细胞/细胞核悬液质控评估；
+2. 单细胞分离及mRNA分子的捕获：对制备合格的细胞/细胞核悬液通过Chromium的液滴微流控设备，完成GEM（Gel bead in Emulsion）的生成，实现单个细胞的分离，GEM生成后破乳回收mRNA分子，并对mRNA分子进行逆转录合成cDNA；
+3. 文库制备及测序：cDNA合成后构建测序文库并完成测序；
+数据分析：
+针对下机数据进行质控，并完成全套分析，最终得到目标样本细胞/细胞核水平表达的基因信息。
+
+@figure
+number = 1
+title = "单细胞组学技术流程图"
+file = <url = resource/scRNA_analysis_pipeline_cn.png; label = "单细胞组学技术流程图">
+size = <width = 800; height = 400>
+desc = " "
+
+%result
+@title
+项目信息
+@paragraph
+本项目的信息见表1。
+@table
+number = 1
+title = "项目信息表"
+file = <url = IDBiotech_result/Project_information.txt>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+
+%result
+@title
+测序结果
+@paragraph
+
+@subtitle
+number = 1
+下机数据质控
+@paragraph
+测序数据下机后，会对read1和read2进行数据质控，read1为包含16bp cell barcode以及12bp UMI序列，read2为cDNA序列。 使用Cell Ranger (v10.0.0) 工具对read1和read2进行质控过滤， 过滤标准详见信息分析流程-下机数据质控，质控统计结果见表2。
+@table
+number = 2
+title = "下机数据质控统计结果"
+file = <url = IDBiotech_result/QC.xls>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+format = <field = 3; type = string; align =centre; desc = "Sample">
+format = <field = 4; type = string; align =centre; desc = "Sample">
+format = <field = 5; type = string; align =centre; desc = "Sample">
+format = <field = 6; type = string; align =centre; desc = "Sample">
+footnote = "Sample: 样本名；"
+footnote = "Number of Reads：测序的总reads数；"
+footnote = "Valid Barcodes: Reads中的barcode在已知数据集中的比例；"
+footnote = "Q30 Bases in Barcode：Barcode测序质量在Q30以上的碱基比例；"
+footnote = "Q30 Bases in RNA Read: 插入RNA片段的测序质量在Q30以上的碱基比例；"
+footnote = "Q30 Bases in UMI: UMI测序质量在Q30以上的碱基比例；"
+
+@subtitle
+number = 2
+基因组比对
+@paragraph
+使用STAR\reference{3}软件将Clean Reads与参考基因组进行比对，统计比对到外显子区、内含子区、基因间区等区域的reads数。比对结果见表3。
+@table
+number = 3
+title = "Clean Reads与参考基因组的比对结果统计"
+file = <url = IDBiotech_result/Mapping.xls>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+format = <field = 3; type = string; align =centre; desc = "Sample">
+format = <field = 4; type = string; align =centre; desc = "Sample">
+format = <field = 5; type = string; align =centre; desc = "Sample">
+footnote = "Sample: 样本名；"
+footnote = "Reads Mapped to Genome：比对到基因组上的reads比例；"
+footnote = "Reads Mapped to Exonic Regions：比对到外显子区域的reads比例；"
+footnote = "Reads Mapped to Intronic Regions：比对到内含子区域的reads比例；"
+footnote = "Reads Mapped to Intergenic Regions：比对到基因间区的reads比例；"
+
+@subtitle
+number = 3
+基因表达定量
+@paragraph
+使用STARsolo\reference{4}软件，将比对到参考基因组唯一位置的reads (Uniquely Mapping Reads) 与基因的对应关系以及基因表达量(UMI数量)进行统计， 得到每个细胞基因捕获情况， 具体结果见表4。
+@table
+number = 4
+title = "基因捕获情况统计"
+file = <url = IDBiotech_result/Cell.xls>
+format = <field = 1; type = string; align =centre; desc = "Sample">
+format = <field = 2; type = string; align =centre; desc = "Sample">
+format = <field = 3; type = string; align =centre; desc = "Sample">
+format = <field = 4; type = string; align =centre; desc = "Sample">
+format = <field = 5; type = string; align =centre; desc = "Sample">
+format = <field = 6; type = string; align =centre; desc = "Sample">
+footnote = "Sample: 样本名"
+footnote = "Estimated Number of Cells：细胞数量估计；"
+footnote = "Mean Reads per Cell：平均每个细胞中的reads数量；"
+footnote = "Median Genes per Cell：平均每个细胞中的基因数；"
+footnote = "Total Genes Detected：检测到的基因总数；"
+footnote = "Median UMI Counts per Cell：平均每个细胞中UMI的数量。"
+%result
+@title
+数据标准化
+@paragraph
+对单个样品的不同文库分别质控， 满足质控标准后合并用于后续分析。 通过可视化细胞的基因分布图， UMI分布图， 可以评估每个样品的细胞活性及基因表达况。线粒体RNA比例， RNA数量和表达量在一定程度上可以反映出细胞活性和质量。 一般来说， 线粒体RNA比例越低、 RNA数量越多、 RNA表达量越高的细胞， 其活性和质量越好。
+@figure
+number = 2
+title = "mRNA和线粒体RNA相关性散点图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="每个点表示一个细胞。 左图： X轴表示mRNA表达量， Y轴表示线粒体RNA比例； 右图： X轴mRNA表达量， Y轴表示mRNA数。 图中数字表示相关性系。"
+
+@figure
+number = 3
+title = "QC小提琴图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="左图： mRNA数； 中图： mRNA表达量； 右图： 线粒体RNA比例。"
+
+
+@paragraph
+根据定量结果进行数据过滤， 过滤掉mRNA表达量过低或过高， 以及线粒体RNA比例过高的细胞， 详见信息分析流程-数据质控和过滤， 过滤后的数据集对细胞内所有基因的表达量进行均一化用于后续分析。
+%result
+@title
+高变基因选择和PCA降维
+@paragraph
+
+@subtitle
+number = 1
+ 高变特征筛选 
+@paragraph
+ 基于每个样品中所有基因平均值和分散度（ 均值和方差） ， 使用R包-Seurat\reference{4}筛选出每个样品中呈现高变异度的基因， 用于下游的PCA分析。 默认挑选变异程度最高的2000个基因。 详见信息分析流程-高变特征筛选。
+@figure
+number = 4
+title = "高变基因筛选图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png; label = "run_count_1kpbmcs">
+size = <width = 860>
+desc="X轴表示平均表达量,Y轴表示标准化方差,右图在左图基础上标注了表达量变异程度top 10的marker基因。"
+
+
+@subtitle
+number = 2
+ 主成分分析 
+@paragraph
+维度热图展示了主成分（ PC） 的变异最大的基因和及其表达量在细胞数据中的异质性， 有助于选择合适的维度进行下游分析。 同时也可以采用折线图 (elbow plot) 决定使用多少个PC来聚类， 以便捕捉到数据中大部分的变化。 图5和图6用于展示top15PC的降维结果， 可以看到随着PC成分的增加， 特征越来越不明显， 有助于下游选择合适的维度。
+@figure
+number = 5
+title = "Top15 PC的降维热图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png; label = "run_count_1kpbmcs">
+size = <width = 1200>
+desc="每列表示一个细胞， 每行表示一个基因； 黄色表示高表达， 紫色表示低表达。"
+
+@figure
+number = 6
+title = "Top15 PC的elbow plot图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="X轴为PC序号， Y轴为标准差。"
+
+%result
+@title
+数据清洗
+@paragraph
+对单个样品的不同文库分别数据清洗和过滤， 满足质控标准后合并用于后续分析。 通过计算液滴中可能存在的双细胞（核）比例以及可能存在的外来RNA污染，利用假设检验推断出在一定概率下最有可能受到污染或者是双胞（核）的细胞。计算结果通过数据的降维聚类图展示，两种过滤方法均淘汰的细胞会被剔除，不纳入后续的分析中。
+@figure
+number = 7
+title = "DoubletFinder 识别的双胞（核）以及非双胞。"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="每个点表示一个细胞。不同颜色表示细胞类型，红色表示细胞为双胞（核），青色表示细胞为非双胞。"
+
+@figure
+number = 8
+title = "DecontX 识别污染细胞。"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="每个点表示一个细胞。不同颜色表示细胞类型，红色表示细胞被污染可能性较高，青色表示细胞被污染的可能性较低。"
+
+
+@paragraph
+根据定量结果进行数据过滤， 过滤掉可能是双胞（核）或存在污染的细胞， 过滤后的数据集对细胞内所有基因的表达量进行均一化用于后续分析。
+%result
+@title
+单样本分析
+@paragraph
+@subtitle
+number = 1
+ 细胞聚类 
+@paragraph
+首先使用PCA对基因的表达矩阵进行降维处理， 之后使用UMAP进行细胞聚类， 生成细胞聚类结果见图6。 该图中每个点代表一个细胞， 空间距离近的点表示这些细胞的基因表达模式比较接近； 颜色根据graph-based聚类算法得到的分类决定， 算法认为同一个cluster内的细胞， 基因表达模式最接近。
+@figure
+number = 9
+title = "细胞聚类结果"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="X轴表示的是UMAP第一成分， Y轴表示的是UMAP第二成分。 数字和颜色代表cluster编号。"
+
+
+@subtitle
+number = 2
+ Marker基因鉴定 
+@paragraph
+使用R包-Seurat分别计算每一类细胞与其他类群的差异表达基因(marker 基因)， 筛选矫正后p-value<0.05且log2FC(log2 fold change:用于评估平均表达量差异倍数)top10 marker基因用于后续结果可视化。表4用于展示结果的前5行， 完整表格详见交付目录IDBiotech_result/4.single_sample/*/2.marker_find/*top10_GeneDiffExp.xls。
+@table
+number = 5
+title = "run_count_1kpbmcs细胞类群Marker基因（Top3）"
+file = <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_top3_Markers.xls>
+format = <field = 1; type = string; align =centre; align =centre; desc = "P-value">
+format = <field = 2; type = string; align =centre; desc = "Average log2FC">
+format = <field = 3; type = string; align =centre; desc = "pct.1">
+format = <field = 4; type = string; align =centre; desc = "pct.2">
+format = <field = 5; type = string; align =centre; desc = "Adjusted P-value">
+format = <field = 6; type = string; align =centre; desc = "Cluster">
+format = <field = 7; type = string; align =centre; desc = "Gene">
+footnote = "pct.1：在当前细胞类群（Cluster）中检测到的Marker细胞的百分比；"
+footnote = " pct.2：在其余细胞类群（Cluster）中检测到的Marker细胞的百分比。"
+footnote = " avg_logFC：记录两组之间平均表达式的差异倍数,正值表示该特征在当前cluster中表达得更高。"
+footnote = " p_val_adj：调整后的p值， 越小越显著。"
+footnote = " cluster：细胞类群。"
+view = -1
+
+
+@subtitle
+number = 3
+ Marker基因分析 
+@paragraph
+对得到的Marker基因， 统计其在不同细胞类群中的表达情况， 使用聚类热图、 气泡图和小提琴图等方式进行可视化展示， 每个细胞类群中Top3基因的结果分别见图10、 图11和图12。
+@figure
+number = 10
+title = "Marker基因聚类热图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png; label = "run_count_1kpbmcs">
+size = <width = 1000>
+desc="横坐标为不同的细胞类群；纵坐标为Marker基因；黄色代表高表达，紫色代表低表达。"
+
+@figure
+number = 11
+title = "Marker基因气泡热图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png; label = "run_count_1kpbmcs">
+size = <width = 1200>
+desc="横坐标为Marker基因，纵坐标为不同的细胞类群；颜色从浅到深，颜色越深表示基因平均表达量越高；圆形越大表示表达该基因的细胞数目越多。"
+
+@figure
+number = 12
+title = "Marker基因小提琴图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png; label = "run_count_1kpbmcs">
+size = <width = 1200>
+desc="纵坐标为不同细胞类群，横坐标为Marker 基因表达量，数字越高表示基因的表达量越高。"
+
+%result
+@title
+功能富集分析
+@paragraph
+在每一种细胞类群的所有Marker基因中筛选显著的差异表达基因（ adjust P-value < 0.05 && Log2FC > 0.5），使用clusterProfiler软件分别对每一个细胞类群的差异基因进行GO（Gene Ontology）和KEGG（Kyoto Encyclopedia of Genes and Genomes）功能富集分析\reference{4}。GO和KEGG富集分析结果图13和14。
+
+@subtitle
+number = 1
+GO富集分析
+@paragraph
+ 对差异基因使用基因本体论数据库（GO）进行富集分析。
+@figure
+number = 13
+title = "GO富集分析结果图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png; label = "run_count_1kpbmcs_0 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_GO_Barplot.png; label = "run_count_1kpbmcs_1 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_GO_Barplot.png; label = "run_count_1kpbmcs_2 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_GO_Barplot.png; label = "run_count_1kpbmcs_3 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_GO_Barplot.png; label = "run_count_1kpbmcs_4 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_GO_Barplot.png; label = "run_count_1kpbmcs_5 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_GO_Barplot.png; label = "run_count_1kpbmcs_6 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_GO_Barplot.png; label = "run_count_1kpbmcs_7 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_GO_Barplot.png; label = "run_count_1kpbmcs_8 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_GO_Barplot.png; label = "run_count_1kpbmcs_9 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_GO_Barplot.png; label = "run_count_1kpbmcs_10 cluster">
+size = <width = 1400>
+desc="横轴为富集基因数目，纵轴为显著富集到的GO term，颜色对应不同的GO数据库子集，分子功能（Molecular Function，MF，细胞组分（Cellular Component ，CC）），生物过程（Biological Process ，BP）。"
+
+@subtitle
+number = 2
+KEGG富集分析
+@paragraph
+ 对差异基因使用KEGG通路数据库进行富集分析。
+@figure
+number = 14
+title = "KEGG富集分析结果图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png; label = "run_count_1kpbmcs_0 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_KEGG_Barplot.png; label = "run_count_1kpbmcs_1 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_KEGG_Barplot.png; label = "run_count_1kpbmcs_2 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_KEGG_Barplot.png; label = "run_count_1kpbmcs_3 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_KEGG_Barplot.png; label = "run_count_1kpbmcs_4 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_KEGG_Barplot.png; label = "run_count_1kpbmcs_5 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_KEGG_Barplot.png; label = "run_count_1kpbmcs_6 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_KEGG_Barplot.png; label = "run_count_1kpbmcs_7 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_KEGG_Barplot.png; label = "run_count_1kpbmcs_8 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_KEGG_Barplot.png; label = "run_count_1kpbmcs_9 cluster">
+file =  <url = IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_KEGG_Barplot.png; label = "run_count_1kpbmcs_10 cluster">
+size = <width = 1200>
+desc="横轴为富集基因数目，纵轴为富集到的KEGG Pathway，颜色对应P-value的值，越深表示富集效果越显著。"
+%result
+@title
+细胞亚群注释
+@paragraph
+通过聚类分析得到不同细胞类群后，除了使用每个cluster的Marker基因信息对细胞类群进行初步的注释和分析之外，还可通过其他软件将细胞类群与参考数据库进行比较，以得到分群后不同细胞的细胞类群注释信息。
+SingleR细胞注释
+SingleR\reference{4}可以将细胞聚类结果中的每个cluster与参考数据库进行比较，根据该cluster与参考数据库中已知细胞类群基因表达谱的相似性对cluster进行打分，最终得到一个打分矩阵。通过打分矩阵结果即可将细胞聚类结果注释为不同的细胞类群。细胞类群的打分矩阵结果见图15，细胞类群注释结果见图16。
+@figure
+number = 15
+title = "SingleR细胞类群注释打分热图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="横坐标为细胞聚类结果的cluster，纵坐标为参考数据集中包含的细胞类型，每一格颜色越接近黄色表示打分越高；最上方Labels表示SingleR给出的细胞注释结果"
+@figure
+number = 16
+title = "SingleR细胞类群注释结果图"
+file = <url = IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png; label = "run_count_1kpbmcs">
+size = <width = 900; height = 350>
+desc="UMAP细胞聚类结果图。每一种颜色代表SingleR注释得到的一种细胞类群。 "
+%result
+@title
+拟时序分析
+@paragraph
+拟时序分析（pseudotime analysis）也称为细胞轨迹分析（trajectory inference），是指根据不同细胞类群之间其基因差异表达的情况，获得细胞谱系的发育结果，构建细胞随着一个虚拟时间顺序的变化轨迹，以此重现细胞随时间变化而变化的过程。
+        使用Monocle3\reference{5}软件进行拟时序分析，基于Seurat对象提取的矩阵进一步降维聚类，并判断降维后的聚类结果之间的表达量关联以确定是否属于同一发育轨迹。根据软件推测的发育轨迹进行细胞类群的可视化，结果见图17。
+@figure
+number = 17
+title = "细胞发育轨迹图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="图中黑色线条表示推测的细胞发育轨迹"
+@paragraph
+根据细胞发育轨迹结果中的节点信息，结合不同细胞类群中基因表达量的变化，Monocle3可以通过机器学习算法计算处于最早发育阶段的细胞，实现拟时序分析，结果见图18。
+@figure
+number = 18
+title = "拟时序分析结果图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="图中黑色线条表示推测的细胞发育轨迹，颜色从紫色到黄色，颜色越接近黄色表示细胞发育时间越晚"
+@paragraph
+在不同的细胞类群聚类结果中，选取Monocle3计算得到的Top5 Marker基因，按照已获得的拟时序结果进行基因表达量的拟时序作图，结果见图19。
+@figure
+number = 19
+title = "Marker基因动态表达结果图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png; label = "run_count_1kpbmcs">
+size = <width = 768>
+desc="横坐标表示拟时序结果；纵坐标表示基因表达量，颜色从紫色到黄色，颜色越接近黄色表示细胞发育时间越晚；黑色线条表示基因表达趋势。"
+%result
+@title
+细胞类群互作分析
+@paragraph
+CellChat\reference{6}是一个能够从单细胞数据中定量推断和分析细胞间通信网络的工具，利用网络分析和模式识别方法预测细胞的主要信号输入和输出，以及这些细胞和信号如何协调功能。CellChatDB数据库整合了来自KEGG和最近研究中的信号分析信息，该数据库囊括了已知的配体-受体复合物组成，包括配体-受体多聚体复合物以及几类辅酶因子。本项目使用CellChat来鉴定时空数据中的配体/受体关系和细胞间的通讯分子，研究不同细胞类型之间的相互交流及通讯网络。所有细胞类群间的通讯网络见图20，每个类群与其他类群间的通讯网络见图21。
+@figure
+number = 20
+title = "所有细胞类群间的细胞通讯网络图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png; label = "run_count_1kpbmcs">
+size = <width = 800>
+desc="连线越粗表示两个cluster之间的互作越强。"
+@figure
+number = 21
+title = "每个细胞类群与其他类群间的细胞通讯网络图"
+file =  <url = IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png; label = "run_count_1kpbmcs">
+size = <width = 800>
+desc="连线越粗表示两个cluster之间的互作越强。"
+

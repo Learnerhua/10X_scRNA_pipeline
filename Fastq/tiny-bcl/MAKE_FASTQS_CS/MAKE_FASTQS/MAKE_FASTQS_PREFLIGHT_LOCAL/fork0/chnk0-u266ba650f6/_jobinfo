@@ -1,0 +1,133 @@
+{
+    "name": "ID.tiny-bcl.MAKE_FASTQS_CS.MAKE_FASTQS.MAKE_FASTQS_PREFLIGHT_LOCAL.fork0.chnk0",
+    "type": "local",
+    "cwd": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/MAKE_FASTQS_CS/MAKE_FASTQS/MAKE_FASTQS_PREFLIGHT_LOCAL/fork0/chnk0-u266ba650f6/files",
+    "python": {
+        "binpath": "/Nas3Data/Download/cellranger-10.0.0/external/anaconda/bin/python3",
+        "version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:45:31) [GCC 13.3.0]"
+    },
+    "rusage": {
+        "self": {
+            "ru_maxrss": 14336,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 576,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.003429,
+            "ru_stime": 0.005715,
+            "ru_inblock": 16,
+            "ru_oublock": 48,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 0
+        },
+        "children": {
+            "ru_maxrss": 138492,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 34261,
+            "ru_majflt": 355,
+            "ru_nswap": 0,
+            "ru_utime": 1.951193,
+            "ru_stime": 0.398602,
+            "ru_inblock": 147504,
+            "ru_oublock": 17656,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 28
+        }
+    },
+    "used_bytes": {
+        "rss": 64487424,
+        "shared": 30932992,
+        "vmem": 1973379072,
+        "text": 3829760,
+        "stack": 123977728,
+        "proc_count": 1
+    },
+    "io": {
+        "total": {
+            "read": {
+                "sysc": 762,
+                "bytes": 274432
+            },
+            "write": {
+                "sysc": 29,
+                "bytes": 0
+            }
+        },
+        "max": {
+            "read": {
+                "sysc": 1506.3678652903516,
+                "bytes": 546819.505300743
+            },
+            "write": {
+                "sysc": 57.783952504524066,
+                "bytes": 0
+            }
+        },
+        "dev": {
+            "read": {
+                "sysc": 46.514933007611525,
+                "bytes": 57349.49019420501
+            },
+            "write": {
+                "sysc": 6.0602816567744515,
+                "bytes": 0
+            }
+        }
+    },
+    "wallclock": {
+        "start": "2026-03-03T11:09:42.79190168+08:00",
+        "end": "2026-03-03T11:09:46.155520402+08:00",
+        "duration_seconds": 3.363618723
+    },
+    "profile_mode": "disable",
+    "stackvars_flag": "disable",
+    "monitor_flag": "disable",
+    "invocation": {
+        "call": "MAKE_FASTQS_CS",
+        "args": {
+            "all_mkfastq_args": "--id=tiny-bcl --run=cellranger-tiny-bcl-1.2.0 --csv=cellranger-tiny-bcl-simple-1.2.0.csv",
+            "bases_mask": null,
+            "bc_length": 16,
+            "bc_read_type": "R1",
+            "bc_start_index": 0,
+            "bcl2fastq1_args": " --mismatches=1",
+            "bcl2fastq2_args": " -p 6 -d 6 -r 6 -w 6 --barcode-mismatches 1",
+            "delete_undetermined": false,
+            "filter_dual_index": false,
+            "filter_single_index": false,
+            "force_single_index": false,
+            "interop_output_path": null,
+            "lanes": null,
+            "max_bcl2fastq_threads": 6,
+            "output_path": null,
+            "project": "H35KCBCXY",
+            "rc_i2_override": null,
+            "run_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-1.2.0",
+            "si_read_type": "I1",
+            "specs": [
+                {
+                    "csv": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/cellranger-tiny-bcl-simple-1.2.0.csv"
+                }
+            ],
+            "umi_length": 10,
+            "umi_read_type": "R1",
+            "umi_start_index": 16
+        },
+        "mro_file": "tenkit/make_fastqs_cs.mro"
+    },
+    "version": {
+        "martian": "v4.0.14",
+        "pipelines": "10.0.0"
+    },
+    "host": "fat02",
+    "pid": 599673,
+    "threads": 1,
+    "memGB": 1,
+    "vmemGB": 4
+}

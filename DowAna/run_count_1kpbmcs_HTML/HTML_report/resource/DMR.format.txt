@@ -1,0 +1,16 @@
+Col	Description
+1	Chromosome ID
+2	Starting position
+3	End position
+4	p-value(Fisher exact test)
+5	All CpG average methylation rate for sample1
+6	All CpG average methylation rate for the sample2
+7	var-methy1
+8	var-methy2
+9	Depth for the for sample1
+10	Depth for the for sample2
+11	var-depth1
+12	var-depth2
+13	Numbers of CpG
+14	Uncovered CpG number in sample 1
+15.	Uncovered CpG number in sample 2

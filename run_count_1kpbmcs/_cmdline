@@ -1,0 +1,1 @@
+cellranger count --id=run_count_1kpbmcs --fastqs=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs --sample=pbmc_1k_v3 --transcriptome=/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/References/refdata-gex-GRCh38-2024-A --create-bam true --localcores 48 --localmem 1000

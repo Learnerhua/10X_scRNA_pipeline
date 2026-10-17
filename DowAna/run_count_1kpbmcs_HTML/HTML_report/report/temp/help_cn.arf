@@ -1,0 +1,65 @@
+format = arf1.0
+language = CN
+
+%help
+@title
+测序下机数据格式
+@paragraph
+10X单细胞测序下机数据以FASTQ格式存储，是Illumina测序平台的标准输出格式。数据示例参见附图3。该文件以4行为单位，代表1条read的信息：第一行有'@'开头，后面跟随序列的描述信息；第二行是序列；第三行由'+'开始，后面也可以跟随序列的描述信息，也可不跟；第四行为第二行序列的碱基质量值，两行一一对应，示例如下：
+
+\verbatim
+\@A00228:279:HFWFVDMXX:1:1101:8486:1000 2:N:0:NCATTACT
+NACAAAGTCCCCCCCATAATACAGGGGGAGCCACTTGGGCAGGAGGCAGGGAGGGGTCCATTCCCCCTGGTGGGGCTGGTGGGGAGCTG
++
+\#FFFFFFFFFFFFFFF:FFFFFFF:FFFFFFFFFFFFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFFFFFF
+\end
+
+@title
+文件交付
+@paragraph
+一些很大的原始文件，如原始下机fq、比对的bam、原始基因表达量(gem)等，以及比较大的结果文件，如Lasso/配准得到的组织区域gem、细胞聚类后的rds等，以移动硬盘或者云盘的方式交付；目录结构与本报告报告一致；
+所有标准分析结果，都已在本报告中体现，每个图表的原文件(包括pdf)，都在对应的目录下，不再单独交付；
+详细目录及文件内容如下：
+\verbatim
+    目录                                       目录内容            内容文件            交付方式
+|-- IDBiotech_result
+|-- QC.xls                                   质控结果统计   
+|-- Mapping.xls                              质控结果统计
+|-- Cell.xls                                 质控结果统计
+|   |-- Sample1                              样本名称                        
+|   |   |-- 01.Data_report                    下机数据质控报告
+|   |   |   |-- Library                                           样本文库         本报告及本目录 
+|   |   |       |-- *xls                                                统计结果         本报告及本目录      
+|   |   |-- 02.Normalize                      数据标准化
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录                            
+|   |   |   |-- *png                          分析结果png       本报告及本目录
+|   |   |-- 03.HvgPCA                      高变特征筛选                            本报告及本目录
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录
+|   |   |   |-- *png                                            分析结果png         本报告及本目录
+|   |   |-- 04.Decontamination                      数据清洗
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录
+|   |   |   |-- *png                                            分析结果png         本报告及本目录
+|   |   |-- 04.sSample                      单样本分析
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录
+|   |   |   |-- *png                                            分析结果png         本报告及本目录
+|   |   |-- 05.GOKEGG                      功能富集分析
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录
+|   |   |   |-- *png                                            分析结果png         本报告及本目录
+|   |   |-- 06.SingleR                      细胞亚群注释
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录
+|   |   |   |-- *png                                            分析结果png         本报告及本目录
+|   |   |-- 07.Monocle                      拟时序分析
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录
+|   |   |   |-- *png                                            分析结果png         本报告及本目录
+|   |   |-- 08.CellChat                      细胞类群互作分析
+|   |   |   |-- *pdf                                            分析结果pdf         本报告及本目录
+|   |   |   |-- *png                                            分析结果png         本报告及本目录
+|   |-- Sample2
+|   |-- SampleN              
+|-- report.html                             网页版报告
+|-- report.pdf                              Pdf版报告
+|-- src                     
+`-- temp
+\end
+
+

@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQs</title> 
+    <link href="../css/report_beta.css" rel="stylesheet" type="text/css" />
+    <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.5.2.min.js" language="javascript"></script>   
+    <script src="../js/jquery.albumSlider.min.js" type="text/javascript"></script>
+    <script src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
+    <script src="../js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+    <script src="../js/albumSider.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/overlib.js"></script>
+    <script src="../js/report.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    $(function () {
+	        $(".download").each(function () {
+	            var width = $(this).parent().next(".table-container").children("table").width();
+	            var floatright = width;
+
+	            if (floatright <= 960) {
+	                $(this).css("margin-left", floatright - 60 + "px");
+	            } else {
+	                $(this).css("margin-left", "960px");
+	            }
+	        });
+	        var w = 0;
+	        var h = $(".catalog").height();
+
+
+	        $(".catalog_li a").each(function () {
+	            var width = $(this).width();
+	            if (width > w) {
+	                w = width;
+	            }
+	        });
+	        $(".catalog").width(w + 40 + "px");
+	        //$("ul.left_ul li:odd").css("background-color", "#d3e6f9");
+	        $(".span_hide").toggle(function () {
+	            $(".catalog_li").hide();
+	            $(this).text("[Show]")
+
+	        }, function () {
+
+	            $(".catalog_li").show();
+	            $(this).text("[Hide]");
+	        });
+	        $(".catalog").height();
+
+		var height = $(".content").height();
+
+		if (710 - height < 60 && 710 - height >0) {             
+                	$(".footer").css("margin-top", 710 - height + "px");
+            	} else if (710 - height >60) {           
+                	$(".footer").css("margin-top", 710 - height - 60 + "px");
+            	}
+
+		$(".confirm").click(function () {
+	            var text = $(this).prev().val();
+	            if (text.length == "0") {
+	                alert("Please enter sample key word! ")
+	                return;
+	            }
+	            $(this).parents("div.lane").find("ul.imglist li").each(function () {
+					
+					if ($(this).text().toLowerCase().indexOf(text.toLowerCase()) >= 0) {
+	                    $(this).show();
+	                } else {
+	                    $(this).hide();
+	                }
+
+	            })
+	        });
+	        $(".showall").click(function () {
+	            $(this).parents("div.lane").find("ul.imglist li").each(function () {
+	                $(this).show();
+	            })
+	        });
+		$(".download1").find("img").mouseenter(function () {
+	            $(this).parent().next().show();
+
+	        });
+	        $(".download1").mouseleave(function () {
+	            $(".showMessage").hide();
+	        });
+
+	    })
+    </script>
+</head>
+<body>
+	<div class="link">
+		<div class = "rightline">
+			<div class = "imgVersion toHtml" url = "Results_cn.html">
+			</div>
+			<div class = "line toHtml" url = "Results_cn.html">
+				中文
+			</div>
+		</div>
+	<div class="rightline">
+		<a href="../../report_en.pdf" target = "_blank">
+				<img style="margin-top:20px;" width="50px;" height="50px;" src="../img/pdf.jpg" title="PDF Download" alt="PDF" />
+			</a>
+		</div>
+	</div>
+<div class = "top" onclick = "javascript:scroll(0,0)"></div>
+  <div id="page">
+			<div class = "move_left left_fixer">
+		<div class = "left_top">	<div><img style="margin-top:10px;"  src = "../img/BGI_Research_Logo.png" width = "120" alt = ""/></a></div>	</div>
+		<ul class = "left_ul">
+			<li class = "toHtml" url = "Results.html">Results
+			</li>
+			<li class = "toHtml" url = "Methods.html">Methods
+			</li>
+			<li class = "toHtml" url = "Tables.html">Tables
+			</li>
+			<li class = "toHtml" url = "Figures.html">Figures
+			</li>
+			<li class = "toHtml" url = "Files.html">Files
+			</li>
+			<li class = "toHtml" url = "References.html">References
+			</li>
+			<li class = "toHtml" url = "Help.html">Help
+			</li>
+			<li class = "menuBG toHtml" url = "FAQs.html">FAQs
+			</li>
+		</ul>
+	</div>
+
+
+			<div class = "content">
+		
+				<div class = "g_title">1. What QC indicators are mainly looked at in the analysis results?</div>
+	<div class = "g_content">Median number of genes per cell, number of reads per cell, number of UMI. These indicators are mainly related to the amount of sequencing and the number of cells. In general, the number of genes identified in each cell of model organisms is between 500 and 5000. The reads in each cell range from tens to hundreds of Kelvin. Cell Ranger's web_summary also reports key QC indicators such as Valid Barcodes ratio (should be >75%), Q30 Bases in Barcode (should be ≥90%), Q30 Bases in UMI (should be ≥90%), Q30 Bases in RNA Read (should be ≥75%), and sequencing saturation.</div>
+	<div class = "g_title">2. How many cells can be found?</div>
+	<div class = "g_content">It is closely related to the cell type in the project design and the corresponding cell viability rate, and it is also related to whether cell drug treatment is carried out in the project design. Generally, the cell death rate is fast, and the number of effective cells found is small. Cell Ranger uses the EmptyDrops algorithm to automatically distinguish real cells from empty droplets, and outputs the filtered_feature_bc_matrix for downstream analysis.</div>
+	<div class = "g_title">3. What does UMAP refer to?</div>
+	<div class = "g_content">A data dimensionality reduction method, compared with TSNE, UMAP is more suitable for dealing with large data sets and complex dimensional information. UMAP combines the power of visualization with the ability to reduce data dimensions; In addition to preserving the local structure, it also preserves the global structure of the data.</div>
+	<div class = "g_title">4. Why is the proportion of mitochondria filtered in ordinary samples over 5%, while the proportion of tumor samples over 20% is filtered?</div>
+	<div class = "g_content">High proportion of mitochondrial gene expression is one of the indicators that cells are under stress, so high proportion of mitochondria is often used to judge poor cell activity; However, tumors/cardiomyocytes/nerve cells/skeletal muscle cells/pancreatic secretory cells, etc. often contain a large number of mitochondria to cope with high energy requirements, so the filtration threshold needs to be up-regulated.</div>
+	<div class = "g_title">5. How many categories can cell categories be divided into?</div>
+	<div class = "g_content">In theory, the more classification, the more detailed, but it will also increase the complexity of calculation and screening, so it is generally divided into 8 to 15 categories.</div>
+	<div class = "g_title">6. Why do cell categories start with 0?</div>
+	<div class = "g_content">For historical reasons, c language designers began counting array subscripts with 0, and later many high-level languages followed c to count from 0.</div>
+	<div class = "g_title">7. Why only high-expression marker genes in a single sample are counted? Why may log2FC be negative in marker gene identification among multiple sample groups?</div>
+	<div class = "g_content">In the single sample analysis, we pay attention to the differentially expressed genes between clusters. It is generally believed that significantly highly expressed genes can best represent each cluster and are more suitable for marker genes. In the subsequent analysis, we also pay more attention to the part of high expression. In the multi-sample intergroup analysis, we pay more attention to the differentially expressed genes between groups, so the marker genes screened may be highly expressed in group 1 or group 2, that is, log2FC may be positive or negative.</div>
+	<br/><br/>
+			</div>
+
+
+	<div class="footer" style="margin-left:230px;font-size:14x;border-top:2px solid #c9c9c9; width:1035px;clear:both;">
+           
+        </div>
+        </div>
+
+  </div>
+</body>
+</html>

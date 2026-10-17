@@ -1,0 +1,24 @@
+{
+    "timestamp": "2026-03-03T17:17:11.956341588+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/join-u3c10a6a701/files/gem_group_index_json.json",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/join-u3c10a6a701/files/output_for_cloupe.cloupe"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T17:16:49.651316929+08:00",
+            "DeltaBytes": 6692
+        },
+        {
+            "Timestamp": "2026-03-03T17:16:50.887245707+08:00",
+            "DeltaBytes": 31667003
+        },
+        {
+            "Timestamp": "2026-03-03T17:17:11.739444124+08:00",
+            "DeltaBytes": -31654951
+        }
+    ],
+    "count": 2,
+    "size": 31654951
+}

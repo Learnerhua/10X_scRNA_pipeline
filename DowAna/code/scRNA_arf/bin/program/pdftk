@@ -1,0 +1,4 @@
+#!/bin/bash
+root_path=`dirname $0`
+export LD_LIBRARY_PATH=$root_path/lib/:$PATH
+$root_path/pdftk.exe $@

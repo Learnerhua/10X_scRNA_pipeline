@@ -1,0 +1,5 @@
+@include "rna/cell_annotation_service.mro"
+
+call WRITE_CELL_TYPES_H5(
+    cell_types = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/CELL_ANNOTATION_SERVICE/REPLACE_LOW_UMI_CELLS/fork0/join-u6f41a7ed0e/files/cell_types.csv",
+)

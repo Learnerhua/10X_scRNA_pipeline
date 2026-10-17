@@ -1,0 +1,8 @@
+{
+    "disable_assign_tags": true,
+    "disable_legacy_bam": false,
+    "disable_sample_bams": true,
+    "disable_subsampling": false,
+    "no_probe_barcode_counts": true,
+    "no_probe_barcode_matrix_demux": true
+}

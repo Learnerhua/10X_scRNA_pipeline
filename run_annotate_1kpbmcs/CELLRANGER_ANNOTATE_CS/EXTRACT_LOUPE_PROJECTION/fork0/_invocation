@@ -1,0 +1,6 @@
+@include "rna/cell_annotation_service.mro"
+
+call EXTRACT_LOUPE_PROJECTION(
+    sample_cloupe   = "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe",
+    projection_name = "umap",
+)

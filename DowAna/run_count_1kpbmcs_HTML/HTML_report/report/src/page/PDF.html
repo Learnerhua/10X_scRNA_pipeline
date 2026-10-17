@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>    <meta charset="UTF-8">    <title>PDF</title>     <link href="../css/report_pdf.css" rel="stylesheet" type="text/css" />    <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />    <script src="../js/jquery-1.5.2.min.js" language="javascript"></script>       <script src="../js/jquery.albumSlider.min.js" type="text/javascript"></script>    <script src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>    <script src="../js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>    <script src="../js/albumSider.js" type="text/javascript"></script>    <script type="text/javascript" src="../js/overlib.js"></script>	<script type="text/javascript">	    $(function () {	        $(".download").each(function () {	            var width = $(this).parent().next(".table-container").children("table").width();	            var floatright = width;	            if (floatright <= 960) {	                $(this).css("margin-left", floatright - 60 + "px");	            } else {	                $(this).css("margin-left", "960px");	            }	        });	        var w = 0;	        var h = $(".catalog").height();	        $(".catalog_li a").each(function () {	            var width = $(this).width();	            if (width > w) {	                w = width;	            }	        });	        $(".catalog").width(w + 40 + "px");	        //$("ul.left_ul li:odd").css("background-color", "#d3e6f9");	        $(".span_hide").toggle(function () {	            $(".catalog_li").hide();	            $(this).text("[Show]")	        }, function () {	            $(".catalog_li").show();	            $(this).text("[Hide]");	        });	        $(".catalog").height();		var height = $(".content").height();		if (710 - height < 60 && 710 - height >0) {                             	$(".footer").css("margin-top", 710 - height + "px");            	} else if (710 - height >60) {                           	$(".footer").css("margin-top", 710 - height - 60 + "px");            	}		$(".confirm").click(function () {	            var text = $(this).prev().val();	            if (text.length == "0") {	                alert("Please enter sample key word! ")	                return;	            }	            $(this).parents("div.lane").find("ul.imglist li").each(function () {										if ($(this).text().toLowerCase().indexOf(text.toLowerCase()) >= 0) {	                    $(this).show();	                } else {	                    $(this).hide();	                }	            })	        });	        $(".showall").click(function () {	            $(this).parents("div.lane").find("ul.imglist li").each(function () {	                $(this).show();	            })	        });		$(".download1").find("img").mouseenter(function () {	            $(this).parent().next().show();	        });	        $(".download1").mouseleave(function () {	            $(".showMessage").hide();	        });	    })    </script></head><body>	  <div id="page">					<div class = "content">
+					<h1 style="color:#0072bc"><div style="width:22px;height:22px; border-radius: 11px;background-color: #0072bc;float:left;margin-top:8px;"></div> &nbsp;Results</h1>
+	<div><a name = '1'></a></div>
+	<h2>1 Technology Introduction</h2>
+
+
+
+	<div class = "p">This project uses the single-cell omics technology (Chromium)<a href="https://doi.org/10.1038/ncomms14049" target="_blank"><sup>[1]</sup></a>, which was developed by 10X Genomics to analyze gene expression patterns at the single cell level from target samples.</div><br/>
+	<div class = "p">The experimental processes are as follows:</div><br/>
+	<div class = "p">1. Sample processing and quality inspection: Target tissue samples were prepared with cell/nuclear suspension and evaluated for cell/nuclear suspension quality control.</div><br/>
+	<div class = "p">2. Isolation of single cells and capture of mRNA molecules: The qualified cell/nuclear suspension was processed by the droplet microfluidic device of Chromium to generate GEMs (Gel beads in Emulsion) and realize the separation of single cells. mRNA molecules were recovered by demulsification after <span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion, the core technology of 10X Chromium platform. Through microfluidic chips, single cells and gel beads carrying oligonucleotide tags are encapsulated in water-in-oil droplets, forming independent micro-reactors.</div></div></span> generation, and cDNA was synthesized by reverse transcription of mRNA molecules.</div><br/>
+	<div class = "p">3. Library preparation and sequencing: The cDNA library was constructed and sequenced after synthesis.</div><br/>
+	<div class = "p">Data analysis: </div><br/>
+	<div class = "p">quality control is performed for sequenced data, and a full set of bioinformatic analyses are conducted to obtain the gene information expressed at the cell/nucleus level of the target sample. </div>
+
+
+
+	<div><a name = 'figure1'></a></div>
+	<div class = "mgt"><a href = "../../resource/scRNA_analysis_pipeline_cn.png" target = "_blank"><img src= "../../resource/scRNA_analysis_pipeline_cn.png"    width = "800"   height = "400"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 1&nbsp;&nbsp;Flow chart of single cell omics technology.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title"> </div>
+	<div><a name = '2'></a></div>
+	<h2>2 Project Information</h2>
+
+
+
+	<div class = "p">Informations of this project are shown in Table1.</div>
+
+
+
+	<div><a name = "table1"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>Table   1</b>&nbsp;&nbsp;Project informations&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/Project_information.txt">Download</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">信息<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">内容<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">合同编号</td><td class = "align_center">KMHD_10X/KMHD_10X</td></tr>
+		<tr><td class = "align_center">项目名称</td><td class = "align_center">康美华大10X单细胞数据流程开发</td></tr>
+		<tr><td class = "align_center">合作方</td><td class = "align_center">康美华大生信部</td></tr>
+		<tr><td class = "align_center">物种名称</td><td class = "align_center">人（Human）</td></tr>
+		<tr><td class = "align_center">参考基因组</td><td class = "align_center">GRCh38</td></tr>
+		<tr><td class = "align_center">样品组织/部位</td><td class = "align_center">外周血</td></tr>
+		<tr><td class = "align_center">样品数目</td><td class = "align_center">1</td></tr>
+	</table>
+	</div>
+
+
+
+	<div><a name = '3'></a></div>
+	<h2>3 Sequencing statistics</h2>
+
+
+
+	<div><a name = '3.1'></a></div>
+	<h3>3.1 Quality Control of Sequencing Data</h3>
+
+
+
+	<div class = "p">Quality control was processed on Read1 and Read2, Read1 contains 16bp <span class = "key_sign">&nbsp;Cell Barcode&nbsp;<div class = "key_body"><div class = "key_title">Cell Barcode</div><div class = "key_content">Synthetic nucleic acid sequences used to identify cells. 10X Chromium uses 16bp Cell Barcodes, with a whitelist containing approximately 737,000 known sequences with minimum edit distance of 3, allowing unique correction of 1-base sequencing errors.</div></div></span> and 12bp <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> sequence, and Read2 is cDNA sequence. The Cell Ranger (v10.0.0) tool was used to filter Read1 and Read2 for quality control. The filtering standards are detailed in the information analysis process - Off-board Data Quality Control. The statistical results of quality control are shown in Table 2.</div>
+
+
+
+	<div><a name = "table2"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>Table   2</b>&nbsp;&nbsp;Quality control results of sequencing data&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/QC.xls">Download</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">Sample<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Number of Fragments<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Valid Barcodes<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Q30 Bases in Barcode<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Q30 Bases in RNA Read<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Q30 Bases in UMI<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">run_count_1kpbmcs</td><td class = "align_center">66,601,887</td><td class = "align_center">64,870,238</td><td class = "align_center">94.1%</td><td class = "align_center">90.2%</td><td class = "align_center">92.7%</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">Sample: Sample name;</div>
+	<div class = "p1_desc">Number of Reads: The total number of reads sequenced;</div>
+	<div class = "p1_desc">Valid Barcodes: Ratio of barcode in Reads to known data sets;</div>
+	<div class = "p1_desc">Q30 Bases in Barcode: The percentage of bases in Barcode with a mass value (Q=-10log(err rate)) greater than 30;</div>
+	<div class = "p1_desc">Q30 Bases in RNA Read: The percentage of bases in RNA Reads with a mass value (Q=-10log(err rate)) greater than 30;</div>
+	<div class = "p1_desc">Q30 Bases in UMI: The percentage of bases in UMI with a mass value (Q=-10log(err rate)) greater than 30.</div>
+
+
+
+	<div><a name = '3.2'></a></div>
+	<h3>3.2 Genome Alignment</h3>
+
+
+
+	<div class = "p">STAR<a href="https://doi.org/10.1186/s13059-019-1662-y" target="_blank"><sup>[2]</sup></a> was used to map clean reads to the reference genome, and the number of reads mapped to exon regions, intron regions and inter-genetic regions was counted. The statistical results are shown in Table3.</div>
+
+
+
+	<div><a name = "table3"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>Table   3</b>&nbsp;&nbsp;Statistics of Clean Reads aligned to the reference genome&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/Mapping.xls">Download</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">Sample<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Mapping Mapped to Genome<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Reads Mapped to Exonic Regions<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Reads Mapped to Intronic Regions<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Reads Mapped to Intergenic Regions<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">run_count_1kpbmcs</td><td class = "align_center">93.7%</td><td class = "align_center">58.9%</td><td class = "align_center">31.1%</td><td class = "align_center">3.7%</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">Sample: Sample name;</div>
+	<div class = "p1_desc">Reads Mapped to Genome: The ratio of reads aligned to reference genome;</div>
+	<div class = "p1_desc">Reads Mapped to Exonic Regions: The ratio of reads aligned to exonic regions of reference genome;</div>
+	<div class = "p1_desc">Reads Mapped to Intronic Regions: The ratio of reads aligned to intronic regions of reference genome;</div>
+	<div class = "p1_desc">Reads Mapped to Intergenic Regions: The ratio of reads aligned to intergenic regions of reference genome.</div>
+
+
+
+	<div><a name = '3.3'></a></div>
+	<h3>3.3 Quantification of Gene Expression</h3>
+
+
+
+	<div class = "p"> Using STARsolo<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a> software, reads (Uniquely Mapping Reads) compared to the unique position of the reference genome were counted according to their corresponding relationship with genes and the amount of gene expression (<span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> number) to obtain the gene capture situation of each cell. The detailed results were shown in 4.</div>
+
+
+
+	<div><a name = "table4"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>Table   4</b>&nbsp;&nbsp;Statistics of Unique Mapping Reads aligned to the reference genome&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/Cell.xls">Download</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">Sample<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Estimated Number of Cells<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Mean Reads per Cell<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Median Genes per Cell<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Total Genes Detected<div class = "key_body"><div class = "key_content">Sample</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Median UMI Counts per Cell<div class = "key_body"><div class = "key_content">Sample</div></div></span></th></tr>
+		<tr><td class = "align_center">run_count_1kpbmcs</td><td class = "align_center">1,221</td><td class = "align_center">54,547</td><td class = "align_center">3,290</td><td class = "align_center">25,863</td><td class = "align_center">10,029</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">Sample: Sample name;</div>
+	<div class = "p1_desc">Estimated Number of Cells: Estimated Number of Cells;</div>
+	<div class = "p1_desc">Mean Reads per Cell: Mean Reads per Cell;</div>
+	<div class = "p1_desc">Median Genes per Cell: Median Genes per Cell;</div>
+	<div class = "p1_desc">Total Genes Detected: Total Genes Detected.</div>
+
+
+
+	<div><a name = '4'></a></div>
+	<h2>4 Data Normalization</h2>
+
+
+
+	<div class = "p">The different libraries of a single sample were controlled separately and combined for subsequent analysis after meeting the quality control criteria. By visualizing the cell gene profile, <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> profile, the cell activity and gene expression status of each sample can be assessed. Mitochondrial RNA ratio, RNA quantity and expression can reflect cell activity and quality to some extent. In general, the lower the proportion of mitochondrial RNA, the higher the number of RNA, and the higher the expression of RNA, the better the activity and quality of cells.</div>
+
+
+
+	<div><a name = 'figure2'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 2&nbsp;&nbsp;Scatter plot of mRNA and mitochondrial RNA correlation.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">Each dot represents a cell. Left: X axis represents mRNA expression, Y axis represents the proportion of mitochondrial RNA; Right: mRNA expression on the X-axis and mRNA number on the Y-axis. The numbers in the figure represent the correlation system.</div>
+	<div><a name = 'figure3'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 3&nbsp;&nbsp;QC violin diagram.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">Left: mRNA number; Middle figure: mRNA expression; Right: Mitochondrial RNA ratio.</div>
+	<br/><div class = "p">According to the quantitative results, the data was filtered out, and the cells with too low or too high mRNA expression and too high proportion of mitochondrial RNA were filtered out. For details, see the information analysis flow - Data Quality Control and Filtering. After filtering, the expression levels of all genes in the cells were homogenized for subsequent analysis.</div>
+
+
+
+	<div><a name = '5'></a></div>
+	<h2>5 High variable gene selection and PCA dimensionality reduction</h2>
+
+
+
+	<div><a name = '5.1'></a></div>
+	<h3>5.1  Highly variable feature screening </h3>
+
+
+
+	<div class = "p"> Based on the mean and dispersion (mean and variance) of all genes in each sample, R-package -Seurat<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a> was used to screen out genes with high variability in each sample for downstream PCA analysis. The 2,000 genes with the highest degree of variation are selected by default. See Information Analysis Flow - High Variable Feature Screening for details.</div>
+
+
+
+	<div><a name = 'figure4'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png"    width = "860"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 4&nbsp;&nbsp;High variant gene screening plot.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The X-axis represents the average expression level, and the Y-axis represents the standardized variance. On the basis of the left figure, marker genes with the top 10 expression level variation were marked in the right figure.</div>
+	<div><a name = '5.2'></a></div>
+	<h3>5.2  Principl component analysis </h3>
+
+
+
+	<div class = "p"> Dimensional heat maps show the heterogeneity of principal component (PC) genes with the greatest variation and their expression levels in cell data, helping to select appropriate dimensions for downstream analysis. You can also use the elbow plot to determine how many PCS are used to cluster in order to capture most of the changes in the data. Figure 5 and Figure 6 are used to show the dimension reduction results of top15PC. It can be seen that with the increase of PC components, features become less and less obvious, which is helpful for downstream selection of appropriate dimensions.</div>
+
+
+
+	<div><a name = 'figure5'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 5&nbsp;&nbsp;Dimension reduction heatmap for Top15 PCS.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">Each column represents a cell and each row represents a gene; Yellow indicates high expression and purple indicates low expression.</div>
+	<div><a name = 'figure6'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 6&nbsp;&nbsp;Elbow plot for Top15 PCS.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The X-axis is the PC serial number and the Y-axis is the standard deviation.</div>
+	<div><a name = '6'></a></div>
+	<h2>6 Data Clean</h2>
+
+
+
+	<div class = "p">Different libraries of a single sample were cleaned and filtered separately, and then combined for subsequent analysis after meeting the quality control standards. By calculating the possible proportion of double cells (nuclear) in the droplet and the possible foreign RNA contamination, the cells most likely to be contaminated or double cells (nuclear) were inferred by hypothesis testing under a certain probability. The results of the calculation are presented by the dimensionality reduction cluster plot of the data, and the cells eliminated by both filtering methods are eliminated and not included in the subsequent analysis.</div>
+
+
+
+	<div><a name = 'figure7'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 7&nbsp;&nbsp;Doublets (nuclear) and Singlets cells identified by DoubletFinder.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">Each dot represents a cell. Different colors indicate cell types; red indicates that the cell is Doublets (nuclear) and cyan indicates that the cell is Singlets. </div>
+	<div><a name = 'figure8'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 8&nbsp;&nbsp;DecontX identifies contaminated cells.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">Each dot represents a cell. Different colors indicate cell types, with red indicating a higher probability of cell contamination and cyan indicating a lower probability of cell contamination.</div>
+	<br/><div class = "p">According to the quantitative results, the data were filtered out, and the cells that might be double (nuclear) or with contamination were filtered out. The filtered data set was used to homogenize the expression levels of all genes in the cells for subsequent analysis.</div>
+
+
+
+	<div><a name = '7'></a></div>
+	<h2>7 Single sample analysis</h2>
+
+
+
+	<div><a name = '7.1'></a></div>
+	<h3>7.1  Cell Clustering </h3>
+
+
+
+	<div class = "p"> Firstly, PCA was used for dimensionality reduction of gene expression matrix, and then UMAP was used for cell clustering. The cell clustering results were shown in Figure 6. In this figure, each point represents a cell, and the closest points in space indicate that the gene expression patterns of these cells are more similar. The colors are determined by a graph-based clustering algorithm that identifies cells within a cluster as having the most similar gene expression patterns.</div>
+
+
+
+	<div><a name = 'figure9'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 9&nbsp;&nbsp; Cell clustering result.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The X-axis represents the first component of UMAP, and the Y-axis represents the second component of UMAP. The number and color represent the cluster number.</div>
+	<div><a name = '7.2'></a></div>
+	<h3>7.2  Marker gene identification </h3>
+
+
+
+	<div class = "p"> Seurat was used to calculate the differentially expressed genes (marker genes) between each type of cell and other groups. After screening and correction, top10 marker genes with p-value<0.05 and log2FC(log2 fold change: used to evaluate the average expression difference multiple) were used for visualization of subsequent results. Table 4 shows the first five rows of results. The complete table is in the delivery directory IDBiotech_result/ 4.SINGLE_SAMPLE /*/2.marker_find/*top10_GeneDiffExp.xls.</div>
+
+
+
+	<div><a name = "table5"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>Table   5</b>&nbsp;&nbsp;run_count_1kpbmcsMarker genes of cell clustering(Top3)&nbsp;&nbsp;&nbsp;(<a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_top3_Markers.xls">Download</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+	<tr><th class = "align_center"><span class = "key_sign_tb">p_val<div class = "key_body"><div class = "key_content">P-value</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">avg_log2FC<div class = "key_body"><div class = "key_content">Average log2FC</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">pct.1<div class = "key_body"><div class = "key_content">pct.1</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">pct.2<div class = "key_body"><div class = "key_content">pct.2</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">p_val_adj<div class = "key_body"><div class = "key_content">Adjusted P-value</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">cluster<div class = "key_body"><div class = "key_content">Cluster</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">gene<div class = "key_body"><div class = "key_content">Gene</div></div></span></th></tr>
+	<tr><td class = "align_center">5.3040733060608e-14</td><td class = "align_center">5.90812597020177</td><td class = "align_center">0.071</td><td class = "align_center">0.001</td><td class = "align_center">1.11868210098128e-09</td><td class = "align_center">0</td><td class = "align_center">HLF</td></tr>
+	<tr><td class = "align_center">9.86795792606281e-07</td><td class = "align_center">5.79099335551828</td><td class = "align_center">0.027</td><td class = "align_center">0</td><td class = "align_center">0.0208125100618591</td><td class = "align_center">0</td><td class = "align_center">KIF19</td></tr>
+	<tr><td class = "align_center">1.70173608621492e-48</td><td class = "align_center">5.75512639230505</td><td class = "align_center">0.269</td><td class = "align_center">0.006</td><td class = "align_center">3.58913157943589e-44</td><td class = "align_center">0</td><td class = "align_center">IATPR</td></tr>
+	<tr><td class = "align_center">6.32422263005578e-19</td><td class = "align_center">5.0668376381096</td><td class = "align_center">0.108</td><td class = "align_center">0.003</td><td class = "align_center">1.33384179490506e-14</td><td class = "align_center">1</td><td class = "align_center">CEACAM3</td></tr>
+	<tr><td class = "align_center">1.02484265797564e-13</td><td class = "align_center">4.93820173519813</td><td class = "align_center">0.061</td><td class = "align_center">0</td><td class = "align_center">2.16149564993643e-09</td><td class = "align_center">1</td><td class = "align_center">ENSG00000286872</td></tr>
+	<tr><td class = "align_center">0.000451961005444999</td><td class = "align_center">4.81826536502014</td><td class = "align_center">0.02</td><td class = "align_center">0.001</td><td class = "align_center">1</td><td class = "align_center">1</td><td class = "align_center">VASH1-DT</td></tr>
+	<tr><td class = "align_center">2.41463210764165e-09</td><td class = "align_center">5.47417487082446</td><td class = "align_center">0.053</td><td class = "align_center">0.002</td><td class = "align_center">5.092700578227e-05</td><td class = "align_center">2</td><td class = "align_center">CYP4F3</td></tr>
+	<tr><td class = "align_center">3.29095697142602e-12</td><td class = "align_center">5.34600042904148</td><td class = "align_center">0.061</td><td class = "align_center">0.001</td><td class = "align_center">6.94095734843463e-08</td><td class = "align_center">2</td><td class = "align_center">KCNJ15</td></tr>
+	<tr><td class = "align_center">2.76240134541867e-27</td><td class = "align_center">5.30446130478018</td><td class = "align_center">0.176</td><td class = "align_center">0.008</td><td class = "align_center">5.82618067762251e-23</td><td class = "align_center">2</td><td class = "align_center">SERPINB2</td></tr>
+	<tr><td class = "align_center">0.00422387183513731</td><td class = "align_center">7.58977216615775</td><td class = "align_center">0.015</td><td class = "align_center">0.001</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">CLDN5</td></tr>
+	<tr><td class = "align_center">0.00422387183513731</td><td class = "align_center">6.71425993030866</td><td class = "align_center">0.015</td><td class = "align_center">0.001</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">LY6G6F</td></tr>
+	<tr><td class = "align_center">0.000167249397964261</td><td class = "align_center">6.59214906296929</td><td class = "align_center">0.015</td><td class = "align_center">0</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">TRAPPC3L</td></tr>
+	<tr><td class = "align_center">0.000167249397964261</td><td class = "align_center">6.59214906296929</td><td class = "align_center">0.015</td><td class = "align_center">0</td><td class = "align_center">1</td><td class = "align_center">3</td><td class = "align_center">ENSG00000267316</td></tr>
+	<tr><td class = "align_center">1.59934532805308e-74</td><td class = "align_center">10.04654749696</td><td class = "align_center">0.346</td><td class = "align_center">0</td><td class = "align_center">3.37317923139675e-70</td><td class = "align_center">4</td><td class = "align_center">ENSG00000257275</td></tr>
+	<tr><td class = "align_center">9.00618653141672e-66</td><td class = "align_center">8.63737200910687</td><td class = "align_center">0.323</td><td class = "align_center">0.002</td><td class = "align_center">1.8994948013411e-61</td><td class = "align_center">4</td><td class = "align_center">SCN3A</td></tr>
+	<tr><td class = "align_center">1.08363111088679e-203</td><td class = "align_center">8.25865266793103</td><td class = "align_center">0.929</td><td class = "align_center">0.004</td><td class = "align_center">2.28548637597133e-199</td><td class = "align_center">4</td><td class = "align_center">TCL1A</td></tr>
+	<tr><td class = "align_center">5.15796481288074e-94</td><td class = "align_center">9.36229669241278</td><td class = "align_center">0.448</td><td class = "align_center">0.002</td><td class = "align_center">1.08786635868468e-89</td><td class = "align_center">5</td><td class = "align_center">ENSG00000228033</td></tr>
+	<tr><td class = "align_center">2.83556625672241e-186</td><td class = "align_center">8.37378700851507</td><td class = "align_center">0.955</td><td class = "align_center">0.012</td><td class = "align_center">5.98049279205324e-182</td><td class = "align_center">5</td><td class = "align_center">SLC4A10</td></tr>
+	<tr><td class = "align_center">8.33861889991444e-31</td><td class = "align_center">8.07131571838811</td><td class = "align_center">0.134</td><td class = "align_center">0</td><td class = "align_center">1.75869811218095e-26</td><td class = "align_center">5</td><td class = "align_center">RBM24</td></tr>
+	<tr><td class = "align_center">1.5762598293406e-05</td><td class = "align_center">6.22834684771001</td><td class = "align_center">0.03</td><td class = "align_center">0.001</td><td class = "align_center">0.332448960606226</td><td class = "align_center">6</td><td class = "align_center">SMOC2</td></tr>
+	<tr><td class = "align_center">9.54845678402386e-12</td><td class = "align_center">6.22796465042395</td><td class = "align_center">0.061</td><td class = "align_center">0.001</td><td class = "align_center">2.01386502031847e-07</td><td class = "align_center">6</td><td class = "align_center">STYK1</td></tr>
+	<tr><td class = "align_center">2.15156534725701e-11</td><td class = "align_center">6.16848478030419</td><td class = "align_center">0.045</td><td class = "align_center">0</td><td class = "align_center">4.53786647389975e-07</td><td class = "align_center">6</td><td class = "align_center">EPHX4</td></tr>
+	<tr><td class = "align_center">1.69195911597018e-42</td><td class = "align_center">10.3593006846339</td><td class = "align_center">0.419</td><td class = "align_center">0.029</td><td class = "align_center">3.56851097149271e-38</td><td class = "align_center">7</td><td class = "align_center">IGHA1</td></tr>
+	<tr><td class = "align_center">2.43339223537432e-54</td><td class = "align_center">9.18273071071192</td><td class = "align_center">0.323</td><td class = "align_center">0.006</td><td class = "align_center">5.13226756362798e-50</td><td class = "align_center">7</td><td class = "align_center">IGHG2</td></tr>
+	<tr><td class = "align_center">1.58004841432701e-81</td><td class = "align_center">9.17613594292543</td><td class = "align_center">0.468</td><td class = "align_center">0.008</td><td class = "align_center">3.33248011065711e-77</td><td class = "align_center">7</td><td class = "align_center">IGHG1</td></tr>
+	<tr><td class = "align_center">6.19928772415435e-07</td><td class = "align_center">6.72752662668168</td><td class = "align_center">0.039</td><td class = "align_center">0.001</td><td class = "align_center">0.0130749177390139</td><td class = "align_center">8</td><td class = "align_center">ZNF346-IT1</td></tr>
+	<tr><td class = "align_center">5.57402553041927e-72</td><td class = "align_center">6.57370690372465</td><td class = "align_center">0.471</td><td class = "align_center">0.011</td><td class = "align_center">1.17561772462073e-67</td><td class = "align_center">8</td><td class = "align_center">NRCAM</td></tr>
+	<tr><td class = "align_center">1.66199265873349e-14</td><td class = "align_center">6.52025039611055</td><td class = "align_center">0.059</td><td class = "align_center">0</td><td class = "align_center">3.5053087165348e-10</td><td class = "align_center">8</td><td class = "align_center">MXRA8</td></tr>
+	<tr><td class = "align_center">4.7952597122065e-152</td><td class = "align_center">9.37802795772645</td><td class = "align_center">0.771</td><td class = "align_center">0.006</td><td class = "align_center">1.01136822590147e-147</td><td class = "align_center">9</td><td class = "align_center">BNC2</td></tr>
+	<tr><td class = "align_center">1.08279447928851e-94</td><td class = "align_center">9.28995095846408</td><td class = "align_center">0.438</td><td class = "align_center">0.001</td><td class = "align_center">2.28372183626739e-90</td><td class = "align_center">9</td><td class = "align_center">ENSG00000288970</td></tr>
+	<tr><td class = "align_center">3.37992270431441e-109</td><td class = "align_center">8.96255559910122</td><td class = "align_center">0.583</td><td class = "align_center">0.006</td><td class = "align_center">7.12859497566952e-105</td><td class = "align_center">9</td><td class = "align_center">MYOM2</td></tr>
+	<tr><td class = "align_center">1.44022745581125e-47</td><td class = "align_center">7.09500773003462</td><td class = "align_center">0.231</td><td class = "align_center">0.001</td><td class = "align_center">3.0375837270515e-43</td><td class = "align_center">10</td><td class = "align_center">RDUR</td></tr>
+	<tr><td class = "align_center">1.04280340697129e-30</td><td class = "align_center">7.0407838654519</td><td class = "align_center">0.154</td><td class = "align_center">0.001</td><td class = "align_center">2.19937666564314e-26</td><td class = "align_center">10</td><td class = "align_center">UICLM</td></tr>
+	<tr><td class = "align_center">5.85331063297531e-13</td><td class = "align_center">6.80688882016098</td><td class = "align_center">0.051</td><td class = "align_center">0</td><td class = "align_center">1.23452174560082e-08</td><td class = "align_center">10</td><td class = "align_center">PPP1R17</td></tr>
+	</table>
+	</div>
+	<div class = "p1_desc mgft20">pct.1: Percentage of Marker cells in the current cell cluster;</div>
+	<div class = "p1_desc">pct.2: Percentage of Marker cells in other remaining cell clusters.</div>
+	<div class = "p1_desc">avg_logFC: A multiple of the difference in the average expression between the two groups is recorded, with a positive value indicating that the feature is expressed more highly in the current cluster.</div>
+	<div class = "p1_desc">p_val_adj: The adjusted P-value, the smaller of adjusted Pvalue, the more significant it is.</div>
+	<div class = "p1_desc">cluster: cell clusters.</div>
+
+
+
+	<div><a name = '7.3'></a></div>
+	<h3>7.3  Marker gene identification </h3>
+
+
+
+	<div class = "p"> The obtained Marker genes were statistically expressed in different cell groups, and visualized by means of clustering heat map, bubble map and violin map. The results of Top3 genes in each cell group were shown in figure10, figure11 and figure12, respectively.</div>
+
+
+
+	<div><a name = 'figure10'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png"    width = "1000"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 10&nbsp;&nbsp;Heatmap of Marker gene clustering.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The abscissa represents different cell groups; The ordinate is Marker gene; Yellow represents high expression and purple represents low expression.</div>
+	<div><a name = 'figure11'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 11&nbsp;&nbsp;Bubble heatmap of Marker gene .&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The abscissa is Marker gene and the ordinate is different cell group. The color ranges from light to dark, darker color represent higher expression level. Larger bubble indicates a higher percentage of cells expressing the gene in the cell group.</div>
+	<div><a name = 'figure12'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 12&nbsp;&nbsp;Violin diagram of Marker gene .&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The ordinate is different cell groups, and the abscissa is specific marker genes’ expression levels. </div>
+	<div><a name = '8'></a></div>
+	<h2>8 Functional Enrichment Analysis</h2>
+
+
+
+	<div class = "p">Significat differently expressed Genes(DEGs, adjust P-value < 0.05 && Log2FC > 0.5) were screened from all Marker genes in each cell cluster. ClusterProfiler was used to conduct functional enrichment analysis of GO (Gene Ontology) and KEGG (Kyoto Encyclopedia of Genes and Genomes) categories<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>. Enrichment results are shown from Figure 13 to 14.</div>
+
+
+
+	<div><a name = '8.1'></a></div>
+	<h3>8.1  GO enrichment analysis </h3>
+
+
+
+	<div class = "p"> The differential genes were enriched using the gene ontology database (GO).</div>
+
+
+
+	<div><a name = 'figure13'></a></div>
+	<div class = "albumSlider lane toPage">
+	<div class="selectImg">
+		<div class="fright">
+			<input type="text" value="" />
+			<input type="button" value="Confirm" class="confirm" />
+			<input type="button" value="Show All" class="showall" />
+		</div>
+	</div>
+		<div class = "fullview" style="height:351px"  alt = "1"><a href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png"><img src = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png" style="height:351px"  alt = ""/></a></div>
+		<div class = "slider">
+			<div class = "button movebackward" title = "Scroll Up"></div>
+				<div class = "imglistwrap">
+					<ul class = "imglist">
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png">run_count_1kpbmcs_0 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_GO_Barplot.png">run_count_1kpbmcs_1 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_GO_Barplot.png">run_count_1kpbmcs_2 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_GO_Barplot.png">run_count_1kpbmcs_3 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_GO_Barplot.png">run_count_1kpbmcs_4 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_GO_Barplot.png">run_count_1kpbmcs_5 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_GO_Barplot.png">run_count_1kpbmcs_6 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_GO_Barplot.png">run_count_1kpbmcs_7 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_GO_Barplot.png">run_count_1kpbmcs_8 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_GO_Barplot.png">run_count_1kpbmcs_9 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_GO_Barplot.png">run_count_1kpbmcs_10 cluster</li>
+					</ul>
+				</div>
+			<div class = "button1 moveforward" title = "Scroll Down"></div>
+		</div>
+	</div>
+
+	<div class = "p1 img_title"><center><b>Figure 13&nbsp;&nbsp;Barplot of GO enrichment.</b></center></div>	<div class = "p1 img_title">X-axis, number of enriched genes; y-axis, the significant enriched GO term; The dot color corresponds to different GO database, Molecular Function(MF),Cellular Component(CC), and Biological Process(BP).</div>
+
+
+	<div><a name = '8.2'></a></div>
+	<h3>8.2  KEGG enrichment analysis </h3>
+
+
+
+	<div class = "p"> The differential genes were enriched using the KEGG pathway database.</div>
+
+
+
+	<div><a name = 'figure14'></a></div>
+	<div class = "albumSlider lane toPage">
+	<div class="selectImg">
+		<div class="fright">
+			<input type="text" value="" />
+			<input type="button" value="Confirm" class="confirm" />
+			<input type="button" value="Show All" class="showall" />
+		</div>
+	</div>
+		<div class = "fullview" style="height:351px"  alt = "1"><a href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png"><img src = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png" style="height:351px"  alt = ""/></a></div>
+		<div class = "slider">
+			<div class = "button movebackward" title = "Scroll Up"></div>
+				<div class = "imglistwrap">
+					<ul class = "imglist">
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png">run_count_1kpbmcs_0 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_KEGG_Barplot.png">run_count_1kpbmcs_1 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_KEGG_Barplot.png">run_count_1kpbmcs_2 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_KEGG_Barplot.png">run_count_1kpbmcs_3 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_KEGG_Barplot.png">run_count_1kpbmcs_4 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_KEGG_Barplot.png">run_count_1kpbmcs_5 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_KEGG_Barplot.png">run_count_1kpbmcs_6 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_KEGG_Barplot.png">run_count_1kpbmcs_7 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_KEGG_Barplot.png">run_count_1kpbmcs_8 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_KEGG_Barplot.png">run_count_1kpbmcs_9 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_KEGG_Barplot.png">run_count_1kpbmcs_10 cluster</li>
+					</ul>
+				</div>
+			<div class = "button1 moveforward" title = "Scroll Down"></div>
+		</div>
+	</div>
+
+	<div class = "p1 img_title"><center><b>Figure 14&nbsp;&nbsp;Barplot of KEGG enrichment analysis.</b></center></div>	<div class = "p1 img_title">X-axis, number of enriched genes; y-axis, enriched KEGG Pathway; The dot color corresponds to log10(P-value), and the darker the color, the more significant the enrichment.</div>
+
+
+	<div><a name = '9'></a></div>
+	<h2>9 Annotation of Cell Clusters</h2>
+
+
+
+	<div class = "p">After dividing cells into different groups through cluster analysis, cell types are further identified by using marker gene information in public databases.</div><br/>
+	<div class = "p">SingleR Cell Annotation</div><br/>
+	<div class = "p">SingleR<a href="https://doi.org/10.1016/s0168-9525(00)02024-2" target="_blank"><sup>[3]</sup></a>can recognize the existing cell clustering results based on Seurat, compare each cluster with a reference data set, and score the cluster according to the similarity of gene expression between cluster and known cell groups in the reference data set to obtain a scoring matrix. Cells/Bins can be annotated into different groups by scoring matrix results. The visualization results of the scoring matrix of cell clustering results are shown in Figure 15, and the annotation results of cell groups are shown in Figure 16.</div>
+
+
+
+	<div><a name = 'figure15'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 15&nbsp;&nbsp;Scoring heatmap of cell cluster annotation by SingleR.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">x-axis, the cell clusters; y-axis, cell types contained in the reference dataset; the color ranges from blue to yellow, and the more closer to yellow, the higher scores; top lables represent the annotation result by SingleR.</div>
+	<div><a name = 'figure16'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png"    width = "900"   height = "350"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 16&nbsp;&nbsp;Annotation results of cell clusters by SingleR.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">Cluster results of UMAP. Each color represents a cell cluster annotaed by SingleR.</div>
+	<div><a name = '10'></a></div>
+	<h2>10 Pseudotime Analysis</h2>
+
+
+
+	<div class = "p">Pseudotime analysis, also known as trajectory inference, refers to obtaining cell lineage information according to the differentially expressed genes among different cell groups and constructing a change trajectory of cells in a virtual timeline. Based on these results, a cell change timeline can be recreated.</div><br/>
+	<div class = "p">        Monocle3<a href="https://doi.org/10.1038/nmeth.3176" target="_blank"><sup>[4]</sup></a> was used for Pseudo-time analysis. Based on the result of dimensionality reduction and clustering, we further estimated whether the clustering results belonged to the same developmental trajectory. The cell groups were visualized according to the developmental trajectories predicted by the software, and the results are shown in Figure 17.</div>
+
+
+
+	<div><a name = 'figure17'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 17&nbsp;&nbsp;Cell development trajectory diagram.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The black lines in the figure show the presumed trajectory of cell development.</div>
+	<div class = "p">According to the results of cell development trajectory, combined with the changes of gene expression levels in different cell groups, Monocle3 could identify the cells at the earliest developmental stage using a machine learning algorithm and create a pseudo-time analysis, as shown in Figure 18.</div>
+
+
+
+	<div><a name = 'figure18'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 18&nbsp;&nbsp;Diagram of pseudo time series analysis results.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The black lines represent the presumed developmental trajectory of the cells, ranging in color from purple to yellow, and the color closer to yellow, the cells develop the later.</div>
+	<br/><div class = "p">In the clustering results of different cell classes, the top 5 marker genes calculated by Monocle3 were selected, and the gene expression levels were visualized according to the obtained pseudo-time results, as shown in Figure 19.</div>
+
+
+
+	<div><a name = 'figure19'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 19&nbsp;&nbsp;Pseudo expression result of Marker gene.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">x-axis, the result of Pseudotime; y-axis, gene expression, and the color ranges from purple to yellow. the color closer to yellow, the cell development time is the later. The black line shows trends in gene expression.</div>
+	<div><a name = '11'></a></div>
+	<h2>11 Interaction of Cell Clusters</h2>
+
+
+
+	<div class = "p">CellChat<a href="https://doi.org/10.1093/nar/gkr965" target="_blank"><sup>[5]</sup></a> is a tool capable of quantitatively inferring and analyzing cell-to-cell communication networks from single-cell data, using network analysis and pattern recognition methods to predict the main signal inputs and outputs of cells and how these cells and signals coordinate their functions. The CellChatDB database incorporates signal analysis information from KEGG and recent studies. The database includes known ligand-receptor complex compositions, including ligand-receptor polymeric complexes and several coenzyme factors. In this project, CellChat was used to identify ligand/receptor relationships and intercellular communication molecules in spatio-temporal data, and to study the interaction and communication networks between different cell types.The communication network among all cell clusters is shown in Fig20, and the communication network between each cluster and other clusters is shown in Fig21.</div>
+
+
+
+	<div><a name = 'figure20'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png"    width = "800"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 20&nbsp;&nbsp;Communication network diagram between all cell clusters.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The thicker the connection line, the stronger the interaction between two clusters</div>
+	<div><a name = 'figure21'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png"    width = "800"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 21&nbsp;&nbsp;Communication network diagram between each cell cluster and others.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">The thicker the connection line, the stronger the interaction between two clusters</div>
+	<br/><br/>
+<h1 style="color:#0072bc"><div style="width:22px;height:22px; border-radius: 11px;background-color: #0072bc;float:left;margin-top:8px;"></div> &nbsp;Methods</h1>
+	<div><a name = '1'></a></div>
+	<h2>1 Project process</h2>
+
+
+
+	<div class = "p">The overall project process from sample reception to project delivery is as follows:</div>
+
+
+
+	<div><a name = 'figure1'></a></div>
+	<div class = "mgt"><a href = "../../resource/scRNA_technology_pipeline.png" target = "_blank"><img src= "../../resource/scRNA_technology_pipeline.png"    width = "500"   height = "300"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 1&nbsp;&nbsp;Project Flowchart.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title"> </div>
+	<div><a name = '2'></a></div>
+	<h2>2 Experimental process</h2>
+
+
+
+	<div class = "p"></div>
+
+
+
+	<div><a name = '3'></a></div>
+	<h2>3 Experimental process</h2>
+
+
+
+	<div class = "p"></div>
+
+
+
+	<div><a name = '3.1'></a></div>
+	<h3>3.1 10X Chromium single cell technology principle</h3>
+
+
+
+	<div class = "p">10X Chromium technology is a droplet microfluidic system based on water-in-oil emulsion. Through the introduction of Gel Beads-in-Emulsion (<span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion, the core technology of 10X Chromium platform. Through microfluidic chips, single cells and gel beads carrying oligonucleotide tags are encapsulated in water-in-oil droplets, forming independent micro-reactors.</div></div></span>) technology, gel beads carrying oligonucleotide tags are wrapped together with a single cell or nucleus in water-in-oil droplets. Each <span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion, the core technology of 10X Chromium platform. Through microfluidic chips, single cells and gel beads carrying oligonucleotide tags are encapsulated in water-in-oil droplets, forming independent micro-reactors.</div></div></span> serves as an independent micro-reactor for cell lysis and capture of mRNA molecules, as well as the tag sequence used to identify beads from the same <span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion, the core technology of 10X Chromium platform. Through microfluidic chips, single cells and gel beads carrying oligonucleotide tags are encapsulated in water-in-oil droplets, forming independent micro-reactors.</div></div></span>. The oligonucleotides on the gel bead surface contain: <span class = "key_sign">&nbsp;Cell Barcode&nbsp;<div class = "key_body"><div class = "key_title">Cell Barcode</div><div class = "key_content">Synthetic nucleic acid sequences used to identify cells. 10X Chromium uses 16bp Cell Barcodes, with a whitelist containing approximately 737,000 known sequences with minimum edit distance of 3, allowing unique correction of 1-base sequencing errors.</div></div></span> (16bp) for identifying cells, <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> (10bp for v2, 12bp for v3) for identifying molecules, and Poly(dT) sequence for capturing mRNA. Library construction and Illumina sequencing of cDNA can obtain gene expression information of a large number of cells at one time, as shown in the figure below.</div>
+
+
+
+	<div><a name = 'figure2'></a></div>
+	<div class = "mgt"><a href = "../../resource/scRNA_library_structure.png" target = "_blank"><img src= "../../resource/scRNA_library_structure.png"    width = "700"   height = "300"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 2&nbsp;&nbsp;Schematic diagram of 10X Chromium single-cell technique.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title"> </div>
+	<div><a name = '3.2'></a></div>
+	<h3>3.2 Sequencing library structure</h3>
+
+
+
+	<div class = "p">The cDNA was amplified by PCR, fragmented, end-repaired with A-tailing, ligated to adapters, re-amplified, and constructed as a standard library for Illumina sequencing, then sequenced by computer. The library structure is shown in the figure below.</div>
+
+
+
+	<div><a name = 'figure3'></a></div>
+	<div class = "mgt"><a href = "../../resource/scRNA_library_sequence.png" target = "_blank"><img src= "../../resource/scRNA_library_sequence.png"    width = "700"   height = "300"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 3&nbsp;&nbsp;Schematic diagram of single-cell sequencing library structure.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">Cell Barcode: Synthetic nucleic acid sequence used to identify cells (16bp); UMI: Used to identify nucleic acid sequences captured from sample tissue (10bp for v2, 12bp for v3); Poly(dT): Sequence for complementary pairing with mRNA poly(A); Insert: Captured RNA fragment</div>
+	<div><a name = '4'></a></div>
+	<h2>4 Information analysis process</h2>
+
+
+
+	<div class = "p">The raw data obtained by sequencing are called raw reads. The Cell Ranger analysis pipeline provided by 10X Genomics is used to process the offline data, mainly including the following steps: (1) Align Read2 to the reference genome using STAR; (2) Correct Cell Barcodes against the whitelist and correct UMIs from Read1; (3) Annotate aligned reads to corresponding genes; (4) Deduplicate and count by valid Barcode+<span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span>+Gene combinations; (5) Distinguish real cells from empty droplets using the EmptyDrops algorithm (Cell Calling); (6) Perform secondary analysis such as dimensionality reduction and clustering. The specific analysis process is shown in the following figure:</div>
+
+
+
+	<div><a name = 'figure4'></a></div>
+	<div class = "mgt"><a href = "../../resource/analysis_pipeline.png" target = "_blank"><img src= "../../resource/analysis_pipeline.png"    width = "768"   height = "300"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 4&nbsp;&nbsp;Information Analysis Flow Chart.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title"> </div>
+	<div><a name = '4.1'></a></div>
+	<h3>4.1 Disembarkation data quality control</h3>
+
+
+
+	<div class = "p">Cell Ranger is used for demultiplexing and quality control of offline data, mainly including the following steps:</div><br/>
+	<div class = "p">(1) Use cellranger mkfastq to convert Illumina BCL files to FASTQ format;</div><br/>
+	<div class = "p">(2) Correct Cell Barcodes from Read1 against the whitelist: 10X Chromium uses approximately 737,000 known Barcode sequences (whitelist), with minimum edit distance of 3 between whitelist Barcodes. Therefore, 1-base sequencing errors can be uniquely corrected back to the original whitelist sequence, and Reads with Barcodes that cannot be corrected are discarded;</div><br/>
+	<div class = "p">(3) Correct <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> sequences: If two UMIs under the same gene and same <span class = "key_sign">&nbsp;Cell Barcode&nbsp;<div class = "key_body"><div class = "key_title">Cell Barcode</div><div class = "key_content">Synthetic nucleic acid sequences used to identify cells. 10X Chromium uses 16bp Cell Barcodes, with a whitelist containing approximately 737,000 known sequences with minimum edit distance of 3, allowing unique correction of 1-base sequencing errors.</div></div></span> differ by only one base (edit distance=1), the <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> with fewer supporting Reads is corrected to the <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> with more supporting Reads;</div><br/>
+	<div class = "p">(4) Sequencing quality assessment: Q30 Bases in Barcode should be ≥90%, Q30 Bases in <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> should be ≥90%, Q30 Bases in RNA Read should be ≥75%, and Valid Barcodes ratio should be greater than 75%.</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = '4.2'></a></div>
+	<h3>4.2 Data comparison and statistics</h3>
+
+
+
+	<div class = "p">RNA reads (insertions) will be matched against a pre-constructed reference genome database using STAR comparison software. Based on the STAR comparison results, combined with the information in the reference dataset (gtf/gff file), reads coverage information of each region of the genome was analyzed to obtain the ratio information of exons, introns and intergene regions, which could be used as a reference index for data quality control. Cell Ranger integrates the STAR algorithm with optimizations for 10X Barcode structure. The following is a schematic diagram of its principle:</div>
+
+
+
+	<div><a name = 'figure5'></a></div>
+	<div class = "mgt"><a href = "../../resource/STAR.png" target = "_blank"><img src= "../../resource/STAR.png"    width = "500"   height = "300"/></a></div>
+	<div class = "p1 img_title"><center><b>Figure 5&nbsp;&nbsp;STAR Comparison Principle.&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title"> </div>
+	<div><a name = '4.3'></a></div>
+	<h3>4.3 Quantitative statistics of gene expression</h3>
+
+
+
+	<div class = "p">The quantitative analysis of gene expression of scRNA-seq is mainly based on <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> counting. Reads pairs with the same <span class = "key_sign">&nbsp;Cell Barcode&nbsp;<div class = "key_body"><div class = "key_title">Cell Barcode</div><div class = "key_content">Synthetic nucleic acid sequences used to identify cells. 10X Chromium uses 16bp Cell Barcodes, with a whitelist containing approximately 737,000 known sequences with minimum edit distance of 3, allowing unique correction of 1-base sequencing errors.</div></div></span> sequence, <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> label, and alignment to the same gene would be defined as PCR duplicates. Only non-PCR duplicates and verified <span class = "key_sign">&nbsp;Cell Barcode&nbsp;<div class = "key_body"><div class = "key_title">Cell Barcode</div><div class = "key_content">Synthetic nucleic acid sequences used to identify cells. 10X Chromium uses 16bp Cell Barcodes, with a whitelist containing approximately 737,000 known sequences with minimum edit distance of 3, allowing unique correction of 1-base sequencing errors.</div></div></span> and <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> are used for downstream gene quantitative analysis. <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> correction rules are as follows:</div><br/>
+	<div class = "p">(1) Under the same <span class = "key_sign">&nbsp;Cell Barcode&nbsp;<div class = "key_body"><div class = "key_title">Cell Barcode</div><div class = "key_content">Synthetic nucleic acid sequences used to identify cells. 10X Chromium uses 16bp Cell Barcodes, with a whitelist containing approximately 737,000 known sequences with minimum edit distance of 3, allowing unique correction of 1-base sequencing errors.</div></div></span> and same gene, if two UMIs differ by only one base (edit distance=1), the <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> with fewer supporting Reads is merged into the <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> with more supporting Reads;</div><br/>
+	<div class = "p">(2) Each <span class = "key_sign">&nbsp;UMI&nbsp;<div class = "key_body"><div class = "key_title">UMI</div><div class = "key_content">Unique Molecular Identifier, used to identify nucleic acid sequences captured from sample tissues. 10X v2 uses 10bp, v3 uses 12bp. Different mRNA sequences can be derived from the same molecule, using the same UMI identifier. UMI correction is based on directional merging with edit distance=1.</div></div></span> group is ultimately counted as 1 mRNA molecule.</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = '4.4'></a></div>
+	<h3>4.4 Data quality control and filtering</h3>
+
+
+
+	<div class = "p">Commonly used QC filtration conditions mainly include:</div><br/>
+	<div class = "p">(1) The number of genes identified per cell: a) Low quality cells or empty droplets usually identify very few genes; b) Twin or polycellular droplets may exhibit an unusually high number of genes.</div><br/>
+	<div class = "p">(2) The number of molecules identified per cell (similar to 1);</div><br/>
+	<div class = "p">(3) The ratio to the mitochondrial genome;</div><br/>
+	<div class = "p">Cell Ranger uses the EmptyDrops algorithm to automatically distinguish real cells from empty droplets. On this basis, commonly used cell filtration parameters for downstream analysis are:</div><br/>
+	<div class = "p">(1) Filter out cells with a gene number less than 200 or greater than the maximum gene number *90%;</div><br/>
+	<div class = "p">(2) Cells with more than 5% of mitochondrial reads were filtered out (cell types with high energy requirements required special treatment, such as tumor tissue and cardiomyocytes, and the general threshold was set to more than 20%);</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = '4.5'></a></div>
+	<h3>4.5 High variable feature screening</h3>
+
+
+
+	<div class = "p">Calculating subsets that exhibit highly differentiated features between cells in the dataset (i.e., they are highly expressed in some cells and low expressed in others), focusing on these genes in downstream analysis helps highlight biological signals in single-cell datasets. By default, the 2,000 genes with the highest degree of variation are selected. These genes will be used for downstream analysis, such as PCA.</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = '4.6'></a></div>
+	<h3>4.6 Cell clustering</h3>
+
+
+
+	<div class = "p">In factor analysis technology, variables are grouped according to their correlation, that is, all variables in a specific group have a high correlation with each other, but often have a low correlation with variables in other groups. Then, the most significant principal component is selected according to the degree of enrichment and P-value. According to tSNE or UMAP (https://www.nature.com/articles/nbt.4314) algorithm of nonlinear dimension reduction analysis, the cells together into classes. The UMAP algorithm is adopted by default for the following reasons: UMAP is more suitable for processing large data sets and complex dimensional information. Combines the power of visualization with the ability to reduce data dimensions; In addition to preserving the local structure, it also preserves the global structure of the data. (The Ultimate Guide to 12 Dimensionality Reduction Techniques (with Python codes))</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = '4.7'></a></div>
+	<h3>4.7 Screening of specific marker genes in cluster</h3>
+
+
+
+	<div class = "p">The differentially expressed genes of each cluster and all remaining cells were calculated, and the screening parameters were as follows:</div><br/>
+	<div class = "p_content">
+	<div class = "p_light">min.pct = 0.25, logfc.threshold = 0.25</div>
+	</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = '4.8'></a></div>
+	<h3>4.8 Analysis software description</h3>
+
+
+
+	<div class = "p">The analysis software used in this project is shown in the following table:</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = "table1"></a></div>
+	<br/>
+	<div class = "p1 mgft25"><b>Table   1</b>&nbsp;&nbsp;Information of the software&nbsp;&nbsp;&nbsp;(<a href = "../../resource/scRNA_software_info_en.xls">Download</a>)</div>
+	<div class = "align_center table-container">
+	<table>
+		<tr><th class = "align_center"><span class = "key_sign_tb">Software<div class = "key_body"><div class = "key_content">Name</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Version<div class = "key_body"><div class = "key_content">Version</div></div></span></th><th class = "align_center"><span class = "key_sign_tb">Description<div class = "key_body"><div class = "key_content">Note</div></div></span></th></tr>
+		<tr><td class = "align_center">Cell Ranger</td><td class = "align_center">v10.0.0</td><td class = "align_center">Cell Ranger is the official data analysis pipeline provided by 10X Genomics for single-cell RNA-seq data. It processes Illumina raw sequencing data (FASTQ) into gene expression matrices, including FASTQ demultiplexing, sequence alignment (STAR), Barcode/UMI correction, and gene expression quantification.</td></tr>
+		<tr><td class = "align_center">STARsolo</td><td class = "align_center">v2.7.11a</td><td class = "align_center">STARsolo is a built-in single-cell analysis module of the STAR aligner. It serves as an alternative to Cell Ranger for sequence alignment and gene expression quantification, offering faster performance and supporting multiple single-cell library preparation platforms (including 10X Chromium 3' and 5' assays).</td></tr>
+		<tr><td class = "align_center">Seurat</td><td class = "align_center">v5.0.0</td><td class = "align_center">Seurat is an R package dedicated to single-cell RNA-seq analysis. Its functionality covers data filtering, normalization, batch effect removal, cell clustering, differential gene expression analysis, and more. It is feature-rich and widely adopted in the single-cell sequencing community.</td></tr>
+		<tr><td class = "align_center">SingleR</td><td class = "align_center">v2.2.0</td><td class = "align_center">SingleR compares each cluster from cell clustering results against reference databases, scoring clusters based on the similarity of their gene expression profiles to known cell populations. The resulting score matrix enables automated cell type annotation for each cluster.</td></tr>
+		<tr><td class = "align_center">CellChat</td><td class = "align_center">v2.0.0</td><td class = "align_center">CellChat quantitatively infers and analyzes intercellular communication networks from single-cell data. It uses network analysis and pattern recognition methods to predict major signaling inputs and outputs of cells, and how these cells and signals coordinate biological functions.</td></tr>
+		<tr><td class = "align_center">clusterProfiler</td><td class = "align_center">v4.10.0</td><td class = "align_center">clusterProfiler is an R package for gene enrichment analysis using multiple methods, such as GO and KEGG, with built-in visualization capabilities for enrichment analysis results.</td></tr>
+		<tr><td class = "align_center">Monocle3</td><td class = "align_center">v1.3.7</td><td class = "align_center">Monocle3 is an R package for pseudotime analysis. Based on differential gene expression across cell populations, it infers cell lineage development, constructs cell trajectory along a virtual time axis, and recapitulates the dynamic process of cell state transitions over time.</td></tr>
+	</table>
+	</div>
+
+
+
+	<br/><br/>
+<h1 style="color:#0072bc"><div style="width:22px;height:22px; border-radius: 11px;background-color: #0072bc;float:left;margin-top:8px;"></div> &nbsp;Help</h1>
+	<div><a name = '1'></a></div>
+	<h2>1 Format of Sequencing Data</h2>
+
+
+
+	<div class = "p">10X single-cell sequencing data are stored in FASTQ format, which is the standard output format for Illumina sequencing platform. See attached Figure 3 for examples of data. This file consists of four action units: the first line begins with '@', followed by the sequence description; The second line is the sequence; The third line begins with a '+', which may or may not be followed by the sequence description; The fourth line is the base quality value of the second line sequence, and the two lines are correspond one by one. An example is shown as the following:</div><br/>
+	<div class = "p"></div><br/>
+	<div class = "p_content">
+	<div class = "p_light">@A00228:279:HFWFVDMXX:1:1101:8486:1000 2:N:0:NCATTACT</div>
+	<div class = "p_light">NACAAAGTCCCCCCCATAATACAGGGGGAGCCACTTGGGCAGGAGGCAGGGAGGGGTCCATTCCCCCTGGTGGGGCTGGTGGGGAGCTG</div>
+	<div class = "p_light">+</div>
+	<div class = "p_light">#FFFFFFFFFFFFFFF:FFFFFFF:FFFFFFFFFFFFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFFFFFF</div>
+	</div><br/>
+	<div class = "p"></div>
+
+
+
+	<div><a name = '2'></a></div>
+	<h2>2 Data Delivery</h2>
+
+
+
+	<div class = "p">For some big raw data, suach as raw sequencing fastq、alignment bam and experession <span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion, the core technology of 10X Chromium platform. Through microfluidic chips, single cells and gel beads carrying oligonucleotide tags are encapsulated in water-in-oil droplets, forming independent micro-reactors.</div></div></span>，and some big analysis results，suach as <span class = "key_sign">&nbsp;GEM&nbsp;<div class = "key_body"><div class = "key_title">GEM</div><div class = "key_content">Gel Beads-in-Emulsion, the core technology of 10X Chromium platform. Through microfluidic chips, single cells and gel beads carrying oligonucleotide tags are encapsulated in water-in-oil droplets, forming independent micro-reactors.</div></div></span> of tissue、rds of cell cluster，are delivered by a Portable Hard Disk(PHD) or Cloud Disk . The directory structure is consistent with this report;</div><br/>
+	<div class = "p">All standard analysis results have been shown in this report, and all tables and figures (including pdf) have been put in the corresponding directory which will not be delivered again.</div><br/>
+	<div class = "p">The detailed directory and files are shown as the following:</div><br/>
+	<div class = "p_content">
+	<div class = "p_light">    Directory                                       Content            Files            Deliver method</div>
+	<div class = "p_light">|-- IDBiotech_result</div>
+	<div class = "p_light">|-- QC.xls                                    QC report   </div>
+	<div class = "p_light">|-- Mapping.xls                               QC report</div>
+	<div class = "p_light">|-- Cell.xls                                  QC report</div>
+	<div class = "p_light">|   |-- Sample1                              Sample Name                        </div>
+	<div class = "p_light">|   |   |-- 01.Data_report                    Data report</div>
+	<div class = "p_light">|   |   |   |-- LibraryID1                                            Library of Sample         This report  </div>
+	<div class = "p_light">|   |   |       |-- *xls                                                report         This report      </div>
+	<div class = "p_light">|   |   |-- 02.Normalize                      Data Normalize</div>
+	<div class = "p_light">|   |   |   |-- *pdf                          Analysis result pdf       This report                             </div>
+	<div class = "p_light">|   |   |   |-- *png                          Analysis result png       This report</div>
+	<div class = "p_light">|   |   |-- 03.HvgPCA                         High variableFeatures                This report</div>
+	<div class = "p_light">|   |   |   |-- *pdf                                            Analysis result png        This report</div>
+	<div class = "p_light">|   |   |   |-- *png                                            Analysis result png         This report</div>
+	<div class = "p_light">|   |   |-- 04.Decontamination                        Data Cleaning</div>
+	<div class = "p_light">|   |   |   |-- *pdf                                            Analysis result png        This report</div>
+	<div class = "p_light">|   |   |   |-- *png                                            Analysis result png         This report</div>
+	<div class = "p_light">|   |   |-- 04.sSample                        Single sample analysis</div>
+	<div class = "p_light">|   |   |   |-- *pdf                                            Analysis result png        This report</div>
+	<div class = "p_light">|   |   |   |-- *png                                            Analysis result png         This report</div>
+	<div class = "p_light">|   |   |-- 05.GOKEGG                        Gene enrichment analysis</div>
+	<div class = "p_light">|   |   |   |-- *pdf                                            Analysis result png        This report</div>
+	<div class = "p_light">|   |   |   |-- *png                                            Analysis result png         This report</div>
+	<div class = "p_light">|   |   |-- 06.SingleR                        SingleR Cell annotation</div>
+	<div class = "p_light">|   |   |   |-- *pdf                                            Analysis result png        This report</div>
+	<div class = "p_light">|   |   |   |-- *png                                            Analysis result png         This report</div>
+	<div class = "p_light">|   |   |-- 07.Monocle                        Pseudotime analysis</div>
+	<div class = "p_light">|   |   |   |-- *pdf                                            Analysis result png        This report</div>
+	<div class = "p_light">|   |   |   |-- *png                                            Analysis result png         This report</div>
+	<div class = "p_light">|   |   |-- 08.CellChat                        Cell-cell communication analysis</div>
+	<div class = "p_light">|   |   |   |-- *pdf                                            Analysis result png        This report</div>
+	<div class = "p_light">|   |   |   |-- *png                                            Analysis result png         This report</div>
+	<div class = "p_light">|   |-- Sample2</div>
+	<div class = "p_light">|   |-- SampleN              </div>
+	<div class = "p_light">|-- report.html                             Html report</div>
+	<div class = "p_light">|-- report.pdf                              Pdf report</div>
+	<div class = "p_light">|-- src                     </div>
+	<div class = "p_light">`-- temp</div>
+	</div><br/>
+	<div class = "p"></div><br/>
+	<div class = "p"></div><br/>
+
+
+
+	<br/><br/>
+<h1 style="color:#0072bc"><div style="width:22px;height:22px; border-radius: 11px;background-color: #0072bc;float:left;margin-top:8px;"></div> &nbsp;FAQs</h1>
+	<div class = "g_title">1. What QC indicators are mainly looked at in the analysis results?</div>
+	<div class = "g_content">Median number of genes per cell, number of reads per cell, number of UMI. These indicators are mainly related to the amount of sequencing and the number of cells. In general, the number of genes identified in each cell of model organisms is between 500 and 5000. The reads in each cell range from tens to hundreds of Kelvin. Cell Ranger's web_summary also reports key QC indicators such as Valid Barcodes ratio (should be >75%), Q30 Bases in Barcode (should be ≥90%), Q30 Bases in UMI (should be ≥90%), Q30 Bases in RNA Read (should be ≥75%), and sequencing saturation.</div>
+	<div class = "g_title">2. How many cells can be found?</div>
+	<div class = "g_content">It is closely related to the cell type in the project design and the corresponding cell viability rate, and it is also related to whether cell drug treatment is carried out in the project design. Generally, the cell death rate is fast, and the number of effective cells found is small. Cell Ranger uses the EmptyDrops algorithm to automatically distinguish real cells from empty droplets, and outputs the filtered_feature_bc_matrix for downstream analysis.</div>
+	<div class = "g_title">3. What does UMAP refer to?</div>
+	<div class = "g_content">A data dimensionality reduction method, compared with TSNE, UMAP is more suitable for dealing with large data sets and complex dimensional information. UMAP combines the power of visualization with the ability to reduce data dimensions; In addition to preserving the local structure, it also preserves the global structure of the data.</div>
+	<div class = "g_title">4. Why is the proportion of mitochondria filtered in ordinary samples over 5%, while the proportion of tumor samples over 20% is filtered?</div>
+	<div class = "g_content">High proportion of mitochondrial gene expression is one of the indicators that cells are under stress, so high proportion of mitochondria is often used to judge poor cell activity; However, tumors/cardiomyocytes/nerve cells/skeletal muscle cells/pancreatic secretory cells, etc. often contain a large number of mitochondria to cope with high energy requirements, so the filtration threshold needs to be up-regulated.</div>
+	<div class = "g_title">5. How many categories can cell categories be divided into?</div>
+	<div class = "g_content">In theory, the more classification, the more detailed, but it will also increase the complexity of calculation and screening, so it is generally divided into 8 to 15 categories.</div>
+	<div class = "g_title">6. Why do cell categories start with 0?</div>
+	<div class = "g_content">For historical reasons, c language designers began counting array subscripts with 0, and later many high-level languages followed c to count from 0.</div>
+	<div class = "g_title">7. Why only high-expression marker genes in a single sample are counted? Why may log2FC be negative in marker gene identification among multiple sample groups?</div>
+	<div class = "g_content">In the single sample analysis, we pay attention to the differentially expressed genes between clusters. It is generally believed that significantly highly expressed genes can best represent each cluster and are more suitable for marker genes. In the subsequent analysis, we also pay more attention to the part of high expression. In the multi-sample intergroup analysis, we pay more attention to the differentially expressed genes between groups, so the marker genes screened may be highly expressed in group 1 or group 2, that is, log2FC may be positive or negative.</div>
+	<br/><br/>
+<h1 style="color:#0072bc"><div style="width:22px;height:22px; border-radius: 11px;background-color: #0072bc;float:left;margin-top:8px;"></div> &nbsp;References</h1>
+	<div class = "p2"><a href = "https://doi.org/10.1038/ncomms14049" target = "_blank">[1] Zheng G X Y, Terry J M, Belgrader P, et al. Massively parallel digital transcriptional profiling of single cells[J]. Nature communications, 2017, 8(1): 1-12.</a></div>
+	<div class = "p2"><a href = "https://doi.org/10.1186/s13059-019-1662-y" target = "_blank">[2] Lun A T L, Riesenfeld S, Andrews T, et al. EmptyDrops: distinguishing cells from empty droplets in droplet-based single-cell RNA sequencing data[J]. Genome biology, 2019, 20(1): 1-9.</a></div>
+	<div class = "p2"><a href = "https://doi.org/10.1016/s0168-9525(00)02024-2" target = "_blank">[3] Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. doi: 10.1016/s0168-9525(00)02024-2. PMID: 10827456.</a></div>
+	<div class = "p2"><a href = "https://doi.org/10.1038/nmeth.3176" target = "_blank">[4] Buchfink B, Xie C, Huson D H. Fast and sensitive protein alignment using DIAMOND[J]. Nature methods, 2015, 12(1): 59-60</a></div>
+	<div class = "p2"><a href = "https://doi.org/10.1093/nar/gkr965" target = "_blank">[5] Zhang H M, Chen H, Liu W, et al. AnimalTFDB: a comprehensive animal transcription factor database[J]. Nucleic acids research, 2012, 40(D1): D144-D149.</a></div>
+	<br/><br/>
+	<br/><br/>
+			</div>	<div class="footer" style="font-size:14x;border-top:2px solid #c9c9c9; width:1265px;clear:both;">                   </div>        </span>        </div>  </div></body></html>

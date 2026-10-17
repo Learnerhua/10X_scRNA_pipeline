@@ -1,0 +1,2 @@
+Samplename	libname	datapath	organism	step	Respath
+run_count_1kpbmcs	run_count_1kpbmcs_lib	/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/upResult/run_count_1kpbmcs	Human	1234567	/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/DowAna/Res/run_count_1kpbmcs

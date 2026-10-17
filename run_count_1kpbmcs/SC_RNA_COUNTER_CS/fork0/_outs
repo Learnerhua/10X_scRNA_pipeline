@@ -1,0 +1,21 @@
+{
+    "aggregate_barcodes": null,
+    "analysis": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/analysis",
+    "cell_types": null,
+    "cloupe": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe",
+    "crispr_analysis": null,
+    "feature_reference": null,
+    "filtered_feature_bc_matrix": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix",
+    "filtered_feature_bc_matrix_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/filtered_feature_bc_matrix.h5",
+    "metrics_summary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/metrics_summary.csv",
+    "molecule_info": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/molecule_info.h5",
+    "possorted_genome_bai_index": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/possorted_genome_bam.bam.bai",
+    "possorted_genome_bam": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/possorted_genome_bam.bam",
+    "possorted_genome_csi_index": null,
+    "probe_set": null,
+    "raw_feature_bc_matrix": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/raw_feature_bc_matrix",
+    "raw_feature_bc_matrix_h5": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/raw_feature_bc_matrix.h5",
+    "target_panel": null,
+    "web_summary": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/web_summary.html",
+    "web_summary_cell_types": null
+}

@@ -1,0 +1,30 @@
+{
+    "timestamp": "2026-03-03T17:10:49.639561704+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_TSNE/fork0/chnk0-u3c10a6a582/files/tsne_csv",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_TSNE/fork0/chnk0-u3c10a6a582/files/tsne_h5.h5",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_TSNE/fork0/join-u3c10a6a582/files/tsne_csv",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_TSNE/fork0/join-u3c10a6a582/files/tsne_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T17:10:26.723830555+08:00",
+            "DeltaBytes": 107833
+        },
+        {
+            "Timestamp": "2026-03-03T17:10:29.566777536+08:00",
+            "DeltaBytes": 101150
+        },
+        {
+            "Timestamp": "2026-03-03T17:10:29.645339178+08:00",
+            "DeltaBytes": -94969
+        },
+        {
+            "Timestamp": "2026-03-03T17:10:49.639561704+08:00",
+            "DeltaBytes": -94969
+        }
+    ],
+    "count": 8,
+    "size": 189938
+}

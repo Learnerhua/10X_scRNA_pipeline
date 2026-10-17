@@ -1,0 +1,4 @@
+2026-03-04 16:14:10 [time] __start__
+2026-03-04 16:14:11 [info] Running exportprojectioncsv: exportprojectioncsv /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/outs/cloupe.cloupe /oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_annotate_1kpbmcs/CELLRANGER_ANNOTATE_CS/EXTRACT_LOUPE_PROJECTION/fork0/chnk0-u6f41a7e9d2/files/umap.csv umap
+2026-03-04 16:14:11 [info] exportprojectioncsv output: b''
+2026-03-04 16:14:11 [time] __end__

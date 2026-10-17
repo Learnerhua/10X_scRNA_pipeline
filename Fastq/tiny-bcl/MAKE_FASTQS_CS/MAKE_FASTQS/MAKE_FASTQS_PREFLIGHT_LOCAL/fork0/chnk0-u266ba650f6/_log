@@ -1,0 +1,17 @@
+2026-03-03 11:09:42 [time] __start__
+2026-03-03 11:09:46 [info] -------mkfastq diagnostic start-------
+2026-03-03 11:09:46 [info] args:
+2026-03-03 11:09:46 [info] --id=tiny-bcl --run=cellranger-tiny-bcl-1.2.0 --csv=cellranger-tiny-bcl-simple-1.2.0.csv
+2026-03-03 11:09:46 [info] runParameters.xml parameters:
+2026-03-03 11:09:46 [info] BCL folder RTA Version: 1.18.66.4
+2026-03-03 11:09:46 [info] BCL params: {'ApplicationName': 'HiSeq Control Software', 'ApplicationVersion': '2.2.70'}
+2026-03-03 11:09:46 [info] RC'ing i2 read: False
+2026-03-03 11:09:46 [info] samplesheet:
+2026-03-03 11:09:46 [info] 
+Lane,Sample,Index
+1,test_sample,SI-P03-C9
+
+2026-03-03 11:09:46 [info] Read Info: [{'read_length': 26, 'index_read': False, 'read_name': 'R1', 'original_read_name': 'R1'}, {'read_length': 8, 'index_read': True, 'read_name': 'I1', 'original_read_name': 'R2'}, {'read_length': 98, 'index_read': False, 'read_name': 'R2', 'original_read_name': 'R3'}]
+2026-03-03 11:09:46 [info] Flowcell ID: H35KCBCXY
+2026-03-03 11:09:46 [info] -------mkfastq diagnostic end-------
+2026-03-03 11:09:46 [time] __end__

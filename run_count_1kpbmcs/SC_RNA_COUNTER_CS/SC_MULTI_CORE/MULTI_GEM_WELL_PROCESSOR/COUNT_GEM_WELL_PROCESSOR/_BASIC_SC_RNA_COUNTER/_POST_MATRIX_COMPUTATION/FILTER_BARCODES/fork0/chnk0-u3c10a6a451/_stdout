@@ -1,0 +1,12 @@
+[stdout]
+Found recovered_cells = 1139 with loss = 0.001955580330160515
+Range empty barcodes: 45000 - 90000
+The SGT slope is -1.950571315041984.
+Max background UMIs: 10
+Number of candidate bcs: 108
+Range candidate bc umis: 502, 2983
+Number of empty bcs: 45000
+Number of original cell calls: 1141
+Max adjusted P-value: 0.001
+Min observed P-value: 1.521111549447886e-05
+Non-ambient bcs identified by empty drops: 80

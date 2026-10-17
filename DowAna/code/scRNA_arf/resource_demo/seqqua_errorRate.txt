@@ -1,0 +1,4 @@
+Sequencing Error Rate(%)	Sequencing Quality Value	Character
+1	20	5
+0.1	30	?
+0.01	40	I

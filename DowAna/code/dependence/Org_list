@@ -1,0 +1,17 @@
+orgdb	organism	keggname
+org.Hs.eg.db	Human	hsa
+org.Mm.eg.db	Mouse	mmu
+org.Rn.eg.db	Rat	rno
+org.Dm.eg.db	Fly	dme
+org.At.tair.db	Arabidopsis	ath
+org.Dr.eg.db	Zebrafish	dre
+org.Sc.sgd.db	Yeast	sce
+org.Ce.eg.db	Worm	sko
+org.Bt.eg.db	Bovine	bta
+org.Gg.eg.db	Chicken	gga
+org.Ss.eg.db	Pig	ssc
+org.Mmu.eg.db	Rhesus	mcc
+org.Cf.eg.db	Canine	cfa
+org.Xl.eg.db	Xenopus	xla
+org.Pt.eg.db	Chimp	ptr
+org.Ag.eg.db	Anopheles	aga

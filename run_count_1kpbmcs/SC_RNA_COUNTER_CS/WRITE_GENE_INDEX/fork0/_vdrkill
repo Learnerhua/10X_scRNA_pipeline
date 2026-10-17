@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-03-03T16:48:03.071102484+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/WRITE_GENE_INDEX/fork0/chnk0-u3c10a6a025/files/gene_index.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T16:47:33.99779457+08:00",
+            "DeltaBytes": 187836878
+        },
+        {
+            "Timestamp": "2026-03-03T16:48:03.071102484+08:00",
+            "DeltaBytes": -187831913
+        }
+    ],
+    "count": 1,
+    "size": 187831913
+}

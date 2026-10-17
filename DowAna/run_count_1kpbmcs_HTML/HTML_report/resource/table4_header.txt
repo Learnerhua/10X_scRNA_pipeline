@@ -1,0 +1,1 @@
+Sample	Bin Size	Mean Gene Types	Median Gene Types	Mean MIDs	Median MIDs

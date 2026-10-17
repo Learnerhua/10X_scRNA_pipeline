@@ -1,0 +1,32 @@
+[stdout]
+Number of fastq units = 1
+Sampling reads from: Sample pbmc_1k_v3 in "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs"
+Sample pbmc_1k_v3 in "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs" is a paired-end library!
+Potential chemistries: SC5P-R2, SC5P-PE, SC5P-R2-v3, SC5P-PE-v3, SC3Pv1, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3LT, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+
+Length based filtering for Sample pbmc_1k_v3 in "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs"
+LengthStats {
+    median: {
+        R1: 28,
+        I1: 8,
+        R2: 91,
+    },
+}
+Compatible chemistries: SC5P-R2, SC5P-R2-v3, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3LT, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+Result: SC5P-R2, SC5P-R2-v3, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3LT, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+Consensus candidates after length filter: SC5P-R2, SC5P-R2-v3, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3LT, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+
+Whitelist based filtering for Sample pbmc_1k_v3 in "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs"
+ARC-v1: 0.00125
+SC3Pv3LT: 0.00363
+SC3Pv4-polyA: 0.00872
+SC3Pv2: 0.02068
+SC3Pv3-CS1: 0.14465
+SC3Pv3HT-CS1: 0.14465
+SC3Pv4-CS1: 0.0051
+SC3Pv3-polyA: 0.94724
+SC3Pv3HT-polyA: 0.94724
+SC5P-R2: 0.02068
+SC5P-R2-v3: 0.00194
+Compatible chemistries: SC3Pv3-polyA, SC3Pv3HT-polyA
+Result: SC3Pv3-polyA, SC3Pv3HT-polyA

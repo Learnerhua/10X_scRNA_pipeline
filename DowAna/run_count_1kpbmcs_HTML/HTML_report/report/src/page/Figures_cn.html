@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Figures</title> 
+    <link href="../css/report_beta.css" rel="stylesheet" type="text/css" />
+    <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.5.2.min.js" language="javascript"></script>   
+    <script src="../js/jquery.albumSlider.min.js" type="text/javascript"></script>
+    <script src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
+    <script src="../js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+    <script src="../js/albumSider.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/overlib.js"></script>
+    <script src="../js/report.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    $(function () {
+	        $(".download").each(function () {
+	            var width = $(this).parent().next(".table-container").children("table").width();
+	            var floatright = width;
+
+	            if (floatright <= 960) {
+	                $(this).css("margin-left", floatright - 60 + "px");
+	            } else {
+	                $(this).css("margin-left", "960px");
+	            }
+	        });
+	        var w = 0;
+	        var h = $(".catalog").height();
+
+
+	        $(".catalog_li a").each(function () {
+	            var width = $(this).width();
+	            if (width > w) {
+	                w = width;
+	            }
+	        });
+	        $(".catalog").width(w + 40 + "px");
+	        //$("ul.left_ul li:odd").css("background-color", "#d3e6f9");
+	        $(".span_hide").toggle(function () {
+	            $(".catalog_li").hide();
+	            $(this).text("[展示]")
+
+	        }, function () {
+
+	            $(".catalog_li").show();
+	            $(this).text("[隐藏]");
+	        });
+	        $(".catalog").height();
+
+		var height = $(".content").height();
+
+		if (710 - height < 60 && 710 - height >0) {             
+                	$(".footer").css("margin-top", 710 - height + "px");
+            	} else if (710 - height >60) {           
+                	$(".footer").css("margin-top", 710 - height - 60 + "px");
+            	}
+
+		$(".confirm").click(function () {
+	            var text = $(this).prev().val();
+	            if (text.length == "0") {
+	                alert("Please enter sample key word! ")
+	                return;
+	            }
+	            $(this).parents("div.lane").find("ul.imglist li").each(function () {
+					
+					if ($(this).text().toLowerCase().indexOf(text.toLowerCase()) >= 0) {
+	                    $(this).show();
+	                } else {
+	                    $(this).hide();
+	                }
+
+	            })
+	        });
+	        $(".showall").click(function () {
+	            $(this).parents("div.lane").find("ul.imglist li").each(function () {
+	                $(this).show();
+	            })
+	        });
+		$(".download1").find("img").mouseenter(function () {
+	            $(this).parent().next().show();
+
+	        });
+	        $(".download1").mouseleave(function () {
+	            $(".showMessage").hide();
+	        });
+
+	    })
+    </script>
+</head>
+<body>
+	<div class="link">
+		<div class = "rightline">
+			<div class = "imgVersion toHtml" url = "Results.html">
+			</div>
+			<div class = "line toHtml" url = "Results.html">
+				English
+			</div>
+		</div>
+	<div class="rightline">
+		<a href="../../report_cn.pdf" target = "_blank">
+				<img style="margin-top:20px;" width="50px;" height="50px;" src="../img/pdf.jpg" title="PDF Download" alt="PDF" />
+			</a>
+		</div>
+	</div>
+<div class = "top" onclick = "javascript:scroll(0,0)"></div>
+  <div id="page">
+			<div class = "move_left left_fixer">
+		<div class = "left_top">	<div><img style="margin-top:10px;"  src = "../img/BGI_Research_Logo.png" width = "120" alt = ""/></a></div>	</div>
+		<ul class = "left_ul">
+			<li class = "toHtml" url = "Results_cn.html">分析结果
+			</li>
+			<li class = "toHtml" url = "Methods_cn.html">分析方法
+			</li>
+			<li class = "toHtml" url = "Tables_cn.html">结果表格
+			</li>
+			<li class = "menuBG toHtml" url = "Figures_cn.html">结果图片
+			</li>
+			<li class = "toHtml" url = "Files_cn.html">文件
+			</li>
+			<li class = "toHtml" url = "References_cn.html">参考文献
+			</li>
+			<li class = "toHtml" url = "Help_cn.html">帮助
+			</li>
+			<li class = "toHtml" url = "FAQs_cn.html">常见问题
+			</li>
+		</ul>
+	</div>
+
+
+			<div class = "content">
+			<div class = "catalog">
+	<div class = "cont_ca">内容  <span class = "span_hide">[隐藏]</span></div>		<div class = "catalog_li"><a href = "#figure1">1 单细胞组学技术流程图</a></div>
+		<div class = "catalog_li"><a href = "#figure2">2 mRNA和线粒体RNA相关性散点图</a></div>
+		<div class = "catalog_li"><a href = "#figure3">3 QC小提琴图</a></div>
+		<div class = "catalog_li"><a href = "#figure4">4 高变基因筛选图</a></div>
+		<div class = "catalog_li"><a href = "#figure5">5 Top15 PC的降维热图</a></div>
+		<div class = "catalog_li"><a href = "#figure6">6 Top15 PC的elbow plot图</a></div>
+		<div class = "catalog_li"><a href = "#figure7">7 DoubletFinder 识别的双胞（核）以及非双胞</a></div>
+		<div class = "catalog_li"><a href = "#figure8">8 DecontX 识别污染细胞</a></div>
+		<div class = "catalog_li"><a href = "#figure9">9 细胞聚类结果</a></div>
+		<div class = "catalog_li"><a href = "#figure10">10 Marker基因聚类热图</a></div>
+		<div class = "catalog_li"><a href = "#figure11">11 Marker基因气泡热图</a></div>
+		<div class = "catalog_li"><a href = "#figure12">12 Marker基因小提琴图</a></div>
+		<div class = "catalog_li"><a href = "#figure13">13 GO富集分析结果图</a></div>
+		<div class = "catalog_li"><a href = "#figure14">14 KEGG富集分析结果图</a></div>
+		<div class = "catalog_li"><a href = "#figure15">15 SingleR细胞类群注释打分热图</a></div>
+		<div class = "catalog_li"><a href = "#figure16">16 SingleR细胞类群注释结果图</a></div>
+		<div class = "catalog_li"><a href = "#figure17">17 细胞发育轨迹图</a></div>
+		<div class = "catalog_li"><a href = "#figure18">18 拟时序分析结果图</a></div>
+		<div class = "catalog_li"><a href = "#figure19">19 Marker基因动态表达结果图</a></div>
+		<div class = "catalog_li"><a href = "#figure20">20 所有细胞类群间的细胞通讯网络图</a></div>
+		<div class = "catalog_li"><a href = "#figure21">21 每个细胞类群与其他类群间的细胞通讯网络图</a></div>
+	</div>
+
+				<div><a name = 'figure1'></a></div>
+	<div class = "mgt"><a href = "../../resource/scRNA_analysis_pipeline_cn.png" target = "_blank"><img src= "../../resource/scRNA_analysis_pipeline_cn.png"    width = "800"   height = "400"/></a></div>
+	<div class = "p1 img_title"><centet><b>图1&nbsp;&nbsp;单细胞组学技术流程图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title"> </div>
+	<div><a name = 'figure2'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_scatterplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图2&nbsp;&nbsp;mRNA和线粒体RNA相关性散点图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每个点表示一个细胞。 左图： X轴表示mRNA表达量， Y轴表示线粒体RNA比例； 右图： X轴mRNA表达量， Y轴表示mRNA数。 图中数字表示相关性系。</div>
+	<div><a name = 'figure3'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/02.Normalize/sample_run_count_1kpbmcs_fig1_vlnplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图3&nbsp;&nbsp;QC小提琴图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">左图： mRNA数； 中图： mRNA表达量； 右图： 线粒体RNA比例。</div>
+	<div><a name = 'figure4'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_var.png"    width = "860"/></a></div>
+	<div class = "p1 img_title"><centet><b>图4&nbsp;&nbsp;高变基因筛选图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">X轴表示平均表达量,Y轴表示标准化方差,右图在左图基础上标注了表达量变异程度top 10的marker基因。</div>
+	<div><a name = 'figure5'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_pca.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><centet><b>图5&nbsp;&nbsp;Top15 PC的降维热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每列表示一个细胞， 每行表示一个基因； 黄色表示高表达， 紫色表示低表达。</div>
+	<div><a name = 'figure6'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/03.HvgPCA/sample_run_count_1kpbmcs_fig3_elbowplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图6&nbsp;&nbsp;Top15 PC的elbow plot图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">X轴为PC序号， Y轴为标准差。</div>
+	<div><a name = 'figure7'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_doublets_dimplot.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图7&nbsp;&nbsp;DoubletFinder 识别的双胞（核）以及非双胞。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每个点表示一个细胞。不同颜色表示细胞类型，红色表示细胞为双胞（核），青色表示细胞为非双胞。</div>
+	<div><a name = 'figure8'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.Decontamination/sample_run_count_1kpbmcs_decontx_class.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图8&nbsp;&nbsp;DecontX 识别污染细胞。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">每个点表示一个细胞。不同颜色表示细胞类型，红色表示细胞被污染可能性较高，青色表示细胞被污染的可能性较低。</div>
+	<div><a name = 'figure9'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_fig4_cluster.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图9&nbsp;&nbsp;细胞聚类结果。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">X轴表示的是UMAP第一成分， Y轴表示的是UMAP第二成分。 数字和颜色代表cluster编号。</div>
+	<div><a name = 'figure10'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_heatmapClusters.png"    width = "1000"/></a></div>
+	<div class = "p1 img_title"><centet><b>图10&nbsp;&nbsp;Marker基因聚类热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标为不同的细胞类群；纵坐标为Marker基因；黄色代表高表达，紫色代表低表达。</div>
+	<div><a name = 'figure11'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_dotplotClusters.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><centet><b>图11&nbsp;&nbsp;Marker基因气泡热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标为Marker基因，纵坐标为不同的细胞类群；颜色从浅到深，颜色越深表示基因平均表达量越高；圆形越大表示表达该基因的细胞数目越多。</div>
+	<div><a name = 'figure12'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/04.sSample/sample_run_count_1kpbmcs_vlnplotClusters.png"    width = "1200"/></a></div>
+	<div class = "p1 img_title"><centet><b>图12&nbsp;&nbsp;Marker基因小提琴图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">纵坐标为不同细胞类群，横坐标为Marker 基因表达量，数字越高表示基因的表达量越高。</div>
+	<div><a name = 'figure13'></a></div>
+	<div class = "albumSlider lane">
+	<div class="selectImg">
+		<div class="fright">
+			<input type="text" value="" />
+			<input type="button" value="搜索" class="confirm" />
+			<input type="button" value="显示" class="showall" />
+		</div>
+	</div>
+		<div class = "fullview" style="height:351px"  alt = "1"><a href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png"><img src = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png" style="height:351px"  alt = ""/></a></div>
+		<div class = "slider">
+			<div class = "button movebackward" title = "向上"></div>
+				<div class = "imglistwrap">
+					<ul class = "imglist">
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_GO_Barplot.png">run_count_1kpbmcs_0 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_GO_Barplot.png">run_count_1kpbmcs_1 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_GO_Barplot.png">run_count_1kpbmcs_2 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_GO_Barplot.png">run_count_1kpbmcs_3 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_GO_Barplot.png">run_count_1kpbmcs_4 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_GO_Barplot.png">run_count_1kpbmcs_5 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_GO_Barplot.png">run_count_1kpbmcs_6 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_GO_Barplot.png">run_count_1kpbmcs_7 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_GO_Barplot.png">run_count_1kpbmcs_8 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_GO_Barplot.png">run_count_1kpbmcs_9 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_GO_Barplot.png">run_count_1kpbmcs_10 cluster</li>
+					</ul>
+				</div>
+			<div class = "button1 moveforward" title = "向下"></div>
+		</div>
+	</div>
+
+	<div class = "p1 img_title"><center><b>图13&nbsp;&nbsp;GO富集分析结果图。</b></center></div>	<div class = "p1 img_title">横轴为富集基因数目，纵轴为显著富集到的GO term，颜色对应不同的GO数据库子集，分子功能（Molecular Function，MF，细胞组分（Cellular Component ，CC）），生物过程（Biological Process ，BP）。</div>
+
+
+	<div><a name = 'figure14'></a></div>
+	<div class = "albumSlider lane">
+	<div class="selectImg">
+		<div class="fright">
+			<input type="text" value="" />
+			<input type="button" value="搜索" class="confirm" />
+			<input type="button" value="显示" class="showall" />
+		</div>
+	</div>
+		<div class = "fullview" style="height:351px"  alt = "1"><a href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png"><img src = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png" style="height:351px"  alt = ""/></a></div>
+		<div class = "slider">
+			<div class = "button movebackward" title = "向上"></div>
+				<div class = "imglistwrap">
+					<ul class = "imglist">
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster0_KEGG_Barplot.png">run_count_1kpbmcs_0 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster1_KEGG_Barplot.png">run_count_1kpbmcs_1 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster2_KEGG_Barplot.png">run_count_1kpbmcs_2 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster3_KEGG_Barplot.png">run_count_1kpbmcs_3 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster4_KEGG_Barplot.png">run_count_1kpbmcs_4 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster5_KEGG_Barplot.png">run_count_1kpbmcs_5 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster6_KEGG_Barplot.png">run_count_1kpbmcs_6 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster7_KEGG_Barplot.png">run_count_1kpbmcs_7 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster8_KEGG_Barplot.png">run_count_1kpbmcs_8 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster9_KEGG_Barplot.png">run_count_1kpbmcs_9 cluster</li>
+					<li href = "../../IDBiotech_result/run_count_1kpbmcs/05.GOKEGG/Cluster10_KEGG_Barplot.png">run_count_1kpbmcs_10 cluster</li>
+					</ul>
+				</div>
+			<div class = "button1 moveforward" title = "向下"></div>
+		</div>
+	</div>
+
+	<div class = "p1 img_title"><center><b>图14&nbsp;&nbsp;KEGG富集分析结果图。</b></center></div>	<div class = "p1 img_title">横轴为富集基因数目，纵轴为富集到的KEGG Pathway，颜色对应P-value的值，越深表示富集效果越显著。</div>
+
+
+	<div><a name = 'figure15'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_Heatmap_singleR.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图15&nbsp;&nbsp;SingleR细胞类群注释打分热图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标为细胞聚类结果的cluster，纵坐标为参考数据集中包含的细胞类型，每一格颜色越接近黄色表示打分越高；最上方Labels表示SingleR给出的细胞注释结果</div>
+	<div><a name = 'figure16'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/06.SingleR/run_count_1kpbmcs_DimPlot_singleR.png"    width = "900"   height = "350"/></a></div>
+	<div class = "p1 img_title"><centet><b>图16&nbsp;&nbsp;SingleR细胞类群注释结果图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">UMAP细胞聚类结果图。每一种颜色代表SingleR注释得到的一种细胞类群。 </div>
+	<div><a name = 'figure17'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_track.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图17&nbsp;&nbsp;细胞发育轨迹图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">图中黑色线条表示推测的细胞发育轨迹</div>
+	<div><a name = 'figure18'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/sample_run_count_1kpbmcs_pseudotime.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图18&nbsp;&nbsp;拟时序分析结果图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">图中黑色线条表示推测的细胞发育轨迹，颜色从紫色到黄色，颜色越接近黄色表示细胞发育时间越晚</div>
+	<div><a name = 'figure19'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/07.Monocle/run_count_1kpbmcs_Cluster_1_monocle.png"    width = "768"/></a></div>
+	<div class = "p1 img_title"><centet><b>图19&nbsp;&nbsp;Marker基因动态表达结果图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">横坐标表示拟时序结果；纵坐标表示基因表达量，颜色从紫色到黄色，颜色越接近黄色表示细胞发育时间越晚；黑色线条表示基因表达趋势。</div>
+	<div><a name = 'figure20'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_netall.png"    width = "800"/></a></div>
+	<div class = "p1 img_title"><centet><b>图20&nbsp;&nbsp;所有细胞类群间的细胞通讯网络图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">连线越粗表示两个cluster之间的互作越强。</div>
+	<div><a name = 'figure21'></a></div>
+	<div class = "mgt"><a href = "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png" target = "_blank"><img src= "../../IDBiotech_result/run_count_1kpbmcs/08.CellChat/sample_run_count_1kpbmcs_neteach.png"    width = "800"/></a></div>
+	<div class = "p1 img_title"><centet><b>图21&nbsp;&nbsp;每个细胞类群与其他类群间的细胞通讯网络图。&nbsp;&nbsp;&nbsp;</b></center></div><div class = "p1 img_title">连线越粗表示两个cluster之间的互作越强。</div>
+	<br/><br/>
+			</div>
+
+
+	<div class="footer" style="margin-left:230px;font-size:14x;border-top:2px solid #c9c9c9; width:1035px;clear:both;">
+           
+        </div>
+        </div>
+
+  </div>
+</body>
+</html>

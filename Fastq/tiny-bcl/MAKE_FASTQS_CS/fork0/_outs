@@ -1,0 +1,5 @@
+{
+    "fastq_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/outs/fastq_path",
+    "input_samplesheet": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/outs/input_samplesheet.csv",
+    "interop_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/tiny-bcl/outs/interop_path"
+}

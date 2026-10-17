@@ -1,0 +1,22 @@
+{
+    "analysis_id":"7494f3ff-fd75-4e19-965d-a85de558bf8e",
+    "analyze_duration":676.8397068977356,
+    "analyze_success":true,
+    "analyze_tries":1,
+    "barcodes":1221,
+    "cell_annotation_model":"human_pca_v1_beta",
+    "connect_duration":0.7457904815673828,
+    "connect_success":true,
+    "connect_tries":1,
+    "download_duration":5.068778038024902,
+    "download_success":true,
+    "download_tries":1,
+    "failure_mode":"",
+    "file_size":6256707,
+    "server_url":"https://cloud.10xgenomics.com",
+    "success":true,
+    "time_elapsed":688.6242020130157,
+    "upload_duration":5.502488374710083,
+    "upload_success":true,
+    "upload_tries":1
+}

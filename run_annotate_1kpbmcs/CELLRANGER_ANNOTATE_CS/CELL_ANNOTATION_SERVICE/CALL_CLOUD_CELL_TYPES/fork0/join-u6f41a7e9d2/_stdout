@@ -1,0 +1,3 @@
+[stdout]
+Error decoding token JSON at /oldhome/ouyjh/.config/txg/credentials.
+ error seen Expecting value: line 1 column 1 (char 0)

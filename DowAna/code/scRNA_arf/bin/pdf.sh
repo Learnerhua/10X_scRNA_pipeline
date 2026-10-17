@@ -1,0 +1,4 @@
+/dellfsqd2/ST_OCEAN/USER/xudayou/pipeline_tools/new_arf2html/program/wkhtmltopdf --page-size A4 --quiet --disable-external-links --print-media-type -O Portrait -T 20mm -R 10mm -B 10mm -L 10mm --outline-depth 3 cover ./cover_cn.html toc --xsl-style-sheet /dellfsqd2/ST_OCEAN/USER/xudayou/pipeline_tools/new_arf2html/program/toc_cn.xsl --footer-center [page]/[toPage] --header-spacing 5 ./report/src/page/PDF_cn.html --page-offset -1 --footer-center [page]/[toPage] report_cn.pdf.tmp1
+/dellfsqd2/ST_OCEAN/USER/xudayou/pipeline_tools/new_arf2html/program/pdftk report_cn.pdf.tmp1 output report_cn.pdf.tmp2
+/dellfsqd2/ST_OCEAN/USER/xudayou/pipeline_tools/new_arf2html/program/pdftk report_cn.pdf.tmp2 background /dellfsqd2/ST_OCEAN/USER/xudayou/pipeline_tools/new_arf2html/program/background.pdf output ./report/report.pdf
+rm -f ./*tmp1 ./*tmp2

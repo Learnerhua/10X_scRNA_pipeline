@@ -1,0 +1,10 @@
+{
+    "filter_probes": null,
+    "gene_index": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/FULL_COUNT_INPUTS/WRITE_GENE_INDEX/fork0/chnk0-u3c10a6a026/files/gene_index.json",
+    "is_antibody_only": false,
+    "is_pd": false,
+    "no_bam": false,
+    "reference_path": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/References/refdata-gex-GRCh38-2024-A",
+    "target_set": null,
+    "target_set_name": null
+}

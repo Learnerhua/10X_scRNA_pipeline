@@ -1,0 +1,155 @@
+{
+    "__mem_gb": 5,
+    "__threads": 2,
+    "__vmem_gb": 42,
+    "alignments": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u3c10a6a0df/files/pos_sorted_mapped.asf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u3c10a6a0df/files/pos_sorted_unmapped.asf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk1-u3c10a6a0df/files/pos_sorted_mapped.asf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk1-u3c10a6a0df/files/pos_sorted_unmapped.asf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk2-u3c10a6a0df/files/pos_sorted_mapped.asf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk2-u3c10a6a0df/files/pos_sorted_unmapped.asf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk3-u3c10a6a0df/files/pos_sorted_mapped.asf",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk3-u3c10a6a0df/files/pos_sorted_unmapped.asf"
+    ],
+    "bam_header": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/join-u3c10a6a0de/files/bam_header.sam",
+    "range": {
+        "end": {
+            "cigar_hash": 3810711972,
+            "flags": 16,
+            "is_unmapped": false,
+            "position": 97362294,
+            "read_name_hash": 11788168341084050393,
+            "target_id": 1
+        },
+        "start": null
+    },
+    "read_chunks": [
+        {
+            "chemistry": {
+                "barcode": [
+                    {
+                        "kind": "gel_bead",
+                        "length": 16,
+                        "offset": 0,
+                        "read_type": "R1",
+                        "whitelist": {
+                            "name": "3M-february-2018_TRU",
+                            "part": null,
+                            "slide": null,
+                            "strand": "+",
+                            "translation": false,
+                            "translation_whitelist_path": null
+                        }
+                    }
+                ],
+                "barcode_extraction": null,
+                "description": "Single Cell 3' v3 (polyA)",
+                "endedness": "three_prime",
+                "name": "SC3Pv3-polyA",
+                "rna": {
+                    "length": null,
+                    "min_length": null,
+                    "offset": 0,
+                    "read_type": "R2"
+                },
+                "rna2": null,
+                "strandedness": "+",
+                "umi": [
+                    {
+                        "length": 12,
+                        "min_length": 10,
+                        "offset": 16,
+                        "read_type": "R1",
+                        "whitelist": null
+                    }
+                ]
+            },
+            "chunk_id": 0,
+            "fastq_id": null,
+            "fastqs": {
+                "i1": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_I1_001.fastq.gz",
+                "i2": null,
+                "r1": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R1_001.fastq.gz",
+                "r1_interleaved": false,
+                "r2": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R2_001.fastq.gz"
+            },
+            "gem_group": 1,
+            "library_id": 0,
+            "library_type": "Gene Expression",
+            "read_group": "run_count_1kpbmcs:0:1:HFWFVDMXX:1",
+            "read_lengths": {},
+            "subsample_rate": null,
+            "umi_extractor": {
+                "translators": [
+                    null
+                ]
+            }
+        },
+        {
+            "chemistry": {
+                "barcode": [
+                    {
+                        "kind": "gel_bead",
+                        "length": 16,
+                        "offset": 0,
+                        "read_type": "R1",
+                        "whitelist": {
+                            "name": "3M-february-2018_TRU",
+                            "part": null,
+                            "slide": null,
+                            "strand": "+",
+                            "translation": false,
+                            "translation_whitelist_path": null
+                        }
+                    }
+                ],
+                "barcode_extraction": null,
+                "description": "Single Cell 3' v3 (polyA)",
+                "endedness": "three_prime",
+                "name": "SC3Pv3-polyA",
+                "rna": {
+                    "length": null,
+                    "min_length": null,
+                    "offset": 0,
+                    "read_type": "R2"
+                },
+                "rna2": null,
+                "strandedness": "+",
+                "umi": [
+                    {
+                        "length": 12,
+                        "min_length": 10,
+                        "offset": 16,
+                        "read_type": "R1",
+                        "whitelist": null
+                    }
+                ]
+            },
+            "chunk_id": 1,
+            "fastq_id": null,
+            "fastqs": {
+                "i1": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L002_I1_001.fastq.gz",
+                "i2": null,
+                "r1": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L002_R1_001.fastq.gz",
+                "r1_interleaved": false,
+                "r2": "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/Fastq/pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L002_R2_001.fastq.gz"
+            },
+            "gem_group": 1,
+            "library_id": 0,
+            "library_type": "Gene Expression",
+            "read_group": "run_count_1kpbmcs:0:1:HFWFVDMXX:2",
+            "read_lengths": {},
+            "subsample_rate": null,
+            "umi_extractor": {
+                "translators": [
+                    null
+                ]
+            }
+        }
+    ],
+    "sample_barcodes": null,
+    "slide_serial_capture_area": null,
+    "target_set_name": null,
+    "write_header": true
+}

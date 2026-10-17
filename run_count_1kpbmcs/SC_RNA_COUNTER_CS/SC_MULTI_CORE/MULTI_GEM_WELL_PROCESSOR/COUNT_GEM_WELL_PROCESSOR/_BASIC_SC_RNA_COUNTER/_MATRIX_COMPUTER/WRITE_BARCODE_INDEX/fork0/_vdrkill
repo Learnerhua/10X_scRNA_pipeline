@@ -1,0 +1,24 @@
+{
+    "timestamp": "2026-03-03T17:16:35.024560787+08:00",
+    "paths": [
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_INDEX/fork0/chnk0-u3c10a6a0de/files/summary.json",
+        "/oldhome/ouyjh/Workspace/scRNA_cellranger_pipeline/run_count_1kpbmcs/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_INDEX/fork0/chnk0-u3c10a6a0de/files/barcode_index.bi.bincode"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-03-03T16:50:38.934434072+08:00",
+            "DeltaBytes": 10227688
+        },
+        {
+            "Timestamp": "2026-03-03T17:05:20.438537163+08:00",
+            "DeltaBytes": -39
+        },
+        {
+            "Timestamp": "2026-03-03T17:16:35.024560787+08:00",
+            "DeltaBytes": -10221867
+        }
+    ],
+    "count": 2,
+    "size": 10221906
+}
